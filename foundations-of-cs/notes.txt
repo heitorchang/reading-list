@@ -146,3 +146,47 @@ p. 60
 
 Example: the factorial function
 
+p. 64
+
+Example: Balanced parentheses
+
+p. 69
+
+Recursive functions may be direct or indirect (only a second, third, or other function calls the original one)
+
+p. 70
+
+Example: factorial function in C
+
+p. 72
+
+Backward induction (selection sort where we swap the smallest element with the first one, and recursively sort the remainder)
+
+p. 74
+
+Divide-and-Conquer (definition)
+
+p. 75
+
+Merge Sort: a recursive, divide-and-conquer algorithm
+
+p. 77
+
+merge(lst1, lst2) function
+
+p. 79
+
+split(lst) function
+
+p. 81
+
+mergeSort(lst) function
+
+p. 83
+
+Recursive makeList() function
+
+p. 85
+
+Proving properties of recursive programs
+Factorial and Linked list

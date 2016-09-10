@@ -1,4 +1,4 @@
 Foundations of Computer Science
 
 09.sep.16 p. 44 Ch 2.4
-10.sep.16 p. 64 Balanced parentheses
+10.sep.16 p. 89 Ch 3
