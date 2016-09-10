@@ -1,0 +1,148 @@
+Ch. 1: Mechanization of Abstraction
+
+p. 2
+
+Example of exam scheduling without conflicts: a course-conflict graph with edges representing at least one student taking both courses
+
+p. 3
+
+Definitions of data models, data structures, and algorithms.
+
+Data model: abstraction used to describe problems
+Data structure: programming language constructs used to represent data models
+Algorithm: technique used to obtain solutions by manipulating data
+
+p. 7
+
+The list data model in C
+
+p. 14
+
+The static part of the C data model: the type system
+
+Union types
+
+p. 15
+
+Pointer types
+
+p. 17
+
+typedef
+
+Ch. 2: Iteration, Induction, and Recursion
+
+p. 28
+
+Self-definition, basis-induction, "basis" case, and "inductive" case
+
+p. 29-31
+
+Selection sort
+
+p. 34-35
+
+Inductive Proofs (weak induction)
+
+p. 36
+
+Why proofs by induction work? Technically, induction must be accepted as axiomatic.
+
+First informal proof: Iteration of the inductive step
+Second informal proof: Least counterexample (minimal counterexample):
+  Suppose S(n) is false for some value a, the least nonnegative integer for which S(a) is false.
+  If a = 0, we contradict the basis, S(0), so a must be greater than 0.
+  Now, if S(a) is false, S(a-1) is true (because a is the least nonnegative integer where S(a) is false).
+  Replacing n with a-1 in the inductive step, S(a-1) implies S(a). Since S(a-1) is true, S(a) must be true: another contradiction.
+  Because of these contradictions, S(n) must be true for any n >= 0
+  
+  (what if a = 1?) We showed how the inductive step holds, so S(a) cannot be false.
+
+p. 38
+
+Error-detecting codes
+
+p. 43
+
+Formulas for sums of arithmetic and geometric series
+
+p. 44
+
+Template for simple (weak) inductions
+
+p. 45
+
+Complete (also called strong or perfect) induction: entitlement to use S(i) for all values of i from the basis value up to n.
+
+1. Prove the basis, S(0)
+2. As an inductive hypothesis, assume S(0), S(1), ... , S(n) to be true. With these statements, prove that S(n+1) holds.
+
+p. 46
+
+Justifying complete induction (with a "least counterexample" argument)
+
+p. 47
+
+Associativity and commutativity
+
+p. 51
+
+A template for all inductions
+
+1. Specify the statement S(n) to be proved. Say you are going to prove S(n) by induction on n. Explain what n represents.
+
+2. State the basis case(s). These will be the integers i0 ... j0
+
+3. Prove each of the basis cases S(i0), S(i0 + 1), ..., S(j0).
+
+4. Set up the inductive step by stating that you are assuming S(i0), S(i0 + 1), ..., S(n) and want to prove S(n + 1), with n >= j0. Express S(n + 1) by substituting n + 1 for n in the statement S(n).
+
+5. Prove S(n + 1) under the assumptions mentioned in (4). You are free to use any or all of the statements of the inductive hypothesis.
+
+6. Conclude that S(n) is true for all n >= i0 (but not necessarily for smaller n).
+
+Example; (p. 41, Ex. 2.3.1)
+
+Sigma(from i=1 to n) of i = n(n + 1) / 2
+  (Sigma = Oversized sigma, summation)
+
+1. Statement S(n): Sigma(from i=1 to n) of i = n(n + 1) / 2 for any integer n >= 1.
+
+2. Basis case: n = 1.
+
+3. Sigma(from i=1 to n) of i = 1 * (1 + 1) / 2 = 2 / 2 = 1
+
+4. S(n + 1) = (n + 1)((n + 1) + 1) / 2 = (n + 1)(n + 2) / 2
+     = (n^2 + 3n + 2) / 2
+
+5. Sigma(from i=1 to n+1) of i = Sigma(from i=1 to n) of i + n + 1.
+                               = n(n + 1) / 2 + (n + 1)
+							     (we are writing Sigma(i->n) of i as S(n))
+							   = (n^2 + n) / 2 + (2 * (n + 1)) / 2
+							   = (n^2 + n + 2n + 2) / 2
+							   = (n^2 + 3n + 2) / 2 = S(n + 1) as in (4)
+
+6. Therefore, we conclude that S(n) is true for n >= 1.
+
+p. 52
+
+A loop invariant (or inductive assertion) is a statement S that is true each time we enter a particular point in the loop. This statement, S, is then proved by induction on a parameter that measures how many times we have gone around the loop.
+
+p. 57
+
+Loop invariants for while-loops
+
+p. 59
+
+Recursive (or inductive) definitions: one or more classes of closely related objects or facts are defined in terms of the objects themselves. The definition must not be meaningless, nor paradoxical.
+
+A recursive definition involves:
+
+1. One or more basis rules, in which simple objects are defined
+
+2. One or more inductive rules, whereby larger objects are defined in terms of smaller ones in the collection.
+
+p. 60
+
+Example: the factorial function
+
