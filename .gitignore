@@ -1,0 +1,11 @@
+# Github Python .gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+venv/
+.venv/
+ENV/

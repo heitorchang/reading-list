@@ -190,3 +190,57 @@ p. 85
 
 Proving properties of recursive programs
 Factorial and Linked list
+
+p. 91
+
+Benchmarking definition
+
+p. 92
+
+Profiling definition: determining where a program is spending its time
+
+Statement counter: counts the number of times a statement is executed on a given set of inputs
+
+90-10 rule: 90% of the running time is spent in 10% of the code
+
+p. 97
+
+Big-oh notation (definition)
+
+p. 98
+
+Template for big-oh proofs
+
+p. 101
+
+Template for proofs that a big-oh relationship is false
+
+p. 103
+
+Common running times
+
+O(1)        constant
+O(log n)    logarithmic
+O(n)        linear
+O(n log n)  n log n
+O(n^2)      quadratic
+O(n^3)      cubic
+O(2^n)      exponential
+
+p. 106
+
+Logarithms in running times
+
+log_2(n) is the number of times we have to divide by 2 to get down to 1
+
+p. 108
+
+Incommensurate functions are those that are not big-oh of each other.
+
+p. 109
+
+Analyzing the running time of a program
+
+p. 116
+
+Recursive rule for bounding running time
