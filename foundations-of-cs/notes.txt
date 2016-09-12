@@ -244,3 +244,12 @@ Analyzing the running time of a program
 p. 116
 
 Recursive rule for bounding running time
+
+p. 120
+
+Determine running time by climbing the structure tree (recursively)
+
+p. 129
+
+Program analysis in a nutshell
+
