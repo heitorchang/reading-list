@@ -1,5 +1,3 @@
-Ch. 1: Mechanization of Abstraction
-
 p. 2
 
 Example of exam scheduling without conflicts: a course-conflict graph with edges representing at least one student taking both courses
@@ -29,8 +27,6 @@ Pointer types
 p. 17
 
 typedef
-
-Ch. 2: Iteration, Induction, and Recursion
 
 p. 28
 
@@ -281,7 +277,123 @@ p. 154
 
 A function that takes time O(n^k) and calls itself with input of size n-1 takes time O(n^(k+1))
 
-A function calling itself twice with recursion going on for log_2(n) levels (like merge sort) has running time O(n log n) times the work done at each call, plus O(n) times the work done at the basis.
+A function calling itself twice with recursion going on for log_2(n) levels (like merge sort) has a running time O(n log n) times the work done at each call, plus O(n) times the work done at the basis.
 
 A function calling itself twice with recursion going on for n levels (like a Fibonacci program) has a running time exponential in n.
 
+p. 156
+
+Paradigm counting (combinatorics) problems:
+
+Counting assignments: how many ways can we paint a row of n houses, each in any of k colors?
+
+Counting permutations: how many different orderings of n distinct items are there?
+
+Counting ordered selections: how many ways can we pick k things out of n and arranging the k things in order? Paradigm: counting the number of ways different horses can win, place (come in second), and show (come in third) in a race.
+
+Counting the combinations of m things out of n: the selection of m from n distinct objects, without regard to the order. Paradigm: counting the number of possible poker hands.
+
+Counting permutations with some identical items. Paradigm: counting the number of anagrams of a word that may have some letters appearing more than once.
+
+Counting the number of ways objects, some of which may be identical, can be distributed among bins. Paradigm: counting the number of ways of distributing fruits to children.
+
+p. 158
+
+Counting assignments: The number of ways to assign any one of k values to each of n items is k^n (proved by induction)
+
+p. 160
+
+Permutation: an ordering of n distinct items in a line (where order matters)
+
+p. 163
+
+Formula for permutations: the number of permutations of n objects is n! 
+
+Why a general-purpose sorting algorithm must be proportional to n log n: progressively divide the set of possible orders into those where the first and second elements are sorted, and those where they are not.
+
+p. 166
+
+Special-purpose linear-time sorting algorithm for inputs where they are distinct integers chosen in a given range
+
+p. 167
+
+Let Pi(n) be the number of permutations of n items. A generalized function Pi(n, m) is defined as the number of ways we can select m items from n, where order matters for the selected items, but not for the unselected items.
+
+Pi(n) is Pi(n, n).
+
+By deduction, Pi(n, m) = n(n-1)(n-2)...(n-m+1) = n! / (n-m)!
+
+p. 171
+
+Selecting m items out of n without regard to order is expressed as the total number of permutations Pi(n, m) divided by the number of different orders the m items can take (m!).
+
+Recursively get the number n Choose m
+
+Basis: nC0 = 1
+
+Induction: if 0 < m < n, then nCm = (n-1)Cm + (n-1)C(m-1)
+
+i) Not pick the first element, and pick m things from the remaining n-1 elements: (n-1)Cm
+
+ii) Pick the first element and select m-1 things from the remaining n-1 elements: (n-1)C(m-1)
+
+p. 179
+
+Permutations with repeated items: If there are n items divided into k groups of sizes i_1, i_2, ... i_k, then the number of different distinguishable orders of the n items is n!/ Product of i_j! for j from 1 to k
+
+That is, divide n! by each of i_k!. If an item is unique, i_k! is 1 and has no effect.
+
+p. 181
+
+Distribution of objects to bins
+
+A trick that works when distributing identical objects to several bins is to construct a string with a letter representing an item, and * representing a partition between bins. Then, we can use n Choose m to get the number of ways the items can be distributed.
+
+Example: 4 apples distributed to 3 children:
+
+Two * partitions are needed, so we have a string of 4 A's and 2 *'s.
+
+The number of ways to select 4 A's out of the 6 positions is 6 Choose 4 = 15
+
+In general, with n objects and m bins, a string's length will be n+m-1. The number of distributions is (n+m-1) Choose n
+
+p. 182
+
+Distributing distinguishable objects
+
+For each class i of the items, use a character a_i.
+
+Use m-1 *'s to represent boundaries between the m bins. Note that the *'s can be considered as a class of its own, that is, a collection of identical characters "*".
+
+The total number of such strings is (n+m-1)! / (m-1)!(Product of i_j! for j from 1 to k)
+
+p. 183
+
+Comparison of Counting Problems
+
+Must     Order      Identical
+Use All  Important  Objects?
+ N        N          N         Poker hands
+ N        Y          N         Painting houses (with replacement),
+                               Horse race (without)
+ Y        N          Y         Apples to children
+ Y        Y          N         Sorting
+ Y        Y          Y         Anagrams
+
+p. 184
+
+Combining counting rules:
+
+1. Express a count as a sequence of choices
+2. Express a count as a difference of counts (exclude a certain class of arrangements)
+3. Express a count as a sum of counts for subcases
+
+p. 192
+
+For any event E in a probability space P, the complement event E_bar is the set of points of P that are not in event E.
+
+Prob(E) + Prob(E_bar) = 1
+
+or
+
+Prob(E_bar) = 1 - Prob(E)

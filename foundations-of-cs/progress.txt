@@ -1,6 +1,7 @@
 Foundations of Computer Science
 
-09.sep.16 p. 44 Ch 2.4
+09.sep.16 p. 44 Sec 2.4
 10.sep.16 p. 89 Ch 3
 11.sep.16 p. 120 Ch 3 Climbing the structure tree
 12.sep.16 p. 156 Ch 4 
+13.sep.16 p. 193 Sec 4.10 Conditional Probability
