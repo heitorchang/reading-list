@@ -253,3 +253,35 @@ p. 129
 
 Program analysis in a nutshell
 
+p. 132
+
+Analyzing recursive functions: a recurrence relation relates the running time of a function F, T_F(n), to functions T_G(k) of other functions G in the program with argument sizes k.
+
+p. 142
+
+Inductions that skip some values: showing a T(n) using powers of 2 also shows it is true for all n, because T(n) does not decrease as n increases.
+
+p. 145
+
+Generalized form for simplest type of recurrence:
+
+Basis: T(1) = a
+Induction: T(n) = T(n-1) + g(n)
+
+Division into two subproblems:
+
+Basis: T(1) = a
+Induction: T(n) = 2T(n/2) + g(n) for n = a power of 2 and greater than 1
+
+p. 151
+
+Summary of Solutions to common recurrence relations: O(n^(k+1)), O(c^n), O(n^log_d(c)), O(n^k), O(n^k log n)
+
+p. 154
+
+A function that takes time O(n^k) and calls itself with input of size n-1 takes time O(n^(k+1))
+
+A function calling itself twice with recursion going on for log_2(n) levels (like merge sort) has running time O(n log n) times the work done at each call, plus O(n) times the work done at the basis.
+
+A function calling itself twice with recursion going on for n levels (like a Fibonacci program) has a running time exponential in n.
+
