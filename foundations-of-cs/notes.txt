@@ -71,7 +71,7 @@ p. 45
 Complete (also called strong or perfect) induction: entitlement to use S(i) for all values of i from the basis value up to n.
 
 1. Prove the basis, S(0)
-2. As an inductive hypothesis, assume S(0), S(1), ... , S(n) to be true. With these statements, prove that S(n+1) holds.
+2. As an inductive hypothesis, assume S(0), S(1), ..., S(n) to be true. With these statements, prove that S(n+1) holds.
 
 p. 46
 
@@ -339,7 +339,7 @@ ii) Pick the first element and select m-1 things from the remaining n-1 elements
 
 p. 179
 
-Permutations with repeated items: If there are n items divided into k groups of sizes i_1, i_2, ... i_k, then the number of different distinguishable orders of the n items is n!/ Product of i_j! for j from 1 to k
+Permutations with repeated items: If there are n items divided into k groups of sizes i_1, i_2, ..., i_k, then the number of different distinguishable orders of the n items is n!/ Product of i_j! for j from 1 to k
 
 That is, divide n! by each of i_k!. If an item is unique, i_k! is 1 and has no effect.
 
@@ -418,7 +418,7 @@ p. 197
 
 A distributive law for probabilities
 
-By dividing the probability space of n points into regions, R_1, R_2, ... R_k, we can write Prob(E) as Sum of (e_i/r_i)(r_i/n) for i from 1 to k, where e_i is the number of points in E that lie in region R_i, and r_i is the total number of points in R_i.
+By dividing the probability space of n points into regions, R_1, R_2, ..., R_k, we can write Prob(E) as Sum of (e_i/r_i)(r_i/n) for i from 1 to k, where e_i is the number of points in E that lie in region R_i, and r_i is the total number of points in R_i.
 
 p. 199
 
@@ -458,7 +458,7 @@ p. 202
 
 Bayes' Rule
 
-Suppose E is an event partitioned into k regions R_1, R_2, ... R_k.
+Suppose E is an event partitioned into k regions R_1, R_2, ..., R_k.
 
 Then Prob(R_j/E) = (Prob(R_j)Prob(E/R_j)) / (Sum of Prob(R_i)Prob(E/R_i) for i from 1 to k)
 
@@ -492,3 +492,108 @@ If E and F are independent events, then the probability of E-and-F is pq
 
 If E and F are independent events, then the probability of E-or-F is p + q - pq
 
+p. 212
+
+The expected value of a payoff function f, EV(f), is the sum over all points x of f(x)Prob(x).
+
+When all points are equally likely, EV(f) is computed by summing f(x) for all x in the space, then dividing by the number of points in the space
+
+The expected value is sometimes called the mean, and can be thought of as a "center of gravity"
+
+p. 213
+
+EV(f) = Sum of v * Prob(E_v) for all v, where v is a value and E_v is the set of points on which f produces value v.
+
+In the case where points have equal probability, let n_v be the number of points in event E_v and n be the total number of points in the space. Then, EV(f) = (Sum of v * n_v for all v) / n.
+
+p. 216
+
+A Monte-Carlo algorithm is probabilistic; it makes a random selection at each iteration. It will either say "true", in which case the answer is guaranteed to be correct, or "I don't know", which could mean the answer is either true or false.
+
+Given the probability p of the algorithm saying "true", the probability it will never say "true" is (1-p)^n for n iterations. This value decreases rapidly as n increases.
+
+By repeating the algorithm a constant number of times, we conclude the answer is "false" if none of the repetitions produce "true". By adjusting the number of repetitions, we adjust the probability of incorrectly concluding "false" to be as low as we like, but it will never be 0.
+
+p. 224
+
+A recursive definition of trees:
+
+Basis: A single node n is a tree. n is the root of this one-node tree.
+
+Induction: Let r be a new node and T_1, T_2, ..., T_k be trees with roots c_1, c_2, ..., c_k. No node may appear more than once in each of the T_i's. A new tree T is formed with r and T_1, T_2, ..., T_k as follows:
+
+Make r the root of tree T. Then add an edge from r to each of the c_1, c_2, ..., c_k roots, making each of these nodes a child of r. In other words, make r the parent of each of the roots of T_1, T_2, ..., T_k.
+
+p. 225
+
+A node is also its own ancestor.
+
+Node d is a descendant of node a if and only if a is an ancestor of d.
+
+By the above definition, a node is also a descendant of itself. A proper ancestor or descendant requires a path of length 1 or more.
+
+The length of a path from m_1, m_2, ..., m_k has length k-1, one less than the number of nodes on the path.
+
+p. 226
+
+Nodes that have the same parent are called siblings.
+
+An entire tree is a subtree of itself.
+
+A leaf is a node that has no children. An interior node has one or more children. Every node is either a leaf or an interior node. If the tree is a single node, this node is both a root and a leaf.
+
+The height of a node n is the length of a longest path from n to a leaf. The height of the tree is the height of the root. The depth, or level, of a node n is the length of the path from the root to n.
+
+p. 228
+
+A labeled tree's nodes have labels or values associated with each node. This label can be anything, from simple integers to complex arrays or other structures with multiple fields. A node's label can be changed, but its name cannot be changed.
+
+p. 232
+
+Array-of-pointers representation of trees
+
+[  info                  ]
+[ p0 | p1 | ... | p_bf-1 ]
+
+The constant bf is the branching factor: the maximum number of children a node can have. Missing children are represented by a NULL pointer.
+
+p. 233
+
+A trie (pronounced "try") is a type of search tree. Each node except the root has an associated letter (the key may be something else). The node also has an associated value. The array-of-pointers representation is a trie.
+
+p. 239
+
+A simple recursion on a tree produces the preorder listing of the node labels of the tree. The process is: take an action A_0 on node n. Then, call itself on the first child, c_1, of n. In this recursive call, "explore" the subtree rooted at c_1. When this recursive call returns, do some other action, A_1. Then call the function on the second child of n, and so on.
+
+The effect of a preorder listing is to print (only the first time a node is visited) as if we circumnavigated the tree counterclockwise.
+
+p. 251
+
+A template for structural induction
+
+1. Specify the statement S(T) to be proved, where T is a tree
+2. Prove the basis, that S(T) is true whenever T is a tree with a single node.
+3. Set up the inductive step by letting T be a tree with root r and k >= 1 subtrees, T_1, T_2, ..., T_k. State that you assume the inductive hypothesis: S(T_i) is true for each of the subtrees.
+4. Prove that S(T) is true under the assumptions of step 3.
+
+p. 256
+
+The scheme for recursions on binary trees is
+
+{
+  action A_0
+  recursive call on left subtree
+  action A_1
+  recursive call on right subtree
+  action A_2
+}
+
+p. 259
+
+Binary search tree
+
+p. 261
+
+An Abstract Data Type (ADT) is a collection of operations, such as insert, delete, and lookup, that may be performed on a set of objects of a certain kind. This concept is also called a class, or a module.
+
+An ADT can have more than one abstract implementation. For example, the binary search tree is a good way to implement the dictionary ADT. Each abstract implementation can, in turn, be implemented by several data structures.
