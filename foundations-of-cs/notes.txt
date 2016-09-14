@@ -597,3 +597,8 @@ p. 261
 An Abstract Data Type (ADT) is a collection of operations, such as insert, delete, and lookup, that may be performed on a set of objects of a certain kind. This concept is also called a class, or a module.
 
 An ADT can have more than one abstract implementation. For example, the binary search tree is a good way to implement the dictionary ADT. Each abstract implementation can, in turn, be implemented by several data structures.
+
+p. 264
+
+Deleting an element from a binary search tree
+
