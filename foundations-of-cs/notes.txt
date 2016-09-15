@@ -602,3 +602,45 @@ p. 264
 
 Deleting an element from a binary search tree
 
+p. 272
+
+Partially ordered trees
+
+p. 280
+
+Heapsort
+
+p. 289
+
+A sublist is a contiguous portion of a list.
+
+A subsequence of L is a list formed by striking out zero or more elements of L. The elements of the subsequence must remain in the same order of L, but need not be consecutive in L. e (epsilon, the empty list) and L itself are always sublists and subsequences of L.
+
+p. 293
+
+Linked-list data structure
+
+p. 299
+
+Doubly linked lists
+
+p. 303
+
+Lookup with sentinels (a method to speed up a search) 
+
+p. 306
+
+Stacks: a LIFO (last-in first-out) abstract data type 
+
+p. 318
+
+Queues: a FIFO (first-in first-out) abstract data type
+
+p. 320
+
+Circular array 
+
+Longest common subsequence (LCS) example: say we have two lists consisting of lines from two separate files with a small number of changes between them. An LCS represents those lines that have not been changed.
+
+A subsequence is formed from a list by deleting any number of elements, while keeping the remaining elements in order. The elements do not need to be contiguous.
+
