@@ -640,7 +640,17 @@ p. 320
 
 Circular array 
 
+p. 321
+
 Longest common subsequence (LCS) example: say we have two lists consisting of lines from two separate files with a small number of changes between them. An LCS represents those lines that have not been changed.
 
 A subsequence is formed from a list by deleting any number of elements, while keeping the remaining elements in order. The elements do not need to be contiguous.
+
+p. 324
+
+Recovering an LCS from a two-dimensional table giving the length of the LCS
+
+p. 330
+
+CPC (Characters Per Cell)
 
