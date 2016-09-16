@@ -687,3 +687,22 @@ S is a proper subset of T if S is a subset of T and there is at least one elemen
 p. 349
 
 The power set of S, written P(S) or 2^S, is the set of subsets of S.
+
+p. 357
+
+Characteristic-vector implementation of sets
+
+p. 361
+
+Hash table data structure
+
+p. 366
+
+Relations and Functions
+
+A set of elements, each of which is a tuple of the same arity (say, k), is called a relation of arity k.
+
+p. 367
+
+Cartesian product (A X B)
+
