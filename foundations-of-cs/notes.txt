@@ -654,3 +654,36 @@ p. 330
 
 CPC (Characters Per Cell)
 
+p. 338
+
+Basic definitions of sets
+
+The empty set is a set, and not an atom.
+
+Defining a set of elements belonging to S for having a property P is called abstraction.
+
+p. 339
+
+A multiset may have repeated elements, but still have no order associated with its elements.
+
+p. 341
+
+Russell's paradox: Is set S a member of itself?
+
+p. 344
+
+Commutative, associative, and distributive laws of union and intersection
+
+p. 345
+
+Associative law of union and difference
+
+Distributive law of difference over union
+
+p. 347
+
+S is a proper subset of T if S is a subset of T and there is at least one element of T that is also not in S.
+
+p. 349
+
+The power set of S, written P(S) or 2^S, is the set of subsets of S.
