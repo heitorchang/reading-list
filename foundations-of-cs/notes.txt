@@ -706,3 +706,25 @@ p. 367
 
 Cartesian product (A X B)
 
+p. 390
+
+Partial orders and total orders
+
+p. 391
+
+Equivalence relations
+
+p. 392
+
+Equivalence classes
+
+p. 393
+
+Closures of relations
+
+p. 399
+
+Cardinality of sets, aleph-zero (cardinality of integers)
+
+The set of real numbers belongs to another equivalence class, called the "continuum".
+

@@ -8,3 +8,4 @@ Foundations of Computer Science
 14.sep.16 p. 268 Sec 5.8 Efficiency of Binary Search Tree Operations
 15.sep.16 p. 337 Ch 7 The Set Data Model
 16.sep.16 p. 387 Sec 7.10 Some Special Properties of Binary Relations
+19.sep.16 p. 400 Sec 7.11 Exercises
