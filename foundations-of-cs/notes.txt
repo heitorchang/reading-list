@@ -728,3 +728,6 @@ Cardinality of sets, aleph-zero (cardinality of integers)
 
 The set of real numbers belongs to another equivalence class, called the "continuum".
 
+p. 433
+
+Natural join: a join of two relations R and S where (commonly) the attributes equated have the same name, and in addition, R and S have no other attribute names in common.
