@@ -731,3 +731,34 @@ The set of real numbers belongs to another equivalence class, called the "contin
 p. 433
 
 Natural join: a join of two relations R and S where (commonly) the attributes equated have the same name, and in addition, R and S have no other attribute names in common.
+
+p. 459
+
+Implementing graphs
+
+Adjacency Lists
+
+Adjacency Matrices
+
+p. 468
+
+An algorithm for computing the connected components
+
+p. 478
+
+Minimal Spanning Trees
+
+In this context, the "tree" is unrooted and unordered (it is just an undirected graph with no simple cycles)
+
+The tree is "minimal" when the sum of the edge labels (integers or reals) is as small as possible.
+
+p. 479
+
+Kruskal's algorithm is a greedy algorithm that produces a minimal spanning tree. Often, the overall effect of locally optimal decisions is not globally optimum. However, In the case of Kruskal's algorithm, the greedy approach is optimal.
+
+p. 484
+
+Depth-first search
+
+To avoid infinite recursion, we mark nodes as we visit them.
+

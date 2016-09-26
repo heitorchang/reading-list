@@ -1,13 +1,14 @@
 Foundations of Computer Science
 
-09.sep.16 p. 44  Sec 2.4  Complete Induction
-10.sep.16 p. 89  Ch. 3    Running time
-11.sep.16 p. 120 Ch. 3    Climbing the structure tree
-12.sep.16 p. 156 Ch. 4    Combinatorics
-13.sep.16 p. 212 Sec 4.12 Expected Value Calculations
-14.sep.16 p. 268 Sec 5.8  Efficiency of Binary Search Tree Operations
-15.sep.16 p. 337 Ch. 7    The Set Data Model
-16.sep.16 p. 387 Sec 7.10 Some Special Properties of Binary Relations
-19.sep.16 p. 403 Ch. 8    The Relational Data Model
-20.sep.16 p. 423 Sec 8.6  Navigation among Relations
-23.sep.16 p. 461 Sec 9.3  Comparison of Adjacency Matrices and Lists
+09.sep.16 p. 44  Sec 2.4   Complete Induction
+10.sep.16 p. 89  Ch. 3     Running time
+11.sep.16 p. 120 Ch. 3     Climbing the structure tree
+12.sep.16 p. 156 Ch. 4     Combinatorics
+13.sep.16 p. 212 Sec 4.12  Expected Value Calculations
+14.sep.16 p. 268 Sec 5.8   Efficiency of Binary Search Tree Operations
+15.sep.16 p. 337 Ch. 7     The Set Data Model
+16.sep.16 p. 387 Sec 7.10  Some Special Properties of Binary Relations
+19.sep.16 p. 403 Ch. 8     The Relational Data Model
+20.sep.16 p. 423 Sec 8.6   Navigation among Relations
+23.sep.16 p. 461 Sec 9.3   Comparison of Adjacency Matrices and Lists
+26.sep.16 p. 495 Sec 9.7   Some uses of Depth-first Search
