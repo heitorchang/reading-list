@@ -11,4 +11,4 @@ Foundations of Computer Science
 19.sep.16 p. 403 Ch. 8     The Relational Data Model
 20.sep.16 p. 423 Sec 8.6   Navigation among Relations
 23.sep.16 p. 461 Sec 9.3   Comparison of Adjacency Matrices and Lists
-26.sep.16 p. 495 Sec 9.7   Some uses of Depth-first Search
+26.sep.16 p. 525 Sec 9.10^ Applications of Graph coloring

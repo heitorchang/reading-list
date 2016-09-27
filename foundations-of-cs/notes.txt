@@ -762,3 +762,21 @@ Depth-first search
 
 To avoid infinite recursion, we mark nodes as we visit them.
 
+p. 502
+
+Dijkstra's algorithm for finding shortest paths
+
+p. 514
+
+Floyd's algorithm
+
+p. 516
+
+Warshall's algorithm
+
+p. 522
+
+A complete graph has an edge between every pair of distinct nodes. When the graph is undirected, there are n(n - 1)/2 edges.
+
+For a complete directed graph, there are n^2 arcs.
+
