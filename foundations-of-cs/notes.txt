@@ -780,3 +780,31 @@ A complete graph has an edge between every pair of distinct nodes. When the grap
 
 For a complete directed graph, there are n^2 arcs.
 
+p. 533
+
+A bounce filter smoothes a sequence of 0's and 1's by regarding a single digit surrounded by the other as "noise."
+
+p. 539
+
+Nondeterministic automata
+
+p. 547
+
+The subset construction for creating a deterministic automaton out of a nondeterministic one.
+
+p. 556
+
+Regular expressions
+
+p. 560
+
+Kleene closure
+
+p. 566
+
+The backslash (\) is an escape character.
+
+p. 572
+
+Automata cannot count, so it is not possible for one to recognize all and only the strings of balanced parentheses.
+

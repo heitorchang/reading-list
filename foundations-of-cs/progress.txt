@@ -13,4 +13,4 @@ Foundations of Computer Science
 23.sep.16 p. 461 Sec 9.3   Comparison of Adjacency Matrices and Lists
 26.sep.16 p. 525 Sec 9.10  Applications of Graph coloring
 27.sep.16 p. 529 Ch. 10    Patterns, Automata, and Regular Expressions 
--- Paused reading
+06.oct.16 p. 593 Sec 11.2  The terminology of grammars
