@@ -14,3 +14,4 @@ Foundations of Computer Science
 26.sep.16 p. 525 Sec 9.10  Applications of Graph coloring
 27.sep.16 p. 529 Ch. 10    Patterns, Automata, and Regular Expressions 
 06.oct.16 p. 593 Sec 11.2  The terminology of grammars
+10.oct.16 p. 616 Sec 11.6  Constructing Parse Trees
