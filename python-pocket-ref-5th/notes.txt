@@ -1,0 +1,409 @@
+Python Pocket Reference, 5th ed.
+
+p. 13 Table 1
+lambda args1: X
+
+X in Y, X not in Y  ;; Membership
+X is Y, X is not Y  ;; Identity
+
+x ** y   ;; Exponentiation
+
+X[i:j:k]  ;; Slicing
+
+(...)  Tuple, expression, generator expression
+[...]  List, list comprehension
+{...}  Dictionary, set, dict/set comprehension
+
+p. 15
+
+X < Y < Z  ;; comparisons may be chained
+
+p. 16
+
+Boolean true means any nonzero number or nonempty collection object.
+All objects have a Boolean value. The special object None is false.
+
+p. 17
+
+The three major type categories are:
+
+- Sequence (positionally ordered)
+- Mapping (access-by-key)
+- Number (all types)
+
+Types may be mutable
+
+Class methods for predefined syntax include __contains__, __iter__,
+__getitem__, __add__, __mul__, __len__, __setitem__
+
+p. 28 String formatting expression with %
+
+'%d %s for you' % (2, 'spam')
+;; 2 spam for you
+
+'%(n)d named %(x)s' % {'n': 1, 'x': "spam"}
+;; 1 named spam
+
+p. 30 String formatting method
+
+'{n} named {x:s}'.format(n=3, x="spam")
+;; 3 named spam
+
+p. 38 Searching methods
+
+S.find(sub [, start [, end]]) returns offset of the first occurrence of
+sub in S. Returns -1 if not found. There is also S.rfind()
+
+S.index() is like find, but raises ValueError if not found. There is
+also S.rindex()
+
+p. 39 Splitting and joining
+
+S.split([sep [, maxsp]])
+;; 'a*b'.split('*')
+
+S.join(iterable)
+'*'.join(['a', 'b'])  ;; 'a*b'
+
+S.replace(old, new, [, count])
+
+S.splitlines([keepends])
+
+p. 47 Lists
+
+L = ['spam', [42, 32], 1.23, {}]
+
+L = list('spam')  ;; ['s', 'p', 'a', 'm']
+
+L = [x ** 2 for x in range(9)]  ;; [0, 1, 4, 9, ... 49, 64]
+
+List operations
+
+L.append(X)  ;; insert single object X at the end of L (in-place)
+L.extend(I)  ;; inserts each item in I at the end of L (in-place)
+L[:0] = I    ;; prepends all items in I
+
+L.sort(key=None, reverse=False)  ;; key is a function of one argument
+that is used to extract a comparison value, for example, str.lower
+
+L.index(X, [, i [, j]])
+
+L.insert(i, X)
+
+L.remove(X)
+
+L.pop([i])
+
+L.copy()  ;; makes a top-level (shallow) copy of L
+
+List comprehension
+[expr for target1 in iterable1 [if condition1]
+      for target2 in iterable2 [if condition2] ...]
+
+[x + y for x in range(5) if x % 2 == 0 for y in [10, 20, 30]]
+;; [10, 20, 30, 12, 22, 32, 14, 24, 34]
+
+p. 50 The iteration protocol
+
+An iterable has an __iter__() method. When called, it returns an
+iterator (an object with a __next__() method). It may be the same object
+
+__next__() returns the next item in the iteration or raises a
+StopIteration exception
+
+p. 51 Generator expressions
+
+Generator expressions achieve effects similar to list comprehensions,
+without creating a physical list to hold all results.
+
+The generator object supports the iteration protocol.
+
+The parentheses used for a function with a single argument suffice to
+create an iterable
+
+sum(ord(x) for x in "Spam")
+
+p. 54 Dictionary literals
+
+{}
+
+{'spam': 2, 'eggs': 3}
+
+dict(name='bob', age=45)
+
+dict(zip('abc', [1, 2, 3]))
+
+dict([['a', 1], ['b', 2]])
+
+{c.upper(): ord(c) for c in 'spam'}
+
+p. 55
+
+D.keys()  ;; returns an iterable view
+
+D.values()
+
+D.items()  ;; tuple pairs (key, value)
+
+D.clear()
+
+D.copy()  ;; shallow copy
+
+D.update(D2)
+
+D.get(k [,default=None])  ;; like D[k], but returns second argument
+if k is not found
+
+D.setdefault(k [, default])
+
+D.popitem()  ;; removes and returns an arbitrary item
+
+D.pop(k [, default])
+
+dict.fromkeys(I [, value=None])  ;; creates a dict with keys from I
+
+p. 57
+Tuples are immutable sequences of object references accessed by offset
+
+()  ;; empty tuple
+(0,)  ;; one-item tuple, trailing comma necessary
+
+p. 58 Tuple-specific methods
+
+T.index(X [, i [, j]])
+T.count(X)
+
+p. 62 File context managers
+
+with open(r'C:\misc\script', 'w') as myfile:
+    ... use myfile ...
+
+p. 64 Sets
+
+set()
+{'s', 'p', 'a', 'm'}
+
+{ord(c) for c in 'spam'}  ;; comprehension
+
+frozenset(range(-5, 5))  ;; immutable
+
+x in S  ;; membership
+
+S1.difference(S2)
+S1 - S2
+
+S1.union(S2)
+S1 | S2
+
+S1.intersection(S2)
+S1 & S2
+
+S1.issubset(S2)
+S1 <= S2
+
+S1.issuperset(S2)
+S1 >= S2
+
+;; true subset and superset (S1 and S2 are not the same)
+S1 < S2
+S1 > S2
+
+S1.symmetric_difference(S2)
+S1 ^ S2  ;; elements in either S1 or S2 but not in both
+
+S1.update(S2)
+S1 |= S2  ;; adds items in S2 to S1
+
+S.add(), remove(), discard(), pop(), clear()
+
+len(S)
+
+for x in S
+
+S.copy()  ;; shallow
+
+p. 67
+repr(X) is a string as-code, str(X) is user-friendly
+
+p. 74 Extended sequence assignment
+
+a, *b = [1, 2, 3, 4]
+;; a <- 1
+;; b <- [2, 3, 4]
+
+*a, b = 'spam'
+;; a <- ['s', 'p', 'a']
+;; b <- 'm'
+
+p. 77 Calling a function with arbitrary arguments
+
+def f(a, b, c, d): print(a, b, c, d)
+
+f(*[1, 2], **dict(c=3, d=4))
+;; 1 2 3 4
+
+p. 80 if statement
+if test1:
+    ... do something
+elif test2:
+    ... do another thing
+else:
+    ... do yet another thing
+
+while test:
+    ... do something
+else:
+    ... do another thing
+
+for target in iterable:
+    ... do something
+[else:
+    ... run something once on exit]
+
+pass  ;; does nothing
+
+break  ;; exits closest enclosing
+
+continue  ;; goes to the top of the closest enclosing while or for loop
+
+del name
+del name[i:j:k]
+del name.attribute
+;; primarily used for data structures
+
+p. 84 lambda expressions
+
+lambda arg, arg, ...: expression
+;; it can be used in places that def cannot
+
+p. 85 Decorators
+
+@decorator
+def f():
+    ...
+
+is the same as:
+
+def f():
+    ...
+f = decorator(f)
+
+;; hc-code
+def add2(f):
+    return lambda x: f(x) + 2
+
+@add2
+def sqAdd2(x):
+    return x * x
+
+sqAdd2(9)
+;; 83
+
+p. 86
+
+class C:
+    @decorator
+    def M():
+        ...
+
+@A
+@B
+@C
+def f():
+    ...
+   
+is the same as f = A(B(C(f)))
+    
+@spam(1, 2, 3)  ;; can take arguments
+    
+p. 87
+yield defines a generator function, which produces results on demand
+
+yield from range(n)
+
+p. 88 global
+
+global name [, name]*
+;; is a namespace declaration. when used inside a class of function
+definition statement, all appearances of 'name' will be treated as
+references to a global (module-level) name
+
+nonlocal causes appearances of 'name' to be treated as references to
+a local variable in an enclosing function's scope.
+
+p. 89 import
+
+import [package.]* module [as name]
+
+p. 93 from
+
+from [package.]* module import
+                 [(] name [as othername]
+                 [, name [as othername]]* [)]
+
+p. 94 Package relative import
+
+from source import name [, name]*    ;; Absolute: sys.path
+from . import module [, module]*     ;; Relative: pkg only
+from .source import name [, name]*   ;; Relative: pkg only
+
+from .. import module [, module]*    ;; Parent in pkg
+from ..source import name [, name]*  ;; Parent in pkg
+
+p. 95 The class statement
+
+[decoration]
+class name [ ( super [, super]* [, metaclass=M] ) ]:
+    ... definition
+
+class objects are factories for making instance objects.
+
+Method functions receive a special first argument, called 'self'. It is
+the implied subject of the method call.
+
+staticmethod() and classmethod() built-ins support additional kinds of
+methods.
+
+p. 96 class decorators
+
+@decorator
+class C:
+    def f():
+        ...
+
+is the same as:
+
+class C:
+    def f():
+        ...
+C = decorator(C)
+
+p. 96 Metaclasses
+
+Metaclasses are classes that generally subclass from the 'type' class,
+in order to customize creation of class objects themselves.
+
+Metaclass code is run at the conclusion of a 'class' statement.
+
+p. 97 try
+
+try:
+    ... code ...
+except [type [as value]]:
+    ... other code
+[except [type [as value]]:
+    ... other code]
+[else:
+    ... other code]
+[finally:
+    ... other code]
+
+p. 99
+raise instance [from (otherexc | None)]
+raise class [from (otherexc | None)]
+raise  ;; reraises the most recent exception
+
+p. 101 assert
+
+p. 102 with Statement wraps a block in a context manager.
+
