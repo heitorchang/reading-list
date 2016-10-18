@@ -17,3 +17,4 @@ Foundations of Computer Science
 10.oct.16 p. 616 Sec 11.6  Constructing Parse Trees
 13.oct.16 p. 625 Sec 11.7  A table-driven parsing algorithm
 14.oct.16 p. 633 Sec 11.8  Grammars versus regular expressions
+18.oct.16 p. 643 Sec 12.2  What is Propositional Logic?
