@@ -808,3 +808,18 @@ p. 572
 
 Automata cannot count, so it is not possible for one to recognize all and only the strings of balanced parentheses.
 
+p. 650
+
+Understanding "implies": the implication operator -> should not be confused with causation. We must get used to the notion that "falsehood implies anything."
+
+Suppose "It is raining" -> "Sue takes her umbrella." While it could be that the rain caused Sue to take her umbrella, it could also be true that Sue always carries an umbrella.
+
+Implication: p -> q means "if p is true, then q is true." 
+
+http://mathforum.org/library/drmath/view/55617.html
+"implies" can be seen as "subset" in set theory. For example, "If it rains, then the ground is wet". The set of times when it rains is a subset of the set of times when the ground is wet. A false statement is like the empty set, and it is a subset of any set. Therefore, a false statement implies any statement.
+
+p. 658
+
+the AND of expressions is called a conjunction, and the OR, a disjunction.
+
