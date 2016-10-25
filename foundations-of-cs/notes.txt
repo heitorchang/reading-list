@@ -823,3 +823,34 @@ p. 658
 
 the AND of expressions is called a conjunction, and the OR, a disjunction.
 
+p. 679
+
+Laws involving implication
+
+12.24 (p -> q) == (NOT(p) + q)
+
+p. 682
+
+Tautologies and Methods of Proof
+
+The Law of the Excluded Middle: something is either true or false
+
+p. 683
+
+Proving the Contrapositive
+
+(p -> q) == (NOT(q) -> NOT(p))
+
+p. 684
+
+Proof by Contradiction
+
+(NOT(p) -> 0) == p
+
+p. 685
+
+Equivalence to Truth
+
+This method allows us to prove an expression to be a tautology by transforming it by substitution of equals for equals until the expression is reduced to 1 (TRUE).
+
+(p == 1) == p
