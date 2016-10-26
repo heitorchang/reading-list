@@ -854,3 +854,7 @@ Equivalence to Truth
 This method allows us to prove an expression to be a tautology by transforming it by substitution of equals for equals until the expression is reduced to 1 (TRUE).
 
 (p == 1) == p
+
+p. 733
+
+Predicate logic is first-order logic
