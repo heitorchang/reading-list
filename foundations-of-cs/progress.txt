@@ -21,3 +21,4 @@ Foundations of Computer Science
 21.oct.16 p. 669 Sec 12.7  Tautologies
 25.oct.16 p. 688 Sec 12.10 Modus ponens
 26.oct.16 p. 733 Ch  14    Predicate Logic
+27.oct.16 p. 751 Sec 14.6  The Substitution Principle
