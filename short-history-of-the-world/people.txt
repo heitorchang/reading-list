@@ -1,0 +1,5 @@
+p 266 Carlovingian = Carolingian: the line that is descended from Charlemagne
+p 277 Pope Gregory VII (Hildebrand) regularized the election of the Pope
+p 275 Pope Gregory VII made priests celibate
+p 279 Emperor Frederick II struggled against Rome and both were left worse off.
+p 283 Frederick II was the last of the Hohenstaufens
