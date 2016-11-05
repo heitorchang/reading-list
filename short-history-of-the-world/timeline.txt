@@ -30,6 +30,7 @@ Europe
 1300-1399 p 298 The real history of European literature begins
 1378      p 285 The anti-Pope, Clement VII elected (Great Schism)
 1414-1418 p 304 Church Council at Constance to settle the Great Schism
+1452-1519 p 356 Leonardo da Vinci
 1459-1519 p 309 Emperor Maximilian I
 1497      p 302 Portuguese sail round Africa to India
 1517      p 306 Martin Luther attacks the church in Wittenberg
@@ -39,12 +40,51 @@ Europe
 1533-1584 p 327 Ivan IV (the Terrible) assumed the Byzantine imperial title of Caesar (Tsar)
 1546      p 313 German religious war after the death of Martin Luther
 1552      p 314 Treaty of Passau
-1561      p 321 Sir Francis Bacon (like the first Bacon, preached observation and experiment)
+1561-1626 p 321 Sir Francis Bacon (like the first Bacon, preached observation and experiment)
 1571      p 293 Naval battle of Lepanto breaks the pride of the Ottomans and restored the Mediterranean waters to Christian ascendancy
 1618-1648 p 326 Thirty Years' War between Germans, Swedes, and Bohemians
 1648      p 326 Peace of Westphalia
 1643-1715 p 324 King Louis XIV, "the Grand Monarque"
+1662      p 355 Formation of the Royal Society of London
 1701      p 327 Prussia becomes a kingdom
+1756,1760 p 332 The French loses Canada to British colonists
+176X      p 332 British East India Company captures India
+1760-1820 p 337 British King George III's obstinacy created struggle between home and colonial governments
+1773      p 337 Boston Tea Party
+1775      p 338 Fighting between colonists and British begin at Concord
+1776      p 338 American congress issues The Declaration of Independence
+1787      p 341 French monarchy bankrupt
+1788      p 340 Americans draw up a Constitution
+1789      p 341 French Revolution, Paris revolts
+1791      p 343 French proclaim a Republic
+1794      p 346 Robespierre guillotined
+1796      p 345 Napoleon Bonaparte triumphs in Italy
+1802      p 357 Steamboat Charlotte Dundas
+1804      p 347 Napoleon makes himself Emperor of France
+1804      p 356 First locomotive by Trevithick with adaptation of Watt engine
+1807      p 340 Portugal occupied by Napoleon, monarchy flee to Brazil
+1808      p 348 Spain rises against Napoleon
+1812      p 340 Second war between Americans and Britain (War of 1812)
+1812      p 348 Napoleon defeated by Alexander I of Russia
+1815      p 348 British, Belgians and Prussians defeat Napoleon at Waterloo. Treaty of Vienna
+1822      p 340 Pedro I declares Brazil a separate empire (Independence)
+1823      p 349 Monroe Doctrine (must not be any extension of extra-American government in America)
+1825      p 356 First railway
+1829      p 353 By the treaty of Adrianople, Greece was declared free
+1830-1848 p 350 France still a monarchy, Louis Philippe remained constitutional King of France
+1835      p 358 Electric telegraph
+1835      p 384 Texas established its independence
+1852      p 390 Napoleon III becomes Emperor
+1861      p 386 Lincoln inaugurated President
+1865      p 402 Ratification of treaties that opened Japan to the world
+1871      p 391 Paris falls into German hands. King of Prussia is German Emperor
+1883      p 398 Great Britain takes possession of Egypt
+1889      p 340 Emperor of Brazil shipped off to Europe quietly (Proclamacao da Republica)
+1894-1895 p 402 Japanese war with China
+1909      p 363 Aeroplane available for human locomotion
+1916      p 416 The monk Rasputin was murdered
+1917      p 417 Bolshevik socialists under Lenin overthrow Kerensky
+1920      p 423 President Wilson's scheme of a League of Nations
 
 Asia
 1214      p 287 Jengis Khan made war on the Kin Empire and captured Pekin
@@ -55,3 +95,4 @@ Asia
 1453      p 292 Ottoman (Turk) Sultan, Muhammad II, takes over Constantinople with a great number of guns
 1480      p 290 Grand Duke of Moscow founds modern Russia
 1556-1605 p 292 Akbar: Mongol, or "Mogul" to Arabs Dynasty rules India until the eighteenth century
+1912      p 333 The Chinese recover from Mongol rule
