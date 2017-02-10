@@ -1,0 +1,119 @@
+  Ch 1 p 40 Modelo de Dados do Python
+
+implementar métodos especiais
+
+emular sequências (__len__ e __getitem__)
+
+sobrecarga de operadores (__add__, __mul__)
+
+
+
+  Ch 2 p 86 Uma coleção de sequências 
+
+classificar sequências como mutáveis e imutáveis, ou tipos simples e containers
+
+list comprehensions (listcomps) e expressões geradoras (generator expressions, genexps)
+
+tuplas e sintaxe * para desempacotá-las
+
+collections.namedtuple
+
+fatiamento de sequências
+
+método sort() e função sorted()
+
+bisect.insort e bisect.bisect
+
+array.array
+
+collections.deque
+
+
+
+  Ch 3 p 125 Dicionários e conjuntos
+
+o dict é básico, existem mapeamentos especializados como defaultdict, OrderedDict, ChainMap e Counter
+
+UserDict é fácil de ser estendida
+
+setdefault e update
+
+__missing__
+
+collections.abc contém Mapping, MutableMapping, Set, e MutableSet
+
+o módulo types tem MappingProxyType
+
+
+
+  Ch 4 p 167 Texto versus bytes
+
+1 character não é sempre 1 byte
+
+bytes, bytearray, e memoryview
+
+UnicodeEncodeError e UnicodeDecodeError
+
+Chardet extrai a codificação de um arquivo
+
+o argumento encoding= sempre deve ser usado ao ler e escrever arquivos
+
+locale.getpreferredencoding() é a configuração mais importante (p 148)
+
+sys.getdefaultencoding()
+
+case folding: shave_marks() (p 156), asciize() (p 158) 
+
+pacote externo PyUCA para ordenar texto Unicode
+
+funções como re têm resultados diferentes se usamos str ou bytes 
+
+
+
+  Ch 5 p 200 Armazenando dados
+
+funções em Python são objetos de primeira classe
+
+podem ser atribuídas a variáveis, passadas para outras funções, e armazenadas em estruturas de dados
+
+funções de ordem superior são funções que aceitam funções como argumentos ou devolvem funções (p 177)
+
+invocáveis têm sete variantes diferentes, e podem ser detectadas por callable()
+
+ - funções definidas pelo usuário (def ou lambda)
+ - funções embutidas (built-in)
+ - métodos definidos pelo usuário 
+ - métodos embutidos
+ - classes (quando chamada, executa __new__ e __init__)
+ - instâncias de classe (se a classe define __call__)
+ - funções geradoras (funções que usam yield)
+
+inspect permite a leitura de anotações e atributos de funções
+
+Signature e bind
+
+o módulo operator contém equivalentes de funções aritméticas como mul (no exemplo, para usar com reduce) 
+
+
+
+  Ch 6 p 218 Padrões de projeto com funções de primeira classe
+
+usar funções ou objetos invocáveis é mais natural que imitar padrões de Gamma (Design Patterns)
+
+padrões Strategy e Command
+
+
+
+  Ch 7 p 252 Decoradores de função e closures
+
+decorador simples e decorador parametrizado (envolve dois níveis de funções aninhadas)
+
+@functools.wraps
+
+decoradores empilhados
+
+@lru_cache
+
+@singledispatch permite realizer uma operação de maneiras diferentes de acordo com o tipo do primeiro argumento 
+
+closures, nonlocal
