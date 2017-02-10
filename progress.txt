@@ -5,3 +5,6 @@ Completed 28.oct.16
 
 Short History of the World (H. G. Wells)
 Started   01.nov.16
+
+Python Fluente
+Started   08.fev.17

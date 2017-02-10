@@ -1,0 +1,16 @@
+INTERESTING
+
+p.195
+
+Functional programming: reduce
+
+Replace simple lambda expressions with the module 'operator'
+
+from functools import reduce
+from operator import mul
+
+reduce(mul, range(1, n+1))
+
+INSTEAD OF
+
+reduce(lambda a, b: a*b, range(1, n+1))
