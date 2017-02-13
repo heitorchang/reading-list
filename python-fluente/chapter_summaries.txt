@@ -117,3 +117,42 @@ decoradores empilhados
 @singledispatch permite realizer uma operação de maneiras diferentes de acordo com o tipo do primeiro argumento 
 
 closures, nonlocal
+
+
+
+  Ch 8 p 282 Referências a objetos, mutabilidade e reciclagem
+
+todo objeto tem uma identidade, tipo, e valor. Se quiser, o tipo pode ser alterado pelo atributo __class__
+
+valores imutáveis com valores iguais podem ser representados pelo mesmo objeto
+
+numa coleção imutável, as identidades dos objetos contidos não mudam
+
+atribuições simples não criam cópias
+
++= e *= cria novos objetos se o lado esquerdo é imutável, mas poderá modificar um objeto mutável in-place
+
+parâmetros de função são passados como apelidos, e a função pode alterar qualquer objeto mutável recebido como argumento
+
+usar objetos mutáveis como valores default para parâmetros de função é perigoso porque alterações afetarão o default
+
+weakref 
+
+
+
+  Ch 9 p 312 Um objeto pythônico
+
+métodos para representação: __repr__, __str__, __format__, __bytes__
+
+converter um objeto em um número: __abs__, __bool__, __hash__
+
+implementar __eq__ junto com __hash__, usar XOR ^ nos hashes dos atributos de instância 
+
+frombytes(), inspirado em seu homônimo na classe array.array 
+
+@classmethod e @staticmethod
+
+__slots__
+
+usar NumPy e Pandas quando o número de dados é grande
+

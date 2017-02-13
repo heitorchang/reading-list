@@ -1,2 +1,3 @@
 09.fev.2016 p 137 Codecs
 10.fev.2016 p 258 Referências a objetos ... 
+13.fev.2016 p 318 Hackeando e fatiando sequências

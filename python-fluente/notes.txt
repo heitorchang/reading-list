@@ -1,6 +1,10 @@
-INTERESTING
+p. 122
 
-p.195
+se você implementar __eq__, deve também implementar __hash__
+
+se a == b é True, hash(a) também deve ser == hash(b) 
+
+p. 195
 
 Functional programming: reduce
 
@@ -14,3 +18,21 @@ reduce(mul, range(1, n+1))
 INSTEAD OF
 
 reduce(lambda a, b: a*b, range(1, n+1))
+
+p. 263
+
+a imutabilidade das tuplas refere-se ao conteúdo físico da estrutura de dados (às referências que ela armazena)
+
+o que nunca muda em uma tupla é a identidade dos itens que ela contém 
+
+p. 265
+
+uma cópia rasa de uma lista pode ser feita com lista(lst) ou lst[:]
+
+p. 275
+
+quando um objeto é destruído, o callback registrado por weakref.finalize é chamado
+
+p. 280
+
+unlike list(lst), tuple(t) returns the same tuple 
