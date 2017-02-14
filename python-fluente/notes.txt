@@ -36,3 +36,20 @@ quando um objeto é destruído, o callback registrado por weakref.finalize é ch
 p. 280
 
 unlike list(lst), tuple(t) returns the same tuple 
+
+p. 332
+
+com muita frequência, ao implementar __getattr__, também se deve implementar __setattr__
+
+p. 334
+
+usar genexps em vez de listcomps quando possível
+
+hashes = (hash(x) for x in self._components) e nao [hash(x) ... ] 
+
+p. 354
+
+uma interface é o subconjunto de métodos públicos de um objeto que lhe permitem desempenhar um papel específico no sistema (como 'um iterável')
+
+programadores de Smalltalk chamavam de "protocolo", e são independentes de herança. Um protocolo é uma interface informal (não pode ser verificado estaticamente) 
+

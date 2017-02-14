@@ -156,3 +156,15 @@ __slots__
 
 usar NumPy e Pandas quando o número de dados é grande
 
+
+
+  Ch 10 p 345 Hackeando e fatiando sequências
+
+protocolos são interfaces informais usadas em linguagens com duck typing
+
+objeto slice(a, b, c)
+
+__getattr__ e __setattr__
+
+reduce, operator, all
+
