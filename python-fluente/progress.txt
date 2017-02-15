@@ -1,4 +1,5 @@
-09.fev.2016 p 137 Codecs
-10.fev.2016 p 258 Referências a objetos ... 
-13.fev.2016 p 318 Hackeando e fatiando sequências
-14.fev.2016 p 370 Definindo e usando uma ABC
+09.fev.2017 p 137 Codecs
+10.fev.2017 p 258 Referências a objetos... 
+13.fev.2017 p 318 Hackeando e fatiando sequências
+14.fev.2017 p 370 Definindo e usando uma ABC
+15.fev.2017 p 482 As funções geradoras combinations...

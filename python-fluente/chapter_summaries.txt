@@ -168,3 +168,33 @@ __getattr__ e __setattr__
 
 reduce, operator, all
 
+
+
+  Ch 11 p 386 Interfaces: de protocolos a ABCs
+
+interfaces não têm nenhuma relação com herança. Cada classe é independente na implementação de um protocolo. Quando adotamos duck typing, as interfaces são assim.
+
+com "goose typing", as ABCs são usadas para deixar as interfaces explícitas. Classes podem afirmar que implementam uma interface por serem subclasses de uma ABC ou registrando-se junto a elas. Não é usada herança.
+
+__subclasshook__ permite uma ABC reconhecer uma classe não registrada como subclasse, dependendo de um teste 
+
+
+
+  Ch 12 p 414 Herança: para o bem ou para o mal
+
+crie subclasses de UserList, UserDict e UserString (do módulo collections) em vez de list, dict, ou str
+
+__mro__ (ordem de resolução de métodos)
+
+
+
+  Ch 13 p 443 Sobrecarga de operadores: o jeito certo
+
+não é permitido sobrecarregar operadores nos tipos embutidos
+
+existem operadores unários, infixos, e de atribuição combinada 
+
+para aceitar operações com outros tipos, devolvemos NotImplemented, e não uma exceção
+
+pode-se identificar um operando com duck typing ou por isinstance()
+
