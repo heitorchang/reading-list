@@ -198,3 +198,44 @@ para aceitar operações com outros tipos, devolvemos NotImplemented, e não uma
 
 pode-se identificar um operando com duck typing ou por isinstance()
 
+
+
+  Ch 14 p 492 Iteráveis, iteradores e geradores
+
+o uso de geradores pode tornar código menores e mais legíveis
+
+funções geradoras de itertools
+
+iter(it) e iter(func, sentinel)
+
+yield from
+
+
+
+  Ch 15 p 512 Gerenciadores de contexto e blocos else
+
+blocos else em comandos for, while e try
+
+for: o bloco else executará só quando o laço for executar até o final
+
+while: o bloco else executará quando o laço while sair porque a condição se tornou falsa
+
+try: o bloco else executará quando nenhuma exceção for levantada no try
+
+em todos os casos, else será ignorada se uma exceção ou return, break, ou continue fizerem o controle sair do bloco.
+
+gereciadores de contexto com with, __enter__, __exit__
+
+@contextlib.contextmanager
+
+utilitários de contextlib: closing, suppress, @contextmanager, ContextDecorator, ExitStack
+
+
+
+  Ch 16 p 552 Corrotinas
+
+há três estilos diferentes de código que usa geradores: "puxar" (pull), "empurrar" (push) e "tarefas" (tasks)
+
+corrotinas acumuladoras podem produzir resultados parciais a cada chamada de send(), mas são mais úteis quando devolvem valores
+
+um gerador delegante usa yield from em seu corpo; o subgerador é ativado pelo yield from. O código do cliente aciona toda essa armação enviando valores ao subgerador pelo canal de passagem estabelecido por yield from no gerador delegante. 

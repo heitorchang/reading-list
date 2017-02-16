@@ -115,3 +115,37 @@ lazy evaluation é avaliação preguiçosa, o contrário, eager, é ávida
 
 re.finditer é uma versão lazy de re.findall
 
+p. 485
+
+yield from it cria um canal de it diretamente ao cliente do gerador externo. É mais que açúcar sintático para 
+
+for i in it:
+    yield i
+
+p. 488
+
+iter pode ser chamada com dois argumentos para criar um iterador a partir de uma função normal ou qualquer objeto invocável
+
+o primeiro argumento (o invocável) é chamado repetidamente (sem argumentos) para produzir valores e o segundo argumento é uma sentinela, um marcador que quando devolvido pelo invocável, faz o iterador levantar StopIteration.
+
+p. 496
+
+todo gerador é um iterador 
+
+p. 515
+
+do ponto de vista sintático, uma corrotina é como um gerador
+
+em geral, yield aparece no lado direito de uma expressão, datum = yield
+
+yield é um dispositivo de controle de fluxo, e pode ser usado para implementar multitarefa cooperativa. Cada corrotina cede o controle a um escalonador central
+
+p. 518
+
+uma corrotina pode estar em um de quatro estados: GEN_CREATED, GEN_RUNNING, GEN_SUSPENDED, ou GEN_CLOSED
+
+a primeira ativação de uma corrotina é sempre feita com next(my_cor) ou my_cor.send(None)
+
+p. 565
+
+use a biblioteca requests (de PyPI) em vez da biblioteca-padrão urllib.request 

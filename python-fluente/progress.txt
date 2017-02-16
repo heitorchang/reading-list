@@ -3,3 +3,4 @@
 13.fev.2017 p 318 Hackeando e fatiando sequências
 14.fev.2017 p 370 Definindo e usando uma ABC
 15.fev.2017 p 482 As funções geradoras combinations...
+16.fev.2017 p 576 Downloads com exibição de progresso
