@@ -239,3 +239,31 @@ há três estilos diferentes de código que usa geradores: "puxar" (pull), "empu
 corrotinas acumuladoras podem produzir resultados parciais a cada chamada de send(), mas são mais úteis quando devolvem valores
 
 um gerador delegante usa yield from em seu corpo; o subgerador é ativado pelo yield from. O código do cliente aciona toda essa armação enviando valores ao subgerador pelo canal de passagem estabelecido por yield from no gerador delegante. 
+
+
+
+  Ch 17 p 587 Concorrência com futures
+
+concurrent.futures.Future, Executor.submit(), concurrent.futures.as_completed()
+
+threads não funcionam bem em aplicações limitadas por E/S (entrada/saída). Para contornar a GIL (Global Interpreter Lock), pode-se usar concurrent.futures.ProcessPoolExecutor
+
+concurrent.futures.ThreadPoolExecutor
+
+future.as_completed()
+
+
+
+  Ch 18 p 637 Concorrência com asyncio
+
+yield from, corrotinas, futures, e loop de eventos asyncio
+
+usamos asyncio para evitar o overhead das threads de nível de usuário
+
+asyncio.wait e asyncio.as_completed
+
+pode-se delegar tarefas bloqueantes, como salvar um arquivo, a um pool de threads usando loop.run_in_executor
+
+se ignorarmos yield froms, um procedimento pode se parecer a código sequencial
+
+servidores TCP e HTTP com asyncio, aiohttp 

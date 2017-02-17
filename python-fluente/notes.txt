@@ -149,3 +149,9 @@ a primeira ativação de uma corrotina é sempre feita com next(my_cor) ou my_co
 p. 565
 
 use a biblioteca requests (de PyPI) em vez da biblioteca-padrão urllib.request 
+
+p. 580
+
+servidores locais para testes: nginx, proxy Mozilla Vaurien
+
+
