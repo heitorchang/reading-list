@@ -4,4 +4,4 @@
 14.fev.2017 p 370 Definindo e usando uma ABC
 15.fev.2017 p 482 As funções geradoras combinations...
 16.fev.2017 p 576 Downloads com exibição de progresso
-17.fev.2017 p 672 Documentação de propriedades 
+17.fev.2017 p 706 Descritor dominante sem __get__

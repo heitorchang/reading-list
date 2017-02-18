@@ -267,3 +267,19 @@ pode-se delegar tarefas bloqueantes, como salvar um arquivo, a um pool de thread
 se ignorarmos yield froms, um procedimento pode se parecer a código sequencial
 
 servidores TCP e HTTP com asyncio, aiohttp 
+
+
+
+  Ch 20 681 Atributos dinâmicos e propriedades
+
+__getattribute__, __getattr__
+
+__new__
+
+shelve, pickle
+
+fábrica de propriedades
+
+remoção de propriedades
+
+
