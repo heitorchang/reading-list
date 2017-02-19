@@ -8,3 +8,4 @@ Started   01.nov.16
 
 Python Fluente
 Started   08.fev.17
+Completed 18.fev.17

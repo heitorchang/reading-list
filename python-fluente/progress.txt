@@ -5,3 +5,4 @@
 15.fev.2017 p 482 As funções geradoras combinations...
 16.fev.2017 p 576 Downloads com exibição de progresso
 17.fev.2017 p 706 Descritor dominante sem __get__
+18.fev.2017 T H E   E N D

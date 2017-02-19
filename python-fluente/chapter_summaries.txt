@@ -270,7 +270,7 @@ servidores TCP e HTTP com asyncio, aiohttp
 
 
 
-  Ch 20 681 Atributos dinâmicos e propriedades
+  Ch 19 p 681 Atributos dinâmicos e propriedades
 
 __getattribute__, __getattr__
 
@@ -282,4 +282,31 @@ fábrica de propriedades
 
 remoção de propriedades
 
+
+
+  Ch 20 p 715 Descritores de atributos
+
+descritores no lugar de propriedades
+
+um descritor é uma classe cujas instâncias são instaladas como atributos da classe gerenciada
+
+gerar valores únicos para nomes de armazenamento, para eliminar redundância
+
+fábrica de propriedades contra classe descritora
+
+descritores dominantes e não-dominantes
+
+métodos são descritores não-dominantes
+
+
+
+  Ch 21 p 742 Metaprogramação com classes
+
+metaprogramação de classes é criar ou customizar classes dinamicamente
+
+metaclasses são instâncias de type
+
+tempo de importação e tempo de execução
+
+__prepare__
 
