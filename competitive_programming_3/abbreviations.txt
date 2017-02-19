@@ -1,0 +1,85 @@
+A*   A star
+ACM  Assoc of Computing Machinery
+AC   Accepted
+APSP All-pairs shortest paths
+AVL  Adelson-Valskii-Landis (BST)
+
+BNF  Backus-Naur Form
+BFS  Breadth-First Search
+BI   Big integer
+BIT  Binary Indexed Tree
+BST  Binary search tree
+
+CC   Coin change
+CCW  Counterclockwise
+CF   Cumulative Frequency
+CH   Convex Hull
+CS   Computer Science
+CW   Clockwise
+
+DAG  Directed acyclic graph
+DAT  Direct Addressing Table
+D&C  Divide & Conquer
+DFS  Depth-First Search
+DLS  Depth limited search
+DP   Dynamic programming
+DS   Data Structure
+
+ED   Edit Distance
+
+FIFO First in first out
+FT   Fenwick Tree
+
+GCD  Greatest common divisor
+
+ICPC International Collegiate Programming Contest
+IDS  Iterative Deepening Search
+IDA* Iterative Deepening A Star
+IOI  International Olympiad in Informatics
+IPSC Internet Problem Solving Contest
+
+LA   Live Archive
+LCA  Lowest Common Ancestor
+LCM  Least Common Multiple
+LCP  Longest common prefix
+LCS  Longest common subsequence
+LCS  Longest common substring
+LIFO Last in first out
+LIS  Longest increasing subsequence
+LRS  Longest repeated substring
+LSB  Least significant bit
+
+MCBM Maximum Cardinality Bipartite Matching
+MCM  Matrix Chain Multiplication
+MCMF Min-cost max-flow
+MIS  Maximum Independent Set
+MLE  Memory Limit Exceeded
+MPC  Minimum Path Cover
+MSB  Most significant bit
+MSSP Multi-sources shortest paths
+MST  Minimum Spanning Tree
+MWIS Max weighted independent set
+MVC  Minimum Vertex Cover
+
+OJ   Online Judge
+
+PE   Presentation Error
+
+RB   Red-Black (BST)
+RMQ  Range Min (or Max) Query
+RSQ  Range Sum Query
+RTE  Runtime error
+
+SSSP Single-source shortest paths
+SA   Suffix array
+SPOJ Sphere Online Judge
+ST   Suffix Tree
+STL  Standard Template Library
+
+TLE  Time Limit Exceeded
+
+USACO USA Computing Olympiad
+UVa  University of Valladolid
+
+WA   Wrong Answer
+WF   World Finals
