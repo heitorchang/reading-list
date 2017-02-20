@@ -8,7 +8,7 @@ def filter_out(lst, limit, n):
     return lst
                    
 def sieve(n):
-    """Sieve of Erastothenes (slow)"""
+    """Sieve of Eratosthenes (slow)"""
     
     s = list(range(n+1)) # assume we want n to be counted
     s = s[2:] # skip 0 and 1
