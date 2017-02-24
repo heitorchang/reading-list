@@ -1,0 +1,10 @@
+C++ shortcuts (p. xii)
+
+ll : long long
+ii : pair<int, int>
+vii : vector<ii>
+vi : vector<int>
+INF : 1000000000
+
+ans = a ? b : c : if (a) is true, then ans = b, else, ans = c
+index = (index + 1) % n : index++; if (index >= n) index = 0

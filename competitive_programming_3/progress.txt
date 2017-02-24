@@ -1,3 +1,4 @@
 18.feb.2017 Started (page numbers are book's, not PDF's)
 18.feb.2017 p 1
 19.feb.2017 p 38 Linked List
+24.feb.2017 p 33 Ch 2 Data Structures

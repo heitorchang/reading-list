@@ -1,3 +1,5 @@
+See "code_abbrev.txt" for abbreviations in C++ code
+
 A*   A star
 ACM  Assoc of Computing Machinery
 AC   Accepted
