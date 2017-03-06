@@ -1,0 +1,7 @@
+A cada iteracao de um algoritmo, devemos mostrar tres detalhes sobre um invariante de laco:
+
+Inicializacao: Ele é verdadeiro antes da primeira iteracao do laco
+
+Manutencao: Se ele for verdadeiro antes de uma iteracao do laco, permanecerá verdadeiro antes da proxima iteracao
+
+Término: Quando o laço termina, o invariante nos fornece uma propriedadaútil que ajuda a mostrar o algoritmo é correto 
