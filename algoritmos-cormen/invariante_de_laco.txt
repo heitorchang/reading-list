@@ -1,3 +1,5 @@
+p. 13
+
 A cada iteracao de um algoritmo, devemos mostrar tres detalhes sobre um invariante de laco:
 
 Inicializacao: Ele é verdadeiro antes da primeira iteracao do laco

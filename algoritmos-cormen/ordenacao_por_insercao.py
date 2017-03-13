@@ -1,3 +1,5 @@
+# p. 18
+
 def insertion_sort(A):  # ordena no lugar
     # nota: no livro, A = [1...n]
     # for j = 2 to comprimento -> for j in range(1, comprimento)

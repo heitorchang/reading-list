@@ -1,3 +1,5 @@
+# p. 20 ex. 2.2-2
+
 def ordenar_por_selecao(a):
     len_a = len(a)
 

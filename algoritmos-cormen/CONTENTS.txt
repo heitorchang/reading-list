@@ -1,0 +1,8 @@
+Book pg. number
+
+13 invariante_de_laco
+16 Ex. 2.1-4 soma_binario
+18 ordenacao_por_insercao
+20 ordenacao_por_selecao
+22 ordenacao_por_intercalacao
+54 max_subarray
