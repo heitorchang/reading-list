@@ -1,0 +1,22 @@
+p. 3-4
+insertion sort
+C implementation
+
+p. 5-8
+tour optimization (traveling salesman problem: full solution p. 533)
+
+p. 9-11
+scheduling the largest number of non-overlapping jobs
+a special case of the general "independent set problem"
+pseudocode
+
+given a set of intervals S, what is the largest subset of non-overlapping intervals which can be selected from S?
+
+while (S is not empty)
+  accept the job j from S with the earliest completion date
+  delete j and any interval which intersects j from S
+
+  
+p. 23-26
+lottery set cover (a NP-complete problem)
+pseudocode (first proposed solution is suboptimal)
