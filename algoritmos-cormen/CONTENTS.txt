@@ -1,8 +1,15 @@
 Book pg. number
 
+helper loop.py
+
 13 invariante_de_laco
-16 Ex. 2.1-4 soma_binario
+16 Ex 2.1-4 soma_binario
 18 ordenacao_por_insercao
 20 ordenacao_por_selecao
-22 ordenacao_por_intercalacao
+22 ordenacao_por_intercalacao, my_merge_sort
+29 my_bubble_sort
 54 max_subarray
+55 Ex 4.1-5 max_subarray_linear
+93 randomize_in_place
+116 heapsort, my_heapsort
+124 quicksort
