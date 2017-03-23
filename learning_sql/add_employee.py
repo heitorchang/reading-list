@@ -1,4 +1,6 @@
 def add_employee(cnx, emp_name):
+    cursor = cnx.cursor()
+    
     sql = """INSERT INTO employees
     (first_name)
     VALUES (%s)"""
