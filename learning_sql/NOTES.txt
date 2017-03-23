@@ -1,0 +1,15 @@
+p. 43
+
+Query clauses
+
+SELECT determines which columns to include in the query's result set
+
+FROM identifies which tables to draw data from and how multiple tables should be joined
+
+WHERE indicates which rows to include (filters out unwanted data)
+
+GROUP BY groups rows together by common column values
+
+HAVING indicates which groups to include (filters out unwanted groups)
+
+ORDER BY sorts the rows of the final result set by one or more columns

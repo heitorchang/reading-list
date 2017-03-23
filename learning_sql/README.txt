@@ -2,3 +2,14 @@
 
 https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
 
+23 mar 2017
+
+1) Open connect.py, send script to interactive Python
+
+2) In interactive python, type cxn = connect(). After a short pause, a prompt will appear, and should be free of errors.
+
+3) Open a .py file (such as query_primer.py)
+
+4) Send script to interactive Python
+
+5) Pass the cnx object to each function that executes SQL
