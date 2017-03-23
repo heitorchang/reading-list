@@ -1,3 +1,4 @@
+import mysql.connector
 from connect import connect
 
 cnx = connect()
