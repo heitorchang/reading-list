@@ -6,7 +6,7 @@ https://dev.mysql.com/doc/connector-python/en/connector-python-example-connectin
 
 1) Open connect.py, send script to interactive Python
 
-2) In interactive python, type cxn = connect(). After a short pause, a prompt will appear, and should be free of errors.
+2) In interactive python, type cnx = connect(). After a short pause, a prompt will appear, and should be free of errors.
 
 3) Open a .py file (such as query_primer.py)
 

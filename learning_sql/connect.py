@@ -13,3 +13,21 @@ else:
 
 def connect():
     return mysql.connector.connect(**config)
+
+def simple_query(cnx, sql):
+    cursor = cnx.cursor()
+    cursor.execute(sql)
+    rows = cursor.fetchall()
+    cursor.close()
+    
+    return rows
+
+def print_simple_query(cnx, sql):
+    cursor = cnx.cursor(named_tuple=True)
+    cursor.execute(sql)
+    rows = cursor.fetchall()
+    cursor.close()
+
+    print()  # add a newline
+    for row in rows:
+        print(row)
