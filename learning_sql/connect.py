@@ -2,6 +2,10 @@ import sys
 import mysql.connector
 import os
 
+# IMPORTANT: cnx.commit() must be called after INSERT, UPDATE, and DELETE
+# Also, if external changes are made (such as in PHPMyAdmin), cnx.commit()
+# must be called for these changes to be seen.
+
 if os.name == 'posix':
     sys.path.insert(0, '/home/heitor/reading-list/learning_sql/')
     from config_ubuntu import config
@@ -28,9 +32,10 @@ def print_simple_query(cnx, sql):
     rows = cursor.fetchall()
     cursor.close()
 
-    print()  # add a newline
+    # print()  # add a newline
     for row in rows:
         print(row)
 
 def global_cnx(sql):
+    # assumes a cnx = connect() command has been executed
     print_simple_query(cnx, sql)
