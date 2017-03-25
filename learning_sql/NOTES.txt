@@ -1,3 +1,7 @@
+p. 26
+
+Normalization is the process of ensuring that there are no duplicate or compound columns in your database (except foreign keys).
+
 p. 43
 
 Query clauses
@@ -13,3 +17,16 @@ GROUP BY groups rows together by common column values
 HAVING indicates which groups to include (filters out unwanted groups)
 
 ORDER BY sorts the rows of the final result set by one or more columns
+
+p. 82
+
+The employee table has these fields:
+
+emp_id
+fname, lname
+title
+start_date, end_date
+dept_id
+assigned_branch_id
+
+The dept_id column is the foreign key to the department table

@@ -31,3 +31,6 @@ def print_simple_query(cnx, sql):
     print()  # add a newline
     for row in rows:
         print(row)
+
+def global_cnx(sql):
+    print_simple_query(cnx, sql)
