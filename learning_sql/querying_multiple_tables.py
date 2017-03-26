@@ -28,7 +28,7 @@ def woburn_exp_tellers():
     INNER JOIN branch AS b
     ON e.assigned_branch_id = b.branch_id
     WHERE e.start_date < '2007-01-01'
-    AND (e.title like '%Teller')
+    AND (e.title LIKE '%Teller')
     AND b.name = 'Woburn Branch';""")
 
 def join_three_tables():

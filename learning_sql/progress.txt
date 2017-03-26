@@ -1,16 +1,16 @@
-Complete? (*)
+Complete? (*), Skip (S)
 * Ch 1  A Little Background          23 mar 17
 * Ch 2  create_populate_db.py        25 mar 17
 * Ch 3  query_primer.py              23 mar 17
 * Ch 4  filtering.py                 24 mar 17
 * Ch 5  querying_multiple_tables.py  25 mar 17
-  Ch 6
+* Ch 6  sets_working_with.py         25 mar 17
   Ch 7
 * Ch 8  grouping_and_aggregates.py   24 mar 17
   Ch 9
   Ch 10
   Ch 11
-  Ch 12
-  Ch 13
-  Ch 14
-  Ch 15
+S Ch 12 Transactions                 25 mar 17
+S Ch 13 Indexes                      25 mar 17
+* Ch 14 views.py                     25 mar 17
+S Ch 15 Metadata                     25 mar 17

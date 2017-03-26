@@ -30,3 +30,16 @@ dept_id
 assigned_branch_id
 
 The dept_id column is the foreign key to the department table
+
+p. 245 Views
+
+A view is a mechanism for querying data. A SELECT statement is given a name
+
+p. 250 Implicit GROUP BY
+
+SELECT br.branch_id,
+  (SELECT COUNT(*)
+   FROM employee AS emp
+   WHERE emp.assigned_branch_id = br.branch_id
+  ) AS num_emps
+FROM branch br;
