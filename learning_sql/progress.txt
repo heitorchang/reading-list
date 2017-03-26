@@ -5,9 +5,9 @@ Complete? (*), Skip (S)
 * Ch 4  filtering.py                 24 mar 17
 * Ch 5  querying_multiple_tables.py  25 mar 17
 * Ch 6  sets_working_with.py         25 mar 17
-  Ch 7
+* Ch 7  data_manip.py                26 mar 17
 * Ch 8  grouping_and_aggregates.py   24 mar 17
-  Ch 9
+* Ch 9  subqueries.py                26 mar 17
   Ch 10
   Ch 11
 S Ch 12 Transactions                 25 mar 17

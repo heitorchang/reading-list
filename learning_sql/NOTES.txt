@@ -43,3 +43,13 @@ SELECT br.branch_id,
    WHERE emp.assigned_branch_id = br.branch_id
   ) AS num_emps
 FROM branch br;
+
+p. 166
+
+A WHERE clause can have a tuple of columns match (IN) a subquery that returns multiple columns
+
+WHERE (open_branch_id, open_emp_id) IN (SELECT b.branch_id, e.emp_id ...)
+
+p. 180
+
+Subqueries may be used as data sources in INSERT statements; however, if an error occurs, NULL will be inserted if allowed.

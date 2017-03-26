@@ -46,4 +46,8 @@ def q(sql):
 def ex(sql):
     cursor = cnx.cursor()
     cursor.execute(sql)
+    cnx.commit()
     cursor.close()
+
+cnx = connect()
+print("cnx is your connection.")
