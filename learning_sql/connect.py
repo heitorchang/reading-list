@@ -39,3 +39,11 @@ def print_simple_query(cnx, sql):
 def global_cnx(sql):
     # assumes a cnx = connect() command has been executed
     print_simple_query(cnx, sql)
+
+def q(sql):
+    global_cnx(sql)
+    
+def ex(sql):
+    cursor = cnx.cursor()
+    cursor.execute(sql)
+    cursor.close()
