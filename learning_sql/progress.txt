@@ -8,8 +8,8 @@ Complete? (*), Skip (S)
 * Ch 7  data_manip.py                26 mar 17
 * Ch 8  grouping_and_aggregates.py   24 mar 17
 * Ch 9  subqueries.py                26 mar 17
-  Ch 10
-  Ch 11
+* Ch 10 joins_revisited.py           26 mar 17
+* Ch 11 conditional_logic.py         26 mar 17
 S Ch 12 Transactions                 25 mar 17
 S Ch 13 Indexes                      25 mar 17
 * Ch 14 views.py                     25 mar 17

@@ -53,3 +53,8 @@ WHERE (open_branch_id, open_emp_id) IN (SELECT b.branch_id, e.emp_id ...)
 p. 180
 
 Subqueries may be used as data sources in INSERT statements; however, if an error occurs, NULL will be inserted if allowed.
+
+p. 187
+
+Left vs. Right outer joins: The keyword LEFT indicates that the table on the left side of the join is responsible for determining the number of rows in the result set. The table on the right will provide column values whenever a match is found, NULL otherwise.
+
