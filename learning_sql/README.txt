@@ -13,3 +13,11 @@ https://dev.mysql.com/doc/connector-python/en/connector-python-example-connectin
 4) Send script to interactive Python
 
 5) Pass the cnx object to each function that executes SQL
+
+27 mar 2017
+
+my_ccdiary.py
+
+1) Open and send connect.py 
+2) Open and send quick_create.py
+3) Open and send my_ccdiary.py 

@@ -7,6 +7,7 @@ def quick_create(table_name, col_list):
     """
     types = { 'varchar': 'VARCHAR(80)',
               'str': 'VARCHAR(80)',
+              'text': 'VARCHAR(80)',
               'int': 'INTEGER',
               'money': 'DECIMAL(12,2)',
               'float': 'FLOAT(18,6)',
