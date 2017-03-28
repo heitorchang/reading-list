@@ -19,5 +19,4 @@ https://dev.mysql.com/doc/connector-python/en/connector-python-example-connectin
 my_ccdiary.py
 
 1) Open and send connect.py 
-2) Open and send quick_create.py
-3) Open and send my_ccdiary.py 
+2) Open and send my_ccdiary.py 

@@ -1,3 +1,5 @@
+### NOTE: ADD/EDIT connect.py directly
+
 def quick_create(table_name, col_list):
     """
     Given a list of column names and types, create a table.
