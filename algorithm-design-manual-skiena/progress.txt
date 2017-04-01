@@ -1,1 +1,3 @@
+            * Book's page, not PDF's
 15 mar 2017 p 31 Ch 2 Algorithm Analysis
+31 mar 2017 p 47 Logarithms and bits
