@@ -1,0 +1,12 @@
+PDF
+
+1 The Role of Algorithms in Computing : p. 5
+2.3.1 Merge sort : p. 30
+4 Divide-and-Conquer : p. 65
+6 Heapsort : p. 151
+7 Quicksort : p. 170
+8.3 Radix sort : p. 197
+
+15 Dynamic Programming : p. 359
+
+22 Elementary Graph Algorithms : p. 589
