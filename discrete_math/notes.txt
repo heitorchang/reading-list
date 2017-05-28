@@ -1,0 +1,25 @@
+p. 6 The Conditional Statement
+
+p -> q
+
+p  q  p -> q
+T  T    T
+T  F    F
+F  T    T
+F  F    T
+
+p. 72 Rules of inference (modus ponens, modus tollens, syllogisms)
+
+Modus ponens
+
+p
+p -> q
+-----------
+therefore q
+
+Modus tollens
+
+NOT q
+p -> q
+---------------
+therefore NOT p
