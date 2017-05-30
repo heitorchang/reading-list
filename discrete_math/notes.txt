@@ -23,3 +23,52 @@ NOT q
 p -> q
 ---------------
 therefore NOT p
+
+
+p. 134 Bit string representation of sets
+
+Suppose U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0} and the ordering of the elements of U has the elements in increasing order.
+
+The odd integers is  10 1010 1010 (grouped by four for easy reading)
+The even integers is 01 0101 0101
+The first five are   11 1110 0000
+
+
+p. 139
+
+Definition: If f is a function from A to B, A is the domain of f and
+B is the codomain of f.
+
+
+p. 141
+
+Q: What is an injective function?
+
+A: A one-to-one function. A function f is injective if and only if
+f(a) = f(b) implies that a = b
+
+
+Q: What is a surjective function?
+
+A: An onto function. A function f from A to B is surjective if and only if for every element b in B there is a f(a) = b (all points in the codomain are assigned)
+
+
+p. 144
+
+Q: What is a bijection?
+
+A: A one-to-one correspondence.
+A function that is both one-to-one and onto.
+
+
+p. 158 Recurrence relation
+
+The initial conditions for a recursively defined sequence specify the terms that precede the first term where the recurrence relation takes effect.
+
+
+p. 166 Closed form solutions for common sums
+
+SUM (a * r^k)
+SUM (k), (k^2), (k^3), (x^k)
+
+
