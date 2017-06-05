@@ -72,3 +72,13 @@ SUM (a * r^k)
 SUM (k), (k^2), (k^3), (x^k)
 
 
+p. 195 Binary search
+
+p. 197 Bubble sort
+
+p. 198 Insertion sort
+
+p. 201 Greedy algorithm for scheduling talks
+In each step, select the talk with the earliest ending time among the talks compatible with those already selected
+
+p. 201 Halting problem
