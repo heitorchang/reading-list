@@ -82,3 +82,5 @@ p. 201 Greedy algorithm for scheduling talks
 In each step, select the talk with the earliest ending time among the talks compatible with those already selected
 
 p. 201 Halting problem
+
+p. 532 The closest-pair problem (divide-and-conquer algorithm for finding the closest pair of points in a set of n points)
