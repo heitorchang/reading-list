@@ -84,3 +84,41 @@ In each step, select the talk with the earliest ending time among the talks comp
 p. 201 Halting problem
 
 p. 532 The closest-pair problem (divide-and-conquer algorithm for finding the closest pair of points in a set of n points)
+
+p. 238 a divides b means b / a is an integer
+(there is an integer c such that b = ac). a is a factor or divisor of b
+a | b means "a divides b"
+
+p. 240 if a and b are integers and m is a positive integer, then
+a is congruent to b modulo m if m divides a - b
+a === b (mod m) means a is congruent to b modulo m
+(the congruence symbol is 3 lines)
+
+a === b (mod m) iff a mod m = b mod m
+
+p. 242
+
+(a + b) mod m = ((a mod m) + (b mod m)) mod m
+ab mod m = ((a mod m)(b mod m)) mod m
+
+p. 247 base conversion algorithm
+
+p. 251 binary addition algorithm
+
+p. 252 binary multiplication algorithm
+
+p. 253 binary div algorithm
+
+p. 254 modular exponentiation algorithm
+
+p. 259 Sieve of Eratosthenes (algorithm in English) stop at i <= sqrt(n)
+
+p. 269 Euclidean algorithm for GCD
+
+p. 265
+two integers, a and b, are relatively prime if their GCD is 1
+
+p. 267
+a * b = gcd(a, b) * lcm(a, b)
+
+p. 278 Chinese remainder theorem
