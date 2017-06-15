@@ -1,0 +1,22 @@
+p. 5 Albero sefirotico
+
+            Cheter
+	     1. Keter
+
+   Bina              Chochma
+3. Binah          2. Hokmah
+
+   Cheuora           Hesed
+5. Geburah        4. Hesed
+
+            Teferet
+		 6. Tiferet
+		 
+   Od                Nezach
+8. Hod            7. Nezah
+
+            Iesod
+         9. Jesod
+   
+            Malchut
+        10. Malkut
