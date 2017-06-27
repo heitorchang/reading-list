@@ -122,3 +122,14 @@ p. 267
 a * b = gcd(a, b) * lcm(a, b)
 
 p. 278 Chinese remainder theorem
+
+p. 408 formula for permutations: P(n, r) = n! / (n-r)!
+
+p. 410 formula for combinations: C(n, r) = n! / ((n-r)! * r!), may also be seen as choose(c, n)
+
+Because the order of the combination does not matter,
+and there are P(r,r) ways to order the r elements, each of the
+C(n, r) combinations corresponds to P(r, r) permutations.
+
+By the division rule, C(n, r) = P(n, r) / P(r, r) = n! / (n-r)! / r!
+= n! / ((n-r)! * r!)
