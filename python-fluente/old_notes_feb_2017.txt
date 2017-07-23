@@ -1,0 +1,157 @@
+p. 122
+
+se você implementar __eq__, deve também implementar __hash__
+
+se a == b é True, hash(a) também deve ser == hash(b) 
+
+p. 195
+
+Functional programming: reduce
+
+Replace simple lambda expressions with the module 'operator'
+
+from functools import reduce
+from operator import mul
+
+reduce(mul, range(1, n+1))
+
+INSTEAD OF
+
+reduce(lambda a, b: a*b, range(1, n+1))
+
+p. 263
+
+a imutabilidade das tuplas refere-se ao conteúdo físico da estrutura de dados (às referências que ela armazena)
+
+o que nunca muda em uma tupla é a identidade dos itens que ela contém 
+
+p. 265
+
+uma cópia rasa de uma lista pode ser feita com lista(lst) ou lst[:]
+
+p. 275
+
+quando um objeto é destruído, o callback registrado por weakref.finalize é chamado
+
+p. 280
+
+unlike list(lst), tuple(t) returns the same tuple 
+
+p. 332
+
+com muita frequência, ao implementar __getattr__, também se deve implementar __setattr__
+
+p. 334
+
+usar genexps em vez de listcomps quando possível
+
+hashes = (hash(x) for x in self._components) e nao [hash(x) ... ] 
+
+p. 354
+
+uma interface é o subconjunto de métodos públicos de um objeto que lhe permitem desempenhar um papel específico no sistema (como 'um iterável')
+
+programadores de Smalltalk chamavam de "protocolo", e são independentes de herança. Um protocolo é uma interface informal (não pode ser verificado estaticamente) 
+
+p. 375
+
+a ordem de decoradores de função empilhados é importante
+
+@abstractmethod deve ser aplicado como o decorador mais interno. Nenhum outro decorador deve aparecer entre @abstractmethod e def 
+
+p. 397
+
+subclasses diretos de tipos embutidos como dict, list e str é propenso a erros porque métodos ignoram as versões sobrescritas.
+
+em vez disso, derive classes de UserDict, UserList e UserString do módulo collections
+
+p. 399
+
+esse comportamento é causado pelos tipos embutidos serem implementados na linguagem C
+
+p. 442
+
+métodos especiais de atribuição combinada como += devem devolver self
+
+p. 445
+
+functools.total_ordering gera todos os métodos automaticamente para qualquer classe que defina pelo menos dois operadores de comparação rica
+
+p. 455
+
+um iterável é um objeto do qual a função iter() pode obter um iterador
+
+o método __iter__ devolve um iterador. Sequências sempre são iteráveis, assim como objetos que implementem __getitem__ que aceite índices a partir de 0. 
+
+Python obtém iteradores a partir de iteráveis
+
+use as funções embutidas iter() e next() 
+
+p. 458
+
+um iterador é um objeto que implemente o método __next__, sem argumentos, que devolva o próximo item de uma série ou levante StopIteration quando não houver mais itens.
+
+os iteradores também implementam o método __iter__, portanto também são iteráveis
+
+Iterator.__iter__ é implementado devolvendo self
+
+p. 461
+
+iteradores são iteráveis, mas iteráveis não são iteradores
+
+deve ser possível obter vários iteradores independentes a partir da mesma instância de iterável
+
+p. 464
+
+geradores são iteradores que produzem os valores das expressões passadas para yield
+
+uma função devolve (ou retorna) valores. Mas um gerador produz (yields) valores.
+
+return no corpo de uma função geradora (uma função que cria um objeto gerador) faz StopIteration ser levantada pelo objeto gerador. 
+
+p. 466
+
+lazy evaluation é avaliação preguiçosa, o contrário, eager, é ávida
+
+re.finditer é uma versão lazy de re.findall
+
+p. 485
+
+yield from it cria um canal de it diretamente ao cliente do gerador externo. É mais que açúcar sintático para 
+
+for i in it:
+    yield i
+
+p. 488
+
+iter pode ser chamada com dois argumentos para criar um iterador a partir de uma função normal ou qualquer objeto invocável
+
+o primeiro argumento (o invocável) é chamado repetidamente (sem argumentos) para produzir valores e o segundo argumento é uma sentinela, um marcador que quando devolvido pelo invocável, faz o iterador levantar StopIteration.
+
+p. 496
+
+todo gerador é um iterador 
+
+p. 515
+
+do ponto de vista sintático, uma corrotina é como um gerador
+
+em geral, yield aparece no lado direito de uma expressão, datum = yield
+
+yield é um dispositivo de controle de fluxo, e pode ser usado para implementar multitarefa cooperativa. Cada corrotina cede o controle a um escalonador central
+
+p. 518
+
+uma corrotina pode estar em um de quatro estados: GEN_CREATED, GEN_RUNNING, GEN_SUSPENDED, ou GEN_CLOSED
+
+a primeira ativação de uma corrotina é sempre feita com next(my_cor) ou my_cor.send(None)
+
+p. 565
+
+use a biblioteca requests (de PyPI) em vez da biblioteca-padrão urllib.request 
+
+p. 580
+
+servidores locais para testes: nginx, proxy Mozilla Vaurien
+
+
