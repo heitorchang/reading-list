@@ -1,0 +1,12 @@
+p. 37 A triple-quoted block is considered a comment when it is not assigned to a variable. 
+
+def f(x):
+    x += 1
+    """
+    x += 10
+    x += 100
+    """
+    return x
+
+def test():
+    testeql(f(9), 10)
