@@ -10,3 +10,57 @@ def f(x):
 
 def test():
     testeql(f(9), 10)
+
+p. 76 given a file handle, data, the method data.seek(0) will return it to the beginning
+
+p. 80 split() has an optional maxsplit argument that says how many splits are done at most.
+
+maxsplit = 1 will divide a str into two parts, at most
+
+p. 102 chapter end
+
+a school of thought is to add extra code to guard against errors, such as : if not line.find(":") == -1 or os.path.exists(filename)
+
+another school of thought is to use try: except: blocks. Remember to specify which type of error is exceptional (IOError, ValueError)
+
+(p. 119 except IOError as err:    print("File Error: " + str(err))
+
+p. 110 open modes:
+
+r  read (default)
+w  write (truncates file)
+a  append to the end of the file
++  update (read and write)
+w+ read and write (file is created if it does not exist, otherwise it is truncated)
+
+p. 115 when a block of code must be executed in try: except:, use finally:
+
+p. 120 instead of try, except, finally, use
+
+with open('datafile.txt', 'w') as data:
+    print("It's...", file=data)
+
+p. 122
+
+try:
+    with open("man_data.txt", "w") as man_file, open("other_data.txt", "w") as other_file:
+	    print(man, file=man_file)
+		print(other, file=other_file)
+
+p. 133 pickle dump(), load()
+
+import pickle
+
+with open('mydata.pickle', 'wb') as mysavedata:
+    pickle.dump([1,2,'three'], mysavedata)
+
+with open('mydata.pickle', 'rb') as myloaddata:
+    a_list = pickle.load(myloaddata)
+
+print(a_list)
+
+try:
+except pickle.PickleError as perr:
+    print("Pickling error: " + str(perr))
+
+p. 150 'ord' in 'word' => True
