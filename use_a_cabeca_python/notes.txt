@@ -64,3 +64,45 @@ except pickle.PickleError as perr:
     print("Pickling error: " + str(perr))
 
 p. 150 'ord' in 'word' => True
+
+p. 190
+
+in a class:
+
+code (functions) are "methods" (métodos)
+data are "attributes" (atributos)
+individual units are "instances" (instâncias)
+
+p. 191 a class is a "factory" for new instances
+
+p. 192
+
+a = Athlete()
+
+is
+
+Athlete.__init__(a)
+
+calls
+
+def __init__(self):
+    # code to initialize an Athlete object
+
+p. 193
+
+See "measurer.py"
+
+p. 200 list.extend()
+
+>>> a = [1,2,3]
+>>> a.extend([4,5])
+>>> a
+[1, 2, 3, 4, 5]
+
+p. 206 inheritance from list
+
+class NamedList(list):
+    def __init__(self, a_name):
+	    list.__init__([])  # appears to be optional
+		self.name = a_name
+		
