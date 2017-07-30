@@ -1,4 +1,4 @@
-2nd reading, July 2017
+2nd reading, 23 July 2017
 
 See file resources.py for useful bits of code
 
@@ -22,6 +22,45 @@ deck[12::13] = all spades
 for card in deck:
     ...
 
-Card('Q', 'hearts') in deck
+p. 32 Card('Q', 'hearts') in deck
 
+Sort by rank, then by suit
+
+suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
+
+def spades_high(card):
+    rank_value = FrenchDeck.ranks.index(card.rank)
+	return rank_value * len(suit_values) + suit_values[card.suit]
+
+sorted(deck, key=spades_high)
+
+p. 35
+
+from math import hypot
+
+class Vector:
+    def __init__(self, x=0, y=0):
+	    self.x = x
+		self.y = y
+		
+	def __repr__(self):
+	    return 'Vector(%r, %r)' % (self.x, self.y)
+
+	def __abs__(self):
+		return hypot(self.x, self.y)
+
+	def __bool__(self):
+		return bool(abs(self))
+
+	def __add__(self, other):
+		x = self.x + other.x
+		y = self.y + other.y
+		return Vector(x, y)
+
+	def __mul__(self, scalar):
+		return Vector(self.x * scalar, self.y * scalar)
+
+%r uses a repr() conversion
+
+p. 37 bool() of user-defined instances is by default True, unless __bool__ or __len__ are implemented.
 

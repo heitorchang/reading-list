@@ -11,6 +11,8 @@ def f(x):
 def test():
     testeql(f(9), 10)
 
+p. 68 Default value = valor padrão
+
 p. 76 given a file handle, data, the method data.seek(0) will return it to the beginning
 
 p. 80 split() has an optional maxsplit argument that says how many splits are done at most.
@@ -106,3 +108,18 @@ class NamedList(list):
 	    list.__init__([])  # appears to be optional
 		self.name = a_name
 		
+p. 250
+
+print(yate.u_list(athletes[athlete_name].top3()))
+
+gives a TypeError: 'list' object is not callable
+
+(because AthleteList underneath is actually a list)
+
+The solution is to make top3 a property
+
+@property  # decorator = enfeite
+def top3(self):
+    return sorted(set([self.sanitize(t) for t in self]))[0:3]
+
+NOTE: In my testing, both ways work
