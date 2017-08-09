@@ -64,3 +64,49 @@ class Vector:
 
 p. 37 bool() of user-defined instances is by default True, unless __bool__ or __len__ are implemented.
 
+p. 45
+
+Container sequences -- list, tuple, and collections.deque -- store references to objects.
+
+Flat sequences -- str, bytes, bytearray, memoryview, and array.array -- physically store the value of each item in its memory, and not as distinct objects.
+
+Another way to classify them is:
+
+Mutable sequences -- list, bytearray, array.array, deque, memoryview
+
+Immutable sequences -- str, tuple, bytes
+
+p. 46 terminology: listcomp and genexp (generator expression)
+
+p. 51
+
+if a list is not needed, use a genexp. If the genexp is the only argument in a function, the pair of parentheses do not need to be duplicated.
+
+symbols = "$#@0AZ"
+t = tuple(ord(symbol) for symbol in symbols)
+
+p. 61 slice objects are like spreadsheet cell ranges
+
+# odd-numbered letters, considering first letter as 1, odd
+odds = slice(None, None, 2)  
+name = "Jonathan"
+name_odds = name[odds]  # Jnta
+
+p. 62-63 slices can be used on the left side as assignment targets
+
+a = list(range(10))
+a[1:5] = [55]
+a  # [0, 55, 5, 6, 7, 8, 9]
+
+p. 69 list.sort() is in-place, sorted(a) returns a new list
+sorted can sort immutable iterables like str
+
+sorted has optional parameters reverse and key
+
+key may also be used in min(), max(), itertools.groupby(), and heapq.nlargest()
+
+p. 71-74
+
+bisect.bisect(sorted_list, item_to_insert) returns the position where the item should be placed. By default, it is placed to the right. bisect_left places it to the left
+
+p. 82-84 deque
