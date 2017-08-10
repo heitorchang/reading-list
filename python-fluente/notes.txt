@@ -110,3 +110,7 @@ p. 71-74
 bisect.bisect(sorted_list, item_to_insert) returns the position where the item should be placed. By default, it is placed to the right. bisect_left places it to the left
 
 p. 82-84 deque
+
+p. 108 from types import MappingProxyType
+
+a way of viewing a dictionary's items, without being able to modify them.
