@@ -114,3 +114,20 @@ p. 82-84 deque
 p. 108 from types import MappingProxyType
 
 a way of viewing a dictionary's items, without being able to modify them.
+p. 118 Explanation of how hash tables are used behind the scenes for dicts and sets
+
+p. 122 If a custom class implements __eq__, it should also implement an adequate __hash__.
+
+p. 130 What is a character? Python 3.4 uses the Unicode 6.3 standard, which defines characters up to U+10FFFF.
+
+p. 134 Use memoryview, struct, struct.unpack() to read a GIF header
+
+p. 138 To avoid a UnicodeEncodeError, pass the optional 'errors' argument:
+
+s.encode('cp437', errors='ignore')  # or 'replace', 'xmlcharrefreplace'
+
+p. 141 File coding 'magic comment'
+
+# coding: cp1252
+
+p. 142 detect string an file encoding with chardet
