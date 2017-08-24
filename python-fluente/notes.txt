@@ -131,3 +131,11 @@ p. 141 File coding 'magic comment'
 # coding: cp1252
 
 p. 142 detect string an file encoding with chardet
+
+p. 159 Sorting Unicode strings can be done with locale.strxfrm as the key in sorting, but relies on the locale existing in the operating system.
+
+p. 161 An alternate solution for Unicode sorting is the PyUCA package found in PyPI
+
+p. 190 inspect module allows function introspection
+
+p. 192 Function annotations are stored in __annotations__. Nothing else is really done.
