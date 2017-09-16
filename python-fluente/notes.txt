@@ -139,3 +139,7 @@ p. 161 An alternate solution for Unicode sorting is the PyUCA package found in P
 p. 190 inspect module allows function introspection
 
 p. 192 Function annotations are stored in __annotations__. Nothing else is really done.
+
+p. 291 Vector2d: an object with only special methods
+
+p. 297 implemeting your own __format__ function to allow custom string formatting
