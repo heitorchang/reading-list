@@ -143,3 +143,11 @@ p. 192 Function annotations are stored in __annotations__. Nothing else is reall
 p. 291 Vector2d: an object with only special methods
 
 p. 297 implemeting your own __format__ function to allow custom string formatting
+
+p. 320 a class Vector that works like Vector2d
+
+p. 325 a tuple can be passed to a slice: s[1:4:2, 7:9]
+
+p. 327 for a custom class to allow slicing, the type of index passed to __getitem__ must be checked with isinstance (slice or numbers.Integral)
+
+p. 329 __getattr__ allows you to customize the result of instance.x, instance.y, etc.
