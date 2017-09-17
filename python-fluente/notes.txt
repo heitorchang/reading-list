@@ -151,3 +151,7 @@ p. 325 a tuple can be passed to a slice: s[1:4:2, 7:9]
 p. 327 for a custom class to allow slicing, the type of index passed to __getitem__ must be checked with isinstance (slice or numbers.Integral)
 
 p. 329 __getattr__ allows you to customize the result of instance.x, instance.y, etc.
+
+p. 367 Abstract Base Classes in collections.abc
+
+p. 371 to define your own ABC, you should subclass abc.ABC.
