@@ -155,3 +155,9 @@ p. 329 __getattr__ allows you to customize the result of instance.x, instance.y,
 p. 367 Abstract Base Classes in collections.abc
 
 p. 371 to define your own ABC, you should subclass abc.ABC.
+
+p. 396 do not subclass builtin types like list and dict. They will ignore the overwritten definitions in the subclass.
+
+Instead, subclass UserDict, UserList and UserString
+
+p. 407 Dealing with multiple inheritance
