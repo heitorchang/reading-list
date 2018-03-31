@@ -1,3 +1,5 @@
+* See notes3.txt
+
 2nd reading, 23 July 2017
 
 See file resources.py for useful bits of code

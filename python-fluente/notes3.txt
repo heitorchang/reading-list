@@ -1,0 +1,116 @@
+Python Fluente, by Luciano Ramalho
+3rd reading, 31 mar 2018
+
+29 métodos especiais: obj[key] é tratada pelo método especial __getitem__
+
+my_collection[key]  =>  my_collection.__getitem__(key)
+
+30 from collections import namedtuple
+Card = namedtuple('Card', ['rank', 'suit'])
+CardShort = namedtuple('Card', 'rank suit')
+
+31 from random import choice
+choice([1,2,3])  # 2 or 3 or 1
+
+31 implementando __getitem__, o baralho suporta fatiamento (slicing) e iteração
+
+32 sem __contains__, a varredura será sequencial.
+
+36-37 __repr__ é usado na formatacao de strings, %r, e __str__ é chamada pelo construtor str(). Se for implementar apenas uma delas, escolha __repr__. Ela será chamada quando não houver um __str__ personalizado.
+
+37 Para determinar o valor booleano de uma instancia, se __bool__ nao for implementado, x.__len__() será chamado. Se __len__() for zero, o resultado é False. Se nenhum dos dois forem implementados, bool() retornará True.
+
+39 __iadd__ é "in-place add"
+
+39 len() é uma operacao comum e opera mais eficientemente como uma função do que um método. Para tipos embutidos, o tamanho é lido de um campo de uma struct em C. len() recebe tratamento especial como parte do modelo de dados do Python.
+
+41 O que a documentação chama de "modelo de dados" também é chamada de "modelo de objetos" por muitos autores.
+
+42 um metaobjeto é um objeto que constitue os blocos de construção da propria linguagem.
+
+45 Sequencias embutidas
+
+sequencias container: list, tuple, collections.deque
+
+sequencias simples (armazena fisicamente o valor de cada item): str, bytes, bytearray, memoryview, array.array
+
+outra maneira de agrupá-los:
+
+sequencias mutáveis: list, bytearray, array.array, collections.deque, memoryview
+
+sequencias imutáveis: str, tuple, bytes
+
+46-47 listcomps
+
+47 (dica de sintaxe) Em código Python, quebras de linha sao ignoradas entre pares [], {}, e ()
+
+49 timeit
+
+import timeit
+
+TIMES = 10000
+
+SETUP = """
+symbols = "ABCdef"
+def caps(c):
+    return c < 97
+"""
+
+def clock(label, cmd):
+    res = timeit.repeat(cmd, setup=SETUP, number=TIMES)
+    print(label, *('{:.3f}'.format(x) for x in res))
+
+clock('listcomp', '[ord(s) for s in symbols if ord(s) < 97]')
+clock('listcomp + func', '[ord(s) for s in symbols if caps(ord(s))]')
+
+49 produtos cartesianos
+
+colors = ['BLK', 'WHT']
+sizes = ['Sm', 'Med', 'Lg']
+tshirts = [(size, color) for color in colors for size in sizes]
+
+51 genexps usam a mesma sintaxe de listcomps, mas sao delimitadas por parenteses, e nao por colchetes.
+
+Nao é necessario duplicar os parenteses se o genexp for o unico argumento
+
+52 tuplas armazenam registros (uma colecao de campos)
+
+54 a atribuicao paralela é um exemplo de "desempacotamento de tuplas"
+
+coords = (22.23, 43.223)
+lat, long = coords
+
+ou trocar (swap) valores
+
+b, a = a, b
+
+prefixar um argumento com um asterisco:
+
+divmod(20, 8)
+t = (20, 8)
+divmod(*t)
+
+a, b, *rest = range(5)  =>  0, 1, [2, 3, 4]
+
+55 desempacotamento também pode ser aninhado
+
+56-57 namedtuple
+
+59 por que as fatias (slices) excluem o último item
+
+- quando somente o final é especificado, é o tamanho da fatia
+- o tamanho da fatia é stop - start
+- a[:x] e a[x:] não serão sobrepostos
+
+60 objetos slice
+
+s = slice(0, 2)
+a = [1,2,3,4,5]
+a[s]  =>  [1, 2]
+
+62-63 fatias podem ser atribuidas
+
+a[2:5] = [20, 30]
+del a[6:8]
+
+64 myList = [[]] * 3 resultará em uma lista com tres referencias à mesma lista interna. Provavelmente nao é o que voce queira fazer
