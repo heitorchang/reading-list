@@ -1,0 +1,62 @@
+p. 20
+
+ * The loop counters in while, for, and repeat-until retain their values after exiting the loop. The retained value is the value that first exceeded the loop bound.
+
+For example, after "for j = 2 to A.length", j is A.length + 1.
+
+ * Variables are local unless explicitly declared as global.
+
+ * Arrays begin with 1. A[1..j] indicates the subarray A[1], A[2], ..., A[j]
+
+ * A NIL pointer refers to no object at all.
+
+ * Parameters are passed by value (the called procedure receives its own copy of the parameters). When objects are passed, the pointer to the data is copied, but the object's attributes are not.
+
+If x is a parameter of a called procedure, the assignment x = y within the called procedure is not visible to the calling procedure. However, x.f = 3 is visible.
+
+ * Boolean and, or are short-circuiting
+
+ * For loops and range()
+
+ *  In Python, range excludes the endpoint, so
+
+for i = 1 to 5
+
+is
+
+for i in range(1, 6)
+
+by adding one to the endpoint. When counting backwards,
+
+for i = 5 downto 1
+
+is
+
+for i in range(5, 0, -1)
+
+by subtracting one from the endpoint. The mnemonic is that the step, -1, is the same as the action of subtracting one from the endpoint.
+
+ *  In general, using bubblesort as an example:
+
+for i = 1 to A.length
+
+is
+
+for i in range(1, A.length+1)
+
+but we need to convert from the book's 1-based arrays to 0-based, so we subtract one from both endpoints:
+
+for i in range(len(A))
+
+in reverse iterations, we need to subtract one from the endpoint
+
+for j = A.length downto i + 1
+
+is
+
+for j in range(A.length, i, -1)
+
+in this case, we only subtract one from A.length because i is a movable index.
+
+for j in range(len(A)-1, i, -1)
+
