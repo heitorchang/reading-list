@@ -13,3 +13,5 @@ f(n) = Omega(g(n)) is like a >= b (tight bound)
 f(n) = Theta(g(n)) is like a = b
 f(n) = o(g(n))     is like a < b
 f(n) = omega(g(n)) is like a > b
+
+p. 147 In sorting problems, the numbers to be sorted are keys of records. The records are part of the collection of data to be sorted. In addition to the key, each record typically contains "satellite data."
