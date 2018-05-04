@@ -1,0 +1,15 @@
+p. 45-46 Given the set of functions Big-Theta(g(n)), g(n) is an asymptotically tight bound for any f(n) belonging to this set.
+
+f(n) belongs to Big-Theta(g(n)) if there exist positive constants c1, c2, and n0 such that 0 <= c1*g(n) <= f(n) <= c2*g(n) for all n >= n0
+
+p. 47 Big-O notation is only an asymptotic upper bound. O(g(n)) is a set of functions such that
+
+O(g(n)) = {f(n): there exist positive constants c and n0 such that 0 <= f(n) <= c*g(n) for all n >= n0}
+
+p. 52 an analogy between asymptotic comparison of functions f and g and real numbers is:
+
+f(n) = O(g(n))     is like a <= b (tight bound)
+f(n) = Omega(g(n)) is like a >= b (tight bound)
+f(n) = Theta(g(n)) is like a = b
+f(n) = o(g(n))     is like a < b
+f(n) = omega(g(n)) is like a > b
