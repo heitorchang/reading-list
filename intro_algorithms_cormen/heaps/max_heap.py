@@ -9,22 +9,12 @@ def max_heapify(A, i):
     L = left(i)
     R = right(i)
 
-    try:
-        A_L = A[L]
-    except IndexError:
-        A_L = float('-inf')
-        
-    if L <= len(A) and A_L > A[i]:  # assume len(A) is A.heap_size
+    if L <= len(A) - 1 and A[L] > A[i]:  # assume len(A) is A.heap_size
         largest = L
     else:
         largest = i
 
-    try:
-        A_R = A[R]
-    except IndexError:
-        A_R = float('-inf')  # no right child
-        
-    if R <= len(A) and A_R > A[largest]:
+    if R <= len(A) - 1 and A[R] > A[largest]:
         largest = R
         
     if largest != i:
