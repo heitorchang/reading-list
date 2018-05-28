@@ -19,3 +19,12 @@ p. 147 In sorting problems, the numbers to be sorted are keys of records. The re
 p. 162 A max-priority queue may be used to schedule jobs (higher priority items get performed first). A min-priority queue may simulate events according to each event's time of occurrence.
 
 p. 215 In the problem of finding the min and max elements of an array, process the elements in pairs, say a and b. First compare a with b, then compare the smaller of the two with the current minimum, and the larger with the current maximum. Thus we need 3 comparisons per 2 elements instead of 2 comparisons per 1 element, as would be done in a more obvious way.
+
+p. 359 "Programming" in dynamic programming, refers to a tabular method, not to writing computer code.
+
+p. 362 The rod-cutting problem (to maximize the revenue of selling pieces of a rod) exhibits optimal substructure: optimal solutions incorporate optimal solutions to related subproblems, which may be solved independently.
+
+Alternatively, an optimal solution can be defined recursively as the decomposition of a left-hand piece and a right-hand piece, and only the right piece can be further divided.
+
+
+
