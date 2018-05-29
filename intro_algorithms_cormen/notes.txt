@@ -20,11 +20,20 @@ p. 162 A max-priority queue may be used to schedule jobs (higher priority items 
 
 p. 215 In the problem of finding the min and max elements of an array, process the elements in pairs, say a and b. First compare a with b, then compare the smaller of the two with the current minimum, and the larger with the current maximum. Thus we need 3 comparisons per 2 elements instead of 2 comparisons per 1 element, as would be done in a more obvious way.
 
-p. 359 "Programming" in dynamic programming, refers to a tabular method, not to writing computer code.
+p. 359 "Programming" in dynamic programming refers to a tabular method, not to writing computer code.
 
 p. 362 The rod-cutting problem (to maximize the revenue of selling pieces of a rod) exhibits optimal substructure: optimal solutions incorporate optimal solutions to related subproblems, which may be solved independently.
 
 Alternatively, an optimal solution can be defined recursively as the decomposition of a left-hand piece and a right-hand piece, and only the right piece can be further divided.
 
+p. 372 Applying dynamic programming (in the problem of optimally parenthesizing a matrix chain)
 
+1. Characterize the structure of an optimal solution
+2. Recursively define the value of an optimal solution
+3. Compute the value of an optimal solution
+4. Construct an optimal solution from computed information
+
+p. 379 The "cut-and-paste" argument that solutions to subproblems must be optimal: by "cutting out" the nonoptimal solution and "pasting in" the optimal one, you show that you can get a better solution to the original problem, thus contradicting your supposition that you already had an optimal solution.
+
+p. 389 In general, a bottom-up dynamic-programming algorithm outperforms the corresponding top-down memoized algorithm by a constant factor because there is no overhead for recursion and table maintenance. However, if some subproblems do not need to be solved at all, the top-down memoized solution might be better (it will only solve subproblems that are definitely required).
 
