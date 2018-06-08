@@ -114,3 +114,14 @@ a[2:5] = [20, 30]
 del a[6:8]
 
 64 myList = [[]] * 3 resultará em uma lista com tres referencias à mesma lista interna. Provavelmente nao é o que voce queira fazer
+
+793 Ha sete variantes de objetos invocaveis (callables):
+- funcoes definidas pelo usuario
+- funcoes embutidas
+- metodos de instancia
+- metodos embutidos
+- funcoes geradoras
+- classes que implementam __call__
+- instancias de classes que implementam __call__
+
+796 um 'tipo' é uma categoria de dados usados pelo programa. Tipos podem ser definidos pelo usuario como classes.
