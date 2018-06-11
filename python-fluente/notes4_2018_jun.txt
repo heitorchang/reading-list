@@ -1,0 +1,94 @@
+# Fourth reading, began 11 jun 2018
+
+30 Example: deck of cards
+
+from collections import namedtuple
+Card_tuple_subclass = namedtuple('Card_display_name', 'rank suit')
+
+def __getitem__(self, position):
+    """allows evaluation of deck[0], deck[-1], etc."""
+    return self._cards[position]
+
+31 random.choice picks an element from an array, range, or the deck, which implements __getitem__
+
+33 len in CPython actually reads ob_size of a C struct. It's much faster, so it's the reason len is a function, not a method
+
+35 __abs__, __add__, __mul__, __repr__
+
+36 __repr__ should return the code needed to recreate the represented object, such as Vector(1, 2)
+
+__str__ should produce a suitable string for the end user. If __str__ is undefined, __repr__ is called.
+
+38 https://www.python.org/dev/peps/pep-0357/
+__index__ allows any object to be used for slicing (in particular, NumPy uses different sized integers, that should be allowed inside slices)
+
+45 list, tuple, and collections.deque can store items of different types. They store references to the objects they contain.
+
+str, bytes, bytearray, memoryview, and array.array can store items of only one type.
+
+mutable: list, deque, bytearray, array.array, memoryview
+immutable: tuple, str, bytes
+
+46 listcomp = list comprehension
+genexp = generator expression
+
+47 line breaks are ignored inside (), [], and {}. \ is not needed at the end of lines inside these brackets.
+
+49 Cartesian product
+
+colors = ['red', 'blue']
+sizes = ['S', 'M', 'L']
+tshirts = [(size, color) for size in sizes for color in colors]
+# [('S', 'red'), ('S', 'blue'), ('M', 'red')...]
+
+50 genexps save memory and should be used unless a list is really needed
+
+symbols = '@#$'
+t = tuple(ord(symbol) for symbol in symbols)  # (64, 35, 36)
+
+54 unpacking a tuple as arguments of a function
+
+t = (20, 8)
+quotient, remainder = divmod(*t)
+
+55 use * to capture excessive arguments. The starred variable may be anywhere. Unpacking structures may also be nested, such as (a, b, (c, d)).
+
+a, b, c* = range(5)  # c is [2, 3, 4]
+
+a, *b, c = range(4)  # b is [1, 2]
+
+57 namedtuples have the _asdict() instance method that returns an OrderedDict
+
+61 slices may be named, such as column ranges in a text spreadsheet
+UNIT_PRICE = slice(40, 52)
+
+62 in NumPy, the slice syntax a[m:n, k:l] returns a 2-D slice
+
+62 Slices may be used in assignments to splice and remove elements
+
+64 Use [['_'] * 3 for i in range(3)] instead of [['_'] *  3] * 3 because the latter will repeat the same list reference three times.
+
+69 avoid putting mutable items in tuples
+
+69 sorted() has two optional parameters: reverse=True and key=str.lower, len, etc.
+
+70 key is also used in min(), max(), itertools.groupby(), heapq.nlargest()
+
+72 bisect.bisect(lst, x) is an alias for bisect_right() and returns an index where x should be inserted in lst, such as lst.insert(idx, x). bisect_left() only differs from bisect() when x is already in lst.
+
+73 use bisect to separate values into buckets
+
+import bisect
+
+def grade(score, breakpoints=[60, 70, 80, 90], grades="FDCBA"):
+    i = bisect.bisect(breakpoints, score)
+    return grades[i]
+
+74 bisect.insort(seq, item) inserts item into seq, maintaining it in ascending order.
+
+75 array.array is optimized for containing only numbers of the same type
+
+array has the methods fromlist(), fromfile(), tolist(), and tofile()
+
+78 memoryview() is a class that allows byte-by-byte manipulation of data structures without making a copy
+
