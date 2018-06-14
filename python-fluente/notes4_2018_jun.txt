@@ -92,3 +92,50 @@ array has the methods fromlist(), fromfile(), tolist(), and tofile()
 
 78 memoryview() is a class that allows byte-by-byte manipulation of data structures without making a copy
 
+82 deque
+
+83 deque.rotate(n) : if n > 0, items are shifted to the right, otherwise to the left if n < 0. Items are moved in-place
+
+85 queue.Queue is used for communication between threads. deque is used as a collection.
+
+multiprocessing is used for communication between processes.
+
+heapq provides functions to operate on lists; call heapify(lst)
+
+91 trick to sort a mixed list of strings and ints: sorted(lst, key=int) 
+
+94 use isinstance(3, int) to check the type of an object
+
+95 ways of creating dicts:
+
+a = dict(one=1, two=2)
+b = {'one': 1, 'two': 2}
+dict comprehensions { key: value for... }
+
+97 d.get(key, [default])
+d.setdefault(key, [default])
+d.keys()
+d.values()
+d.update(m)
+
+101 dd = defaultdict(list)  # call with a default factory (without arguments)
+But dd.get(k) will not call the factory
+
+105 collections.OrderedDict
+collections.ChainMap
+collections.Counter
+collections.UserDict
+
+106 Subclassing UserDict is preferable to dict because certain overwritten dict methods do not get called. The actual data is stored in self.data
+
+108 from types import MappingProxyType
+MappingProxyType(d) creates a mappingproxy object for reading items of a dict
+
+113 Set comprehensions {chr(i).upper() for i in range(48, 128)}
+
+115 for a set s:
+s.discard(e)  # does not raise an error if e does not exist
+s.remove(e)   # raises KeyError if e does not exist
+
+122 if __eq__ is implemented, __hash__ should be too. If a == b, then hash(a) == hash(b) must also be true. If __eq__ depends on mutable state, __hash__ should raise a TypeError ("unhashable type")
+
