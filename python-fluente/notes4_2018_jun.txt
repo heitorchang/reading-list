@@ -139,3 +139,33 @@ s.remove(e)   # raises KeyError if e does not exist
 
 122 if __eq__ is implemented, __hash__ should be too. If a == b, then hash(a) == hash(b) must also be true. If __eq__ depends on mutable state, __hash__ should raise a TypeError ("unhashable type")
 
+131 bytes is immutable, bytearray is mutable
+
+132 seq[0] == seq[:1] is only true for str. For other sequence types, seq[:1] will return the same sequence type, while seq[0] is of an item type
+
+132 \t, \n, and \r are escape sequences for tab, newline, and carriage return
+
+134 Using struct with memoryview
+
+142 Use the chardet package to detect a text file's encoding
+
+145 always pass encoding="???" when reading and writing text files
+
+151 from unicodedata import normalize
+# 'NFC', 'NFD', 'NFKC', 'NFKD' (Normalization Forms)
+
+NFC generates the smallest string possible. It is recommended to use NFC
+
+'K' stands for Compatibility. Information may be lost; for example, 4^2 may be replaced by 42.
+
+154 S.casefold() is used for caseless comparisons
+
+156 the custom function shave_marks() removes diacritics
+
+159 locale-specific sorting with key=locale.strxfrm. However, the locale must be installed in the underlying OS. Most successful in GNU/Linux
+
+161 Alternative for Unicode text sorting: the PyUCA package
+
+175 Functions are first-class objects (for example, round() is of <class 'builtin_function_or_method'>. User functions are <class 'function'>)
+
+177 A higher-order function is one that accepts functions as arguments or returns a function
