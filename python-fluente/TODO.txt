@@ -1,0 +1,2 @@
+Look up Zlobin's book on Design Patterns. However, it only covers 8 out of the original 23 patterns
+

@@ -1,5 +1,5 @@
 # Fourth reading, began 11 jun 2018
-    
+
 30 Example: deck of cards
 
 from collections import namedtuple
@@ -232,3 +232,38 @@ If a function is called often with the same argument, such as unicode.normalize(
 
 200 partialmethod works on methods
 
+206 the classic Strategy pattern defines a family of algorithms, encapsulates them and makes them interchangeable. The algorithm can vary independent of the clients who use them.
+
+207 example: different discounts for different clients and orders. A concrete strategy is chosen by the client of the context class.
+
+213 a new promotion object is not needed, because a promotion function may be called directly.
+
+213 Strategy objects are often good Flyweights (a shared object)
+
+214 add available discount functions to a list (takes advantage of functions being first-class citizens) and return max(promo(order) for promo in promos) (use a genexp instead of unnecessarily creating a listcomp)
+
+However, if a promo is added, the promos list needs to be updated.
+
+215 use inspect to find functions named '_promo' to dynamically compute the best promo
+
+216 the Command pattern decouples a Caller object from the Receiver, which implements the operation.
+
+217 a class that implements __call__ can iteratively call other functions stored as an instance variable.
+
+222 nonlocal is often needed for writing custom decorators
+
+223 a decorator is a callable that accepts another function as an argument (the decorated function). It returns a function. Classes may also be decorated.
+
+@decorate
+def target():
+    print("running target")
+
+is the same as
+
+def target():
+    print("running target")
+target = decorate(target)
+
+224 decorators are run when a module is loaded (import time), and not at runtime
+
+227 using a decorator to add (promo) functions to a registry
