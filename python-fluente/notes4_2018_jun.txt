@@ -1,5 +1,5 @@
 # Fourth reading, began 11 jun 2018
-
+    
 30 Example: deck of cards
 
 from collections import namedtuple
@@ -169,3 +169,66 @@ NFC generates the smallest string possible. It is recommended to use NFC
 175 Functions are first-class objects (for example, round() is of <class 'builtin_function_or_method'>. User functions are <class 'function'>)
 
 177 A higher-order function is one that accepts functions as arguments or returns a function
+
+179 all(iterable) checks whether all values are True (or truthy), any(iterable) checks if at least one is truthy
+
+180 a lambda expression's body is limited to pure expressions (assignments, while, try are not allowed)
+
+181 The 7 callable objects are:
+- builtin functions
+- builtin methods
+- user-defined functions
+- user-defined methods
+- classes (__new__, then __init__ are called)
+- instances (if __call__ is defined)
+- generator functions (functions or methods that have the yield keyword)
+
+182 callable() checks if an object is callable
+
+182 When creating an instance that accepts a list, it's a good idea to make a local copy: self._items = list(items)
+
+185 * and ** in function parameters
+
+187 required keyword parameters may be placed after a single * in the parameter list: def f(a, *, b): ...
+
+190 how to use 'signature' in the 'inspect' module
+
+192 function annotations such as def clip(text:ster, maxLen:'int > 0'=80) -> str: serve merely as metadata. There are no checks or guarantees
+
+195 the 'operator' module includes many arithmetic operators that are more readable than an equivalent lambda expression.
+
+from functools import reduce
+from operator import mul
+
+def fact(n):
+    return reduce(mul, range(1, n+1))
+
+195 operator.itemgetter(i, j, ..., k) work like lst[i], returning the value of the ith item (or a tuple if there are many indices).
+
+It can be used as the key(s) in sorting with respect to one or more columns
+
+a = [0, 10, 20]
+ig = itemgetter(0, 2)
+ig(a)  # (0, 20)
+
+sorted(b, key=itemgetter(1))
+
+196 attrgetter extract attributes (fields) from objects
+
+197 iadd, iand, etc. are inplace operator like += and &=
+
+197 methodcaller(f, g, ...) calls the methods f, g, etc. on the given ovject argument
+
+198 functools.partial creates a new function with some of the arguments of the original function fixed (frozen in place)
+
+def f(a, b):
+    return a + b
+    
+addTo9 = partial(f, 9)
+
+addTo9(1)  # 10
+
+If a function is called often with the same argument, such as unicode.normalize('NFC', s), it may be worthwhile to use partial.
+
+200 partialmethod works on methods
+
