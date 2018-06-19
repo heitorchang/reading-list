@@ -267,3 +267,58 @@ target = decorate(target)
 224 decorators are run when a module is loaded (import time), and not at runtime
 
 227 using a decorator to add (promo) functions to a registry
+
+229 variables that are assigned in a function are considered local
+
+230 a variable can be declared global in a function
+
+232 a closure is a function with an extended scope, enclosing non-global variables not defined in its body
+
+234 variables not associated in the local scope are "free variables"
+
+234 closures can be inspected with fn.__code__.co_varnames, .co_freevars, and fn.__closure__
+
+235 the only scenario where a function uses external, non-global variables is when it is nested in another function
+
+236 because variable assignments can only be done with local variables, the nonlocal declaration is needed in creating closures
+
+237 'clock' decorator example
+
+239 @functools.wraps copies relevant attributes from the decorated function to the decorator
+
+240 @functools.lru_cache() implements memoization. It stands for Least Recently Used (a limited cache where items not recently used are discarded)
+
+241 @functools.lru_cache() is written with parentheses. It has default arguments maxsize=128 and typed=False. If maxsize=None, the cache is unlimited. The cache size should be a power of 2. Parameters of the decorated function must be hashable
+
+244 there is no function or method overloading in Python
+
+244 @singledispatch is used to define a generic function. A different implementation is picked based on the type of the first argument. Each implementation should look like:
+
+@singledispatch
+def htmlize(obj):
+    ...
+
+@htmlize.register(numbers.Integral)
+def _(n):
+    ...    
+
+245 if possible, register functions with ABCs instead of concrete types like int or list
+
+246 @singledispatch offers modular extension: code is not limited to a single class (like Java) or a single function (with if/elif/else blocks)
+
+246 stacking decorators like this:
+
+@d1
+@d2
+def f():
+    ...
+
+is the same as d1(d2(f))
+
+247 to create parametrized decorators, a decorator factory must be created. This decorator factory should accept the desired parameters, create a decorator that decorates the target function, and finally return it.
+
+258 variables are labels, not boxes (if you put the same list in two boxes, changing one will in fact affect both)
+
+258 a variable is assigned to an object, and not the other way around
+
+260 several variables assigned to the same object are aliases
