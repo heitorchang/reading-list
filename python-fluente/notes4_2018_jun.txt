@@ -363,4 +363,51 @@ immutable arguments are not changed, while mutable ones can be altered in place.
 
 293 a @staticmethod does not accept a special first parameter. It is like a regular function that happens to be inside a class definition
 
+296 str.format() can be used with datetime objects
+
+from datetime import datetime
+"It is now {:%I:%M %p}".format(datetime.now())
+
+296 custom __format__(self, fmt_spec='')
+
+299 using two underscores at the beginning of a attribute name makes it private. @property marks a getter method of a property. The method name should be named after the private attribute.
+
+def __init__(self, x):
+    self.__x = float(x)
+
+@property
+def x(self):
+    return self.__x
+
+299, 301 a hashable instance should be immutable because the hash value of any instance should not change
+
+300 a custom __hash__ function can be the XOR (^) of the hashes of its components
+
+305 adding two underscores (__myAttr) to a name "mangles" the name. It will become _MyClass__myAttr and prevents accidental access, but does not forbid access (like 'private' in Java).
+
+306 by convention, a single leading underscore has the same "protective" effect without mangling the name
+
+307 __slots__ saves memory, but are not inherited. __slots__ attributes must be defined in each class individually
+
+307 a tuple can be used in defining __slots__
+
+class Vector2d:
+    __slots__ = ('__x', '__y')
+
+309 if weak references are needed with custom classes that use __slots__, __weakref__ must be included in __slots__
+
+309 in general, __slots__ is only worthwhile if you have millions of instances
+
+310 class attributes can be used as default values for instance attributes.
+
+311 subclassing to override a class attribute is more commonplace than altering the target class' class attribute directly
+
+class ShortVector2d(Vector2d):
+    typecode = 'f'  # 'd' in original Vector2d
+
+312 in __repr__, use class_name = type(self).__name__ so it gives the proper result in subclasses
+
+315 Python's approach to attributes is the opposite of Java's: in Java, a public attribute cannot later be implemented as getters and setters without breaking existing code.
+
+In Python, public attributes can later be further controlled with properties (which work as getters and setters)
 
