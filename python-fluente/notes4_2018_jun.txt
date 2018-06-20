@@ -322,3 +322,45 @@ is the same as d1(d2(f))
 258 a variable is assigned to an object, and not the other way around
 
 260 several variables assigned to the same object are aliases
+
+262 'is' and 'is not' check identity, while == checks the values
+
+262 to check for None, use 'x is None' or 'x is not None'
+
+264 lst2 = list(lst1) and lst1[:] creates shallow copies (only references are copied)
+
+267 copy.deepcopy() creates deep copies. copy.copy creates shallow copies.
+
+269 in Python function calls, the parameters turn into aliases of the arguments (call by sharing). Arguments are passed using "call by object reference" (technically call by value, where the value is always an object reference)
+
+immutable arguments are not changed, while mutable ones can be altered in place. However, they cannot be reassigned.
+
+270 don't use mutable values as function keyword defaults
+
+273 usually, if a function or class alters mutable parameters, a copy should be created, such as list(items), so that the client's original data remains unchanged
+
+274 del only removes names, not objects
+
+274 implementing __del__ is rarely needed
+
+275 weakref.finalize registers a callback that is called when an object is destroyed
+
+276 weak references (weakref.ref) do not prevent the garbage collector from destroying an object
+
+277 it is better to use weakref collections, such as WeakKeyDictionary, WeakValueDictionary, WeakSet, and finalize
+
+279 lists and dicts cannot be targets of weakrefs, but user-defined subclasses such as class MyList(list) can be targets.
+
+280 calling copy() or constructors of immutable types return the same object
+
+282 Assigning a new value to an existing variable does not change the previously associated object. It is merely "rebinding"
+
+291 call a type constructor in a class' __init__ to capture errors when instantiating it.
+
+293 for a @classmethod, cls is used as the first parameter (instead of self for regular methods)
+
+293 classmethods are typically used as alternative constructors
+
+293 a @staticmethod does not accept a special first parameter. It is like a regular function that happens to be inside a class definition
+
+
