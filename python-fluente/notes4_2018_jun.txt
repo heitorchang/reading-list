@@ -396,7 +396,7 @@ class Vector2d:
 
 309 if weak references are needed with custom classes that use __slots__, __weakref__ must be included in __slots__
 
-309 in general, __slots__ is only worthwhile if you have millions of instances
+309, 332 in general, __slots__ is only worthwhile if you have millions of instances. it should not be used merely to prevent instance attribute creation
 
 310 class attributes can be used as default values for instance attributes.
 
@@ -410,4 +410,26 @@ class ShortVector2d(Vector2d):
 315 Python's approach to attributes is the opposite of Java's: in Java, a public attribute cannot later be implemented as getters and setters without breaking existing code.
 
 In Python, public attributes can later be further controlled with properties (which work as getters and setters)
+
+319 in implementing Vector, composition is used, not inheritance
+
+320 reprlib can generate __repr__ outputs of limited length
+
+322 calling __repr__ should never raise an Exception or Error because it is used in debugging
+
+322 a protocol is an informal interface, defined in documentation but not enforced in code
+
+322 the Python sequence protocol implies only __len__ and __getitem__
+
+323 to support iteration, only __getitem__ is required.
+
+327 to make a custom object sliceable, check for the type of index in
+
+def __getitem__(self, index):
+    if isinstance(index, slice):
+        ...
+
+329 __getattr__ is called if an attribute is not found via dot notation (myobj.x)
+
+330 implementing __setattr__ can prevent unwanted attribute assignments. usually, if __getattr__ is implemented, __setattr__ should be too
 
