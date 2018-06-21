@@ -433,3 +433,37 @@ def __getitem__(self, index):
 
 330 implementing __setattr__ can prevent unwanted attribute assignments. usually, if __getattr__ is implemented, __setattr__ should be too
 
+334 when using functools.reduce() for calculating hashes, the optional third parameter (initializer) should be 0, to avoid a TypeError with empty sequences (use 0 for +, |, and ^, and 1 for * and &)
+
+336 zip is lazy so it is perfect for checking pairs (or larger tuples) of iterables.
+
+if we assign z = zip(a, b, c), zip(*z) will reverse the operation
+
+337 use itertools.zip_longest(iter1, ..., fillvalue="_") if iterables are of different lengths
+
+344 itertools.chain(*iterables) concatenates its arguments
+
+352 An abstract class represents an interface (C++, Stroustrup)
+
+353 Generally speaking, creating custom ABCs (Abstract Base Classes) is only done by framework creators
+
+353 a class' interface is its public and inherited attributes (data and methods), including dunder methods such as __getitem__
+
+354 protocols are independent of inheritance; a class can implement many protocols
+
+355 the ABC Sequence contains __getitem__, __contains__, __iter__, __reversed__, index, and count. It inherits methods from the superclasses Container (__contains__), Iterable (__iter__), and Sized (__len__)
+
+356 the sequence protocol has two methods: __getitem__ and __len__
+
+359 monkey-patching is altering a module or class at run time
+
+361 "goose typing" (a term invented by Alex Martelli) is that isinstance(obj, abc_cls) is now OK (the metaclass of abc_cls is abc.ABCMeta)
+
+362 isinstance(x, numbers.Number) checks whether x is a number
+
+362 the class method register() allows an end-user to declare that a certain class should be a virtual subclass of an ABC
+
+363 check for a sequence with isinstance(a, collections.abc.Sequence)
+
+363 issubclass() is more acceptable when checking if a class subclasses ABCs
+
