@@ -1,0 +1,7 @@
+In Python 3.7:
+
+asyncio deprecations
+
+Support for directly await-ing instances of asyncio.Lock and other asyncio synchronization primitives has been deprecated. An asynchronous context manager must be used in order to acquire and release the synchronization resource. See Using locks, conditions and semaphores in the async with statement for more information. (Contributed by Andrew Svetlov in bpo-32253.)
+
+The asyncio.Task.current_task() and asyncio.Task.all_tasks() methods have been deprecated. (Contributed by Andrew Svetlov in bpo-32250.)
