@@ -502,3 +502,30 @@ if we assign z = zip(a, b, c), zip(*z) will reverse the operation
 391 Strong vs. Weak typing: strong typing does not implicitly convert between types.
 
 Static vs. Dynamic typing: static typing checks types during compile time. Dynamic typing does so at run time
+
+397 subclassing builtins is error-prone. Subclass UserDict, UserList, and UserString instead.
+
+399 diamond inheritance problem
+
+400 a superclass' method may be called directly, passing the instance as the argument explicitly.
+
+401 The Method Resolution Order (__mro__) defines the specific order when traversing the inheritance graph.
+
+401 super() is safer and more flexible if there are future changes
+
+407 Inheritance may be used to create a subtype (is-a) or to avoid duplicating implementations
+
+Interfaces should explicitly be coded as ABCs
+
+Classes designed to offer methods for unrelated subclasses should be mixin classes. Mixins should never be instantiated and their names should end in "Mixin". Concrete classes should inherit from more than one mixin
+
+408 An ABC can be a mixin, but not necessarily the other way around
+
+ABC concrete methods should only depend on its own (and superclasses') methods.
+
+Concrete classes should have only at most one other concrete superclass. The others should be ABCs or mixins
+
+409 an aggregate class combines ABCs and mixins in an useful manner
+
+Composition is typically more flexible than inheritance
+
