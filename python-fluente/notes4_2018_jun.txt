@@ -264,7 +264,7 @@ def target():
     print("running target")
 target = decorate(target)
 
-224 decorators are run when a module is loaded (import time), and not at runtime
+224 decorators are run when a module is loaded (import time), and not at run time
 
 227 using a decorator to add (promo) functions to a registry
 
@@ -467,3 +467,38 @@ if we assign z = zip(a, b, c), zip(*z) will reverse the operation
 
 363 issubclass() is more acceptable when checking if a class subclasses ABCs
 
+365 by subclassing collections.MutableSequence we must implement __setitem__, __delitem__, and insert
+
+367, 371 most ABCs are in collections.abc. The abc module has abc.ABC, which is needed to create new ABCs.
+
+367 a mixin method is a concrete implementation of an ABC method or of a mixin class
+
+369 callable() checks if an object can be invoked, but there is no hashable(). Use isinstance(obj, collections.Hashable) instead
+
+369 numbers.Number is the highest type of the numerical tower, then Complex, Real, Rational, and Integral
+
+369 Decimal does not belong to any of numbers' classes
+
+370 implementation of a Tombola ABC to represent picking and removing numbers randomly
+
+371 @abc.abstractmethod marks an abstract method. Its body is empty except for a docstring (don't write anything, not even a pass or ...)
+
+372 an ABC may have concrete methods. They should only count on the interface defined by the ABC
+
+372 an abstract method may have an implementation, even if subclasses override them. To use them, use super()
+
+373 LookupError is a superclass of IndexError and KeyError
+
+375 @abstractmethod should be the innermost decorator (closest to def)
+
+376 randomizer = random.SystemRandom() offers "random bytes suitable for cryptographic applications"
+
+378, 384 @MyABC.register or MyABC.register(MySubclass) makes a virtual subclass of MyABC. The virtual subclass will return True for issubclass and isinstance, but will not inherit anything from MyABC. No checks are made, and unimplemented methods will raise Exceptions at run time
+
+381 __subclasses__() returns a list of direct subclasses and _abc_registry is a data attribute associated with a WeakSet with weakrefs to virtual subclasses registered with the ABC
+
+385 __subclasshook__() may cause a custom class to be recognized as a subclass of an ABC. For example, a class defining __len__ will be a subclass of abc.Sized
+
+391 Strong vs. Weak typing: strong typing does not implicitly convert between types.
+
+Static vs. Dynamic typing: static typing checks types during compile time. Dynamic typing does so at run time
