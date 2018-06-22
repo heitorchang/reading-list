@@ -529,3 +529,18 @@ Concrete classes should have only at most one other concrete superclass. The oth
 
 Composition is typically more flexible than inheritance
 
+412 Django's class-based views
+
+413 Django's dispatch is a variation of the Template Method pattern
+
+421 when overloading operators, it's best to always return a new object
+
+422 x != +x if the precision of a Decimal is changed before +x is evaluated.
+
+423 +ctr will discard the Counter's non-positive values
+
+426 __radd__ is the "reversed" or "right" add operator, called on the object to the right of the operator
+
+427 frequently, __radd__ may be as simple as return self + other
+
+429 it's better to capture TypeErrors and return NotImplemented. The interpreter can then try to call the reversed operator
