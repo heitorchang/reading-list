@@ -544,3 +544,72 @@ Composition is typically more flexible than inheritance
 427 frequently, __radd__ may be as simple as return self + other
 
 429 it's better to capture TypeErrors and return NotImplemented. The interpreter can then try to call the reversed operator
+
+430 example of goose typing: check that a number isinstance of numbers.Real
+
+435 if in doubt when implementing an operation or comparison, return NotImplemented
+
+437 when __eq__ is implemented, __ne__ returns the negation of __eq__ if it's not defined
+
+441 example of __iadd__ for AddableBingoCage
+
+442 in general, if an infix operator is designed to accept only operands of the same type as self, it is useless to implement __r_operator__ because by definition, it is only called with an operand of a different type
+
+443 operator overloading is not allowed on builtins, and only existing operators may be overloaded (except is, and, or, not)
+
+443 a = a + b always creates a new object, while += typically modifies the object in-place
+
+445 @functools.total_ordering automatically fills in missing ordering methods
+
+446 operator overloading makes mathematical formulas more readable, such as (1+rate) ** periods, instead of BigDecimal.ONE.add(rate).pow(periods) in Java.
+
+450 every generator is an iterator. An iterator retrieves items from a collection, while generators can create them on demand.
+
+451 Every Python collection is iterable.
+
+Iterators are used in for loops, constructing and extending collection types, consuming files line by line, list, dict, and set comprehensions, tuple unpacking, and function parameter unpacking
+
+453 sequences are iterable
+
+iter(obj) checks if the object's __iter__ is implemented. If not, it checks for __getitem__. An iterator will be created that will try accessing the items, starting from 0
+
+Otherwise, a TypeError is raised
+
+454 try calling iter(x) and handle a TypeError if it is raised, instead of isinstance(x, abc.Iterable)
+
+455 an iterable is any object from which iter() can obtain an iterator. Objects that implement __iter__ (that returns an iterator) is an iterable.
+
+Sequences are always iterable, as well as objects that implement __getitem__, counting from 0
+
+456 the default interface of an iterator is:
+
+__next__ returns the next item, or raises StopIteration if there are none left
+
+__iter__ returns self, for use in places like for loops that expect iterables
+
+456 collections.abc.Iterator is a subclass of Iterable
+
+457 the best way of checking if x is an iterator is: isinstance(x, abc.Iterator)
+
+458 an exhausted iterator must be recreated again. iter(it) returns self.
+
+458 an iterator is any object that implements __next__, without arguments, that returns the next item of a series or raises StopIteration when done. Iterators implementing __iter__ are also iterable
+
+460 __iter__ in iterables instantiate a new iterator.
+
+461 iterators are iterable, but iterables are not iterators. Do not make an iterable an iterator also.
+
+461 it should be possible to obtain multiple, independent iterators from the same iterable instance, which is not possible if the instance is both an iterable and an iterator
+
+461 a Pythonic implementation of an iterable uses a generator function to replace a custom iterator. (example of a Sentence class)
+
+def __iter__(self):
+    for word in self.words:
+        yield word
+
+462 a generator function is a factory of generators. It has a yield statement in its body. Execution is suspended at the point after the next yield statement.
+
+464 a generator creates values; it does not return them. A return statement in a generator function raises StopIteration
+
+
+
