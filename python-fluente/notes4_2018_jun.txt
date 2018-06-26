@@ -611,5 +611,80 @@ def __iter__(self):
 
 464 a generator creates values; it does not return them. A return statement in a generator function raises StopIteration
 
+466 re.finditer returns a generator that can be used to make the Sentence class lazy (return one word at a time)
 
+467 a genexp is a lazy listcomp
 
+470 if a genexp is passed as the only argument of a function or constructor, the surrounding pair of parentheses are not needed
+
+471 ArithmeticProgression generates numbers starting from begin, stepping up to end (or forever if end=None)
+
+471 if f = 3.2 is a float, and i = 2 is an int, type(f)(i) coerces i to a float
+
+472 if the main purpose of a class is to implement __iter__, it can be reduced to a generator function
+
+473 itertools.count is a generator that returns numbers given a starting point and step
+
+itertools.takewhile returns a generator given a predicate and another generator. Results are returned until the predicate is False
+
+takewhile(lambda n: n < 5, count(1))  # <1, 2, 3, 4>
+
+475 compress(it, selector) selectively picks items of it
+compress('Aardvark', (1,0,1,1,0,1))  # ['A', 'r', 'd', 'a']
+
+dropwhile(predicate, it) discards elements until predicate is False. takewhile returns elements until predicate is False
+
+filter(pred, it) returns elements satisfying predicate. filterfalse is the opposite
+
+islice(it, stop) or islice(it, start, stop, step=1) is similar to regular slices but can be used with any iterable and is lazy
+
+476 accumulate(it, [func]) produces accumulated sums, or applies func (if given) to the first pair of items and then each item in the iterable
+
+enumerate(it, start=0) creates tuple pairs (idx, item), (idx+1, next_item), and so on
+
+map(func, it, [it2, ..., itn]) applies func to each item of it. If several iterables are given, func must accept that number of arguments.
+
+starmap(func, it) applies func(*iit) to items iit produced by it.
+
+478 chain(it1, ..., itN) concatenates the given iterables
+
+chain.from_iterable(it) produces all items from each iterable created by it. it should produce a series of iterables, such as a list of iterables
+
+product(it1, ..., itN, repeat=1) is the Cartesian product, with iterables repeated the given number of times. This is like creating sequences from nested for loops
+
+zip(it1, ..., itN) produces tuples from the N iterables in parallel. Stops when the shortest iterable runs out
+
+zip_longest(it1, ..., itN, fillvalue=None) fills gaps with fillvalue
+
+480 combinations(it, out_len)
+combinations_with_replacement(it, out_len)
+cycle(it) repeatedly generates elements of it
+permutations(it, out_len=None) by default, out_len=len(list(it))
+repeat(object, [times]) if times is not given, the object is repeated endlessly
+
+483 groupby(it, key=None) creates tuples (key, group) where group is a generator that produces items matching the key
+
+reversed(seq) works on sequences or classes implementing __reversed__
+
+tee(it, n=2) returns a tuple of n independent generators
+g1, g2 = tee('ABC')
+
+485 a simple usage of 'yield from' replaces nesting a for loop:
+
+def myChain(*iterables):
+    for i in iterables:
+        yield from i  # replaces for item in i: yield item
+
+486 all(it), any(it), max(), min(), sum(), reduce(func, it, [initial])
+
+488 iter(func, sentinel) creates an iterator that repeatedly
+
+491 the value passed to the .send() method will be the value of the corresponding yield expression in the generator. Bidirectional data transfer is possible
+
+- generators produce data for iteration
+- coroutines are data consumers
+- coroutines are not related to iteration
+
+496 in one point of view, generators are iterators because they implement __next__ and __iter__. But iterators are not generators.
+
+However, enumerate creates its tuples, so it's not an iterator in the original Design Patterns sense.

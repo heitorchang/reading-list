@@ -8,7 +8,7 @@ for ch in range(len(firstPages)-1):
 
 * long chapter
     
-Chapter 1  : 27 16    Python Data Model
+Chapter 1  : 27 16    Python Data Model         11.jun.2018
 Chapter 2  : 43 50    A Collection of Sequences
 Chapter 3  : 93 36    Dicts and Sets
 Chapter 4  : 129 45   Text vs. Bytes
@@ -21,10 +21,10 @@ Chapter 10 : 318 34   Hacking Sequences
 Chapter 11 : 352 43 * Interfaces
 Chapter 12 : 395 24   Inheritance
 Chapter 13 : 419 30   Operator Overloading
-Chapter 14 : 449 50 * Iterables
+Chapter 14 : 449 50 * Iterables                 26.jun.2018
 Chapter 15 : 499 16   Context Managers
 Chapter 16 : 515 45 * Coroutines
-Chapter 17 : 560 34   Concurrency with Futures
+Chapter 17 : 560 34   Concurrency with Futures  
 Chapter 18 : 594 49 * Concurrency with asyncio
 Chapter 19 : 643 44 * Dynamic Attributes
 Chapter 20 : 687 31   Attribute Descriptors
