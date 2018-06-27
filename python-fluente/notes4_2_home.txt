@@ -1,0 +1,72 @@
+# notes 4 continued
+
+503 the context manager object is the result of evaluating the expression after with, but the value associated to the target variable is the result of the call to __enter__ in the context manager
+
+For example, open() returns a TextIOWrapper and its __enter__ method returns self.
+
+On completion, __exit__ is called on the context manager, not the object returned by __enter__
+
+'as x' is optional
+
+505 contextlib.redirect_stdout temporarily replaces sys.stdout
+
+__exit__(self, exc_type, exc_value, traceback) is the signature for __exit__. exc refers to an exception that may be raised. They are the same as the arguments given by sys.exc_info() in a finally block
+
+506 some examples of context managers are:
+
+- sqlite3 transactions
+- threading locks and conditions
+- Decimal localcontexts
+- unittest.mock.patch
+
+507 contextlib.closing creates context managers out of objects implementing close()
+
+@contextlib.contextmanager creates a context manager out of a simple generator function
+
+ContextDecorator is a base class that defines context managers from a class that can also be used as a function decorator, executing it in a managed context
+
+ExitStack calls the stacked __exit__ methods of multiple context managers
+
+508 @contextmanager is used with a generator, where the code before yield is executed as __enter__, the value yielded becomes the target variable (as target) and the code after the yield runs as __exit__
+
+509-510 error handling should be done with the yield inside a try block
+
+try:
+    yield "JABBERWOCKY"
+except ZeroDivisionError:
+    msg = "Do not divide by zero"
+finally:
+    sys.stdout.write = original_write
+    if msg:
+        print(msg)
+
+510 you must explicitly reraise an exception in the decorated function if you don't want @contextmanager to suppress it.
+
+515 normally, a caller sends values to a coroutine with co.send(datum). Usually, yield appears on the right side of an assignment (datum = yield)
+
+coroutines enable cooperative multitasking. each coroutine yields control to a central scheduler so other coroutines may be activated
+
+with respect to coroutines, yield is used for flow control.
+
+516 using .send(), the data sent becomes the value of the yield in the generator function
+
+.throw() and .close() allow raising an exception in the generator and terminating it.
+
+a generator may return a value with the 'return' statement
+
+'yield from' simplifies nested generators
+
+a simple coroutine must be started (also called priming) by calling next(coro) or coro.send(None), otherwise we get a TypeError (can't send non-None value to a just-started generator).
+
+518 inspect.getgeneratorstate() returns a coroutine's one of 4 states:
+GEN_CREATED, GEN_RUNNING, GEN_SUSPENDED, or GEN_CLOSED
+
+520 execution stops exactly at the yield expression. Remember that in assignment statements, the right side is evaluated first.
+
+---,
+b = \ yield a  # this side is evaluated first
+     '--------
+
+'a' is returned to the caller, and b will only be assigned after .send() is called.
+
+521 Example: averager()
