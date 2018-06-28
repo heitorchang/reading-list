@@ -1,4 +1,4 @@
-# notes 4 continued
+# notes 4 continued (merge with original notes4 then git rm this file)
 
 503 the context manager object is the result of evaluating the expression after with, but the value associated to the target variable is the result of the call to __enter__ in the context manager
 
@@ -70,3 +70,64 @@ b = \ yield a  # this side is evaluated first
 'a' is returned to the caller, and b will only be assigned after .send() is called.
 
 521 Example: averager()
+
+522 custom @coroutine decorator that prepares a coroutine (calls next())
+
+524 an unhandled exception in a coroutine terminates it (returns StopIteration)
+
+525 coro.throw(SomeException) makes the yield raise the given Exception. It may be handled inside the coroutine
+
+coro.close() raises GeneratorExit and halts the coroutine
+
+527 if some cleanup is necessary independently of how the coroutine stops, try/finally blocks are needed.
+
+530 when a generator calls 'yield from subgen()', subgen takes control and returns values to whoever called gen. It is like calling subgen directly. While subgen runs, gen is blocked.
+
+yield from 'AB' can replace for c in 'AB': yield c
+
+531 the true power of yield from is to open a bidirectional channel between the outermost caller and the innermost subgenerator, without much code in between.
+
+532 in 'yield from' contexts, a delegating generator is the generator containing the 'yield from <iterable>' expression
+
+the 'subgenerator' is the generator obtained from <iterable>
+
+the 'caller' is the client code that calls the delegating generator
+
+533 the averager_count() coroutine is the subgenerator. The delegating generator is:
+
+def grouper(results, key):
+    while True:
+        results[key] = yield from averager_count()
+
+the client is:
+
+results = {}
+for key, values in data.items():
+    group = grouper(results, key)
+    next(group)
+    for value in values:
+        group.send(value)
+    group.send(None)
+
+537 any value produced by the subgenerator is passed directly to the client code
+
+any value sent with .send() is passed to the subgenerator. if None is sent, the subgenerator's __next__() is called. If StopIteration is raised, the delegating generator resumes execution. Other exceptions are propagated to the delegating generator.
+
+return expr raises StopIteration(expr) on the generator's exit
+
+Exceptions (except GeneratorExit) thrown in the delegating generator using .throw() are passed to the subgenerator's .throw().
+
+If GeneratorExit or .close() is called in the delegating generator, it is also called in the subgenerator.
+
+543 In a DES (Discrete Event Simulation), the clock ticks jump from simulated events
+
+544 SimPy package is designed for running simulations
+
+Taxi simulation: Each taxi makes a fixed number of trips and then goes home
+
+549 queue.PriorityQueue is used for storing events
+
+560 futures are objects that represent the asynchronous execution of an operation.
+
+563 call sys.stdout.flush() to display accumulated text
+
