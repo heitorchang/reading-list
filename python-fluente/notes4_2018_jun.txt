@@ -1009,3 +1009,36 @@ passing None means using the default pool of threads
 622 callback nesting or chaining can be replaced by a coroutine with multiple yield froms
 
 623 the price to pay for using a coroutine is the more complicated setup: loop.create_task(three_stages(request1))
+
+624 get flag image and country name from a JSON file
+
+626 use yield from with coroutines and asyncio.Future instances
+
+630 asyncio.start_server()
+loop.run_until_complete(server.wait_closed())
+
+632 asyncio.streams has a ready-to-use server. We only need to implement a handler function.
+
+there is also a lower-level transports module.
+
+633 loop.create_server()
+
+host = loop.run_until_complete(init(loop, address, port))
+
+636 the 'home' function shown is not asynchronous. It is very much like a view in Django
+
+637 implementing an asynchronous page display or even infinite scrolling is left as an exercise.
+
+644 properties can be used to replace a public attribute (data or method) with access methods (getters and setters)
+
+there is a rich API to control attribute access and to implement dynamic attributes
+
+__getattr__ and __setattr__ are called to evaluate dot notation expressions (obj.attr)
+
+649 __getattr__ is called only if there was no attribute found (in the instance, class, or superclasses)
+
+650 FrozenJSON allows attribute access through dot notation (instead of obj[attr])
+
+653 __new__ is the real constructor. It passes the new instance to __init__. __new__ is rarely implemented
+
+654 the shelve and pickle modules
