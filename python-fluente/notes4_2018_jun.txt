@@ -882,3 +882,25 @@ all standard library functions that block I/O free the GIL. Despite the existenc
 576 Executor.map returns the Futures' results in the same order as they were called. If the first Future takes 10 seconds to finish, and the others only one second, the results will be blocked.
 
 To have results shown as they arrive, a combination of Executor.submit() and futures.as_completed() is needed
+
+582 'raise' by itself reraises the current Exception
+
+584 flags download example with futures.as_completed
+
+770 (Appendix) enum.Enum is a generic enumeration
+
+with futures.ThreadPoolExecutor(max_workers=concur_req) as executor:
+
+in executor.submit(download_one, cc, base_url, verbose), the first argument is the callable to be executed. The remaining arguments are passed to the callable.
+
+586 a useful idiom with futures.as_completed() is to create a dict to map each future to other data that may be useful when the future completes
+
+587 threading provides more basic constructs such as Thread, Lock, and Semaphore. They can be used with thread-safe queues from the queue module.
+
+If ProcessPoolExecutor is insufficient for I/O-bound applications, there is the multiprocessing module.
+
+594 concurrency is about dealing with many things at the same time (structure)
+
+parallelism is about doing many things at the same time (execution)
+
+595 asyncio implements concurrency with coroutine driven by an event loop
