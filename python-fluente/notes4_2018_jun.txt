@@ -836,3 +836,49 @@ Taxi simulation: Each taxi makes a fixed number of trips and then goes home
 
 563 call sys.stdout.flush() to display accumulated text
 
+565 the main resources of concurrent.futures are ThreadPoolExecutor and ProcessPoolExecutor. They implement an interface allowing you to submit callables to be executed in separate threads or processes.
+
+from concurrent import futures
+
+workers = min(MAX_WORKERS, len(country_list))
+with futures.ThreadPoolExecutor(workers) as executor:
+    res = executor.map(download_one, country_list)
+    return len(list(res))
+
+567 there are two Future classes: concurrent.futures.Future and asyncio.Future. They have the same purpose: to represent a delayed process that may or may not have been concluded.
+
+Future is similar to Promise in JavaScript
+
+Futures encapsulate pending operations so they may be placed in queues and their results and inspect their results when available
+
+We don't need to create Futures. Passing a callable to Executor.submit() will create one automatically
+
+Both Future objects have a .done() method that is non-blocking and returns a Boolean telling whether the associated callable executed or not.
+
+a callable passed to .add_done_callback() will be called with the Future as the only argument when it has been executed.
+
+.result() returns the result of the callable, reraises an Exception. In concurrent.futures.Future, f.result() blocks. An optional 'timeout' value can be passed, which will raise TimeoutError if the delayed process still hasn't returned.
+
+Though .result() exists in asyncio.Future, it is preferable to use yield from.
+
+568 Executor.map() returns an iterator where __next__ calls .result() of each Future
+
+as_completed() accepts an iterable of futures and returns an iterator that yields each as it completes.
+
+569 if future.result() is inside as_completed(), it will not block because as_completed() only yields completed futures
+
+570 none of the given scripts so far download in parallel (only one thread is active)
+
+CPython's internal data structures are not thread-safe, so the GIL (Global Interpreter Lock) allows only a single thread at a time to execute bytecode.
+
+It is not the language's limitation. Jython does not have this limitation.
+
+all standard library functions that block I/O free the GIL. Despite the existence of the GIL, Python threads are perfectly usable in I/O-bound applications
+
+571 ProcessPoolExecutor allows parallel processing and is ideal for CPU-intensive tasks
+
+573 PyPy is good for CPU-intensive tasks
+
+576 Executor.map returns the Futures' results in the same order as they were called. If the first Future takes 10 seconds to finish, and the others only one second, the results will be blocked.
+
+To have results shown as they arrive, a combination of Executor.submit() and futures.as_completed() is needed
