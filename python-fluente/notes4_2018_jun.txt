@@ -903,7 +903,7 @@ If ProcessPoolExecutor is insufficient for I/O-bound applications, there is the 
 
 parallelism is about doing many things at the same time (execution)
 
-595 asyncio implements concurrency with coroutine driven by an event loop
+595 asyncio implements concurrency with coroutine driven by an event loop. 
 
 596 spinning bar example with threading
 
@@ -947,3 +947,65 @@ if result() is called on an unfinished asyncio.Future, we get an InvalidStateErr
 
 result = yield from my_future
 
+my_future may be a regular function that returns a Future or Task
+
+asyncio.ensure_future(coro_or_future, *, loop=None) accepts either coroutines or futures as the first argument. If loop is None, asyncio.get_event_loop() is used.
+
+BaseEventLoop.create_task(coro) schedules the coroutine for execution and returns an asyncio.Task. It may return an instance compatible with Task if called from a subclass of BaseEventLoop
+
+605 for quick testing, use:
+
+import asyncio
+
+def run_sync(coro_or_future):
+    loop = asyncio.get_event_loop()
+    return loop.run_until_complete(coro_or_future)
+
+a = run_sync(some_coro())
+
+605 flags download with asyncio
+
+607 asyncio.wait() is non-blocking. It's a coroutine that ends when all coroutines passed to it end. It accepts timeout and return_when to make it stop early.
+
+wait_coro = asyncio.wait(to_do)
+res, _ = loop.run_until_complete(wait_coro)
+loop.close()
+
+608 run_until_complete() returns a tuple of the set of completed Futures and the incomplete ones.
+
+608 trick: the general logic of a coroutine can be better understood if we pretend yield froms are not there.
+
+609 yield from foo does not block because the current coroutine (the delegating generator) is suspended.
+
+coroutine chains are driven by an API call to asyncio, such as loop.run_until_complete().
+
+the innermost coroutine at the end of the chain always delegate with yield from a method of asyncio or coroutines of libraries that implement higher-level protocols
+
+611 the memory overhead per thread is in the order of megabytes, so it's infeasible to create one per connection.
+
+callbacks are the traditional method of implementing asynchronous calls. Instead of waiting for a response, we register a function to be called when something happens. In this manner, every call is non-blocking
+
+such a framework depends on interrupts, polling, background processes, etc.
+
+from the event loop's point of view, calling a callback or .send() is practically the same.
+
+615 asyncio.Semaphore is a synchronization device that limits the number of concurrent requests
+
+616 a Semaphore contains an internal counter which decrements on .acquire() and increments on .release(). If the counter is zero, acquire() blocks until another coroutine releases.
+
+with (yield from semaphore):
+
+617 main calls download_many (a regular function), which instantiates the downloader_coro
+
+618 we cannot map futures to country codes because internally, asyncio replaces supplied futures with others so that in the end the same results are provided. A custom FetchError encapsulates a network Exception and saves the country code for error reporting.
+
+619 internally, asyncio's event loop has an executor of a pool of threads, and you can send callables to be executed in it with run_in_executor
+
+620 loop = asyncio.get_event_loop()
+loop.run_in_executor(None, save_flag, image, cc.lower() + '.gif')
+
+passing None means using the default pool of threads
+
+622 callback nesting or chaining can be replaced by a coroutine with multiple yield froms
+
+623 the price to pay for using a coroutine is the more complicated setup: loop.create_task(three_stages(request1))
