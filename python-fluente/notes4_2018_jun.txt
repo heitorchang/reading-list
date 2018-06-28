@@ -904,3 +904,46 @@ If ProcessPoolExecutor is insufficient for I/O-bound applications, there is the 
 parallelism is about doing many things at the same time (execution)
 
 595 asyncio implements concurrency with coroutine driven by an event loop
+
+596 spinning bar example with threading
+
+597 calling time.sleep() blocks the main thread, but the GIL is freed
+
+spinner = threading.Thread(target=spin, args=('Thinking...', signal))
+
+spinner.join() waits until the thread terminates.
+
+599 decorate coroutines with @asyncio.coroutine
+
+time.sleep() should become asyncio.sleep()
+
+async is now a reserved keyword, so asyncio.async became asyncio.ensure_future. It schedules Tasks
+
+a Task is stopped with .cancel()
+
+in main, loop = asyncio.get_event_loop()
+result = loop.run_until_complete(supervisor())
+loop.close()
+
+supervisor() calls asyncio.ensure_future(). It is the heart of the given example
+
+601 an asyncio.Task is like a green thread (scheduled by the runtime library, not natively)
+
+602 a coroutine is driven by 'yield from'
+
+Task.cancel() raises CancelledError
+
+the 'supervisor' coroutine must be driven by loop.run_until_complete
+
+coroutines are synchronized by definition. yield or yield from returns control back to the scheduler
+
+603 in asyncio, BaseEventLoop.create_task() receives a coroutine, schedules it for execution, and returns a Task instance (a subclass of Future)
+
+asyncio.Future has the done(), add_done_callback(), and result() methods, among others. However, yield from is more often used instead of these methods.
+
+if result() is called on an unfinished asyncio.Future, we get an InvalidStateError. yield from is the typical way to get the result of a asyncio.Future
+
+604 callback or post-processing is done after the yield from my_future expression
+
+result = yield from my_future
+
