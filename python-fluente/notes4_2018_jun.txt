@@ -688,3 +688,151 @@ def myChain(*iterables):
 496 in one point of view, generators are iterators because they implement __next__ and __iter__. But iterators are not generators.
 
 However, enumerate creates its tuples, so it's not an iterator in the original Design Patterns sense.
+
+499 'with' defines a temporary context and undoes it under the control of a context manager. It is commonly used to open files and close them automatically.
+
+500 'else' after a 'for' will be executed if the loop reaches its end (that is, it wasn't interrupted by a 'break')
+
+'else' after 'while' executes similarly, if the loop wasn't ended by a 'break'
+
+'else' after 'try' executes if no exception was raised.
+
+these 'else's are also ignored if an exception, 'return', 'break', or 'continue' exits the command's block
+
+502 context managers exist to control 'with' blocks, just as iterators control 'for' loops
+
+'with' simplifies the try/finally pattern
+
+the context manager protocol is made up of __enter__ and __exit__.
+
+503 the context manager object is the result of evaluating the expression after with, but the value associated to the target variable is the result of the call to __enter__ in the context manager
+
+For example, open() returns a TextIOWrapper and its __enter__ method returns self.
+
+On completion, __exit__ is called on the context manager, not the object returned by __enter__
+
+'as x' is optional
+
+505 contextlib.redirect_stdout temporarily replaces sys.stdout
+
+__exit__(self, exc_type, exc_value, traceback) is the signature for __exit__. exc refers to an exception that may be raised. They are the same as the arguments given by sys.exc_info() in a finally block
+
+506 some examples of context managers are:
+
+- sqlite3 transactions
+- threading locks and conditions
+- Decimal localcontexts
+- unittest.mock.patch
+
+507 contextlib.closing creates context managers out of objects implementing close()
+
+@contextlib.contextmanager creates a context manager out of a simple generator function
+
+ContextDecorator is a base class that defines context managers from a class that can also be used as a function decorator, executing it in a managed context
+
+ExitStack calls the stacked __exit__ methods of multiple context managers
+
+508 @contextmanager is used with a generator, where the code before yield is executed as __enter__, the value yielded becomes the target variable (as target) and the code after the yield runs as __exit__
+
+509-510 error handling should be done with the yield inside a try block
+
+try:
+    yield "JABBERWOCKY"
+except ZeroDivisionError:
+    msg = "Do not divide by zero"
+finally:
+    sys.stdout.write = original_write
+    if msg:
+        print(msg)
+
+510 you must explicitly reraise an exception in the decorated function if you don't want @contextmanager to suppress it.
+
+515 normally, a caller sends values to a coroutine with co.send(datum). Usually, yield appears on the right side of an assignment (datum = yield)
+
+coroutines enable cooperative multitasking. each coroutine yields control to a central scheduler so other coroutines may be activated
+
+with respect to coroutines, yield is used for flow control.
+
+516 using .send(), the data sent becomes the value of the yield in the generator function
+
+.throw() and .close() allow raising an exception in the generator and terminating it.
+
+a generator may return a value with the 'return' statement
+
+'yield from' simplifies nested generators
+
+a simple coroutine must be started (also called priming) by calling next(coro) or coro.send(None), otherwise we get a TypeError (can't send non-None value to a just-started generator).
+
+518 inspect.getgeneratorstate() returns a coroutine's one of 4 states:
+GEN_CREATED, GEN_RUNNING, GEN_SUSPENDED, or GEN_CLOSED
+
+520 execution stops exactly at the yield expression. Remember that in assignment statements, the right side is evaluated first.
+
+---,
+b = \ yield a  # this side is evaluated first
+     '--------
+
+'a' is returned to the caller, and b will only be assigned after .send() is called.
+
+521 Example: averager()
+
+522 custom @coroutine decorator that prepares a coroutine (calls next())
+
+524 an unhandled exception in a coroutine terminates it (returns StopIteration)
+
+525 coro.throw(SomeException) makes the yield raise the given Exception. It may be handled inside the coroutine
+
+coro.close() raises GeneratorExit and halts the coroutine
+
+527 if some cleanup is necessary independently of how the coroutine stops, try/finally blocks are needed.
+
+530 when a generator calls 'yield from subgen()', subgen takes control and returns values to whoever called gen. It is like calling subgen directly. While subgen runs, gen is blocked.
+
+yield from 'AB' can replace for c in 'AB': yield c
+
+531 the true power of yield from is to open a bidirectional channel between the outermost caller and the innermost subgenerator, without much code in between.
+
+532 in 'yield from' contexts, a delegating generator is the generator containing the 'yield from <iterable>' expression
+
+the 'subgenerator' is the generator obtained from <iterable>
+
+the 'caller' is the client code that calls the delegating generator
+
+533 the averager_count() coroutine is the subgenerator. The delegating generator is:
+
+def grouper(results, key):
+    while True:
+        results[key] = yield from averager_count()
+
+the client is:
+
+results = {}
+for key, values in data.items():
+    group = grouper(results, key)
+    next(group)
+    for value in values:
+        group.send(value)
+    group.send(None)
+
+537 any value produced by the subgenerator is passed directly to the client code
+
+any value sent with .send() is passed to the subgenerator. if None is sent, the subgenerator's __next__() is called. If StopIteration is raised, the delegating generator resumes execution. Other exceptions are propagated to the delegating generator.
+
+return expr raises StopIteration(expr) on the generator's exit
+
+Exceptions (except GeneratorExit) thrown in the delegating generator using .throw() are passed to the subgenerator's .throw().
+
+If GeneratorExit or .close() is called in the delegating generator, it is also called in the subgenerator.
+
+543 In a DES (Discrete Event Simulation), the clock ticks jump from simulated events
+
+544 SimPy package is designed for running simulations
+
+Taxi simulation: Each taxi makes a fixed number of trips and then goes home
+
+549 queue.PriorityQueue is used for storing events
+
+560 futures are objects that represent the asynchronous execution of an operation.
+
+563 call sys.stdout.flush() to display accumulated text
+
