@@ -51,7 +51,7 @@ t = tuple(ord(symbol) for symbol in symbols)  # (64, 35, 36)
 t = (20, 8)
 quotient, remainder = divmod(*t)
 
-55 use * to capture excessive arguments. The starred variable may be anywhere. Unpacking structures may also be nested, such as (a, b, (c, d)).
+55 use * to capture a variable amount of arguments. The starred variable may be anywhere. Unpacking structures may also be nested, such as (a, b, (c, d)).
 
 a, b, c* = range(5)  # c is [2, 3, 4]
 
@@ -156,7 +156,7 @@ s.remove(e)   # raises KeyError if e does not exist
 
 NFC generates the smallest string possible. It is recommended to use NFC
 
-'K' stands for Compatibility. Information may be lost; for example, 4^2 may be replaced by 42.
+'K' stands for Compatibility. Information may be lost; for example, 4^2 (superscripted 2) may be replaced by 42.
 
 154 S.casefold() is used for caseless comparisons
 
