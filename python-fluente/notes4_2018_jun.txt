@@ -1097,4 +1097,47 @@ __getattribute__ is called before __getattr__. __getattr__ is called when an att
 
 684 in Python, a function call and instantiation both look the same. A factory may be better than a constructor
 
+687 Descriptors are a way of reusing the same logic when accessing several attributes
+
+a descriptor is a class that implements a protocol made up of __get__, __set__, and __delete__. Most descriptors do not implement all three
+
+688 the properties factory uses a functional programming approach, while descriptors is object-oriented
+
+a descriptor is used in a different class by declaring instances of the descriptor as class attributes
+
+in the LineItem class, there are two 'weight's, one is an instance attribute and the other is a class attribute
+
+689 descriptor class: a class implementing the descriptor protocol (Quantity)
+
+managed class: the class where the descriptor instances are declared as class attributes (LineItem). Its instances are managed instances.
+
+descriptor instance: an instance of the descriptor class, declared as a class attribute of the managed class
+
+storage attribute: an attribute of the managed instance that holds the value of a managed attribute of an instance
+
+managed attribute: a public attribute in the managed class that will be handled by a descriptor instance, with values stored in a storage attribute. A descriptor instance and a storage attribute provide the infrastructure for a managed attribute
+
+692 descriptors are based on a protocol. There is no need to make it a subclass
+
+when implementing __set__(self, instance, value), self is the descriptor instance and instance is the managed instance
+
+693 values are stored with: instance.__dict__[self.storage_name] = value
+
+694 to avoid having to repeat the attribute name with weight = Quantity('weight'), we generate a prefix _Quantity# with an incrementing counter.
+
+A pound sign is used because it makes an identifier name invalid, so we avoid users overwriting our auto-generated names
+
+695 in this case, the managed attribute and storage attribute have different names
+
+696 in __get__(self, instance, owner), owner is a reference to the managed class. It is useful if the descriptor reads class attributes
+
+697 in __get__, if instance is None: return self
+
+699 an advantage of a descriptor class is that it may be subclassed. Reusing a property factory will usually require copying code. It is also more readable than relying on closures
+
+700 refactor Quantity as the descriptor classes
+
+AutoStorage <- Validated (abstract) <- Quantity and NonBlank
+
+701 this setup is an example of the Template Method pattern
 
