@@ -189,7 +189,7 @@ NFC generates the smallest string possible. It is recommended to use NFC
 
 185 * and ** in function parameters
 
-187 required keyword parameters may be placed after a single * in the parameter list: def f(a, *, b): ..
+187 required keyword parameters may be placed after a single * in the parameter list: def f(a, *, b): ...
 
 190 how to use 'signature' in the 'inspect' module
 
@@ -296,7 +296,7 @@ target = decorate(target)
 
 @singledispatch
 def htmlize(obj):
-    ..
+    ...
 
 @htmlize.register(numbers.Integral)
 def _(n):
@@ -311,7 +311,7 @@ def _(n):
 @d1
 @d2
 def f():
-    ..
+    ...
 
 is the same as d1(d2(f))
 
@@ -427,7 +427,7 @@ In Python, public attributes can later be further controlled with properties (wh
 
 def __getitem__(self, index):
     if isinstance(index, slice):
-        ..
+        ...
 
 329 __getattr__ is called if an attribute is not found via dot notation (myobj.x)
 
@@ -1109,7 +1109,7 @@ in the LineItem class, there are two 'weight's, one is an instance attribute and
 
 689 descriptor class: a class implementing the descriptor protocol (Quantity)
 
-managed class: the class where the descriptor instances are declared as class attributes (LineItem). Its instances are managed instances.
+managed class: the class where the descriptor instances are declared as class attributes (LineItem). Its instances are managed instances
 
 descriptor instance: an instance of the descriptor class, declared as a class attribute of the managed class
 
@@ -1123,7 +1123,7 @@ when implementing __set__(self, instance, value), self is the descriptor instanc
 
 693 values are stored with: instance.__dict__[self.storage_name] = value
 
-694 to avoid having to repeat the attribute name with weight = Quantity('weight'), we generate a prefix _Quantity# with an incrementing counter.
+694 to avoid having to repeat the attribute name with weight = Quantity('weight'), we generate a prefix _Quantity# with an incrementing counter
 
 A pound sign is used because it makes an identifier name invalid, so we avoid users overwriting our auto-generated names
 
@@ -1141,3 +1141,83 @@ AutoStorage <- Validated (abstract) <- Quantity and NonBlank
 
 701 this setup is an example of the Template Method pattern
 
+703 an overriding descriptor's __set__ overrules (intercepts) the normal behavior of setting an attribute in the managed instance
+
+704 an overriding descriptor implementing both __get__ and __set__ is also called a data descriptor or enforced descriptors
+
+without __set__, a descriptor is non-overriding (also called non-data or shadowable)
+
+705 properties are overriding descriptors
+
+706 if only __set__ is implemented, reading the descriptor will return the descriptor object itself. If an instance attribute is placed directly in __dict__, reading that attribute will return the value in the __dict__
+
+707 writing an instance attribute with the same name as a non-overriding descriptor will shadow the descriptor
+
+methods are implemented as non-overriding descriptors
+
+709 class attributes may be overwritten by a class attribution (monkey-patching)
+
+although the reading of a class attribute can be controlled by a __get__ associated with the managed class, the writing of a class attribute cannot be handled by a descriptor's __set__
+
+709 a function in a class becomes a bound method because user-defined functions have a __get__ method. They work as descriptors when associated with a class
+
+710 obj.func returns a bound method, while Managed.func returns a function
+
+712 using a property is simpler tha creating a descriptor for read-only attributes
+
+if you really must use a descriptor for a read-only attribute, __set__ must be implemented. It should raise AttributeError with a suitable message only
+
+validation descriptors can work with only __set__. Values should be written directly in the instance's __dict__
+
+caching can be done with __get__ only. After performing a expensive computation, set the result as an instance attribute (overwriting the non-overriding descriptor)
+
+non-special methods can be shadowed by instance attributes
+
+714 the docstring of a descriptor class is used to document all descriptor instances in the managed class. It is a disadvantage of descriptors that does not apply to properties
+
+__delete__ intercepts deletion of managed attributes
+
+718 an example of metaprogramming is creatting a new class with a function (without using 'class')
+
+metaclasses allow the creation of new categories of classes with special characteristics, such as ABCs (Abstract Base Classes)
+
+719 record_factory is inspired by namedtuple, and creates simple classes on demand
+
+721 type(cls_name, (object,), cls_attrs) creates a new type
+
+722-723 create matching storage_names in LineItem
+
+724 @model.entity decorator modifies the LineItem class
+
+725 a drawback of decorators is that they apply only to the classes directly associated with them. Subclasses may or may not inherit the decorator's effects
+
+726 in 'import time', the bodies of all classes are executed
+
+726 evaltime.py exercise on evaluation order
+
+730 a metaclass is written like a class
+
+731 str and LineItem are instances of type. They are all subclasses of object
+
+object is an instance of type and type is a subclass of object
+
+type is an instance of type (of itself). These relationships are all 'magical'
+
+ABCMeta and Enum are metaclasses
+
+ABCMeta is an instance and subclass of type. Being a subclass of type, ABCMeta inherits the ability to create classes
+
+735 in metaclasses' __init__, substitute self with cls
+
+737 class EntityMeta(type):
+
+class Entity(metaclass=EntityMeta):
+    """Business entity with validated fields"""
+
+739 __prepare__ is called before __new__ and it creates the mapping used to fill in the class body's attributes
+
+@classmethod
+def __prepare__(cls, name, bases):
+    return collections.OrderedDict()
+
+741 cls.__bases__, __qualname__, __subclasses__(), mro()

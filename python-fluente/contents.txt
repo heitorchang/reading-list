@@ -26,6 +26,6 @@ Chapter 15 : 499 16   Context Managers
 Chapter 16 : 515 45 * Coroutines
 Chapter 17 : 560 34   Concurrency with Futures  
 Chapter 18 : 594 49 * Concurrency with asyncio  28.jun.2018
-Chapter 19 : 643 44 * Dynamic Attributes
+Chapter 19 : 643 44 * Dynamic Attributes        29.jun.2018
 Chapter 20 : 687 31   Attribute Descriptors
 Chapter 21 : 718 29   Metaprogramming with Classes
