@@ -1,0 +1,11 @@
+http://www.obeythetestinggoat.com/pages/book.html#toc
+
+"Test first! Test first!"
+
+Portuguese translation (2nd ed.)
+
+38 "Teste antes! Teste antes!"
+
+49 synonyms for "functional test" are: "acceptance test", "end-to-end test", and "black box test". They are meant to test how the application "functions" from the user's point of view
+
+58 Functional tests are "high-level" (user's point of view) and unit tests are "low-level" (programmer's point of view)
