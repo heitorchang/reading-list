@@ -9,3 +9,46 @@ Portuguese translation (2nd ed.)
 49 synonyms for "functional test" are: "acceptance test", "end-to-end test", and "black box test". They are meant to test how the application "functions" from the user's point of view
 
 58 Functional tests are "high-level" (user's point of view) and unit tests are "low-level" (programmer's point of view)
+
+61 lists/tests.py
+
+django TestCase
+found = resolve('/')
+self.assertEqual(found.func, home_page)
+
+67 lists/tests.py
+
+html = response.content.decode('utf-8')
+
+83 response = self.client.get('/')
+self.assertTemplateUsed(response, 'home.html')
+
+110 test_POST
+
+114 response['location']
+
+115 separate tests for POST and redirect
+
+117 for loop
+
+127 live_server_url
+
+131 wait_for_row_in_list_table
+
+138 definition of lists/new
+
+153 URLs without / at the end are "actions" that modify the database
+
+154 lists/views.py
+
+def new_list(request):
+    pass
+
+169 lists/tests.py
+
+class NewItemTest(TestCase)
+
+172 views.py
+def add_item(request, list_id)
+    
+191 StaticLiveServerTestCase
