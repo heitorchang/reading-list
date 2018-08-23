@@ -50,5 +50,31 @@ class NewItemTest(TestCase)
 
 172 views.py
 def add_item(request, list_id)
-    
+
+189 /static/ in Django
+
 191 StaticLiveServerTestCase
+
+196 STATIC_ROOT and collectstatic
+
+199 {% static %} tag was omitted
+
+248 from unittest import skip
+
+@skip
+def test_something(self):
+
+it's usually a bad idea
+
+251 functional_tests/base.py
+
+255 wait_for is a generic function that says "wait until this assertion passes, or until MAX_WAIT is reached"
+
+260 create a tests/ folder in a Django app and have multiple test_*.py files. Remember to add an __init__.py file
+
+265 with self.assertRaises(ValidationError):
+        item.save()
+
+checks that an action raises an error
+
+278 {% url 'new_list' %}
