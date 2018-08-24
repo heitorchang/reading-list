@@ -78,3 +78,6 @@ it's usually a bad idea
 checks that an action raises an error
 
 278 {% url 'new_list' %}
+
+279 get_absolute_url
+
