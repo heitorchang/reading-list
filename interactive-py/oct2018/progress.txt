@@ -1,3 +1,4 @@
 03 oct 2018 started
 03 oct 2018 begin 1.5
 03 oct 2018 begin 1.13.2 Inheritance, Logic gates
+05 oct 2018 begin 3.4 Stack ADT
