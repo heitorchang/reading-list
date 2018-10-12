@@ -68,7 +68,7 @@ class UnorderedList:
             previous.setNext(current.getNext())
 
     def __str__(self):
-        output = "["
+        output = "[ "
 
         current = self.head
 
@@ -78,3 +78,6 @@ class UnorderedList:
 
         output += "]"
         return output
+
+    def __repr__(self):
+        return self.__str__()
