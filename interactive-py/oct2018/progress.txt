@@ -7,3 +7,4 @@
 10 oct 2018 begin 3.21 Implementing an Unordered List (Linked List)
 14 oct 2018 begin 5.5 Hashing
 15 oct 2018 middle of 5.5.3
+16 oct 2018 begin 5.10 Shell Sort
