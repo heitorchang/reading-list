@@ -1,5 +1,5 @@
 03 oct 2018 started
-03 oct 2018 begin 1.5
+03 oct 2018 begin 1.5 Why study data structures?
 03 oct 2018 begin 1.13.2 Inheritance, Logic gates
 05 oct 2018 begin 3.4 Stack ADT
 08 oct 2018 begin 3.10 Queue
@@ -8,3 +8,4 @@
 14 oct 2018 begin 5.5 Hashing
 15 oct 2018 middle of 5.5.3
 16 oct 2018 begin 5.10 Shell Sort
+17 ovt 2018 begin 5.11 Merge Sort
