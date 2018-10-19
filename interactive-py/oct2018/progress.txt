@@ -9,4 +9,5 @@
 15 oct 2018 middle of 5.5.3
 16 oct 2018 begin 5.10 Shell Sort
 17 oct 2018 begin 6.2 Examples of trees
-18 oct 2018 begin 6.10 Binary Heap implementation | 7.6 Adjacency List Impl.
+18 oct 2018 begin 6.10 Binary Heap implem. | 7.6 Adjacency List implem.
+19 oct 2018 begin 6.12 Search Tree Operations
