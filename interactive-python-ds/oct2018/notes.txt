@@ -1,0 +1,41 @@
+https://runestone.academy/runestone/static/pythonds/index.html
+
+Problem Solving with Algorithms and Data Structures using Python
+
+1.1 Problem solving, abstraction, abstract data types
+
+1.2 Review the framework within which computer science and the study of algorithms and data structures must fit
+
+1.3 Computers are just tools
+
+An algorithm is a step-by-step list of instructions for solving any instance of a problem that might arise. They are finite and give solutions.
+
+A problem is computable if there is an algorithm to solve it. Computer Science studies both solvable and unsolvable problems
+
+Abstraction separates logical and physical perspectives. For example, the functions of a car from a logical perspective is braking, steering and accelerating. Such functions are called the interface. The user is called the client.
+
+The car's physical perspective is of interest to a mechanic. He must know how the engine works (details "under the hood").
+
+Procedural abstraction is separating the interface from its implementation. We can call math.sqrt without knowing how it works.
+
+1.4 Programming is the process of taking an algorithm and encoding it into a language's notation that is understood by a computer.
+
+Control constructs such as sequential processing, decision making and iteration allow representation of algorithmic steps unambiguously
+
+Data types provide an interpretation of raw binary data. They are also called "Primitive data types" (for example, integers)
+
+1.5 Abstractions help manage the complexity of problems.
+
+An Abstract Data Type (ADT) is a logical description of how we view the data and apply operations without regard to how it will be implemented.
+
+This level of abstraction creates an encapsulation around the data (also called information hiding)
+
+The implementation (physical view) of an ADT is a data structure
+
+The separation of logical and physical views allow an implementation-independent view of the data
+
+1.6 By seeing how algorithms are designed, we can develop pattern recognition.
+
+There will often be trade-offs we need to identify and decide upon.
+
+1.7
