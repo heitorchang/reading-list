@@ -12,3 +12,4 @@
 18 oct 2018 begin 6.10 Binary Heap implementation
 19 oct 2018 begin 6.12 Search Tree Operations
 22 oct 2018 begin 7.6 Adjacency List implementation
+23 oct 2018 begin 7.12 Building the Knight's Tour Graph

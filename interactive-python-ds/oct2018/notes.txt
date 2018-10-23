@@ -38,4 +38,95 @@ The separation of logical and physical views allow an implementation-independent
 
 There will often be trade-offs we need to identify and decide upon.
 
-1.7
+1.7 Python is an interpreted, object-oriented programming language. It considers data to be the focal point of the problem-solving process
+
+1.8 A class is a description of what the data looks like (the state) and what they can do (the behavior). A class is analogous to an Abstract Data Type.
+
+Data items are called objects (instances of a class)
+
+1.8.1 Built-in Atomic Data Types
+
+numeric: int, float
+arithmetic: +, -, *, /, **, %, //
+boolean: True, False, and, not
+<, >, <=, >=, ==, !=
+
+Assignment (theSum = 0) associates a name with a value. The variable will hold a reference to a piece of data and not the data itself.
+
+(Stack Overflow) ints are immutable, so when changing the value of a local variable (inside a function), a new integer object is created.
+
+Re-assignment inside a function moves the reference to a new object, while changes to a mutable object (alist[0] = 0) does not change the alist reference itself.
+
+Python is dynamic: the same variable can refer to many different types of data
+
+1.8.2 Built-in Collection data Types
+
+Ordered: List, String, Tuple
+Unordered: Dictionary, Set
+
+Lists are heterogeneous (elements need not be of the same class)
+
+List Operations
+indexing      [i]
+concatenation +
+repetition    *
+membership    in
+length        len()
+slicing       [a:b:step]
+
+Indices start counting with 0. Slice index a is included, but b is not.
+
+When repeating a list, the references are copied. So a repeated nested list is the same list. Changing it in one place will affect all other copies.
+
+List methods
+
+alist.append(item)
+.insert(i, item) inserts item into the ith position
+.pop(), .pop(i)
+.sort(), .reverse()
+.index(item)
+.count(item)
+.remove(item) removes the first occurrence of item
+del alist[i]
+
+list(range(5, 10, 2)) => [5, 7, 9]
+
+String methods
+(sequence operations also work)
+Alignment: center, ljust, rjust
+Case: upper, lower, swapcase, title
+count, find, rfind, index, rindex
+
+find vs. index
+s.index('a') will raise ValueError if it doesn't find the argument
+find returns -1
+Mnemonic: -1 is not found, you can't say not index. Also, -1 is the last character.
+
+split uses the argument as division points or whitespace if there are no arguments.
+
+Lists are mutable, strings and tuples are not.
+
+Sets do not allow duplicates.
+The empty set is set()
+a | b Union (all elements from both sets)
+a & b Intersection (elements common to both)
+a - b Difference (elements in a but not in b)
+a <= b Asks whether all elements of a are in b (isSubset)
+
+add, remove, pop, clear
+pop removes an arbitrary element from the set
+
+Dictionaries are collections of associated pairs of keys and values
+
+capitals = {'Iowa': 'Des Moines', 'Wisconsin', 'Madison'}
+capitals['California'] = 'Sacramento'
+
+list(adict) returns the keys
+
+keys, values, and items return objects. They may be converted to lists.
+
+adict.get('akey', 'not found') returns the value associated to 'akey' or 'not found' if that key is not present. Without the second argument, .get() returns None if the key is not found.
+
+1.9
+
+
