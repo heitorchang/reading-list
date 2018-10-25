@@ -266,3 +266,114 @@ Child class constructors need to call parent class constructors and then move on
 The connector class is not part of the gate hierarchy, but follows a "has-a" relationship. A connector has two gates. "Has-a" does not involve inheritance.
 
 2.1 Analysis
+
+Big-O execution time of common list and dictionary operations
+
+2.2 How do we decide one program is better than another?
+
+There may be many programs for the same algorithm
+
+Algorithm analysis is concerned with comparing the amount of computing resources (time and memory) each algorithm uses
+
+Benchmarking actual time to run an algorithm is not really useful because it is dependent on a particular machine, program, and language
+
+def sumOfN(n):
+    start = time.time()
+	theSum = ...
+	end = time.time()
+	return theSum, end - start
+
+2.3 Big-O notation
+
+To characterize efficiency independent of a particular program or computer, it is important to quantify the number of operations.
+
+For a function T(n) denoting the number of operations (such as assignment), the most dominant part is the "order of magnitude" function, O(f(n)). f(n) is a simple representation of the dominant part of T(n).
+
+For algorithms that depend on the exact values of the data, we may characterize their performance in terms of best case, worst case, or average case
+
+common orders of magnitude are:
+
+f(n)     name
+1        constant
+log n    logarithmic
+n        linear
+n log n  log linear
+n^2      quadratic
+n^3      cubic
+2^n      exponential
+n!       factorial
+
+2.4 Check if two strings are anagrams
+
+2.4.1 "check off" characters from the first string by replacing characters in a list (converted from the second string) with None as they are seen. It is O(n^2)
+
+2.4.2 Sort and compare
+Sort both strings alphabetically and compare them. Its time complexity depends on the sorting algorithm used, typically O(n log n)
+
+2.4.3 Brute force (exhaust all possibilities)
+There are n characters for the first position, n-1 for the second, and so on. It is O(n!)
+
+2.4.4 Count and compare
+Use a list of 26 counters, each for a possible letter. Then compare the two lists. This algorithm is O(n) but requires additional storage. It sacrifices space in order to gain time
+
+2.5 Performance of Python Data Structures
+(lists and dictionaries)
+
+2.6 Lists
+
+# timeit.Timer
+def test1():
+    alist = [i for i in range(1000)]
+
+t1 = Timer("test1()", "from __main__ import test1")
+t1.timeit(number=100)
+
+indexing and assigning        O(1)
+append                        O(1)
+concatenate a list of size k  O(k)  # alist += [i]
+pop()                         O(1)
+pop(i)                        O(n)
+insert(i, item)				  O(n)
+del							  O(n)
+contains (in)  				  O(n)
+slice						  O(n)
+reverse						  O(n)
+sort						  O(n log n)
+multiply					  O(nk)
+
+2.7 Dictionaries
+
+You access dictionary items by a key, while in lists, it is done by index (its position)
+
+get			   O(1) \
+set            O(1)  > Average performance
+contains (in)  O(1) /
+copy           O(n)
+delete         O(1)
+iteration      O(n)
+
+3.1 Objectives
+- Cover the abstract data types
+    stack, queue, deque, list
+
+- prefix, infix, postfix expression formats
+    - use stacks for these expression formats
+
+- use queues for timing simulations
+
+- use the node and reference pattern for linked lists
+
+3.2 Linear data structures are collections where items stay in the same place relative to others that were added or removed.
+
+  left/front [][][][][][] right/rear
+
+3.3 In a stack, addition and removal takes place at the same end--the top
+
+The opposite end is called the base, and represent items that have been there the longest.
+
+Stack ordering is called LIFO (Last-In, First-Out)
+
+By stacking items, then removing them one at a time to a new stack, order is reversed
+
+Analogy: Browser history. The back button removes the newest URL
+
