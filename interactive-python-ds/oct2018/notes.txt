@@ -129,4 +129,64 @@ adict.get('akey', 'not found') returns the value associated to 'akey' or 'not fo
 
 1.9
 
+aName = input('Please enter your name: ')
+input() returns a string
+in Python 2, use raw_input()
 
+use float() or int() to convert to numbers
+
+print(a, b, c, sep="***", end="!!\n")
+
+formatted string
+print("%s is %d years old." % (aName, age))
+
+there is a .format() method not covered in this book
+
+1.10 Control Structures
+counter = 1
+while counter <= 5:
+    print(counter, end=" ")
+	counter += 1
+
+=> 1 2 3 4 5
+
+and, or are short-circuit operators
+
+for item in [1, 3, 6, 5, 0]:
+
+for i in range(5):
+
+for aletter in aword:
+
+if ... else
+if ... elif ... elif ... else
+
+[Internet] 'else' at the end of for and while loops are executed if the loop completes (is not interrupted by break, for example)
+
+list comprehension: add 10 to odd integers
+[x + 10 for x in range(10) if x % 2 == 1]
+=> [11, 13, 15, 17, 19]
+
+a = [1, 1, 0]
+['T' if n == 1 else 'F' for n in a]
+=> ['T', 'T', 'F']
+
+1.11 Exception Handling
+
+A syntax error occurs when there's a mistake in the structure of a statement or expression
+
+[PyRef] A simple statement is comprised within a single logical line
+
+Expression statements are mostly used interactively, to compute and write a value or to call a procedure
+
+a logic error occurs when the program executes but gives the wrong result. If a situation such as division by zero or list access out of bounds occurs at runtime, it is called an exception
+
+Exceptions are raised and handled
+
+try ... except blocks are used to handle potential exceptions. The except block "catches" the exception.
+
+The programmer can raise his or her own exceptions
+
+raise RuntimeError("can't use negative numbers")
+
+1.12 Defining Functions
