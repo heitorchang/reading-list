@@ -190,3 +190,79 @@ The programmer can raise his or her own exceptions
 raise RuntimeError("can't use negative numbers")
 
 1.12 Defining Functions
+
+A function hides the details of a computation
+
+A function definition requires a name, a group of parameters, and a body. It may explicitly return a value
+
+(an argument is a value given to a function; try 's'.join(). It raises TypeError: join takes exactly one argument (0 given))
+
+Newton's method for square roots:
+newguess = (1/2) * (oldguess + (n / oldguess))
+
+1.13 Defining classes
+
+A programmer may create new classes to model data that is needed to solve the problem.
+
+To implement an abstract data type, we use a new class.
+
+1.13.1 Fraction
+
+3 (numerator)
+- 
+5 (denominator)
+
+class Fraction:
+    def __init__(self, top, bottom):
+	    self.num = top
+		self.den = bottom
+
+self is a special parameter that is used as a reference back to the object itself.
+
+'self' must always be the first formal parameter
+
+To create an instance, we invoke the constructor:
+myFraction = Fraction(3, 5)
+
+we want to override the __str__ method to get an useful result with print().
+
+[Fluent Py] __repr__ should be "as-code"
+    return "Fraction({}, {})".format(self.num, self.den)
+
+override __add__ method
+
+Euclid's algorithm for GCD
+[sicp]
+
+def gcd(a, b):
+    if b == 0:
+	    return a
+	return gcd(b, a % b)
+
+In this Fraction implementation, a negative fraction will have a negative numerator.
+
+shallow equality is when two references (variables) refer to the same object
+
+deep equality is when two distinct objects have the same value (not the same reference). __eq__ and __le__ may be overridden.
+
+1.13.2 Inheritance: Logic gates and circuits
+
+Inheritance is the ability for one class to be related to another. Child classes can inherit characteristic data and behavior from a parent class
+
+Child classes are called subclasses and parents are called superclasses. A child and parent follow a "is-a relationship".
+
+The most general class for the digital circuit simulation is LogicGate
+
+The general LogicGate class uses performGateLogic, which will be implemented by subclasses.
+
+class UnaryGate(LogicGate):
+	def __init__(self, n):
+    	super().__init__(n)
+		# Or super(UnaryGate, self).__init__(n)
+		LogicGate.__init__(self, n)
+
+Child class constructors need to call parent class constructors and then move on to their distinguishing data.
+
+The connector class is not part of the gate hierarchy, but follows a "has-a" relationship. A connector has two gates. "Has-a" does not involve inheritance.
+
+2.1 Analysis
