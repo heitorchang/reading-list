@@ -53,7 +53,7 @@ boolean: True, False, and, not
 
 Assignment (theSum = 0) associates a name with a value. The variable will hold a reference to a piece of data and not the data itself.
 
-(Stack Overflow) ints are immutable, so when changing the value of a local variable (inside a function), a new integer object is created.
+(StackOverflow) ints are immutable, so when changing the value of a local variable (inside a function), a new integer object is created.
 
 Re-assignment inside a function moves the reference to a new object, while changes to a mutable object (alist[0] = 0) does not change the alist reference itself.
 
@@ -479,6 +479,99 @@ prec[')'] = 1
    - if it's an operator, pop the operandStack twice. The first pop is the second operand, and the second pop is the first operand. Push the result back on the operandStack.
 4. The result is the value on the operandStack. Pop and return it.
 
-3.10
+3.10 Queues
 
+A queue is an ordered collection of items where the addition of new items happens at one end, the "rear", and removal at the other end, the "front".
 
+The most recently added item must wait, while the item that has been in the collection the longest is at the front.
+
+This ordering principle is called FIFO (First-In, First-Out)
+
+Examples: print tasks, operating system scheduling
+
+3.11 The Queue Abstract Data Type
+
+Queue() creates a new queue
+enqueue(item) adds item to the rear
+dequeue() removes and returns the front item
+isEmpty() tests to see whether the queue is empty
+size() returns the number of items in the queue
+
+q = Queue()       []
+q.enqueue(4)      [4]
+q.enqueue('dog')  ['dog', 4]
+q.dequeue()       ['dog']         => returns 4
+              rear          front
+
+3.12 Implementing a queue
+
+# pythonds.basic.queue
+
+class Queue:
+    def __init__(self):
+	    self.items = []
+
+	def isEmpty(self):
+		return self.items == []
+
+	def enqueue(self, item):
+		self.items.insert(0, item)
+
+	def dequeue(self):
+		return self.items.pop()
+
+	def size(self):
+		return len(self.items)
+
+3.13 Hot Potato (Josephus problem)
+
+A queue acts as a circle, where the front person passes the potato to the person behind, is dequeued, and immediately enqueued (going to the rear of the queue). After 'num' passes of the potato, the front person is removed.
+
+3.14 Printing Tasks
+
+Simulate 10 students printing twice a paper of length between 1 and 20 pages.
+
+Create classes for Printer, Task, and PrintQueue, 'tick' to decrement the internal timer.
+
+3.15 What is a deque?
+
+A deque is a "double-ended queue" and is structurally similar to a queue--it has a front and a rear. However, items may be added and removed from either end.
+
+(StackOverflow) A deque is a doubly-linked list
+
+A deque provides all the capabilities of stacks and queues in a single data structure
+
+3.16 The Deque Abstract Data Type
+
+Deque() creates a new deque
+addFront(item)     [..., ...]
+addRear(item)     rear    front
+removeFront()
+removeRear()
+isEmpty()
+size()
+
+collections.deque has:
+appendleft()  append()
+popleft()     pop()
+
+3.17 Implementing a Deque
+
+...
+def addFront(self, item):
+    self.items.append(item)  # right end
+
+def addRear(self, item):
+    self.items.insert(0, item)  # left end
+
+def removeFront(self):
+    return self.items.pop()
+
+def removeRear(self):
+    return self.items.pop(0)
+
+3.18 Palindrome Checker
+
+Place word in a deque. While size > 1, remove both the front and rear characters. If they are not the same, the word is not a palindrome
+
+3.19 Lists
