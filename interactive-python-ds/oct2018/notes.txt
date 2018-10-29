@@ -688,4 +688,89 @@ Recursion is a method of solving problems that involves breaking them down into 
 
 Usually recursion involves a function calling itself.
 
+4.3 Calculating the Sum of a List
+
+How would you add a list of numbers without 'for' or 'while' loops?
+
+Addition is defined for a pair of numbers. We may add parentheses and sequentially add numbers
+
+total = (1 + (3 + (5 + (7 + 9))))
+      = (1 + (3 + (5 + 16)))
+	  = (1 + (3 + 21))
+	  = (1 + 24)
+	  = 25
+
+listSum(numList) = first(numList) + listSum(rest(numList))
+
+if len(numList) == 1:
+	return numList[0]
+else:
+	return numList[0] + listSum(numList[1:])
+
+The check for a list of size 1 is our "escape clause". The sum of a list of size 1 is trivial: the number in the list
+
+When we reach the point where the problem is as simple as it can get, we begin to piece together the solutions of each of the small problems until the initial problem is solved.
+
+4.4 The 3 laws of recursion
+
+1. A recursive algorithm must have a base case
+2. A recursive algorithm must change its state and move toward the base case
+3. A recursive algorithm must call itself, recursively
+
+The base case is the condition that allows the algorithm to stop recursing (a trivial case that may be solved directly).
+
+Usually the data gets smaller in some way when a recursive call is made.
+
+A recursive factorial function should have n <= 1 as its base case (the factorial of zero is 1 and the program would not crash with negative inputs)
+
+4.5 Converting an integer to a string in any base
+
+Alternative algorithm to using a stack.
+
+Use integer division to reduce the number and concatenate the remainder.
+
+def convBase(n, base):
+	convStr = "0123456789ABCDEF"
+	if n < base:
+		return convStr[n]
+	else:
+		return convBase(n // base, base) + convStr[n % base]
+
+4.6 Stack Frames: Implementing recursion
+
+Instead of concatenating the result of the recursive call in the base conversion algorithm, we could use a stack to store the digits.
+
+When a function is called, a stack frame is allocated to handle the function's local variables.
+
+In list summing, you can think of the return value on the stack taking the place of an accumulator variable.
+
+A stack frame also provides a scope for the function's variables. Each call creates a new scope.
+
+4.7 Visualizing recursion
+
+Turtle graphics: move forward, backward, turn left, right, pen up, pen down
+
+draw a spiral by recursively drawing shorter and shorter line segments and turning right
+
++--------+
+| +----+ |
+| | +- | |
+| | +--+ |
+| +------+
+ 
+A fractal has the same basic shape no matter how much you magnify it (snowflakes, coastlines, trees)
+
+In drawing a tree, we make sure to decrease the size of branches so that the recursion ends.
+
+def tree(branchLen, t):  # t is turtle
+	if branchLen > 5:
+		t.forward(branchLen)
+		t.right(20)
+		tree(branchLen-15, t)
+		t.left(40)
+		tree(branchLen-10, t)
+		t.right(20)
+		t.backward(branchLen)
+
+the tree is drawn all the way to the right first.
 
