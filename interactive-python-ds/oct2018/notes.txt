@@ -575,3 +575,117 @@ def removeRear(self):
 Place word in a deque. While size > 1, remove both the front and rear characters. If they are not the same, the word is not a palindrome
 
 3.19 Lists
+
+A list is a collection of items where each item holds a relative position with respect to the others (first item, second item, third item, and so on). We assume here that lists don't have duplicates.
+
+A list may be ordered or unordered. In an ordered list, the items' values are arranged either in ascending or descending order (sec. 3.22)
+
+3.20 The Unordered List Abstract Data Type
+
+List()
+add(item) Adds item as the new head. Assume item is not already there
+remove(item) We are assuming there are no duplicates
+search(item) returns a Boolean
+isEmpty()
+size()
+append(item) adds item to the end
+index(item) assumes the item is in the list
+insert(pos, item)
+pop() removes and returns the last item
+pop(pos)
+
+3.21 Implementing an Unordered List with Linked Lists
+
+The location of the first item of a linked list must be explicitly specified. This external reference is called the "head" of the list.
+
+The first item knows where the second item is. The second knows the third, and so on. The last item needs to know there is no next item.
+
+The basic building block is the "node". It contains the list item itself in the "data field". It also holds a reference to the next node.
+
+class Node:
+	def __init__(self, initdata):
+		self.data = initdata
+		self.next = None
+
+	... getData(), setData()
+	getNext(), setNext()
+
+-||| (grounding the node) indicates None, the end of the list
+
+3.21.2 The Unordered List Class
+
+Each list object will maintain a single reference to the head of the list.
+
+mylist   head
+  []--->( [] )--->|||
+
+mylist   head
+  []--->( [] )--->[54| ]--->[26| ]--->[12| ]--->|||
+
+The list class itself does not contain Node objects. Instead, it contains a single reference to only the first node in the linked structure.
+
+isEmpty() checks if the head is None
+
+Adding items is easiest at the head.
+
+def add(self, item):
+	temp = Node(item)
+	temp.setNext(self.head)
+	self.head = temp
+
+size, search and remove are implemented with "linked list traversal" (systematically visiting each node). An external reference that starts at the first node is used ("current")
+
+For searching, we initialize "found" to False
+
+remove() assumes the item is present. Two external references, "previous" and "current", are needed, because "previous"'s next needs to become "current"'s next. "previous" starts as None
+
+In traversing, "previous" must be moved forward first (this process is called "inch-worming")
+
+If the item to be removed is at the head, a special procedure is needed because "previous" is None. Head is set to current's next.
+
+append, insert, index and pop are not shown.
+
+3.22 The Ordered List Abstract Data Type
+
+in ascending order, a list may be [17, 26, 31, 54, 79, 93]
+
+The relative position of each item is based upon some underlying characteristic of the item
+
+OrderedList()
+add(item) makes sure order is preserved
+remove(item)
+search(item) returns a Boolean
+isEmpty(), size()
+index(item)
+pop()
+pop(pos)
+
+3.23 Implementing an Ordered List
+
+initializing, isEmpty, size and remove are the same as Unordered List
+
+In searching, we may take advantage of the ordering to stop after the searched value is passed. For example, searching for 45 in [17, 26, 31, 54, 77, 93] can stop once 54 is reached.
+
+in search(), initialize another Boolean, "stop", to False
+
+when adding an item, the method must decide which two items will surround the new item.
+
+Seeing a value greater than 'item' will cause us to stop.
+
+3.23.1 Analysis of Linked Lists
+
+If traversal is needed (length, size, search, remove) and insert and add in ordered lists, the complexity is O(n)
+
+Adding at the head (in unordered lists) and isEmpty() is O(1)
+
+4.1 Recursion - Objectives
+
+complex problems that may otherwise be difficult to solve may have a simple recursive solution
+
+4.2 What is Recursion?
+
+Recursion is a method of solving problems that involves breaking them down into smaller and smaller subproblems until you get to a small enough problem that can be solved trivially.
+
+Usually recursion involves a function calling itself.
+
+
