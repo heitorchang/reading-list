@@ -1,83 +1,87 @@
-def isValid(state, missionaries, cannibals):
-    boat = state[2]
-    if boat:
-        if state[0] - missionaries < 0:
-            print("not enough missionaries on bank A")
-            return False
-        if state[1] - cannibals < 0:
-            print("not enough cannibals on bank A")
-            return False
-        if state[1] - cannibals > state[0] - missionaries:
-            print("A to B: cannibals outnumber missionaries")
-            return False
-    else:
-        if state[0] + missionaries > 3:
-            print("not enough missionaries on bank B")
-            return False
-        if state[1] + cannibals > 3:
-            print("not enough cannibals on bank B")
-            return False
-        if state[1] + cannibals > state[0] + missionaries:
-            print("B to A: cannibals outnumber missionaries")
-            return False
-    return True
+# river banks a and b
+# [missionariesBankA, cannibalsBankA, boatsBankA, missionariesBankB, cannibalsBankB, boatsBankB]
+# 
+# initial state = [3, 3, 1, 0, 0, 0]
 
+from collections import deque
 
-def isValidState(state):
-    return 0 <= state[0] <= 3 and 0 <= state[1] <= 3
-
-    
-class World:
-    def __init__(self, missionaries, cannibals, boatOnBankA):
-        # river banks a and b
-        # in bank a, (missionaries, cannibals, boatOnBankA)
-        # self.state = [3, 3, True]
-        self.state = [missionaries, cannibals, boatOnBankA]
-        self.seen = set([tuple(self.state)])
-        self.path = []
-
-    def move(self, missionaries, cannibals):
-        curstate = self.state[:]
-        
-        if self.state[2]:
-            self.state[0] -= missionaries
-            self.state[1] -= cannibals
-            self.state[2] = False
-        else:
-            self.state[0] += missionaries
-            self.state[1] += cannibals
-            self.state[2] = True
-
-        newstate = self.state
-        
-        if isValidState(newstate) and tuple(newstate) not in self.seen:
-            self.state = newstate
-            self.seen.add(tuple(self.state))
-            self.path.append(self.state)
-        else:
-            self.state = curstate
-
-        if self.state == [0, 0, 0]:
-            return self.path
-            
-        print(self.seen, self.state)
-        return self.state
+class Vertex:
+    def __init__(self, ma, ca, ba, mb, cb, bb):
+        self.ma = ma
+        self.ca = ca
+        self.ba = ba
+        self.mb = mb
+        self.cb = cb
+        self.bb = bb
+        self.state = [ma, ca, ba, mb, cb, bb]
+        self.pred = ""
 
     def __str__(self):
-        return str(self.state)
-        
+        return str(self.ma) + str(self.ca) + str(self.ba) + str(self.mb) + str(self.cb) + str(self.bb)
+
     def __repr__(self):
-        return self.__str__()
+        return str(self.state)
 
+    def isValid(self):
+        return self.ma >= 0 and self.ca >= 0 and self.mb >= 0 and self.cb >= 0 and (self.ma >= self.ca or self.ma == 0) and (self.mb >= self.cb or self.mb == 0)
 
-def solve():
-    w = World(3, 3, True)
-    options = [[2, 0], [0, 2], [1, 0], [0, 1], [1, 1]]
+    def move(self, m, c):
+        if self.ba == 1:
+            return Vertex(self.ma - m, self.ca - c, 0, self.mb + m, self.cb + c, 1)
+        else:
+            return Vertex(self.ma + m, self.ca + c, 1, self.mb - m, self.cb - c, 0)
+            
+            
+class Graph:
+    def __init__(self):
+        self.seen = set()
+        self.vertices = {}
 
-    counter = 1
-    while counter < 150:
-        for o in options:
-            print(o)
-            w = World(*w.move(*o))
-            # infinite loop
-            counter += 1
+        # initialize vertices, exclude invalid states
+        for m in range(4):
+            for c in range(4):
+                for b in range(2):
+                    v = Vertex(m, c, b, 3-m, 3-c, 1-b)
+                    if v.isValid():
+                        self.vertices[str(v)] = v
+                        
+        self.start = self.vertices['331000']
+
+        # BFS
+        d = deque()
+
+        d.append(self.start)
+
+        self.seen.add(str(self.start))
+        
+        while d:
+            curv = d.popleft()
+            if str(curv) == '000331':
+                # Found solution
+                stack = [str(curv)]
+                last = curv
+
+                while True:
+                    if last.pred == "":
+                        break
+                    stack.append(last.pred[:3] + " " + last.pred[3:])
+                    last = self.vertices[last.pred]
+                for mv in stack[::-1]:
+                    print(mv)
+                break
+
+            # edges
+            for m in range(3):
+                for c in range(3):
+                    if 1 <= m + c <= 2:
+                        # print('from', curv, 'move', m, c)
+                        dest = curv.move(m, c)
+                        if dest.isValid() and str(dest) not in self.seen:
+
+                            # print('setting pred of', str(dest), 'to', str(curv))
+                            self.vertices[str(dest)].pred = str(curv)
+                            
+                            self.seen.add(str(dest))
+                            d.append(self.vertices[str(dest)])
+                            
+                
