@@ -809,4 +809,83 @@ def moveTower(height, fromPole, toPole, withPole):
 def moveDisk(from, to):
     print("move disk from", from, "to", to)
 	
-4.11 
+4.11 Exploring a Maze - Finding a way out
+
+First, try going North and recursively try the procedure from there.
+
+If the path is blocked, try South, then West and East
+
+We must remember where we have been (breadcrumbs)
+
+Base cases:
+
+1. The turtle has run into a wall
+2. Found a visited square
+3. Found an outside edge (exit from the maze)
+4. Explored a square unsuccessfully in all 4 directions
+
+class Maze:
+	def __init__(self, mazeFileName)
+	def drawMaze
+	def updatePosition
+	def isExit
+	def __getitem__(self, idx):  # for maze[i][j]
+		return self.mazelist[idx]
+
+isExit checks if row or col are 0 or the last index of rows or cols (and not a wall)
+
+The main algorithm is 'searchFrom'
+
+The base cases are checked:
+
+1. obstacle
+2. tried
+3. isExit
+
+Otherwise, set found to
+	searchFrom(maze, row-1, col) or
+	searchFrom(maze, row+1, col) or
+	searchFrom(maze, row, col-1) or
+	searchFrom(maze, row, col+1)
+
+if found:
+	maze.updatePosition(row, col, part_of_path)
+else:
+	maze.updatePosition(row, col, dead_end)
+
+4.12 Dynamic Programming is a strategy for solving optimization problems
+
+Making change using the fewest coins is a classic problem
+
+The greedy method tries to solve as big a piece of the problem as possible right away. It works for U.S. coins, but not in general (such as including a 21-cent coin and solving for 63 cents)
+
+a recursive solution is too inefficient.
+
+                / 1 + numCoins(originalAmt - 1)  # penny
+numCoins = min {  1 + numCoins(originalAmt - 5)  # nickel
+                \ ... etc.
+
+The key to cutting down the amount of work done is to store past results (memoization, or caching)
+
+A true dynamic programming algorithm begins at 1 cent and systematically works its way up to the desired amount
+
+From 1 to 4 cents, we can only use pennies. For 5 cents, we store the minimum of 4 pennies plus 1 penny (5 coins) and 0 coins plus 1 nickel (1 coin)
+
+For 11 cents, we consider:
+
+#1 a penny  plus the minimum to make 11-1 = 10 cents
+#2 a nickel plus the minimum to make 11-5 =  6 cents
+#3 a dime   plus the minimum to make 11-10 = 1 cent
+
+options 1 and 3 result in 2 coins to make 11 cents, while option 2 results in 3 coins (2 nickels and 1 penny)
+
+def makeChange(coinValues, change):
+	minCoins = [0] * (change+1)
+	for cents in range(change+1):
+		coinCount = cents
+		for j in [c for c in coinValues if c <= cents]:
+			if minCoins[cents-j] + 1 < coinCount:
+				coinCount = minCoins[cents-j] + 1
+		minCoins[cents] = coinCount
+	return minCoins[change]
+			
