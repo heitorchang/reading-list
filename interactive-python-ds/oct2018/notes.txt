@@ -1104,3 +1104,68 @@ Now these are sorted
 Insertion sort is O(n^2) but shifting is typically more efficient than exchanging.
 
 5.10 Shell sort is also called "diminishing increment sort"
+
+The original list is broken into smaller sublists, each of which is sorted with insertion sort. These sublists are made up of items i items apart (the gap)
+
+After sorting the sublists, the items are much closer to their final sorted positions. This final sort is a standard insertion sort
+
+It looks like shell sort is not much better than the standard insertion sort, but in practice, performance is between O(n) and O(n^(3/2)). This is because the final sort makes many fewer comparisons than the standard insertion sort.
+
+5.11 Merge sort uses a divide-and-conquer strategy. It is a recursive algorithm that continually splits a list in half
+
+Once such sublists are reduced to a single item, they are merged to form the sorted list. The larger and larger lists are merged
+
+      [][][][][][]
+      ,----''-----.        Split
+   [][][]       [][][] 
+   /    \       /    \
+  []   [][]    []   [][]
+  .    /  \    .    /  \
+  .   []  []   .   []  []
+  .   .    .   .   .    .
+  .   .    .   .   .    .  then merge
+    ..[][][]     ..[][][]
+	   .            .
+        [][][][][][]						   
+
+a merge operation on a list of size n requires n operations. The list is divided log n times. So, merge sort is O(n log n)
+
+Merge sort requires extra space to store the two halves
+
+5.12 Quick sort is another divide-and-conquer algorithm. However, it does not require additional storage.
+
+At first, a pivot value is chosen. Here, we will use the first item in the list.
+
+The position where the pivot value ends up is the split point.
+
+The partition process finds the split point and moves other values either to the left or right of the split point if they are less than or greater than the pivot, respectively.
+
+  54 26 93 17 77 31 44 55 20
+pivot `leftmark -> <- rightmark
+
+move leftmark to the right until a value greater than the pivot is found
+
+move rightmark to the left until a value less than the pivot is found
+
+then exchange the two values
+
+When rightmark < leftmark, the split point is found at the location of rightmark. We exchange the pivot value with rightmark
+
+Now we recursively quick sort the items to the left of the split point and those to the right.
+
+def quickSort(alist):
+	quickSortHelper(alist, 0, len(alist) - 1)
+
+def quickSortHelper(alist, first, last):
+	if first < last:
+		splitpoint = partition(alist, first, last)
+		quickSortHelper(alist, first, splitpoint-1)
+		quickSortHelper(alist, splitpoint+1, last)
+	...
+
+On average, quick sort is n log n, but in the worst case, where the splits are uneven, it is O(n^2)
+
+The median of three technique chooses the median of the first, middle, and last items of the list as the pivot point.
+
+6.1 Trees and Tree Algorithms
+
