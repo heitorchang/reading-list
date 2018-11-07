@@ -889,3 +889,218 @@ def makeChange(coinValues, change):
 		minCoins[cents] = coinCount
 	return minCoins[change]
 			
+5.1 Sorting and Searching
+
+Implement sequential and binary search
+Use hashing as a search technique
+Implement the Map abstract data type
+
+5.2 Searching is the process of finding a particular item in a collection of items. A search typically returns True or False
+
+  3 in [1, 3, 5, 7, 9]
+  => True
+
+5.3 Sequential search is traversing a list and checking whether the desired item is in it
+
+Regardless of whether the list is ordered or not, sequential search is O(n)
+
+5.4 Binary search takes advantage of an ordered list's structure by discarding the half where we know the desired item is not located in every step
+
+Binary search may be implemented as a recursive divide-and-conquer function
+
+def search(lst, item):
+	if len(lst) == 0:
+		return False
+		
+	midpt = len(lst) // 2
+	if lst(midpt) == item:
+		return True
+	else:
+		if item < lst[midpt]:
+			return search(lst[:midpt], item)
+		else:
+			return search(lst[midpt+1:], item)
+
+in each comparison, half the list is eliminated
+
+comparisons  number of items left
+  1			    n/2
+  2				n/4
+  3				n/8
+  ...			...
+  i 			n/2^i
+
+n/2^i = 1
+
+solving for i, we get i = log_2(n)
+
+The cost of sorting should be considered; sometimes it is better to use a sequential search
+
+5.5 Hashing
+
+(techopedia) Hashing is a one-way function that generates a value from a string (or number) using a mathematical function.
+
+With hashing, we can build a data structure that can be searched in O(1) time
+
+A hash table is a collection of items which are stored in such a way as to make it easy to find them later. Each position is called a slot.
+
+The mapping between an item and the slot where it belongs in the hash table is called the hash function.
+
+The remainder method takes an item and divides it by the table size
+	h(item) = item % 11
+
+The load factor measures how full the hash table is. L = num. of items / table size
+
+When two items have the same hash value, it is called a collision.
+
+5.5.1 Hash functions
+
+A perfect hash function maps each item to a unique slot.
+
+The goal is to create a hash function that minimizes the number of collisions, is easy to compute, and evenly distributes the items.
+
+The folding method divides the item into equal-size pieces, adds them, and keeps a remainder corresponding to the table size
+
+The mid-square method squares the item and takes a portion of the result, such as the middle two digits
+
+Strings may be converted to lists of character codes (integers)
+
+Since anagrams would have the same hash value, we can give each character a different weight based on its position.
+
+5.5.2 Collision resolution is the systematic method for placing the second item in the hash table when there is a collision.
+
+Open addressing is moving sequentially (possibly circularly to the beginning of the hash table) until we encounter an empty slot. This technique is called linear probing.
+
+A disadvantage to linear probing is clustering
+
+Looking for another slot is called rehashing
+
+newhashvalue = rehash(oldhashvalue)
+rehash(pos) = (pos + 3) % sizeoftable  # plus-3
+
+To ensure all slots will be visited by the skip, table sizes should be a prime number.
+
+Quadratic probing uses successive perfect squares (1, 4, 9, 16, etc.) for the skip value
+
+Chaining allows many items to exist in the same slot
+
+ 0  1  2  3  4
+[ ][ ][ ][ ][ ]
+ |        |
+ v        v
+ 44       25
+ |
+ v
+ 77
+
+5.5.3 Implementing the Map abstract data type
+
+The dictionary is an associative data type where you can store key-data pairs. The key is used to look up the associated data value. This idea is referred to as a map.
+
+The map structure is an unordered collection of associations between a key and a data value. Keys are unique.
+
+Map() creates an empty map collection.
+put(key, val) adds a new key-value pair
+get(key) returns the associated value or None if it is not found
+del map[key]
+len() returns the number of key-value pairs
+key in map tests if the given key is in the map
+
+class HashTable:
+	def __init__(self):
+		self.size = 11  # a prime number
+		self.slots = [None] * self.size  # holds keys
+		self.data = [None] * self.size   # holds values
+
+hashfunction implements the simple remainder method
+
+	def hashfunction(self, key, size):
+		return key % size
+
+	def rehash(self, oldhash, size):
+		return (oldhash + 1) % size
+
+put assumes there will eventually be an empty slot unless the key is already present. If the key is present, the new data replaces the old data.
+
+get computes the initial hash value. If the value is not in the initial slot, rehash is used. 'startslot' is defined to ensure the search terminates.
+
+def __getitem__(self, key):
+	return self.get(key)
+
+def __setitem__(self, key, data):
+	self.put(key, data)
+
+5.5.4 Analysis of Hashing
+
+In the best case, searching is O(1). However, due to collisions, the performance depends on L, the load factor.
+
+                Successful search          Unsuccessful search
+With chaining   1 + (L / 2)                L
+Linear probing  (1/2) * (1 + (1 / (1-L)))  (1/2) * (1 + (1 / (1-L)^2))
+
+5.6 Sorting is the process of placing elements from a collection in some kind of order
+
+The efficiency of a sorting algorithm is related to the number of items being processed.
+
+For small collections, a complex sorting method may have a too high of an overhead.
+
+The total number of comparisons is the most common way to measure the efficiency of a sort procedure. In addition, the total number of exchanges is also important.
+
+5.7 Bubble sort makes n-1 passes comparing two adjacent items and exchanging them if they are out of order.
+
+Unlike most sorting algorithms, bubble sort can recognize when a list is already sorted (if there were no exchanges made)
+
+
+54 26 93 17 77   Exchange
+'---'
+
+26 54 93 17 77   Do not exchange
+   '---'
+
+26 54 93 17 77   Exchange
+      '---'
+
+26 54 17 93 77   Exchange
+         '---'
+
+26 54 17 77 93  93 in the right place
+
+Bubble sort is O(n^2)
+
+5.8 Selection sort makes only one exchange in each of the n-1 passes
+
+In each pass, the largest item is found and swapped with the value in its correct place
+
+26 54 (93) 17 77   93 is largest
+       `-------^
+
+26 54 (77) 17 93   77 is largest
+       `----^
+
+26 (54) 17 77 93   54 is largest
+    `----^
+
+(26) 17 54 77 93   26 is largest
+`-----^
+
+17 26 54 77 93     List is sorted
+
+Selection sort is also O(n^2) but makes much fewer exchanges than bubble sort.
+
+5.9 Insertion sort maintains a sorted sublist in the lower positions. Each new item is inserted back in the right place of the sorted sublist. We shift to the right every item of the sorted sublist that is larger than the current item
+
+sorted sublist  current item
+,------------,  v
+17 26 54 77 93 31 44 20 55
+             `\.
+17 26 54 77 31 93 44 20 55
+          `\.
+17 26 54 31 77 93 44 20 55
+       `\.
+17 26 31 54 77 93 44 20 55
+`---------------'
+Now these are sorted
+
+Insertion sort is O(n^2) but shifting is typically more efficient than exchanging.
+
+5.10 Shell sort is also called "diminishing increment sort"
