@@ -1586,3 +1586,202 @@ class Graph:
 	getVertices()
 	__contains__
 	__iter__
+
+7.7 The word ladder problem
+
+Transform "FOOL" to "SAGE" by changing one letter at a time. Find the smallest number of transformations needed
+
+7.8 Building the word ladder graph
+
+Comparing a word to every other word is infeasible (O(n^2))
+
+Instead, we use buckets such as '_OPE' and place in it words that match (_ is a wildcard).
+'_OPE' -> POPE, ROPE, MOPE, COPE, NOPE, ... These words are all connected
+
+Now we create a vertex for each word and edges between all vertices found in each bucket
+
+7.9 Implementing Breadth-First Search (BFS)
+
+Given a graph G and a starting vertex S, BFS explores edges in G to find all the vertices in G for which there is a path from S.
+
+It finds all vertices that are a distance k from s before it finds any that are a distance k+1
+
+All vertices start as white. A gray vertex still has unexplored vertices (when a vertex is initially discovered it is colored gray). A black vertex is completely explored
+
+BFS uses a queue to decide which vertex to explore next
+
+The extended Vertex class used in BFS includes distance, predecessor, and color
+
+BFS begins at the starting vertex 'start' and colors it gray. It is placed in the Queue, and we systematically explore vertices in the front of the queue.
+
+'nbr' = new, unexplored vertex
+
+1. nbr is colored gray
+2. the predecessor of nbr is set to 'currentVert'
+3. nbr's distance is set to currentVert + 1
+4. nbr is enqueued, scheduling it for further exploration
+
+7.10 Breadth-First Search Analysis
+
+The while loop is O(V) because each node is visited only once
+
+The for loop is O(E) because it is run once when the node is dequeued. Combined, it is O(V+E)
+
+In the worst case, if the graph was a long chain, traversing all the vertices would be O(V). There is also the time needed to build the graph
+
+7.11 The Knight's Tour Problem
+
+Find a sequence of moves that allow the knight to visit every square on the board exactly once. Such a sequence is called a tour.
+
+7.12 Building the Knight's Tour Graph
+
+Each square on the chessboard is a node in the graph and each legal move, an edge.
+
+'genLegalMoves' and 'legalCoord' generate edges
+
+7.13 Implementing Knight's Tour
+
+The search algorithm used to solve the knight's tour problem is depth-first search (DFS)
+
+DFS explores one branch of the search tree as deeply as possible.
+
+There are two approaches, one that marks nodes as visited and a more general approach
+
+When a dead end is reached, DFS backs up the tree to the next deepest vertex that allows a legal move
+
+'knightTour' is recursive. It takes four parameters:
+
+n (current depth)
+path
+u (the vertex we wish to explore)
+limit (the number of nodes in the path)
+
+Its recursive nature implies we are using a stack to help us with backtracking
+
+unvisited vertices are colored white and visited ones are colored gray
+
+upon reaching a dead end, we change the vertex's color back to white
+
+7.14 Knight's Tour analysis
+
+The algorithm described is O(k^N), where N is the number of squares on the board and k is a small constant
+
+A heuristic (common sense or practical knowledge to speed up an algorithm) is to visit squares with the fewest available moves first
+
+If we visit easy-to-reach squares early, later the knight gets stranded and unable to reach the other side of the board
+
+7.15 General Depth-First Search
+
+The Knight's Tour is a special case of DFS where we create the deepest depth-first tree without branches
+
+General DFS's goal is to search as deeply as possible, connecting as many nodes as possible, and branching where necessary
+
+DFS may create many trees; we call them a depth-first forest
+
+In addition to predecessor links, DFS vertices make use of discovery and finish times
+
+discovery time: number of steps before a vertex is first encountered
+
+finish time: number of steps before a vertex is colored black
+
+DFSGraph inherits from Graph, adding a 'time' instance variable
+
+We iterate over all the nodes to make sure no vertices are left out of the depth-first forest
+
+dfsvisit calls itself recursively, so there is an implicit stack that is not visible in the code
+
+The starting and finishing times for each node display the parenthesis property: all children of a particular node in the depth-first tree have a later discovery time and earlier finish time than their parent.
+
+7.16 Depth-First Search Analysis
+
+The loops in DFS run in O(V) and dfsvisit is called at most once per edge, or O(E). The total time is O(V+E)
+
+7.17 Topological sorting
+
+Example: cooking pancakes. A directed graph indicates which steps need to be completed first (mixing ingredients, heating griddle, turning pancake)
+
+To decide the precise order in which we should do the steps we turn to a graph algorithm called the topological sort
+
+A topological sort takes a directed acyclic graph (DAG) and produces a linear ordering of all its vertices such that if the graph G contains an edge (v, w) then the vertex v comes before the vertex w in the ordering.
+
+Other examples: project schedules, database query optimization
+
+The topological sort algorithm is:
+
+1. call DFS(g) for the graph g, to compute the finish times for each of the vertices
+2. store the vertices in a list in decreasing order of finish time
+3. return the ordered list
+
+7.18 Strongly Connected Components
+
+Search engines exploit the fact that web pages form a very large directed graph. A page is a vertex, and a hyperlink is an edge
+
+One graph algorithm that can help find clusters of highly interconnected vertices in a graph is called the Strongly Connected Components (SCC) algorithm
+
+A strongly connected component C of a graph G is the largest subset of vertices C in V such that for every pair of vertices v, w in C we have a path from v to w and a path from w to v
+
+Once the strongly connected components have been identified, we can combine all the vertices in one strongly connected component into a single larger vertex.
+
+The transposition of a graph G is the graph G^T where all the edges in the graph have been reversed (an edge from A to B becomes an edge from B to A)
+
+The algorithm is:
+1. call DFS(g) to compute the finish times for each vertex
+2. compute g^T
+3. call DFS(g^T) but in the main loop of DFS explore each vertex in decreasing order of finish time
+4. each tree in the forest computed in step 3 is a strongly connected component. Output the vertex ids for each vertex in each tree in the forest to identify the component
+
+This book does not have the SCC algorithm's code
+
+7.19 Shortest Path Problems
+
+Example: a browser request for a web page
+traceroute shows the routers between the requester and the destination server
+
+A network of routers may be represented as a weighted graph
+
+7.20 Dijkstra's Algorithm is used to determine the shortest path
+
+The 'dist' instance variable in the Vertex class is used to store the current total weight of the smallest weight path from the start to the vertex in question
+
+The algorithm iterates once for every vertex; however, the order is controlled by a priority queue
+
+The value used in the priority queue is dist. Initially, dist is set to infinity or any large value larger than any real distance in the problem.
+
+The predecessors are set with vert.setPred(w)
+
+The priority queue used has the additional 'decreaseKey' method that updates a vertex's dist, moving it toward the front of the queue.
+
+If a negative weight existed, the algorithm would never exit
+
+Real Internet routing algorithms do not use Dijkstra's algorithm because it requires knowing the complete representation of the graph.
+
+In practice, an algorithm such as "distance vector" routing is used
+
+7.21 Analysis of Dijkstra's Algorithm
+
+Building the priority queue is O(V). Calling 'delMin' takes O(log V) time, altogether taking O(V log V) time.
+
+The for loop is executed once for each edge, and decreaseKey is called in this loop, taking O(E log V) time. Combined, the running time is O((V+E) log(V))
+
+7.22 Prim's Spanning Tree Algorithm
+
+This algorithm is used to solve the broadcast problem (transferring a piece of information to anyone who is listening)
+
+Examples: Internet Radio, online game messaging
+
+The solution to this problem is constructing a minimum weight spanning tree, T, for a graph G = (V, E)
+
+T is an acyclic subset of E that connects all the vertices in V such that the sum of the weights of the edges in T is minimized
+
+From the starting vertex, each following vertex forwards the message to any neighbor that is part of the spanning tree.
+
+Prim's algorithm is a greedy algorithm. It chooses the cheapest next step at each step (the edge with the lowest weight)
+
+pseudocode:
+	while T is not yet a spanning tree:
+		find an edge that is safe to add
+		add the new edge to T
+		
+A safe edge connects a vertex in the spanning tree to a vertex that is not in the spanning tree. We do not want to create cycles
+
+Like Dijkstra's algorithm, a priority queue is used.
