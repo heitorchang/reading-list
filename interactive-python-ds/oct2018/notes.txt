@@ -1169,3 +1169,155 @@ The median of three technique chooses the median of the first, middle, and last 
 
 6.1 Trees and Tree Algorithms
 
+- What is a tree structure?
+- how to implement a map data structure with trees
+  - a list
+  - classes and references
+  - a recursive data structure
+- to implement a priority queue using a heap
+
+6.2 Examples of trees
+
+Trees are hierarchical (structured in layers with more general things near the top (the root) and more specific things near the bottom (the leaves))
+
+Example: biological classification of kingdom, phylum, class, ..., species. We can follow paths until we reach a creature's name at the very bottom
+
+Children of one node are independent of children of another node.
+
+Example: filesystem tree. A section of a tree is called a subtree
+
+Example: webpage
+         _____(html)_____
+        /                \   
+    (head)             _(body)_
+   /      \           /   |    \
+(meta)  (title)    (ul)  (h1)  (h2)
+                   /||\
+			     ...etc...
+
+6.3 Tree Vocabulary and Definitions
+
+Node: a fundamental part of a tree. Its name is the key. Additional data is called the payload.
+
+Edge: connects two nodes to show that there is a relationship between them. Every node except the root is connected by exactly one incoming edge. A node may have any number of outgoing edges
+
+Root: the only node that has no incoming edges
+
+Path: an ordered list of nodes that are connected by edges, such as: Mammal -> Carnivora -> Felis -> cat
+
+Children: the set of nodes that have incoming edges from the same node
+
+Parent: a node is the parent of all nodes it connects to with outgoing edges
+
+Sibling: nodes that are children of the same parent are siblings
+
+Subtree: the set of nodes and edges comprised of a parent and all descendants of that parent.
+
+Leaf node: a node with no children
+
+Level: the level of a node is the number of edges on the path from the root node to it. The level of the root node is 0.
+
+Height: the height of a tree is the maximum level of any node in the tree
+
+Definition 1: A tree is a set of nodes and edges that connect pairs of nodes. A tree has these properties:
+
+- one node is designated as the root node
+- every node except the root is connected by an edge from exactly one other node, its parent
+- a unique path traverses from the root to each node
+- if each node has at most two children, it is a binary tree
+
+Definition 2 (recursive): A tree is either empty or consists of a root and zero or more subtrees, each of which is also a tree. The root of each subtree is connected to the root of a parent tree by an edge.
+
+6.4 List of lists representation - a three-element list
+
+The first element is the value of the root node
+The second element is the left subtree (another list)
+The third element is the right subtree (another list)
+
+['a', ['b', [], []], ['c', ['f', [], []], []]]  # it's recursive
+
+The parts of the tree are accessed by standard list indexing: tree[0] is the value, tree[1] the left subtree and tree[2] the right subtree
+
+# Binary Tree functions for creating, splicing, and accessing values. Classes are not created.
+
+6.5 Nodes and references: a BinaryTree class that has attributes for the value and left and right subtrees
+
+class BinaryTree:
+	def __init__(self, rootObj):
+		self.key = rootObj
+		self.leftChild = None   # references to other BinaryTrees
+		self.rightChild = None
+
+For insertion, we must check if there is already a subtree:
+
+	def insertLeft(self, newNode):
+		if self.leftChild is None:
+			self.leftChild = BinaryTree(newNode)
+		else:
+			t = BinaryTree(newNode)
+			t.leftChild = self.leftChild
+			self.leftChild = t
+
+6.6 Parse Trees may be used to represent sentences and mathematical expressions.
+
+         (Sentence)
+        /          \
+(Noun Phrase)  (Verb Phrase)
+      |          |      |
+(Proper Noun)  (Verb) (Noun)
+      |          |      |
+   (Homer)     (Hit)  (Bart)
+
+     __(*)__
+    /       \
+  (+)       (-)  
+  / \       / \
+(7) (3)   (5) (2)
+
+To build a parse tree, we first break up the expression string into a list of tokens:
+
+(, ), operators and operands
+
+When we read a left parenthesis, we start a new expression (new tree)
+
+1) If we read '(', add a new node as the left child of the current node, and descend to this left child
+
+2) If the token is an operator (+, -, /, *), set the root value of the current node to the operator and descend to the right child
+
+3) If the token is a number, set the root value to the number and return to the parent
+
+4) If the token is ')', go to the parent of the current node
+
+To keep track of the parents, we can use a stack: whenever we descend to a child of the current node, we push the current node on the stack. To return to the parent, we pop the stack
+
+To evaluate a parse tree, we recursively evaluate each subtree. The base case is a leaf node; in our case, a number that evaluates to itself. With operators, we apply them to the result of the left and right subtrees.
+
+6.7 The common Tree Traversals are preorder, inorder, and postorder. A traversal is the visitation of the nodes.
+
+preorder: visit the root node, then recursively do a preorder traversal of the left subtree and a preorder traversal of the right subtree
+
+inorder: recursively traverse the left subtree, visit the root node, then traverse the right subtree
+
+postorder: recursively traverse the left and right subtrees, then visit the root node
+
+Preorder traversal is like reading a book front-to-back
+
+def preorder(tree):
+	if tree:
+		print(tree.getRootVal())
+		preorder(tree.getLeftChild())
+		preorder(tree.getRightChild())
+
+Evaluating a parse tree is done in postorder traversal.
+
+Inorder traversal of a parse tree prints back the original expression without parentheses.
+
+6.8 Priority Queues with Binary Heaps
+
+A priority queue lets you dequeue items from the front, but enqueuing will place that item based on its priority (the logical order is determined by its priority). In effect, a priority queue is always sorted.
+
+A binary heap allows enqueuing and dequeuing in O(log n) time.
+
+We will implement a min heap (smallest key value is at the front). A max heap has the largest key value at the front.
+
+6.9
