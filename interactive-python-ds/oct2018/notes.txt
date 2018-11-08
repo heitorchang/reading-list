@@ -1320,4 +1320,110 @@ A binary heap allows enqueuing and dequeuing in O(log n) time.
 
 We will implement a min heap (smallest key value is at the front). A max heap has the largest key value at the front.
 
-6.9
+6.9 Binary Heap operations
+
+BinaryHeap() creates a new, empty binary heap
+insert(k) adds a new item
+findMin() returns the item with the minimum key value, leaving it in the heap
+delMin() returns the minimum and removes it
+isEmpty()
+size()
+buildHeap(alist) builds a new heap from a list of keys
+
+6.10.1 Binary Heap Implementation - Structure
+
+In order to guarantee logarithmic performance of a binary tree, it must be balanced (have roughly the same number of nodes in the left and right subtrees)
+
+In our heap implementation we create a complete binary tree (each level has all its nodes). The exception is the bottommost level, filled from left to right
+
+The heap is represented by a list, with an empty (zero) space in the 0th position. This is done so that the left child of a parent in position p is in 2p, and the right child in 2p+1. Given a node at position n, its parent is in n//2
+
+6.10.2 The Heap Order Property
+
+for every node x with parent p, the key in p is smaller than or equal to the key in x.
+
+        __5__
+       /     \
+      9       11
+     / \     /  \
+    /   \   19  21
+  14     18
+ /  \   /
+33  17 27
+
+6.10.3 Heap operations
+
+A binary heap (BinHeap) object has a list (with 0 as its 0th element) and a size attribute 'currentSize'
+
+in inserting an item, we have to maintain the heap order property. If the new item is less than its parent, we swap them
+
+'percUp' percolates (move gradually) the new item up as fas as it's needed.
+
+delMin() returns the root and deletes it. The structure and order properties need to be restored.
+
+To restore the structure, the last item is moved to the root position.
+
+'percDown' swaps the root with its smallest child less than the root. We repeat the process until it ends up in a position where it is already less than both children.
+
+To build a heap from a given list, we start in the middle: i = len(alist) // 2 (before adding the dummy, initial zero). Nodes past the halfway point are all leaves.
+
+After adding the zero, we "percolate down" all nodes from i counting back to zero.
+
+This procedure is O(n) and is the basis for the O(n log n) heapsort.
+
+[Wikipedia] Heapsort is like an improved selection sort in that the minimal item is repeatedly found, and added to the result. Instead of the linear search in selection sort, heapsort uses the more efficient heap structure.
+
+6.11 Binary Search Trees
+
+So far we have used binary search on a list and hash tables to implement maps
+
+A binary search tree is another structure that may be used to implement a map. It provides for efficient searching
+
+6.12 Search Tree operations
+
+This interface is very similar to a Python dictionary.
+
+Map() creates a new, empty map
+put(key, val) adds a new key-value pair or replaces an existing pair
+get(key) returns the value stored in the map or None if it is not found
+del map[key] deletes the key-value pair
+len() returns the number of key-value pairs stored
+key in map returns True if the key is in the map
+
+6.13 Search Tree implementation
+
+The bst property of a tree states that keys less than the parent are in the left subtree while keys greater than the parent are in the right subtree.
+
+Because we must be able to create and work with an empty binary search tree, our implementation will use two classes: BinarySearchTree and TreeNode
+
+BinarySearchTree keeps track of the size. TreeNode keeps track of its children, parent, key, and payload
+
+put calls a recursive _put helper method if there's a root. Otherwise it installs a new node as the root.
+
+myTree['abc'] = 23 is possible by overriding __setitem__.
+
+def __setitem__(self, k, v):
+    self.put(k, v)
+
+get, _get, and __getitem__ are like _put and are recursive.
+
+To allow 'k in bstree', override __contains__
+
+Deleting a node must consider whether the node
+- has no children (is a leaf) - simply delete it and remove the reference to it in its parent
+- if the node has a single child, we promote the child to take the place of its parent
+- to delete a node with two children, we must find a successor to take its place. It will have no more than one child, so we may remove it in the ways described above.
+
+findMin() looks for the smallest item (the leftmost node), and the successor considers three cases:
+
+1. if the node has a right child, then the successor is the smallest key in the right subtree.
+2. if the node has no right child and is the left child of its parent, then the parent is the successor.
+3. if the node is the right child of its parent and itself has no right child, then the successor to this node is the successor of its parent, excluding this node.
+
+* the first condition is the only one that matters
+
+yield allows us to create an iterator. It is used in generator functions
+
+__iter__ overrides 'for x in something' an is recursive when using for x in ... in its definition
+
+6.14 Search Tree Analysis
