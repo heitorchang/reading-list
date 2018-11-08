@@ -1427,3 +1427,162 @@ yield allows us to create an iterator. It is used in generator functions
 __iter__ overrides 'for x in something' an is recursive when using for x in ... in its definition
 
 6.14 Search Tree Analysis
+
+The put method's limiting factor on its performance is the height of the binary search tree.
+
+If the keys are added in random order, the height of the tree will be around log_2 n
+
+The total number of nodes of a perfectly balanced tree is 2^(h+1) - 1, where h is the height of the tree
+
+If a binary search tree is perfectly balanced, the worst-case performance of put is O(log_2 n)
+
+If keys are inserted in sorted order, performance is O(n) (degenerates to a linked list)
+
+get, del and in are limited similarly because they may fail to find the desired key.
+
+6.15 Balanced Binary Search Trees
+
+An AVL tree (named after G. M. Adelson-Velskii and E. M. Landis) remains balanced at all times.
+
+Each node keeps track of a balance factor
+
+balancefactor = height(leftSubtree) - height(rightSubtree)
+
+An AVL tree is either left-heavy (balancefactor < 0), right-heavy, or perfectly in balance.
+
+6.16 AVL tree performance
+
+The maximum number of nodes of the most unbalanced trees under these rules are:
+
+N_h = 1 + N_h-1 + N_h-2 (like the Fibonacci sequence)
+
+F_i = F_i-1 + F_i-2
+Fi ~= Phi^i / sqrt(5)
+N_h = (Phi^(h+2) / sqrt(5)) - 1
+h ~= 1.44 log N_h
+
+As a result, searching in an AVL tree is O(log n)
+
+6.17 AVL tree implementation
+
+When adding a new key, it will be added as a leaf node. We must recursively update the balance factor of its parent and ancestors.
+
+Once a subtree has a balance factor of zero, the balance of its ancestors does not change
+
+The AVLTree class is a subclass of BinarySearchTree.
+
+updateBalance, self.rebalance, rotateLeft, rotateRight
+
+
+   _(B)_                          _(D)_
+  /     \       rotateLeft       /     \
+[A]     (D)    ----------->    (B)     [E]
+       /   \                  /   \
+     [C]   [E]              [A]   [C] 
+
+To avoid an unbalancing of o  to  o, two rotations are needed.
+                            \    /
+							 o  o
+							/    \
+						   o      o
+
+6.18 Summary of Map ADT Implementations
+
+operation  Sorted List  Hash Table  BST   AVL Tree
+ put       O(n)         O(1)        O(n)  O(log n)
+ get       O(log n)     O(1)        O(n)  O(log n)
+ in        O(log n)     O(1)        O(n)  O(log n)
+ del       O(n)         O(1)        O(n)  O(log n)
+
+7.1 Graphs - Objectives
+
+A tree is a special kind of graph.
+Examples: road networks, airline flights, sequence of classes in a university
+
+7.2 Vocabulary and Definitions
+
+A vertex (or node) is a fundamental part of a graph. Its name is the key, and additional info the payload
+
+An edge connects two vertices to show a relationship between them. Edges may be one-way or two-way. If a graph only has one-way edges, it is a directed graph, or digraph
+
+weight: edges may be weighted to show that there is a cost to go from one vertex to another. (ex. distances)
+
+A graph G = (V, E) has a set of vertices V and a set of edges E. Each edge is a tuple (v, w). This tuple may have a weight as a third element.
+
+path: a sequence of vertices that are connected by edges: w1, w2, ..., wn such that (w_i, w_i+1) is in E for all 1 <= i <= n-1
+
+cycle: in a directed graph, a cycle is a path that starts and ends at the same vertex. A graph with no cycles is called an acyclic graph.
+
+A directed acyclic graph is called a DAG. Several important problems may be solved if they can be represented as a DAG
+
+7.3 The Graph Abstract Data Type
+
+Graph() creates a new, empty graph
+addVertex(vert)
+addEdge(fromVert, toVert) = directed edge
+addEdge(fromVert, toVert, weight) = weighted, directed edge
+getVertex(vertKey)
+getVertices()
+v in g
+
+7.4 Adjacency Matrix
+
+From  To ->
+ |
+ v
+     v0  v1  v2  ...    
+ vo       5
+ v1           4
+ v2   1
+ ...
+
+A value at the intersection of row v and column w indicates an edge
+
+Two connected vertices are adjacent. The number of edges needed to fill the matrix is |V|^2
+
+An adjacency matrix is usually inefficient because they will be sparse (most cells are empty)
+
+7.5 Adjacency List
+
+Keep a master list of all the vertices in the Graph object and then each vertex object in the graph maintains a list of the other vertices it is connected to.
+
+In our implementation, we will use a dictionary where the keys are the vertices and values the weights
+
++-----------------+
+| Graph           |
+|  +----------+   |
+|  | VertList |   |
+|  |          |   |
+|  | [v0| ]---------> id = "v0", adj = {'v1': 5, 'v5': 2}
+|  | [v1| ]---------> id = "v1", adj = {'v2': 4}
+|  | [v2| ]---------> id = "v2", adj = {}
+|  | ...      |   |
+|  +----------|   |
+| numVertices = 6 |
++-----------------+
+
+7.6 Adjacency List Implementation
+
+The 'Graph' class holds the master list of vertices
+The 'Vertex' clsss uses a dictionary to keep track of the vertices to which it is connected, and the weight of each edge
+
+class Vertex:
+	def __init__(self, key):
+		self.id = key
+		self.connectedTo = {}
+
+	addNeighbor()
+	getConnections()
+	getId()
+	getWeight()
+
+class Graph:
+	def __init__(self):
+		self.vertList = {}
+
+	addVertex()
+	addEdge()
+	getVertex()
+	getVertices()
+	__contains__
+	__iter__
