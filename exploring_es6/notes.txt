@@ -17,4 +17,85 @@ A binding is an entry in an environment
 
 Destructive methods and functions modify their parameters or receivers.
 
-Next: begin http://exploringjs.com/es6/ch_about-es6.html
+http://exploringjs.com/es6/ch_about-es6.html
+
+TC39 is ECMA (European Computer Manufacturers Association) Technical Committee 39. It meets regularly and invites experts to evolve JavaScript
+
+http://exploringjs.com/es6/ch_one-javascript.html
+
+Evolution without versioning is possible by always being backward-compatible
+
+http://exploringjs.com/es6/ch_core-features.html
+
+let is a block-scoped version of var. Variables declared with var are function-scoped
+
+const is used for variables whose values never change
+
+(avoid var)
+
+Using a block and a let declaration, we restrict the scope of a variable to that block.
+
+{  // open block
+	let tmp = ...;
+	...
+}  // close block
+
+Template literals use the backtick and ${x}
+
+function printCoord(x, y) {
+	console.log(`(${x}, ${y})`);
+}
+
+Template literals can also span multiple lines
+
+const HTML5_SKELETON = `
+	<!doctype html>
+	<html>
+	...
+	</html>`;
+
+Arrow functions don't shadow this
+
+function UiComponent() {
+	var button = document.getElementById('myButton');
+	button.addEventListener('click', () => {
+		console.log("click");
+		this.handleClick();
+	});
+}
+
+Arrow functions are also used for short callbacks that only return results of expressions
+
+const squares = arr.map(x => x * x);
+'(x) => x * x' and 'x => x * x' are both allowed
+
+Destructuring makes code simpler by making temporary variables unnecessary
+
+const [, year, month, day] =
+	/^(\d\d\d\d)-(\d\d)-(\d\d)$/
+	.exec('2999-12-31');
+
+The empty slot at the beginning skips the Array element at index zero.
+
+const {writable, configurable} is an abbreviation for { writable: writable, configurable: configurable }
+
+const {writable, configurable} = Object.getOwnPropertyDescriptor(obj, 'foo');
+
+for-of is concise and you can break from it.
+
+const arr = ['a', 'b', 'c'];
+for (const elem of arr) {
+	console.log(elem);
+}
+
+for (const [index, elem] of arr.entries()) {  // destructuring
+	console.log(index + '. ' + elem);
+}
+
+Default values for parameters may be defined in the signature
+
+function foo(x=0, y=0) {
+	...
+}
+
+Next: 4.8 http://exploringjs.com/es6/ch_core-features.html
