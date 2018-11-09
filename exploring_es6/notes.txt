@@ -1,0 +1,20 @@
+http://exploringjs.com/es6/ch_about-book.html
+Axel Rauschmayer
+
+A protocol defines interfaces (signatures for methods and functions) and rules for using them
+The idea is to specify how a service is to be performed
+
+Given obj.meth(), obj is the receiver of the method call, and accessible via 'this'
+
+The (type) signature of a function describes how the function is to be called, and what its inputs and outputs are
+For example, parseInt(string : string, radix? : number) : number
+
+Implementations of internal slots are left unspecified.
+
+An environment stores the variables of a scope and is basically a dictionary that maps variable names to values.
+
+A binding is an entry in an environment
+
+Destructive methods and functions modify their parameters or receivers.
+
+Next: begin http://exploringjs.com/es6/ch_about-es6.html
