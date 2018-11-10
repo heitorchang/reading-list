@@ -17,13 +17,19 @@ A binding is an entry in an environment
 
 Destructive methods and functions modify their parameters or receivers.
 
+
+
 http://exploringjs.com/es6/ch_about-es6.html
 
 TC39 is ECMA (European Computer Manufacturers Association) Technical Committee 39. It meets regularly and invites experts to evolve JavaScript
 
+
+
 http://exploringjs.com/es6/ch_one-javascript.html
 
 Evolution without versioning is possible by always being backward-compatible
+
+
 
 http://exploringjs.com/es6/ch_core-features.html
 
@@ -222,4 +228,46 @@ export default function () { ... }  // no semicolon
 import myFunc from 'myFunc';
 myFunc();
 
-Next: http://exploringjs.com/es6/ch_numbers.html
+
+
+http://exploringjs.com/es6/ch_numbers.html
+
+0xFF  hex
+0b11  bin
+0o10  oct
+
+Number.EPSILON (for comparing floating point numbers with a tolerance for rounding errors)
+Number.isInteger(num)
+
+Number.isSafeInteger(num)
+Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER
+
+Number.isFinite, Number.parseFloat, Number.parseInt
+
+Math.sign, Math.trunc, Math.log10, Math.hypot
+
+The method toString(radix) can be used to display the number in a base other than 10.
+
+255..toString(16)  // the double dots are necessary so that the dot for property access is not confused with a decimal dot
+
+The radix in Number.parseInt() should never be omitted.
+
+function epsEqu(x, y) {
+	return Math.abs(x - y) < Number.EPSILON;
+}
+console.log(epsEqu(0.1+0.2, 0.3));  // true
+
+Math.cbrt(x) returns the cube root of x
+
+Math.expm1 and Math.log1p provide higher precision when results are close to 1
+
+Math.log2, Math.log10
+
+Math.clz32(x) counts the leading zero bits in the 32-bit integer x
+
+Trigonometric methods Math.sinh, .cosh, .tanh, .asinh, .acosh, .atanh, .hypot(...values)
+
+
+
+Next: http://exploringjs.com/es6/ch_strings.html
+
