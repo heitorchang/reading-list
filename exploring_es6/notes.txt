@@ -98,4 +98,128 @@ function foo(x=0, y=0) {
 	...
 }
 
-Next: 4.8 http://exploringjs.com/es6/ch_core-features.html
+Handling named parameters is also done with destructuring
+
+function selectEntries({ start=0, end=-1, step=1 }) {
+	...
+}
+
+To make the parameter optional, specify {} as a parameter default value
+
+function selectEntries({ start=0, end=-1, step=1 } = {}) {
+	...
+}
+
+Rest parameters are used to accept an arbitrary number of arguments via the ... operator
+
+Trailing parameters appear after required parameters
+
+function format(pattern, ...args) {
+	...
+}
+
+... is also the spread operator, that turns arrays into parameters
+
+Math.max(...[-1, 5, 11, 3])
+
+Array.prototype.push() appends all of its arguments as elements to its receiver. There is no method that destructively appends an Array to another one
+
+arr1.push(...arr2);
+
+The spread operator can also non-destructively turn the contents of its operand into Array elements.
+
+const arr1 = ['a', 'b'];
+const arr2 = ['c'];
+const arr3 = ['d', 'e'];
+
+console.log([...arr1, ...arr2, ...arr3]);
+
+Methods are properties whose values are functions
+
+Method definitions is a special syntax for creating methods
+
+const obj = {
+	foo() {
+		...
+	},
+	bar() {
+		this.foo();
+	},
+}
+
+Classes provide syntax for constructor functions and method definitions. There are no commas between the parts of a class
+
+class Person {
+	constructor(name) {
+		this.name = name;
+	}
+	describe() {
+		return 'Person called ' + this.name;
+	}
+}
+
+Subclassing is done with 'extends'
+
+class Employee extends Person {
+	constructor(name, title) {
+		super(name);
+		this.title = title;
+	}
+	describe() {
+		return super.describe() + ' (' + this.title + ')';
+	}
+}
+
+'Map' is a built-in data structure that can use arbitrary values as keys, and keys don't have to be escaped
+
+const map = new Map();
+function countWords(word) {
+	const count = map.get(word) || 0;
+	map.set(word, count + 1);
+}
+
+Strings' beginning and end can be checked with .startswith('abc') and .endswith('xyz'). Contents may be checked with .includes('jkl')
+
+Strings may be repeated with .repeat(numberOfTimes)
+
+arr.findIndex(x => Number.isNaN(x));  // can be used to find NaN in an Array
+
+const arr = Array.from(arguments);
+
+const arr1 = [...'abc'];
+	// ['a', 'b', 'c']
+
+const arr = new Array(2).fill('x');
+	// ['x', 'x']
+
+Multiple exports are called 'named exports'
+
+// -- lib.js --
+export const sqrt = Math.sqrt;
+export function square(x) {
+	return x * x;
+}
+export function diag(x, y) {
+	return sqrt(square(x) + square(y));
+}
+
+// -- main1.js --
+import { square, diag } from 'lib';
+console.log(square(11));
+console.log(diag(3, 4)); 
+
+// -- main2.js --
+import * as lib from 'lib';  // import modules as objects
+console.log(lib.square(11));
+console.log(lib.diag(3, 4)); 
+
+Single exports are done via a 'default export'
+
+// -- myFunc.js --
+export default function () { ... }  // no semicolon
+
+// -- main1.js --
+import myFunc from 'myFunc';
+myFunc();
+
+Next: http://exploringjs.com/es6/ch_numbers.html
