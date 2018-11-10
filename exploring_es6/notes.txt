@@ -292,3 +292,79 @@ String.prototype.search(regexp) calls regexp[Symbol.search](this)
 String.prototype.split(separator, limit) calls separator[Symbol.split](this, limit)
 
 The parameters don't have to be regular expressions anymore. Any objects with appropriate methods will do.
+
+
+
+http://exploringjs.com/es6/ch_symbols.html
+
+Symbols are a primitive type that serve as unique IDs. They are created via a factory function
+
+const mySymbol = Symbol('mySymbol');
+
+Every time you call Symbol('Red'), a new symbol is created.
+
+The optional parameter is a descriptive string that is shown when printing the symbol.
+
+Symbols are mainly used as unique property keys (they do not clash with other symbols or strings).
+
+An object can be made iterable by using Symbol.iterator as the key of a method
+
+const iterableObject = {
+	[Symbol.iterator]() {  // enables the use of the for-of loop
+		...
+	}
+}
+for (const x of iterableObject) {
+	console.log(x);
+}
+
+The only way to convert a Symbol to a String is with an explicit call:
+const sym = Symbol('desc');
+String(sym)  // 'Symbol(desc)'
+
+The following operations are aware of symbols as property keys:
+
+Reflect.ownKeys()
+Property access via []
+Object.assign()
+
+The following operations ignore symbols as property keys:
+
+Object.keys()
+Object.getOwnPropertyNames()
+for-in loop
+
+Symbols can be used as property keys
+
+Classes and object literals have a feature called 'computed property keys': the key of a property is specified via an expression in square brackets.
+
+const MY_KEY = Symbol();
+
+const obj = {
+	[MY_KEY]: 123
+};
+
+const FOO = Symbol();
+const obj2 = {
+	[FOO]() {
+		return 'bar';
+	}
+};
+console.log(obj2[FOO]());  // bar
+
+Property keys are either strings or symbols
+String-valued property keys are called property names
+Symbol-valued property keys are called property symbols
+
+Object.getOwnPropertyNames() ignores symbol-valued property keys
+Object.getOwnPropertySymbols() ignores string-valued property keys
+Reflect.ownKeys() considers all kinds of keys
+Object.keys(obj) only considers enumerable property keys that are strings
+
+Strings do not work well as enum constants because they may be used in different contexts (COLOR_BLUE and MOOD_BLUE). Using symbols, each value is unique.
+
+const COLOR_BLUE = Symbol('Blue');
+
+Symbols are useful for non-public properties in inheritance hierarchies and to keep meta-level properties from clashing with base-level properties.
+
+Next: 7.4.1 http://exploringjs.com/es6/ch_symbols.html
