@@ -184,7 +184,7 @@ function countWords(word) {
 	map.set(word, count + 1);
 }
 
-Strings' beginning and end can be checked with .startswith('abc') and .endswith('xyz'). Contents may be checked with .includes('jkl')
+Strings' beginning and end can be checked with .startswith('abc') and .endswith('xyz'). Contents may be checked with .includes('jkl'). They have an optional second parameter, which specifies where the string to be searched starts or ends.
 
 Strings may be repeated with .repeat(numberOfTimes)
 
@@ -269,5 +269,26 @@ Trigonometric methods Math.sinh, .cosh, .tanh, .asinh, .acosh, .atanh, .hypot(..
 
 
 
-Next: http://exploringjs.com/es6/ch_strings.html
+http://exploringjs.com/es6/ch_strings.html
 
+'\u{1F680}' is a Unicode escape that lets you specify any code point
+
+With String.raw`Not a newline: \n` backslashes are not special and escapes are not interpreted.
+
+Strings are iterable, which means that you can use for-of to iterate over their characters and use ... to turn them into Arrays
+
+To count the Unicode code points in a string, use iteration (convert it to an Array) and get its length: [...'x\uD83D\uDE80y'].length
+
+To reverse a string with non-BMP code points (larger than 16 bits) [...str].reverse().join('') However, this approach does not work with combining marks. A library such as Esrever is needed.
+
+The method codePointAt(idx) returns the numeric value of a code point. The opposite is String.fromCodePoint(i)
+
+String.prototype.match(regexp) calls regexp[Symbol.match](this)
+
+String.prototype.replace(searchValue, replaceValue) calls searchValue[Symbol.replace](this, replaceValue)
+
+String.prototype.search(regexp) calls regexp[Symbol.search](this)
+
+String.prototype.split(separator, limit) calls separator[Symbol.split](this, limit)
+
+The parameters don't have to be regular expressions anymore. Any objects with appropriate methods will do.
