@@ -367,4 +367,76 @@ const COLOR_BLUE = Symbol('Blue');
 
 Symbols are useful for non-public properties in inheritance hierarchies and to keep meta-level properties from clashing with base-level properties.
 
-Next: 7.4.1 http://exploringjs.com/es6/ch_symbols.html
+Whenever there are inheritance hierarchies (via classes, mixins, or a prototypical approach), there are public and private properties.
+
+Public properties are seen by clients, and private ones are used internally. Protected properties are shared between the several pieces.
+
+Public properties usually have string keys, but symbols are better for private ones to avoid accidental name clashes.
+
+Typically, all own property keys can be found with Reflect.ownKeys()
+
+An object is iterable if it has a method whose key is the symbol Symbol.iterator.
+
+const iterableObj = {
+	data: ['Hello', 'world'],
+	[Symbol.iterator]() {
+		...
+	}
+}
+
+for (const x of obj) {
+	console.log(x);
+}
+
+Converting symbols to other primitive types may be explicit or implicit (coercion)
+
+To			Explicit					Implicit	
+boolean		Boolean(sym)   -> OK		!sym     -> OK
+number		Number(sym)    -> TypeError	sym * 2  -> TypeError
+string		String(sym)    -> OK		'' + sym -> TypeError
+			sym.toString() -> OK		`${sym}` -> TypeError
+object		Object(sym)    -> OK		Object.keys(sym) -> OK
+
+Boolean() returns true for symbols
+
+It is possible to create wrapper objects, instances of Symbol. Object, called as a function, converts all values to objects.
+
+const sym = Symbol();
+typeof sym  // 'symbol'
+const wrapper = Object(sym);
+typeof wrapper  // 'object'
+wrapper instanceof Symbol  // true
+
+[] normally coerces its operand to string, but it also unwraps symbol wrapped objects
+
+A code realm is a context in which pieces of code exist. 
+
+Symbol() is a factory for symbols. Each value it returns is unique
+
+The global object Symbol has several properties that serve as constants, called well-known symbols.
+
+For customizing basic language operations:
+
+- Symbol.hasInstance (method, customizes the behavior of x instanceof C
+
+- Symbol.toPrimitive (method, customizes how it is converted to a primitive value)
+
+- Symbol.toStringTag (string, called by Object.prototype.toString() to compute the default string description of obj)
+
+- Symbol.unscopables (Object, lets an object hide some properties from the with statement)
+
+Iteration:
+
+- Symbol.iterator (method, a method with this key makes an object iterable)
+
+Miscellaneous:
+
+- Symbol.species (method, configures how built-in methods such as Array.prototype.map()) create objects that are similar to this
+
+- Symbol.isConcatSpreadable (boolean, configures whether Array.prototype.concat() adds the indexed elements of an object to its result ("spreading") or the object as a single element)
+
+If you want a symbol to be the same in all realms, you need to use the global symbol registry, via the following two methods:
+
+Symbol.for(str) returns the symbol whose key is the string str in the registry. If str is not yet in the registry, a new symbol is created and filed in the registry.
+
+Symbol.keyFor(sym) returns the string that is associated with the symbol sym. If sym is not in the registry, this method returns undefined. This method can be used to serialize symbols (e.g. to JSON)
