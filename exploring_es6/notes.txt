@@ -440,3 +440,105 @@ If you want a symbol to be the same in all realms, you need to use the global sy
 Symbol.for(str) returns the symbol whose key is the string str in the registry. If str is not yet in the registry, a new symbol is created and filed in the registry.
 
 Symbol.keyFor(sym) returns the string that is associated with the symbol sym. If sym is not in the registry, this method returns undefined. This method can be used to serialize symbols (e.g. to JSON)
+
+
+
+http://exploringjs.com/es6/ch_template-literals.html
+
+Despite their similar names and appearance, template literals and tagged template literals are quite different.
+
+- Template literals (code) are multi-line string literals that support interpolation
+- Tagged template literals (code) are function calls
+- Web templates (data) are HTML with blanks to be filled in
+
+A template literal is a string literal:
+
+const firstName = 'Jane';
+console.log(`Hello ${firstName}!
+How are you
+today?`);
+
+A tagged template literal (or simply tagged template) is created by mentioning a function before a template literal:
+
+String.raw`A \tagged\ template`
+// 'A \\tagged\\ template'
+
+Tagged templates are function calls. String.raw is called to produce the result.
+
+The backslash is used for escaping inside template literals.
+
+`${`  // SyntaxError
+`\${`  // '${'
+
+Other than the backtick and ${, the backslash works like in string literals
+
+In template literals, all line terminators are normalized to \n
+
+Putting a template literal after an expression triggers a function call (similar to how a parameter list (comma-separated values in parentheses) triggers a function call)
+
+tagFunction`Hello ${firstName} ${lastName}!`
+
+is equivalent to
+
+tagFunction(['Hello ', ' ', '!'], firstName, lastName)
+
+(in reality, the first parameter is more than just an Array)
+
+The function to call is the tag function
+
+The tag function receives two types of data:
+
+- Template strings such as 'Hello ', known at compile time (statically)
+- Substitutions such as firstName. A substitution can be any expression, known at runtime (dynamically)
+
+Tag functions also get two versions of each template string:
+
+- A raw version in which backslashes are not interpreted
+- A cooked version in which backslashes are special (`\n` becomes a newline)
+
+Examples:
+
+const str = String.raw`Multi-line text
+Escapes are not interpreted
+\n is not a newline.`;
+
+const proc = sh`ps ax | grep ${pid}`;
+
+POST`http://foo.org/bar?a=${a}`
+(myOnReadyStateChangeHandler);
+
+t7.js is an alternative to JSX (a language extension in Facebook React) and uses templates tagged with t7.
+
+Text localization (L10N)
+
+msg`Welcome to ${siteName}, visitor number ${visitorNumber}:d!`;
+
+The :d annotation affects the substitution formatting
+
+A template is basically a function: data in, text out.
+
+For production code, use Handlebars.js
+
+Prefixing ${} with an exclamation mark, !${addr.first}, will escape characters such as < and >
+
+The number of template strings is always one plus the number of substitutions. If a substitution is first in a literal, it is prefixed by an empty template string. If a substitution is last in a literal, it is suffixed by an empty template string.
+
+An empty template literal produces one (empty) template string and no substitutions.
+
+The tag function 'describe' shows the Cooked and Raw interpretations of template strings
+
+if-then-else inside a template can be done via the ternary operator (cond ? then : else) or the logical Or operator (||)
+
+!${addr.first || '(No first name)'}
+
+Regular expression instances can be created statically (at compile time) via a regular expression literal: /^abc$/i
+
+Or dynamically (at runtime), via the RegExp constructor: new RegExp('^abc$', 'i')
+
+"Template string" is the old name for "template literal"
+"Template handler" is the old name for "tag function"
+
+
+
+http://exploringjs.com/es6/ch_variables.html
+
