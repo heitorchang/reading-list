@@ -1627,6 +1627,8 @@ The while loop is O(V) because each node is visited only once
 
 The for loop is O(E) because it is run once when the node is dequeued. Combined, it is O(V+E)
 
+[ThinkComplexity2] O(V+E) means the time complexity grows in proportion to either V or E, whichever is bigger
+
 In the worst case, if the graph was a long chain, traversing all the vertices would be O(V). There is also the time needed to build the graph
 
 7.11 The Knight's Tour Problem

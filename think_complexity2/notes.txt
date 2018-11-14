@@ -1,0 +1,26 @@
+(Page numbers are raw PDF pages, out of 228. Section/Chapter in parens)
+
+p 31 (2.2) NetworkX simple example
+
+p 44 (3) The "small world property" is that the average distance between nodes, measured in number of edges on the shortest path, is much smaller than expected
+
+p 45 The typical distance between any two people in a social network is about "six degrees of separation"
+
+p 47 (3.3) The degree of a node is its number of neighbors
+
+p 72 (4.5) The Barabasi-Albert model uses "preferential attachment": a new edge is more likely to connect to a vertex that already has a large number of edges (the rich get richer)
+
+Graphs that have a degree distribution obeying a power law are called scale-free networks.
+
+p 79 (4.8)
+
+Misprint:
+
+targets : repeated_nodes 1.:
+In a system, S, we see
+
+p 82 (4.9) Exercises
+
+Misprint:
+
+Note: The actor network is not connected, so you might want to use nx.connected_component_subgraphs to find connected subsets of the nodes.
