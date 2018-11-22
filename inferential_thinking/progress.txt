@@ -1,2 +1,3 @@
 20 nov 2018 ch 2 https://www.inferentialthinking.com/chapters/02/causality-and-experiments
 21 nov 2018 ch 5 Sequences
+22 nov 2018 ch 6 Tables
