@@ -1,15 +1,18 @@
 Using Anaconda on Windows
 
-1. Create a conda environment
+1. (optional) Create a conda environment
 
-> conda create -n datascience
+   > conda create -n datascience
 
-> conda activate datascience
+   > conda activate datascience
 
-> pip install datascience
+2. Install non-conda package
 
-2. In Jupyter, include magic statements
+   > pip install datascience
 
-from datascience import *    # bad style, but follows text
+3. In Jupyter, include magic statements
+
+import datascience as ds
+import numpy as np
 %matplotlib inline
-import matplotlib.pyplot as plots
+%config InteractiveShell.ast_node_interactivity='last_expr_or_assign'
