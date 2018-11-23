@@ -1,4 +1,4 @@
 20 nov 2018 ch 2 https://www.inferentialthinking.com/chapters/02/causality-and-experiments
 21 nov 2018 ch 5 Sequences
 22 nov 2018 ch 7 Visualization
-23 nov 2018 sec 11.1 Assessing Models
+23 nov 2018 sec 12.3 Causality

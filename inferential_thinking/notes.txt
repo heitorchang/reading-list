@@ -1,0 +1,35 @@
+11.1 https://www.inferentialthinking.com/chapters/11/1/Assessing_Models
+
+sample_proportions(sample_size, distribution_of_categories (a list or an array of proportions that add up to 1))
+
+11.2 Total variation distance (TVD)
+
+11.3 Statistical tests of hypotheses
+
+null hypothesis
+alternative hypothesis
+
+atable.sample(27, with_replacement=False)
+
+The P-value is the "observed significance level" of the test.
+
+If the P-value is < 5%, it is "statistically significant"
+If the P-value is < 1%, it is "highly statistically significant"
+
+12.1 A/B testing
+
+smoking mothers
+
+null hypothesis: The distribution of birth weights of babies is the same for mothers who don't smoke as for mothers who do.
+
+the difference in the sample is due to chance.
+
+alternative hypothesis: The babies of mothers who smoke have a lower birth weight
+
+to test, we draw a random sample without replacement
+
+testing the null hypothesis: if there were no difference between the two distributions, then whether a birth weight has the label True or False (for smoking) should make no difference to the average. (permutation test)
+
+def permuted_sample_average_difference(table, label, group_label, repetitions)
+
+
