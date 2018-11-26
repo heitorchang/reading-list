@@ -62,3 +62,12 @@ scipy.stats.norm.cdf (cumulative distribution function) is the fundamental funct
 
 14.5 The sample mean is an unbiased estimate of the population mean
 
+15.1 def standard_units(arr):
+		return (arr - np.mean(arr)) / np.std(arr)
+
+Correlation does not imply causation
+
+15.2 The slope of the regression line is r * (SD of y) / (SD of x)
+The intercept is avg. of y - slope * avg. of x
+
+15.4 "minimize" function for nonlinear regression
