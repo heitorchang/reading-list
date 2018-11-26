@@ -2,3 +2,4 @@
 21 nov 2018 ch 5 Sequences
 22 nov 2018 ch 7 Visualization
 23 nov 2018 ch 13 Estimation
+26 nov 2018 ch 14.5 The variability of the Sample Mean

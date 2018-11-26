@@ -2,7 +2,7 @@
 
 sample_proportions(sample_size, distribution_of_categories (a list or an array of proportions that add up to 1))
 
-11.2 Total variation distance (TVD)
+11.2 Total variation distance (TVD) is the absolute difference between two distributions, divided by 2.
 
 11.3 Statistical tests of hypotheses
 
@@ -32,4 +32,33 @@ testing the null hypothesis: if there were no difference between the two distrib
 
 def permuted_sample_average_difference(table, label, group_label, repetitions)
 
+13.1 The pth (between 0 and 100) percentile is the smallest value in the collection that is at least as large as p% of all the values.
+
+Example: for array[6, 7, 9, 12, 17], the 80th percentile is 12 (80% of the values are less than or equal to it)
+
+13.2 The bootstrap is an idea to generate new random samples from the original sample (resampling)
+
+1) Treat the original sample as if it were the population.
+
+2) Draw from the sample, at random with replacement, the same number of times as the original sample size. The size of the resample is the same as the size of the original sample.
+
+Using the bootstrap method, we can construct a 95% (or any other value less than 100) confidence interval, which says we are 95% confident that the actual population statistic is inside this interval.
+
+The 95% confidence interval goes from the 2.5th percentile to the 97.5th percentile
+
+14.2 The variance is the mean of the squared deviations (distance from the mean)
+
+The standard deviation (SD) is the square root of the variance
+
+Chebychev's bounds: for all lists and all numbers z, the proportion of entries that are in the range "average +/- z SDs" is at least 1 - (1 / z^2). This is a lower bound. The percent of entries within "average +/- 2 SDs" might be larger than 75%, but cannot be smaller
+
+14.3 The point of inflection (where the curve changes from looking like an 'upside-down cup' to a 'right-way-up cup') is 1 SD away from the mean
+
+"It is a fact of mathematics that the standard normal curve cannot be integrated in any of the usual ways of calculus"
+
+scipy.stats.norm.cdf (cumulative distribution function) is the fundamental function for finding areas under the normal curve. It returns all the area under the curve to the left of the given argument.
+
+14.4 The Central Limit Theorem says that the probability distribution of the sum or mean of a large random sample drawn with replacement will be roughly normal, regardless of the distribution of the population from which the sample is drawn
+
+14.5 The sample mean is an unbiased estimate of the population mean
 
