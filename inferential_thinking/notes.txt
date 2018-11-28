@@ -71,3 +71,5 @@ Correlation does not imply causation
 The intercept is avg. of y - slope * avg. of x
 
 15.4 "minimize" function for nonlinear regression
+
+17.3 distance(point1, point2)

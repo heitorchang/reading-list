@@ -4,3 +4,4 @@
 23 nov 2018 ch 13 Estimation
 26 nov 2018 sec 15.5 Visual Diagnostics
 27 nov 2018 sec 17.2 Training and testing
+28 nov 2018 The End
