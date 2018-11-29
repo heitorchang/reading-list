@@ -1,0 +1,10 @@
+00.00 preface
+
+"PyData" world
+
+01.03 magic commands
+
+%paste, %cpaste
+%run
+%timeit
+%magic, %lsmagic

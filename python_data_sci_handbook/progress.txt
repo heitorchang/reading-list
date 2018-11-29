@@ -1,1 +1,0 @@
-04 jun 2018 https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.02-The-Basics-Of-NumPy-Arrays.ipynb
