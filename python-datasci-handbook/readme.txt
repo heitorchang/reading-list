@@ -17,15 +17,3 @@ import matplotlib.pyplot as plt
 import datascience as ds
 %matplotlib inline
 %config InteractiveShell.ast_node_interactivity='last_expr_or_assign'
-
-
-00.00 preface
-
-"PyData" world
-
-01.03 magic commands
-
-%paste, %cpaste
-%run
-%timeit
-%magic, %lsmagic

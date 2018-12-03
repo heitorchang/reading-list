@@ -4,6 +4,10 @@
 
 https://jakevdp.github.io/PythonDataScienceHandbook/
 
-29 nov 2018 Ch 2 NumPy
+29 nov 2018 ch 2 NumPy
 
 https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html
+
+03 dec 2018 sec 02.02
+
+https://jakevdp.github.io/PythonDataScienceHandbook/02.02-the-basics-of-numpy-arrays.html
