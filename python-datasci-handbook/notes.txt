@@ -29,3 +29,62 @@ import datascience as ds
 %run
 %timeit
 %magic, %lsmagic
+
+02.02 NumPy Arrays
+
+np.random.seed(0)
+
+np.random.randint(10, size=6)
+np.random.randint(10, size=(3, 4, 5))
+
+arr.ndim, .shape, .size
+
+x2[0, 1]  # access 2-D array, slicing also works
+
+x2[:, 0]  # first column of x2
+x2[0, :]  # first row of x2
+
+Array slices are views of data. So changing a sliced variable will affect the original.
+
+Copying is done with the copy() method
+
+reshape, np.newaxis
+
+concatenate, vstack, hstack
+
+split, vsplit, hsplit
+
+02.03 Universal functions
+
+Vectorized functions are fast, typically implemented through universal functions (ufuncs)
+
+Specifying output
+
+x = np.arange(5)
+y = np.empty(5)
+np.multiply(x, 10, out=y)
+
+np.add.reduce(x)
+np.add.accumulate(x)
+
+np.multiply.outer(x)
+
+ufunc.at, ufunc.reduceat
+
+02.04 Aggregates
+
+M.min(axis=0) will give the minimum value within each column.
+
+the given axis is the dimension that will be collapsed
+
+02.05 Broadcasting
+
+Broadcasting is a set of rules for applying binary ufuncs on arrays of different sizes
+
+02.06 Booleans
+
+Masking: x[x < 5]
+
+and/or vs. &/|
+
+and, or gauge the truth or falsehood of the entire object (a single Boolean entity), while &, | refer to bits within each object (a string of bits where 1 = True and 0 = False)
