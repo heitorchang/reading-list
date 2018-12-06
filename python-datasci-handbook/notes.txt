@@ -88,3 +88,16 @@ Masking: x[x < 5]
 and/or vs. &/|
 
 and, or gauge the truth or falsehood of the entire object (a single Boolean entity), while &, | refer to bits within each object (a string of bits where 1 = True and 0 = False)
+
+02.07 fancy indexing is passing an array of indices to access multiple array elements at once.
+
+An arbitrary shape can be given to the index array
+
+The return value reflects the broadcasted shape of the indices
+
+bin data with np.add.at()
+
+02.09 Structured Data
+
+NumPy has structured arrays and record arrays; however, in practice, Pandas DataFrames are used more often
+
