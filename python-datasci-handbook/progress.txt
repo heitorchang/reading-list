@@ -17,3 +17,5 @@ https://jakevdp.github.io/PythonDataScienceHandbook/02.02-the-basics-of-numpy-ar
 https://jakevdp.github.io/PythonDataScienceHandbook/02.07-fancy-indexing.html
 
 06 dec 2018 sec 03.01
+
+13 dec 2018 sec 03.08
