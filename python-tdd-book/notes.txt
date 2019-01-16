@@ -37,7 +37,7 @@ self.assertTemplateUsed(response, 'home.html')
 
 138 definition of lists/new
 
-153 URLs without / at the end are "actions" that modify the database
+153 URLs without / at the end (trailing slash) are "actions" that modify the database
 
 154 lists/views.py
 
