@@ -1,0 +1,41 @@
+29 deck of cards
+45 summary of built-in sequences
+46 listcomps
+52 tuples
+59 slicing
+75 specialized sequences--arrays, memoryviews, numpy, scipy
+84 table of methods implemented in lists
+94 generic map types
+96 dictcomps
+101 defaultdict
+106 UserDict
+109 sets
+129 text vs. bytes
+175 first-class functions
+180 lambda
+183 function introspection with dir()
+205 Design Patterns with first-class functions
+206 Strategy
+216 Command
+223 decorators
+232 closures
+258 object references
+259 variables are not boxes, they're labels (etiquetas)
+264 copies are shallow by default
+268 function parameters as references
+288 Vector2d
+318 slicing sequences
+352 interfaces: protocols and ABCs
+365 subclassing an ABC
+395 inheritance
+396 subclass UserDict instead of dict
+407 multiple inheritance
+419 operator overloading (sobrecarga de operadores)
+431 table of methods for operators
+450 iterables, iterators and generators
+469 genexps
+475 tables of itertools generators
+485 yield from
+500 'else' in blocks other than if
+502 'with' blocks
+515 coroutines
