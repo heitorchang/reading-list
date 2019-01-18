@@ -39,3 +39,14 @@
 500 'else' in blocks other than if
 502 'with' blocks
 515 coroutines
+522 decorators to prime coroutines
+530 using 'yield from'
+543 using coroutines to simulate discrete events
+560 concurrency with futures
+573 Executor.map
+594 concurrency with asyncio
+644 dynamic attributes and properties
+687 attribute descriptors
+709 methods are descriptors
+719 a class factory
+730 metaclass basics
