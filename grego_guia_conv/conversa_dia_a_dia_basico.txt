@@ -1,0 +1,14 @@
+bom dia;καλημέρα
+boa tarde;καλό απόγευμα
+boa noite;καλησπέρα
+boa noite (ao se despedir);καληνύχτα
+com licença;συγνώμη
+desculpe;συγνώμη
+sim;ναι
+não;όχι
+obrigado;ευχαριστώ
+oi;γεια σου
+por favor;παρακαλώ
+tchau;γεια σου
+adeus;αντίο
+tudo bem, ok;εντάξει

@@ -1,0 +1,39 @@
+eu gostaria ...;θα ήθελα 
+nós gostaríamos ...;θα θέλαμε
+você quer ...;θέλεις
+o senhor tem ...;έχετε
+tem um ...;υπάρχει ένα
+tem alguns ...;υπάρχουν καθόλου
+como ...;πώς
+por que ...;γιατί
+quando ...;πότε
+o que ...;τι
+quem?;ποιός
+qual?;ποιός
+onde fica ...;πού ειναι
+onde ficam ...;πού ειναι
+quanto custa isto?;πόσο κάνει αυτό
+o que é isto?;τι είναι αυτό;
+o senhor fala inglês?;μιλάτε Αγγλικά;
+onde ficam os toaletes, por favor?;πού είναι οι τουαλέτες, παρακαλώ;
+como vai?;πώς είσαι;
+bem, obrigado;καλά, ευχαριστώ
+muito obrigado;ευχαριστώ πολύ
+não, obrigado;όχι, ευχαριστώ
+sim, por favor;ναι, παρακαλώ
+de nada;παρακαλώ
+até mais tarde;θα σε δω αργότερα
+sinto muito;λυπάμαι
+como?;παρακαλώ;
+o quê?;τι;
+poderia repetir, por favor?;μπορείτε να το επαναλάβετε αυτό, παρακαλώ;
+poderia falar mais devagar;μπορείτε να μιλάτε πιο αργά;
+não estou entendendo;δεν καταλαβαίνω
+entendendo um pouco de grego;καταλαβαίνω λίγο ελληνικά
+quase nunca falo grego;δεν μιλάω σχεδόν καθόλου ελληνικά
+como se escreve?;πώς το συλλαβίζετε αυτό;
+como se diz aquilo em grego?;πώς το λέτε αυτό στα ελληνικά;
+poderia anotar para mim?;μπορείτε να μου το γράψετε;
+isto significa ...;σημαίνει
+é um tipo de ...;είναι ένα είδος
+
