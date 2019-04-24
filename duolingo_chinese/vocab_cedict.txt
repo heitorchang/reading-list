@@ -5,7 +5,7 @@
 02. Numbers
 一 [yī] one/1/single/a (article)/as soon as/entire/whole/all/throughout/"one" radical in Chinese characters (Kangxi radical 1)/also pr. [yao1] for greater clarity when spelling out numbers digit by digit
 二 [èr] two/2/(Beijing dialect) stupid
-三 [sān] surname San//three/3
+三 [sān] three/3
 四 [sì] four/4
 五 [wǔ] five/5
 六 [liù] six/6
@@ -14,39 +14,39 @@
 九 [jiǔ] nine/9
 十 [shí] ten/10
 零 [líng] zero/nought/zero sign/fractional/fragmentary/odd (of numbers)/(placed between two numbers to indicate a smaller quantity followed by a larger one)/fraction/(in mathematics) remainder (after division)/extra/to wither and fall/to wither
-元 [yuán] surname Yuan/the Yuan or Mongol dynasty (1279-1368)//currency unit (esp. Chinese yuan)/first/original/primary/fundamental/constituent/part/era (of a reign)/meta- (prefix)/(math.) argument/variable/(Tw) (geology) eon
-百 [bǎi] surname Bai//hundred/numerous/all kinds of
+元 [yuán] currency unit (esp. Chinese yuan)/first/original/primary/fundamental/constituent/part/era (of a reign)/meta- (prefix)/(math.) argument/variable/(Tw) (geology) eon
+百 [bǎi] hundred/numerous/all kinds of
 
 03. Name
-叫 [jiào] to shout/to call/to order/to ask/to be called/by (indicates agent in the passive mood)//variant of 叫[jiao4]
+叫 [jiào] to shout/to call/to order/to ask/to be called/by (indicates agent in the passive mood)
 我 [wǒ] I/me/my
 什么 [shénme] what?/something/anything
 名字 [míngzi] name (of a person or thing)/CL:個|个[ge4]
-姓 [xìng] family name/surname/CL:個|个[ge4]/to be surnamed
-呢 [ne] particle indicating that a previously asked question is to be applied to the preceding word ("What about ...?", "And ...?")/particle for inquiring about location ("Where is ...?")/particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board ("ok?", "are you with me?")/(at the end of a declarative sentence) particle indicating continuation of a state or action/particle indicating strong affirmation//woolen material
+姓
+呢 [ne / ní] particle indicating that a previously asked question is to be applied to the preceding word ("What about ...?", "And ...?")/particle for inquiring about location ("Where is ...?")/particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board ("ok?", "are you with me?")/(at the end of a declarative sentence) particle indicating continuation of a state or action/particle indicating strong affirmation//woolen material
 
 04. Greeting 2
 高兴 [gāoxìng] happy/glad/willing (to do sth)/in a cheerful mood
 很 [hěn] (adverb of degree)/quite/very/awfully
-也 [yě] surname Ye//also/too/(in Classical Chinese) final particle implying affirmation
+也 [yě] also/too/(in Classical Chinese) final particle implying affirmation
 认识 [rènshi] to know/to recognize/to be familiar with/to get acquainted with sb/knowledge/understanding/awareness/cognition
 
 05. Food 1
-面 [miàn] face/side/surface/aspect/top/classifier for flat surfaces such as drums, mirrors, flags etc//variant of 麵|面[mian4]//flour/noodles/(of food) soft (not crunchy)/(slang) (of a person) ineffectual/spineless
-鱼 [yú] surname Yu//fish/CL:條|条[tiao2],尾[wei3]
-吃 [chī] to eat/to consume/to eat at (a cafeteria etc)/to eradicate/to destroy/to absorb/to suffer/to stammer (Taiwan pr. for this sense is [ji2])//variant of 吃[chi1]
+面 [miàn / miàn] face/side/surface/aspect/top/classifier for flat surfaces such as drums, mirrors, flags etc//flour/noodles/(of food) soft (not crunchy)/(slang) (of a person) ineffectual/spineless
+鱼 [yú] fish/CL:條|条[tiao2],尾[wei3]
+吃 [chī] to eat/to consume/to eat at (a cafeteria etc)/to eradicate/to destroy/to absorb/to suffer/to stammer (Taiwan pr. for this sense is [ji2])
 饭 [fàn] food/cuisine/cooked rice/meal/CL:碗[wan3],頓|顿[dun4]
-喝 [hē] to drink/My goodness!//to shout loudly
+喝 [hē / hè] to drink/My goodness!//to shout loudly
 不 [bù] (negative prefix)/not/no
 茶 [chá] tea/tea plant/CL:杯[bei1],壺|壶[hu2]
-水 [shuǐ] surname Shui//water/river/liquid/beverage/additional charges or income/(of clothes) classifier for number of washes
+水 [shuǐ] water/river/liquid/beverage/additional charges or income/(of clothes) classifier for number of washes
 
 06. Occupation
-是 [shì] is/are/am/yes/to be//variant of 是[shi4]/(used in given names)
+是 [shì] is/are/am/yes/to be
 生 [shēng] to be born/to give birth/life/to grow/raw/uncooked/student
 学 [xué] to learn/to study/to imitate/science/-ology
 他 [tā] he or him/(used for either sex when the sex is unknown or unimportant)/(used before sb's name for emphasis)/(used as a meaningless mock object)/other/another
-吗 [mǎ] see 嗎啡|吗啡, morphine//(question particle for "yes-no" questions)
+吗 [mǎ / ma] see 嗎啡|吗啡, morphine//(question particle for "yes-no" questions)
 她 [tā] she
 们 [men] plural marker for pronouns, and nouns referring to individuals
 老师 [lǎoshī] teacher/CL:個|个[ge4],位[wei4]
@@ -54,25 +54,25 @@
 
 07. Contact 1
 电话 [diànhuà] telephone/CL:部[bu4]/phone call/CL:通[tong1]/phone number
-的 [de] of/~'s (possessive particle)/(used after an attribute)/(used to form a nominal expression)/(used at the end of a declarative sentence for emphasis)//see 的士[di1 shi4]//really and truly//aim/clear
+的 [de / dī / dí / dì] of/~'s (possessive particle)/(used after an attribute)/(used to form a nominal expression)/(used at the end of a declarative sentence for emphasis)//see 的士[di1 shi4]//really and truly//aim/clear
 号码 [hàomǎ] number/CL:堆[dui1],個|个[ge4]
-多少 [duōshǎo] number/amount/somewhat//how much/how many/which (number)/as much as
+多少 [duōshǎo / duōshao] number/amount/somewhat//how much/how many/which (number)/as much as
 
 08. Nation
-国 [guó] surname Guo//country/nation/state/national/CL:個|个[ge4]
+国 [guó] country/nation/state/national/CL:個|个[ge4]
 人 [rén] man/person/people/CL:個|个[ge4],位[wei4]
-中 [zhōng] China/Chinese/surname Zhong//within/among/in/middle/center/while (doing sth)/during/(dialect) OK/all right//to hit (the mark)/to be hit by/to suffer/to win (a prize, a lottery)
-哪 [nǎ] how/which//(particle equivalent to 啊 after noun ending in -n)//which? (interrogative, followed by classifier or numeral-classifier)
-美 [měi] the Americas/abbr. for 美洲[Mei3 zhou1]/USA/abbr. for 美國|美国[Mei3 guo2]//beautiful/very satisfactory/good/to beautify/to be pleased with oneself
-英 [yīng] United Kingdom/British/England/English/abbr. for 英國|英国[Ying1 guo2]//hero/outstanding/excellent/(literary) flower/blossom
+中 [zhōng / zhòng] within/among/in/middle/center/while (doing sth)/during/(dialect) OK/all right//to hit (the mark)/to be hit by/to suffer/to win (a prize, a lottery)
+哪 [nǎ / na / něi] how/which//(particle equivalent to 啊 after noun ending in -n)//which? (interrogative, followed by classifier or numeral-classifier)
+美 [měi / měi] the Americas/abbr. for 美洲[Mei3 zhou1]/USA/abbr. for 美國|美国[Mei3 guo2]//beautiful/very satisfactory/good/to beautify/to be pleased with oneself
+英 [yīng / yīng] United Kingdom/British/England/English/abbr. for 英國|英国[Ying1 guo2]//hero/outstanding/excellent/(literary) flower/blossom
 对 [duì] right/correct/couple/pair/towards/at/for/to face/opposite/to treat (sb a certain way)/to match together/to adjust/to fit/to suit/to answer/to reply/classifier: couple
-都 [dū] surname Du//all/both/entirely/(used for emphasis) even/already/(not) at all//capital city/metropolis
-大 [dà] big/huge/large/major/great/wide/deep/older (than)/oldest/eldest/greatly/very much/(dialect) father/father's elder or younger brother//see 大夫[dai4 fu5]
-拿 [ná] old variant of 拿[na2]//variant of 拿[na2]//to hold/to seize/to catch/to apprehend/to take/(used in the same way as 把[ba3]: to mark the following noun as a direct object)
-加 [jiā] abbr. for Canada 加拿大[Jia1 na2 da4]/surname Jia//to add/plus/(used after an adverb such as 不, 大, 稍 etc, and before a disyllabic verb, to indicate that the action of the verb is applied to sth or sb previously mentioned)/to apply (restrictions etc) to (sb)/to give (support, consideration etc) to (sth)
+都 [dōu / dū] all/both/entirely/(used for emphasis) even/already/(not) at all//capital city/metropolis
+大 [dà / dài] big/huge/large/major/great/wide/deep/older (than)/oldest/eldest/greatly/very much/(dialect) father/father's elder or younger brother//see 大夫[dai4 fu5]
+拿 [ná] to hold/to seize/to catch/to apprehend/to take/(used in the same way as 把[ba3]: to mark the following noun as a direct object)
+加 [jiā] to add/plus/(used after an adverb such as 不, 大, 稍 etc, and before a disyllabic verb, to indicate that the action of the verb is applied to sth or sb previously mentioned)/to apply (restrictions etc) to (sb)/to give (support, consideration etc) to (sth)
 
 09. Greeting 3
-上 [shǎng] see 上聲|上声[shang3 sheng1]//on top/upon/above/upper/previous/first (of multiple parts)/to climb/to get onto/to go up/to attend (class or university)
+上 [shǎng / shàng] see 上聲|上声[shang3 sheng1]//on top/upon/above/upper/previous/first (of multiple parts)/to climb/to get onto/to go up/to attend (class or university)
 早 [zǎo] early/morning/Good morning!/long ago/prematurely
 忙 [máng] busy/hurriedly/to hurry/to rush
 早上 [zǎoshang] early morning/CL:個|个[ge4]
@@ -83,10 +83,10 @@
 
 10. Location 1
 东西南北 [dōngxīnánběi] east west south north
-家 [jiā] see 傢伙|家伙[jia1 huo5]//surname Jia//home/family/(polite) my (sister, uncle etc)/classifier for families or businesses/refers to the philosophical schools of pre-Han China/noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian/CL:個|个[ge4]
-京 [jīng] abbr. for Beijing/surname Jing/Jing ethnic minority//capital city of a country/big/algebraic term for a large number (old)/artificial mound (old)
+家 [jiā / jiā] see 傢伙|家伙[jia1 huo5]//home/family/(polite) my (sister, uncle etc)/classifier for families or businesses/refers to the philosophical schools of pre-Han China/noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian/CL:個|个[ge4]
+京 [jīng] capital city of a country/big/algebraic term for a large number (old)/artificial mound (old)
 在 [zài] (located) at/(to be) in/to exist/in the middle of doing sth/(indicating an action in progress)
-儿 [ér] child/son//non-syllabic diminutive suffix/retroflex final
+儿 [ér / r] child/son//non-syllabic diminutive suffix/retroflex final
 住 [zhù] to live/to dwell/to stay/to reside/to stop/(suffix indicating firmness, steadiness, or coming to a halt)
 
 11. Phrases 1
@@ -94,9 +94,9 @@
 客 [kè] customer/visitor/guest
 谢谢 [xièxie] to thank/thanks/thank you
 不客气 [bùkèqi] you're welcome/don't mention it/impolite/rude/blunt
-关系 [guānxi] relation/relationship/to concern/to affect/to have to do with/guanxi/CL:個|个[ge4]//variant of 關係|关系[guan1 xi5]
+关系 [guānxi] relation/relationship/to concern/to affect/to have to do with/guanxi/CL:個|个[ge4]
 起 [qǐ] to rise/to raise/to get up/to set out/to start/to appear/to launch/to initiate (action)/to draft/to establish/to get (from a depot or counter)/verb suffix, to start/starting from (a time, place, price etc)/classifier for occurrences or unpredictable events: case, instance/classifier for groups: batch, group
-没 [méi] (negative prefix for verbs)/have not/not//drowned/to end/to die/to inundate
+没 [méi / mò] (negative prefix for verbs)/have not/not//drowned/to end/to die/to inundate
 对不起 [duìbuqǐ] unworthy/to let down/I'm sorry/excuse me/pardon me/if you please/sorry? (please repeat)
 没关系 [méiguānxi] it doesn't matter
 
@@ -108,13 +108,13 @@
 一个
 谁 [shéi] who/also pr. [shui2]
 这 [zhè] this/these/(commonly pr. [zhei4] before a classifier, esp. in Beijing)
-那 [nā] surname Na//surname Nuo//variant of 哪[na3]//that/those/then (in that case)/commonly pr. [nei4] before a classifier, esp. in Beijing//(archaic) many/beautiful/how/old variant of 挪[nuo2]
+那 [nà] that/those/then (in that case)/commonly pr. [nei4] before a classifier, esp. in Beijing
 哥哥 [gēge] older brother/CL:個|个[ge4],位[wei4]
 姐姐 [jiějie] older sister/CL:個|个[ge4]
 有 [yǒu] to have/there is/there are/to exist/to be
 弟弟 [dìdi] younger brother/CL:個|个[ge4],位[wei4]
 妹妹 [mèimei] younger sister/young woman/CL:個|个[ge4]
-和 [hé] old variant of 和[he2]//surname He/Japanese (food, clothes etc)//and/together with/with/sum/union/peace/harmony/Taiwan pr. [han4] when it means "and" or "with"//to compose a poem in reply (to sb's poem) using the same rhyme sequence/to join in the singing/to chime in with others//to complete a set in mahjong or playing cards//to combine a powdery substance (flour, plaster etc) with water/Taiwan pr. [huo4]//to mix (ingredients) together/to blend/classifier for rinses of clothes/classifier for boilings of medicinal herbs//old variant of 和[he2]/harmonious
+和 [hé / hè / hú / huó / huò] and/together with/with/sum/union/peace/harmony/Taiwan pr. [han4] when it means "and" or "with"//to compose a poem in reply (to sb's poem) using the same rhyme sequence/to join in the singing/to chime in with others//to complete a set in mahjong or playing cards//to combine a powdery substance (flour, plaster etc) with water/Taiwan pr. [huo4]//to mix (ingredients) together/to blend/classifier for rinses of clothes/classifier for boilings of medicinal herbs
 
 13. Phrases 2
 请 [qǐng] to ask/to invite/please (do sth)/to treat (to a meal etc)/to request
@@ -122,46 +122,46 @@
 问 [wèn] to ask
 请问 [qǐngwèn] Excuse me, may I ask...?
 汉语 [hànyǔ] Chinese language/CL:門|门[men2]
-说 [shuì] to persuade//to speak/to say/to explain/to scold/to tell off/a theory (typically the last character in a compound, as in 日心說|日心说 heliocentric theory)
+说 [shuì / shuō] to persuade//to speak/to say/to explain/to scold/to tell off/a theory (typically the last character in a compound, as in 日心說|日心说 heliocentric theory)
 一次 [yīcì] first/first time/once/(math.) linear (of degree one)
 帮助 [bāngzhù] assistance/aid/to help/to assist
 再 [zài] again/once more/re-/second/another/then (after sth, and not until then)
 再一次 [zàiyīcì] again
 
 14. Greeting 4
-安 [ān] surname An//content/calm/still/quiet/safe/secure/in good health/to find a place for/to install/to fix/to fit/to bring (a charge against sb)/to pacify/to harbor (good intentions)/security/safety/peace/ampere
-会 [huì] can/to be possible/to be able to/will/to be likely to/to be sure to/to assemble/to meet/to gather/to see/union/group/association/CL:個|个[ge4]/a moment (Taiwan pr. for this sense is [hui3])//to balance an account/accountancy/accounting
+安 [ān] content/calm/still/quiet/safe/secure/in good health/to find a place for/to install/to fix/to fit/to bring (a charge against sb)/to pacify/to harbor (good intentions)/security/safety/peace/ampere
+会 [huì / kuài] can/to be possible/to be able to/will/to be likely to/to be sure to/to assemble/to meet/to gather/to see/union/group/association/CL:個|个[ge4]/a moment (Taiwan pr. for this sense is [hui3])//to balance an account/accountancy/accounting
 早安 [zǎoān] Good morning!
 晚安 [wǎnān] Good night!/Good evening!
 一会儿 [yīhuìr] a moment/a while/in a moment/now...now.../also pr. [yi1 hui3 r5]
-最 [zuì] variant of 最[zui4]//old variant of 最[zui4]//most/the most/-est (superlative suffix)
-错 [cuò] surname Cuo//mistake/wrong/bad/interlocking/complex/to grind/to polish/to alternate/to stagger/to miss/to let slip/to evade/to inlay with gold or silver
+最 [zuì] most/the most/-est (superlative suffix)
+错 [cuò] mistake/wrong/bad/interlocking/complex/to grind/to polish/to alternate/to stagger/to miss/to let slip/to evade/to inlay with gold or silver
 久 [jiǔ] (long) time/(long) duration of time
 近 [jìn] near/close to/approximately
 不错 [bùcuò] correct/right/not bad/pretty good
 最近 [zuìjìn] recent/recently/these days/latest/soon/nearest (of locations)/shortest (of routes)
 
 15. Drink
-冰 [bīng] ice/CL:塊|块[kuai4]/to chill sth/(of an object or substance) to feel cold/(of a person) cold/unfriendly/(slang) methamphetamine//variant of 冰[bing1]
-要 [yāo] to demand/to request/to coerce//important/vital/to want/to ask for/will/going to (as future auxiliary)/may/must/(used in a comparison) must be/probably/if
+冰 [bīng] ice/CL:塊|块[kuai4]/to chill sth/(of an object or substance) to feel cold/(of a person) cold/unfriendly/(slang) methamphetamine
+要 [yāo / yào] to demand/to request/to coerce//important/vital/to want/to ask for/will/going to (as future auxiliary)/may/must/(used in a comparison) must be/probably/if
 热 [rè] to warm up/to heat up/hot (of weather)/heat/fervent
-奶 [nǎi] breast/milk/to breastfeed//variant of 嬭|奶[nai3]//mother/variant of 奶[nai3]
+奶 [nǎi] breast/milk/to breastfeed
 咖啡 [kāfēi] coffee (loanword)/CL:杯[bei1]
-牛 [niú] surname Niu//ox/cow/bull/CL:條|条[tiao2],頭|头[tou2]/(slang) awesome
+牛 [niú] ox/cow/bull/CL:條|条[tiao2],頭|头[tou2]/(slang) awesome
 
 16. Location 2
 洗 [xǐ] to wash/to bathe/to develop (photo)
 医院 [yīyuàn] hospital/CL:所[suo3],家[jia1],座[zuo4]
 手 [shǒu] hand/(formal) to hold/person engaged in certain types of work/person skilled in certain types of work/personal(ly)/convenient/classifier for skill/CL:雙|双[shuang1],隻|只[zhi1]
-间 [jiān] between/among/within a definite time or space/room/section of a room or lateral space between two pairs of pillars/classifier for rooms//gap/to separate/to thin out (seedlings)/to sow discontent
+间 [jiān / jiàn] between/among/within a definite time or space/room/section of a room or lateral space between two pairs of pillars/classifier for rooms//gap/to separate/to thin out (seedlings)/to sow discontent
 洗手间 [xǐshǒujiān] toilet/lavatory/washroom
 饭馆 [fànguǎn] restaurant/CL:家[jia1]
 那儿 [nàr] there
 
 17. Time 1
 月 [yuè] moon/month/monthly/CL:個|个[ge4],輪|轮[lun2]
-几 [jī] small table//almost//how much/how many/several/a few
-年 [nián] surname Nian//year/CL:個|个[ge4]//grain/harvest (old)/variant of 年[nian2]
+几 [jī / jī / jǐ] small table//almost//how much/how many/several/a few
+年 [nián] year/CL:個|个[ge4]
 星期 [xīngqī] week/CL:個|个[ge4]/day of the week/Sunday
 明天 [míngtiān] tomorrow
 几点 [jǐdiǎn] what time?/when?
@@ -169,21 +169,21 @@
 现 [xiàn] to appear/present/now/existing/current
 
 18. Family 2
-子 [zǐ] son/child/seed/egg/small thing/1st earthly branch: 11 p.m.-1 a.m., midnight, 11th solar month (7th December to 5th January), year of the Rat/Viscount, fourth of five orders of nobility 五等爵位[wu3 deng3 jue2 wei4]/ancient Chinese compass point: 0° (north)//(noun suffix)
+子 [zǐ / zi] son/child/seed/egg/small thing/1st earthly branch: 11 p.m.-1 a.m., midnight, 11th solar month (7th December to 5th January), year of the Rat/Viscount, fourth of five orders of nobility 五等爵位[wu3 deng3 jue2 wei4]/ancient Chinese compass point: 0° (north)//(noun suffix)
 两 [liǎng] two/both/some/a few/tael, unit of weight equal to 50 grams (modern) or 1⁄16 of a catty 斤[jin1] (old)
 孩 [hái] child
-岁 [suì] variant of 歲|岁[sui4], year/years old//classifier for years (of age)/year/year (of crop harvests)
-女 [nǚ] female/woman/daughter//archaic variant of 汝[ru3]
+岁 [suì] classifier for years (of age)/year/year (of crop harvests)
+女 [nǚ] female/woman/daughter
 丈夫 [zhàngfu] husband/CL:個|个[ge4]
-妻子 [qīzǐ] wife and children//wife/CL:個|个[ge4]
+妻子 [qīzǐ / qīzi] wife and children//wife/CL:個|个[ge4]
 它 [tā] it
 狗 [gǒu] dog/CL:隻|只[zhi1],條|条[tiao2]
 猫 [māo] cat/CL:隻|只[zhi1]/(dialect) to hide oneself/(coll.) modem
 
 19. Telephone 1
 慢 [màn] slow
-喂 [wéi] hello (when answering the phone)//hey/to feed (an animal, baby, invalid etc)//variant of 餵|喂[wei4]//to feed
-白 [bái] surname Bai//white/snowy/pure/bright/empty/blank/plain/clear/to make clear/in vain/gratuitous/free of charge/reactionary/anti-communist/funeral/to stare coldly/to write wrong character/to state/to explain/vernacular/spoken lines in opera
+喂 [wéi / wèi / wèi] hello (when answering the phone)//hey/to feed (an animal, baby, invalid etc)//to feed
+白 [bái] white/snowy/pure/bright/empty/blank/plain/clear/to make clear/in vain/gratuitous/free of charge/reactionary/anti-communist/funeral/to stare coldly/to write wrong character/to state/to explain/vernacular/spoken lines in opera
 快 [kuài] rapid/quick/speed/rate/soon/almost/to make haste/clever/sharp (of knives or wits)/forthright/plainspoken/gratified/pleased/pleasant
 明白 [míngbai] clear/obvious/unequivocal/to understand/to realize
 
@@ -192,14 +192,14 @@
 朋友 [péngyou] friend/CL:個|个[ge4],位[wei4]
 男 [nán] male/Baron, lowest of five orders of nobility 五等爵位[wu3 deng3 jue2 wei4]/CL:個|个[ge4]
 矮 [ǎi] low/short (in length)
-可 [kě] can/may/able to/to approve/to permit/to suit/(particle used for emphasis) certainly/very//see 可汗[ke4 han2]
-常 [cháng] surname Chang//always/ever/often/frequently/common/general/constant
+可 [kě / kè] can/may/able to/to approve/to permit/to suit/(particle used for emphasis) certainly/very//see 可汗[ke4 han2]
+常 [cháng] always/ever/often/frequently/common/general/constant
 非常 [fēicháng] very/very much/unusual/extraordinary
 可爱 [kěài] adorable/cute/lovely
 
 21. Time 2
 晚 [wǎn] evening/night/late
-分 [fēn] to divide/to separate/to distribute/to allocate/to distinguish (good and bad)/part or subdivision/fraction/one tenth (of certain units)/unit of length equivalent to 0.33 cm/minute (unit of time)/minute (angular measurement unit)/a point (in sports or games)/0.01 yuan (unit of money)//part/share/ingredient/component
+分 [fēn / fèn] to divide/to separate/to distribute/to allocate/to distinguish (good and bad)/part or subdivision/fraction/one tenth (of certain units)/unit of length equivalent to 0.33 cm/minute (unit of time)/minute (angular measurement unit)/a point (in sports or games)/0.01 yuan (unit of money)//part/share/ingredient/component
 下 [xià] down/downwards/below/lower/later/next (week etc)/second (of two parts)/to decline/to go down/to arrive at (a decision, conclusion etc)/measure word to show the frequency of an action
 下午 [xiàwǔ] afternoon/CL:個|个[ge4]/p.m.
 晚上 [wǎnshang] evening/night/CL:個|个[ge4]/in the evening
@@ -207,102 +207,102 @@
 每 [měi] each/every
 中午 [zhōngwǔ] noon/midday/CL:個|个[ge4]
 昨天 [zuótiān] yesterday
-了 [le] (modal particle intensifying preceding clause)/(completed action marker)//to finish/to achieve/variant of 瞭|了[liao3]/to understand clearly//(of eyes) bright/clear-sighted/to understand clearly//unofficial variant of 瞭[liao4]
+了 [le / liǎo] (modal particle intensifying preceding clause)/(completed action marker)//(of eyes) bright/clear-sighted/to understand clearly
 去 [qù] to go/to go to (a place)/(of a time etc) last/just passed/to send/to remove/to get rid of/to reduce/to be apart from in space or time/to die (euphemism)/to play (a part)/(when used either before or after a verb) to go in order to do sth/(after a verb of motion indicates movement away from the speaker)/(used after certain verbs to indicate detachment or separation)
 去年 [qùnián] last year
 住 [zhù] to live/to dwell/to stay/to reside/to stop/(suffix indicating firmness, steadiness, or coming to a halt)
 今年 [jīnnián] this year
-会 [huì] can/to be possible/to be able to/will/to be likely to/to be sure to/to assemble/to meet/to gather/to see/union/group/association/CL:個|个[ge4]/a moment (Taiwan pr. for this sense is [hui3])//to balance an account/accountancy/accounting
+会 [huì / kuài] can/to be possible/to be able to/will/to be likely to/to be sure to/to assemble/to meet/to gather/to see/union/group/association/CL:個|个[ge4]/a moment (Taiwan pr. for this sense is [hui3])//to balance an account/accountancy/accounting
 明年 [míngnián] next year
 
 22. Location 3
-左 [zuǒ] surname Zuo//left/the Left (politics)/east/unorthodox/queer/wrong/differing/opposite/variant of 佐[zuo3]
+左
 右 [yòu] right (-hand)/the Right (politics)/west (old)
-边 [biān] side/edge/margin/border/boundary/CL:個|个[ge4]/simultaneously//suffix of a noun of locality
+边 [biān / bian] side/edge/margin/border/boundary/CL:個|个[ge4]/simultaneously//suffix of a noun of locality
 旁 [páng] beside/one side/other/side/self/the right-hand side of split Chinese character, often the phonetic
-后 [hòu] surname Hou//empress/queen//back/behind/rear/afterwards/after/later
+后 [hòu / hòu] empress/queen//back/behind/rear/afterwards/after/later
 学校 [xuéxiào] school/CL:所[suo3]
 前 [qián] front/forward/ahead/first/top (followed by a number)/future/ago/before/BC (e.g. 前293年)/former/formerly
-路 [lù] surname Lu//road/CL:條|条[tiao2]/journey/route/line (bus etc)/sort/kind
+路 [lù] road/CL:條|条[tiao2]/journey/route/line (bus etc)/sort/kind
 到 [dào] to (a place)/until (a time)/up to/to go/to arrive/(verb complement denoting completion or result of an action)
 走 [zǒu] to walk/to go/to run/to move (of vehicle)/to visit/to leave/to go away/to die (euph.)/from/through/away (in compound verbs, such as 撤走[che4 zou3])/to change (shape, form, meaning)
-里 [lǐ] variant of 裡|里[li3]//lining/interior/inside/internal/also written 裏|里[li3]//Li (surname)//li, ancient measure of length, approx. 500 m/neighborhood/ancient administrative unit of 25 families/(Tw) borough, administrative unit between the township 鎮|镇[zhen4] and neighborhood 鄰|邻[lin2] levels
-往 [wǎng] to go (in a direction)/to/towards/(of a train) bound for/past/previous//old variant of 往[wang3]
-这里 [zhèlǐ] variant of 這裡|这里[zhe4 li3]//here
-哪里 [nǎlǐ] where?/somewhere/anywhere/wherever/nowhere (negative answer to question)/humble expression denying compliment/also written 哪裡|哪里//where?/somewhere/anywhere/wherever/nowhere (negative answer to question)/humble expression denying compliment
-那里 [nàli] there/that place/also written 那裡|那里//there/that place
+里 [lǐ / lǐ] lining/interior/inside/internal/also written 裏|里[li3]//li, ancient measure of length, approx. 500 m/neighborhood/ancient administrative unit of 25 families/(Tw) borough, administrative unit between the township 鎮|镇[zhen4] and neighborhood 鄰|邻[lin2] levels
+往 [wǎng] to go (in a direction)/to/towards/(of a train) bound for/past/previous
+这里 [zhèlǐ] here
+哪里 [nǎlǐ / nǎlǐ] where?/somewhere/anywhere/wherever/nowhere (negative answer to question)/humble expression denying compliment/also written 哪裡|哪里//where?/somewhere/anywhere/wherever/nowhere (negative answer to question)/humble expression denying compliment
+那里 [nàli / nàli] there/that place/also written 那裡|那里//there/that place
 
 23. Hobbies 1
-书 [shū] abbr. for 書經|书经[Shu1 jing1]//book/letter/document/CL:本[ben3],冊|册[ce4],部[bu4]/to write
-欢 [huān] variant of 歡|欢[huan1]//joyous/happy/pleased//hubbub/clamor/variant of 歡|欢[huan1]//a breed of horse/variant of 歡|欢[huan1]
-看 [kān] to look after/to take care of/to watch/to guard//to see/to look at/to read/to watch/to visit/to call on/to consider/to regard as/to look after/to treat (an illness)/to depend on/to feel (that)/(after verb) to give it a try/Watch out! (for a danger)
+书 [shū / shū] abbr. for 書經|书经[Shu1 jing1]//book/letter/document/CL:本[ben3],冊|册[ce4],部[bu4]/to write
+欢 [huān] joyous/happy/pleased
+看 [kān / kàn] to look after/to take care of/to watch/to guard//to see/to look at/to read/to watch/to visit/to call on/to consider/to regard as/to look after/to treat (an illness)/to depend on/to feel (that)/(after verb) to give it a try/Watch out! (for a danger)
 喜欢 [xǐhuan] to like/to be fond of
-游 [yóu] surname You//to swim/variant of 遊|游[you2]//to walk/to tour/to roam/to travel
-玩 [wán] to play/to have fun/to trifle with/toy/sth used for amusement/curio or antique (Taiwan pr. [wan4])/to keep sth for entertainment//variant of 玩[wan2]/Taiwan pr. [wan4]
-戏 [xì] variant of 戲|戏[xi4]//trick/drama/play/show/CL:出[chu1],場|场[chang3],臺|台[tai2]
+游 [yóu] to walk/to tour/to roam/to travel
+玩 [wán] to play/to have fun/to trifle with/toy/sth used for amusement/curio or antique (Taiwan pr. [wan4])/to keep sth for entertainment
+戏 [xì] trick/drama/play/show/CL:出[chu1],場|场[chang3],臺|台[tai2]
 电脑 [diànnǎo] computer/CL:臺|台[tai2]
-最 [zuì] variant of 最[zui4]//old variant of 最[zui4]//most/the most/-est (superlative suffix)
+最 [zuì] most/the most/-est (superlative suffix)
 游戏 [yóuxì] game/CL:場|场[chang3]/to play
 音乐 [yīnyuè] music/CL:張|张[zhang1],曲[qu3],段[duan4]
-听 [yǐn] smile (archaic)//to listen/to hear/to obey/a can (loanword from English "tin")/classifier for canned beverages//(literary pronunciation, still advocated in Taiwan) to rule/to sentence/to allow
-歌 [gē] song/CL:支[zhi1],首[shou3]/to sing//variant of 歌[ge1]
+听 [yǐn / tīng / tìng] smile (archaic)//to listen/to hear/to obey/a can (loanword from English "tin")/classifier for canned beverages//(literary pronunciation, still advocated in Taiwan) to rule/to sentence/to allow
+歌 [gē] song/CL:支[zhi1],首[shou3]/to sing
 跳舞 [tiàowǔ] to dance
 唱 [chàng] to sing/to call loudly/to chant
 
 24. Routine 1
-床 [chuáng] bed/couch/classifier for beds/CL:張|张[zhang1]//variant of 床[chuang2]
-班 [bān] surname Ban//team/class/squad/work shift/ranking/CL:個|个[ge4]/classifier for groups
+床 [chuáng] bed/couch/classifier for beds/CL:張|张[zhang1]
+班 [bān] team/class/squad/work shift/ranking/CL:個|个[ge4]/classifier for groups
 起 [qǐ] to rise/to raise/to get up/to set out/to start/to appear/to launch/to initiate (action)/to draft/to establish/to get (from a depot or counter)/verb suffix, to start/starting from (a time, place, price etc)/classifier for occurrences or unpredictable events: case, instance/classifier for groups: batch, group
 做 [zuò] to do/to make/to produce/to write/to compose/to act as/to engage in/to hold (a party)/to be/to become/to function (in some capacity)/to serve as/to be used for/to form (a bond or relationship)/to pretend/to feign/to act a part/to put on appearance
 睡觉 [shuìjiào] to go to bed/to sleep
-从 [cóng] surname Cong//from/through/via/to follow/to obey/to engage in (an activity)/never (in negative sentence)/(Taiwan pr. [zong4]) retainer/assistant/accomplice/related by common paternal grandfather or earlier ancestor//second cousin
-回 [huí] to circle/to go back/to turn around/to answer/to return/to revolve/Hui ethnic group (Chinese Muslims)/time/classifier for acts of a play/section or chapter (of a classic book)//to curve/to return/to revolve//variant of 迴|回[hui2]
+从 [cóng / zòng] from/through/via/to follow/to obey/to engage in (an activity)/never (in negative sentence)/(Taiwan pr. [zong4]) retainer/assistant/accomplice/related by common paternal grandfather or earlier ancestor//second cousin
+回 [huí / huí] to circle/to go back/to turn around/to answer/to return/to revolve/Hui ethnic group (Chinese Muslims)/time/classifier for acts of a play/section or chapter (of a classic book)//to curve/to return/to revolve
 放 [fàng] to put/to place/to release/to free/to let go/to let out/to set off (fireworks)
 下班 [xiàbān] to finish work/to get off work
 
 25. Payment 1
 买 [mǎi] to buy/to purchase
 块 [kuài] lump (of earth)/chunk/piece/classifier for pieces of cloth, cake, soap etc/(coll.) classifier for money and currency units
-只 [zhǐ] only/merely/just/but//variant of 只[zhi3]//grain that has begun to ripen/variant of 衹|只[zhi3]//variant of 只[zhi3]//classifier for birds and certain animals, one of a pair, some utensils, vessels etc
-钱 [qián] surname Qian//coin/money/CL:筆|笔[bi3]/unit of weight, one tenth of a tael 兩|两[liang3]
-多少 [duōshǎo] number/amount/somewhat//how much/how many/which (number)/as much as
-毛 [máo] surname Mao//hair/feather/down/wool/mildew/mold/coarse or semifinished/young/raw/careless/unthinking/nervous/scared/(of currency) to devalue or depreciate/classifier for Chinese fractional monetary unit ( = 角[jiao3] , = one-tenth of a yuan or 10 fen 分[fen1])
+只 [zhǐ / zhī] only/merely/just/but//classifier for birds and certain animals, one of a pair, some utensils, vessels etc
+钱 [qián] coin/money/CL:筆|笔[bi3]/unit of weight, one tenth of a tael 兩|两[liang3]
+多少 [duōshǎo / duōshao] number/amount/somewhat//how much/how many/which (number)/as much as
+毛 [máo] hair/feather/down/wool/mildew/mold/coarse or semifinished/young/raw/careless/unthinking/nervous/scared/(of currency) to devalue or depreciate/classifier for Chinese fractional monetary unit ( = 角[jiao3] , = one-tenth of a yuan or 10 fen 分[fen1])
 共 [gòng] common/general/to share/together/total/altogether/abbr. for 共產黨|共产党[Gong4 chan3 dang3], Communist party
 一共 [yīgòng] altogether
 信用卡 [xìnyòngkǎ] credit card
 收 [shōu] to receive/to accept/to collect/to put away/to restrain/to stop/in care of (used on address line after name)
-千 [qiān] thousand//see 鞦韆|秋千[qiu1 qian1]
-便宜 [biànyí] convenient//cheap/inexpensive/small advantages/to let sb off lightly
-金 [jīn] surname Jin/surname Kim (Korean)/Jurchen Jin dynasty (1115-1234)//gold/chemical element Au/generic term for lustrous and ductile metals/money/golden/highly respected/one of the eight ancient musical instruments 八音[ba1 yin1]
+千 [qiān / qiān] thousand//see 鞦韆|秋千[qiu1 qian1]
+便宜 [biànyí / piányi] convenient//cheap/inexpensive/small advantages/to let sb off lightly
+金 [jīn] gold/chemical element Au/generic term for lustrous and ductile metals/money/golden/highly respected/one of the eight ancient musical instruments 八音[ba1 yin1]
 贵 [guì] expensive/noble/precious/(honorific) your
 现金 [xiànjīn] cash
 太 [tài] highest/greatest/too (much)/very/extremely
-行 [háng] row/line/commercial firm/line of business/profession/to rank (first, second etc) among one's siblings (by age)/(in data tables) row/(Tw) column//to walk/to go/to travel/a visit/temporary/makeshift/current/in circulation/to do/to perform/capable/competent/effective/all right/OK!/will do/behavior/conduct/Taiwan pr. [xing4] for the behavior-conduct sense
-万 [mò] see 万俟[Mo4 qi2]//surname Wan//ten thousand/a great number
+行 [háng / xíng] row/line/commercial firm/line of business/profession/to rank (first, second etc) among one's siblings (by age)/(in data tables) row/(Tw) column//to walk/to go/to travel/a visit/temporary/makeshift/current/in circulation/to do/to perform/capable/competent/effective/all right/OK!/will do/behavior/conduct/Taiwan pr. [xing4] for the behavior-conduct sense
+万 [mò / wàn] see 万俟[Mo4 qi2]//ten thousand/a great number
 不行 [bùxíng] won't do/be out of the question/be no good/not work/not be capable
 
 26. Entertainment
 电影 [diànyǐng] movie/film/CL:部[bu4],片[pian4],幕[mu4],場|场[chang3]
-干 [gān] old variant of 乾|干[gan1]//surname Gan//dry/clean/in vain/dried food/foster/adoptive/to ignore//variant of 乾|干[gan1]//to concern/to interfere/shield/stem//tree trunk/main part of sth/to manage/to work/to do/capable/cadre/to kill (slang)/to fuck (vulgar)
+干 [gān / gān / gàn] dry/clean/in vain/dried food/foster/adoptive/to ignore//to concern/to interfere/shield/stem//tree trunk/main part of sth/to manage/to work/to do/capable/cadre/to kill (slang)/to fuck (vulgar)
 想 [xiǎng] to think/to believe/to suppose/to wish/to want/to miss (feel wistful about the absence of sb or sth)
 电视 [diànshì] television/TV/CL:臺|台[tai2],個|个[ge4]
-纸 [zhǐ] variant of 紙|纸[zhi3]//paper/CL:張|张[zhang1],沓[da2]/classifier for documents, letter etc
+纸 [zhǐ] paper/CL:張|张[zhang1],沓[da2]/classifier for documents, letter etc
 报 [bào] to announce/to inform/report/newspaper/recompense/revenge/CL:份[fen4],張|张[zhang1]
 报纸 [bàozhǐ] newspaper/newsprint/CL:份[fen4],期[qi1],張|张[zhang1]
 网 [wǎng] net/network
-闻 [wén] surname Wen//to hear/news/well-known/famous/reputation/fame/to smell/to sniff at
-机 [jī] surname Ji//machine/engine/opportunity/intention/aircraft/pivot/crucial point/flexible (quick-witted)/organic/CL:臺|台[tai2]
-新 [xīn] abbr. for Xinjiang 新疆[Xin1 jiang1] or Singapore 新加坡[Xin1 jia1 po1]/surname Xin//new/newly/meso- (chemistry)
+闻 [wén] to hear/news/well-known/famous/reputation/fame/to smell/to sniff at
+机 [jī] machine/engine/opportunity/intention/aircraft/pivot/crucial point/flexible (quick-witted)/organic/CL:臺|台[tai2]
+新 [xīn] new/newly/meso- (chemistry)
 明星 [míngxīng] star/celebrity
 新闻 [xīnwén] news/CL:條|条[tiao2],個|个[ge4]
 育 [yù] to have children/to raise or bring up/to educate
 体育 [tǐyù] sports/physical education
-节 [jiē] see 節骨眼|节骨眼[jie1 gu5 yan3]//festival/holiday/node/joint/section/segment/part/to economize/to save/to abridge/moral integrity/classifier for segments, e.g. lessons, train wagons, biblical verses/CL:個|个[ge4]
+节 [jiē / jié] see 節骨眼|节骨眼[jie1 gu5 yan3]//festival/holiday/node/joint/section/segment/part/to economize/to save/to abridge/moral integrity/classifier for segments, e.g. lessons, train wagons, biblical verses/CL:個|个[ge4]
 节目 [jiémù] program/item (on a program)/CL:臺|台[tai2],個|个[ge4],套[tao4]
-韩 [hán] Han, one of the Seven Hero States of the Warring States 戰國七雄|战国七雄/Korea from the fall of the Joseon dynasty in 1897/Korea, esp. South Korea 大韓民國|大韩民国/surname Han
+韩
 
 27. Location 4
-桌 [zhuō] table/desk/classifier for tables of guests at a banquet etc//old variant of 桌[zhuo1]
+桌 [zhuō] table/desk/classifier for tables of guests at a banquet etc
 找 [zhǎo] to try to find/to look for/to call on sb/to find/to seek/to return/to give change
 椅 [yǐ] chair
 箱 [xiāng] box/trunk/chest
@@ -314,8 +314,8 @@
 进 [jìn] to go forward/to advance/to go in/to enter/to put in/to submit/to take in/to admit/(math.) base of a number system/classifier for sections in a building or residential compound
 等 [děng] class/rank/grade/equal to/same as/to wait for/to await/et cetera/and so on/et al. (and other authors)/after/as soon as/once
 菜 [cài] dish (type of food)/vegetable/cuisine/CL:盤|盘[pan2],道[dao4]/(coll.) (one's) type/(of one's skills etc) weak/poor
-坐 [zuò] surname Zuo//to sit/to take a seat/to take (a bus, airplane etc)/to bear fruit/variant of 座[zuo4]
-文 [wén] surname Wen//language/culture/writing/formal/literary/gentle/(old) classifier for coins/Kangxi radical 67
+坐
+文 [wén] language/culture/writing/formal/literary/gentle/(old) classifier for coins/Kangxi radical 67
 菜单 [càidān] menu/CL:份[fen4],張|张[zhang1]
 服务员 [fúwùyuán] waiter/waitress/attendant/customer service personnel/CL:個|个[ge4],位[wei4]
 订 [dìng] to agree/to conclude/to draw up/to subscribe to (a newspaper etc)/to order
@@ -323,25 +323,25 @@
 买单 [mǎidān] to pay the restaurant bill
 
 29. Supermarket 1
-东西 [dōngxī] east and west//thing/stuff/person/CL:個|个[ge4],件[jian4]
+东西 [dōngxī / dōngxi] east and west//thing/stuff/person/CL:個|个[ge4],件[jian4]
 一些 [yīxiē] some/a few/a little/(following an adjective) slightly ...er
 超市 [chāoshì] supermarket/abbr. for 超級市場|超级市场/CL:家[jia1]
-果 [guǒ] fruit/result/resolute/indeed/if really//variant of 果[guo3]/fruit
-苹 [píng] (artemisia)/duckweed//apple
+果 [guǒ] fruit/result/resolute/indeed/if really
+苹 [píng / píng] (artemisia)/duckweed//apple
 瓜 [guā] melon/gourd/squash
-给 [gěi] to/for/for the benefit of/to give/to allow/to do sth (for sb)/(grammatical equivalent of 被)/(grammatical equivalent of 把)/(sentence intensifier)//to supply/to provide
+给 [gěi / jǐ] to/for/for the benefit of/to give/to allow/to do sth (for sb)/(grammatical equivalent of 被)/(grammatical equivalent of 把)/(sentence intensifier)//to supply/to provide
 鸡 [jī] fowl/chicken/CL:隻|只[zhi1]/(slang) prostitute
 新鲜 [xīnxiān] fresh (experience, food etc)/freshness/novel/uncommon
 蔬菜 [shūcài] vegetables/produce/CL:種|种[zhong3]
-蛋 [dàn] variant of 蜑[Dan4]//egg/CL:個|个[ge4],打[da2]/oval-shaped thing
-米 [mǐ] surname Mi//rice/CL:粒[li4]/meter (classifier)
+蛋 [dàn] egg/CL:個|个[ge4],打[da2]/oval-shaped thing
+米 [mǐ] rice/CL:粒[li4]/meter (classifier)
 袋 [dài] pouch/bag/sack/pocket
-包 [bāo] surname Bao//to cover/to wrap/to hold/to include/to take charge of/to contract (to or for)/package/wrapper/container/bag/to hold or embrace/bundle/packet/CL:個|个[ge4],隻|只[zhi1]
-糖 [táng] sugar/sweets/candy/CL:顆|颗[ke1],塊|块[kuai4]//old variant of 糖[tang2]
+包 [bāo] to cover/to wrap/to hold/to include/to take charge of/to contract (to or for)/package/wrapper/container/bag/to hold or embrace/bundle/packet/CL:個|个[ge4],隻|只[zhi1]
+糖 [táng] sugar/sweets/candy/CL:顆|颗[ke1],塊|块[kuai4]
 面包 [miànbāo] bread/CL:片[pian4],袋[dai4],塊|块[kuai4]
 
 30. Hobbies 2
-习 [xí] surname Xi//to practice/to study/habit
+习 [xí] to practice/to study/habit
 为什么 [wèishénme] why?/for what reason?
 学习 [xuéxí] to learn/to study
 所以 [suǒyǐ] therefore/as a result/so/the reason why
@@ -357,23 +357,23 @@
 印度 [yìndù] India
 
 31. Dining 1
-海 [hǎi] surname Hai//ocean/sea/CL:個|个[ge4],片[pian4]/great number of people or things/(dialect) numerous
-还 [huán] surname Huan//still/still in progress/still more/yet/even more/in addition/fairly/passably (good)/as early as/even/also/else//to pay back/to return
+海 [hǎi] ocean/sea/CL:個|个[ge4],片[pian4]/great number of people or things/(dialect) numerous
+还 [hái / huán] still/still in progress/still more/yet/even more/in addition/fairly/passably (good)/as early as/even/also/else//to pay back/to return
 本 [běn] root/stem/origin/source/this/the current/original/inherent/originally/classifier for books, periodicals, files etc
 还是 [háishi] or/still/nevertheless/had better
 肉 [ròu] meat/flesh/pulp (of a fruit)/(coll.) (of a fruit) squashy/(of a person) flabby/irresolute
 面条 [miàntiáo] noodles
 饮料 [yǐnliào] drink/beverage
-羊 [yáng] surname Yang//sheep/goat/CL:頭|头[tou2],隻|只[zhi1]
+羊 [yáng] sheep/goat/CL:頭|头[tou2],隻|只[zhi1]
 猪 [zhū] hog/pig/swine/CL:口[kou3],頭|头[tou2]
 
 32. Health 1
-作 [zuō] worker/workshop/(slang) troublesome/high-maintenance (person)//to do/to grow/to write or compose/to pretend/to regard as/to feel/writings or works
+作 [zuō / zuò] worker/workshop/(slang) troublesome/high-maintenance (person)//to do/to grow/to write or compose/to pretend/to regard as/to feel/writings or works
 觉得 [juéde] to think/to feel
-累 [lěi] to accumulate/to involve or implicate (Taiwan pr. [lei4])/continuous/repeated//tired/weary/to strain/to wear out/to work hard//surname Lei//rope/to bind together/to twist around
+累 [lěi / lèi / léi] to accumulate/to involve or implicate (Taiwan pr. [lei4])/continuous/repeated//tired/weary/to strain/to wear out/to work hard//rope/to bind together/to twist around
 工作 [gōngzuò] to work/(of a machine) to operate/job/work/task/CL:個|个[ge4],份[fen4],項|项[xiang4]
 健康 [jiànkāng] health/healthy
-胖 [pán] healthy/at ease//fat/plump
+胖 [pán / pàng] healthy/at ease//fat/plump
 身体 [shēntǐ] the body/one's health/CL:具[ju4],個|个[ge4]/in person
 注意 [zhùyì] to take note of/to pay attention to
 开始 [kāishǐ] to begin/beginning/to start/initial/CL:個|个[ge4]
@@ -384,88 +384,88 @@
 地铁 [dìtiě] subway/metro
 不准 [bùzhǔn] not to allow/to forbid/to prohibit
 酒店 [jiǔdiàn] wine shop/pub (public house)/hotel/restaurant/(Tw) hostess club
-车 [chē] surname Che//car/vehicle/CL:輛|辆[liang4]/machine/to shape with a lathe//war chariot (archaic)/rook (in Chinese chess)/rook (in chess)
+车 [chē / jū] car/vehicle/CL:輛|辆[liang4]/machine/to shape with a lathe//war chariot (archaic)/rook (in Chinese chess)/rook (in chess)
 出租车 [chūzūchē] taxi/(Taiwan) rental car
 站 [zhàn] station/to stand/to halt/to stop/branch of a company or organization/website
 汽车 [qìchē] car/automobile/bus/CL:輛|辆[liang4]
 公共汽车 [gōnggòngqìchē] bus/CL:輛|辆[liang4],班[ban1]
-船 [chuán] variant of 船[chuan2]//boat/vessel/ship/CL:條|条[tiao2],艘[sou1],隻|只[zhi1]
+船 [chuán] boat/vessel/ship/CL:條|条[tiao2],艘[sou1],隻|只[zhi1]
 可以 [kěyǐ] can/may/possible/able to/not bad/pretty good
 
 34. Shopping 1
 件 [jiàn] item/component/classifier for events, things, clothes etc
 商店 [shāngdiàn] store/shop/CL:家[jia1],個|个[ge4]
 衣服 [yīfu] clothes/CL:件[jian4],套[tao4]
-门 [mén] surname Men//gate/door/CL:扇[shan4]/gateway/doorway/CL:個|个[ge4]/opening/valve/switch/way to do something/knack/family/house/(religious) sect/school (of thought)/class/category/phylum or division (taxonomy)/classifier for large guns/classifier for lessons, subjects, branches of technology/(suffix) -gate (i.e. scandal; derived from Watergate)
+门 [mén] gate/door/CL:扇[shan4]/gateway/doorway/CL:個|个[ge4]/opening/valve/switch/way to do something/knack/family/house/(religious) sect/school (of thought)/class/category/phylum or division (taxonomy)/classifier for large guns/classifier for lessons, subjects, branches of technology/(suffix) -gate (i.e. scandal; derived from Watergate)
 欢迎 [huānyíng] to welcome/welcome
-关 [guān] surname Guan//mountain pass/to close/to shut/to turn off/to concern/to involve
+关 [guān] mountain pass/to close/to shut/to turn off/to concern/to involve
 随便 [suíbiàn] as one wishes/as one pleases/at random/negligent/casual/wanton
 需要 [xūyào] to need/to want/to demand/to require/requirement/need
 
 35. Languages 1
 字 [zì] letter/symbol/character/word/CL:個|个[ge4]/courtesy or style name traditionally given to males aged 20 in dynastic China
-读 [dòu] comma/phrase marked by pause//to read/to study/reading of word (i.e. pronunciation), similar to 拼音[pin1 yin1]
+读 [dòu / dú] comma/phrase marked by pause//to read/to study/reading of word (i.e. pronunciation), similar to 拼音[pin1 yin1]
 意思 [yìsi] idea/opinion/meaning/wish/desire/interest/fun/token of appreciation, affection etc/CL:個|个[ge4]/to give as a small token/to do sth as a gesture of goodwill etc
-难 [nán] difficult (to...)/problem/difficulty/difficult/not good//disaster/distress/to scold
+难 [nán / nàn] difficult (to...)/problem/difficulty/difficult/not good//disaster/distress/to scold
 写 [xiě] to write
 
 36. Time 3
 秒 [miǎo] second (unit of time)/arc second (angular measurement unit)/(coll.) instantly
-差 [chā] difference/discrepancy/to differ/error/to err/to make a mistake//to differ from/to fall short of/lacking/wrong/inferior/Taiwan pr. [cha1]//to send/to commission/messenger/mission
+差 [chā / chà / chāi] difference/discrepancy/to differ/error/to err/to make a mistake//to differ from/to fall short of/lacking/wrong/inferior/Taiwan pr. [cha1]//to send/to commission/messenger/mission
 刻 [kè] quarter (hour)/moment/to carve/to engrave/to cut/oppressive/classifier for short time intervals
-时 [shí] old variant of 時|时[shi2]//surname Shi//o'clock/time/when/hour/season/period
-钟 [zhōng] surname Zhong//handleless cup/goblet/to concentrate/variant of 鐘|钟[zhong1]//clock/o'clock/time as measured in hours and minutes/bell/CL:架[jia4],座[zuo4]
+时 [shí] o'clock/time/when/hour/season/period
+钟 [zhōng] clock/o'clock/time as measured in hours and minutes/bell/CL:架[jia4],座[zuo4]
 小 [xiǎo] small/tiny/few/young
 小时 [xiǎoshí] hour/CL:個|个[ge4]
 分钟 [fēnzhōng] minute
 整 [zhěng] exactly/in good order/whole/complete/entire/in order/orderly/to repair/to mend/to renovate/(coll.) to fix sb/to give sb a hard time/to mess with sb
 
 37. Dining 2
-德 [dé] Germany/German/abbr. for 德國|德国[De2 guo2]//virtue/goodness/morality/ethics/kindness/favor/character/kind//variant of 德[de2]//variant of 德[de2]
-杯 [bēi] cup/trophy cup/classifier for certain containers of liquids: glass, cup//variant of 杯[bei1]//variant of 杯[bei1]/trophy cup/classifier for certain containers of liquids: glass, cup
+德 [dé / dé] Germany/German/abbr. for 德國|德国[De2 guo2]//virtue/goodness/morality/ethics/kindness/favor/character/kind
+杯 [bēi] cup/trophy cup/classifier for certain containers of liquids: glass, cup
 啤酒 [píjiǔ] beer (loanword)/CL:杯[bei1],瓶[ping2],罐[guan4],桶[tong3],缸[gang1]
 果汁 [guǒzhī] fruit juice
 香蕉 [xiāngjiāo] banana/CL:枝[zhi1],根[gen1],個|个[ge4],把[ba3]
 蛋糕 [dàngāo] cake/CL:塊|块[kuai4],個|个[ge4]
 块 [kuài] lump (of earth)/chunk/piece/classifier for pieces of cloth, cake, soap etc/(coll.) classifier for money and currency units
-碗 [wǎn] variant of 碗[wan3]//variant of 碗[wan3]//variant of 碗[wan3]//bowl/cup/CL:隻|只[zhi1],個|个[ge4]
+碗 [wǎn] bowl/cup/CL:隻|只[zhi1],個|个[ge4]
 盘 [pán] plate/dish/tray/board/hard drive (computing)/to build/to coil/to check/to examine/to transfer (property)/to make over/classifier for food: dish, helping/to coil/classifier for coils of wire/classifier for games of chess
 筷子 [kuàizi] chopsticks/CL:對|对[dui4],根[gen1],把[ba3],雙|双[shuang1]
-刀 [dāo] surname Dao//knife/blade/single-edged sword/cutlass/CL:把[ba3]/(slang) dollar (loanword)/classifier for sets of one hundred sheets (of paper)/classifier for knife cuts or stabs
-叉 [chā] fork/pitchfork/prong/pick/cross/intersect/"X"//to cross/be stuck//to diverge/to open (as legs)
+刀 [dāo] knife/blade/single-edged sword/cutlass/CL:把[ba3]/(slang) dollar (loanword)/classifier for sets of one hundred sheets (of paper)/classifier for knife cuts or stabs
+叉 [chā / chá / chǎ] fork/pitchfork/prong/pick/cross/intersect/"X"//to cross/be stuck//to diverge/to open (as legs)
 勺子 [sháozi] scoop/ladle/CL:把[ba3]
 
 38. Existence 1
 办公室 [bàngōngshì] office/business premises/bureau/CL:間|间[jian1]
 辆 [liàng] classifier for vehicles
-瓶 [píng] bottle/vase/pitcher/CL:個|个[ge4]/classifier for wine and liquids//variant of 瓶[ping2]
+瓶 [píng] bottle/vase/pitcher/CL:個|个[ge4]/classifier for wine and liquids
 照片 [zhàopiàn] photograph/picture/CL:張|张[zhang1],套[tao4],幅[fu2]
-张 [zhāng] surname Zhang//to open up/to spread/sheet of paper/classifier for flat objects, sheet/classifier for votes
-只 [zhǐ] only/merely/just/but//variant of 只[zhi3]//grain that has begun to ripen/variant of 衹|只[zhi3]//variant of 只[zhi3]//classifier for birds and certain animals, one of a pair, some utensils, vessels etc
-鸟 [diǎo] variant of 屌[diao3]/penis//bird/CL:隻|只[zhi1],群[qun2]/(dialect) to pay attention to/(intensifier) damned/goddam
+张 [zhāng] to open up/to spread/sheet of paper/classifier for flat objects, sheet/classifier for votes
+只 [zhǐ / zhī] only/merely/just/but//classifier for birds and certain animals, one of a pair, some utensils, vessels etc
+鸟 [niǎo] bird/CL:隻|只[zhi1],群[qun2]/(dialect) to pay attention to/(intensifier) damned/goddam
 树 [shù] tree/CL:棵[ke1]/to cultivate/to set up
 
 39. Sports 1
 跑步 [pǎobù] to run/to jog/(military) to march at the double
 游泳 [yóuyǒng] swimming/to swim
-蓝 [lán] surname Lan//blue/indigo plant
-打 [dá] dozen (loanword)//to beat/to strike/to hit/to break/to type/to mix up/to build/to fight/to fetch/to make/to tie up/to issue/to shoot/to calculate/to play (a game)/since/from
+蓝 [lán] blue/indigo plant
+打 [dá / dǎ] dozen (loanword)//to beat/to strike/to hit/to break/to type/to mix up/to build/to fight/to fetch/to make/to tie up/to issue/to shoot/to calculate/to play (a game)/since/from
 球 [qiú] ball/sphere/globe/CL:個|个[ge4]/ball game/match/CL:場|场[chang3]
-足 [jù] excessive//foot/to be sufficient/ample
+足 [jù / zú] excessive//foot/to be sufficient/ample
 踢 [tī] to kick/to play (e.g. soccer)/(slang) butch (in a lesbian relationship)
 运动 [yùndòng] to move/to exercise/sports/exercise/motion/movement/campaign/CL:場|场[chang3]
 骑马 [qímǎ] to ride a horse
 
 40. Invitation 1
-吧 [bā] bar (loanword) (serving drinks, or providing Internet access etc)/to puff (on a pipe etc)/(onom.) bang/abbr. for 貼吧|贴吧[tie1 ba1]//(modal particle indicating suggestion or surmise)/...right?/...OK?/...I presume.
+吧 [bā / ba] bar (loanword) (serving drinks, or providing Internet access etc)/to puff (on a pipe etc)/(onom.) bang/abbr. for 貼吧|贴吧[tie1 ba1]//(modal particle indicating suggestion or surmise)/...right?/...OK?/...I presume.
 有空 [yǒukòng] to have time (to do sth)
 时候 [shíhou] time/length of time/moment/period
 来 [lái] to come/to arrive/to come round/ever since/next
 请 [qǐng] to ask/to invite/please (do sth)/to treat (to a meal etc)/to request
-过 [guò] surname Guo//to cross/to go over/to pass (time)/to celebrate (a holiday)/to live/to get along/excessively/too-//(experienced action marker)
+过 [guò / guo] to cross/to go over/to pass (time)/to celebrate (a holiday)/to live/to get along/excessively/too-//(experienced action marker)
 不好意思 [bùhǎoyìsi] to feel embarrassed/to find it embarrassing/to be sorry (for inconveniencing sb)
 浪漫 [làngmàn] romantic
-告诉 [gàosù] to press charges/to file a complaint//to tell/to inform/to let know
+告诉 [gàosù / gàosu] to press charges/to file a complaint//to tell/to inform/to let know
 约会 [yuēhuì] appointment/engagement/date/CL:次[ci4],個|个[ge4]/to arrange to meet
 
 41. Health 2
@@ -474,26 +474,26 @@
 舒服 [shūfu] comfortable/feeling well
 肚子 [dùzi] belly/abdomen/stomach/CL:個|个[ge4]
 疼 [téng] (it) hurts/sore/to love dearly
-头 [tóu] head/hair style/the top/end/beginning or end/a stub/remnant/chief/boss/side/aspect/first/leading/classifier for pigs or livestock/CL:個|个[ge4]//suffix for nouns
+头 [tóu / tou] head/hair style/the top/end/beginning or end/a stub/remnant/chief/boss/side/aspect/first/leading/classifier for pigs or livestock/CL:個|个[ge4]//suffix for nouns
 休息 [xiūxi] rest/to rest
 一定 [yīdìng] surely/certainly/necessarily/fixed/a certain (extent etc)/given/particular/must
 感冒 [gǎnmào] to catch cold/(common) cold/CL:場|场[chang2],次[ci4]/(coll.) to be interested in (often used in the negative)/(Tw) to detest/can't stand
-留 [liú] old variant of 留[liu2]//to leave (a message etc)/to retain/to stay/to remain/to keep/to preserve//old variant of 留[liu2]
-药 [yào] leaf of the iris/variant of 藥|药[yao4]//medicine/drug/substance used for a specific purpose (e.g. poisoning, explosion, fermenting)/CL:種|种[zhong3],服[fu4],味[wei4]/to poison
-假 [jiǎ] fake/false/artificial/to borrow/if/suppose//vacation//variant of 假[jia3]/to borrow
+留 [liú] to leave (a message etc)/to retain/to stay/to remain/to keep/to preserve
+药 [yào] medicine/drug/substance used for a specific purpose (e.g. poisoning, explosion, fermenting)/CL:種|种[zhong3],服[fu4],味[wei4]/to poison
+假 [jiǎ / jià] fake/false/artificial/to borrow/if/suppose//vacation
 发烧 [fāshāo] to have a high temperature (from illness)/to have a fever
-别 [bié] surname Bie//to leave/to depart/to separate/to distinguish/to classify/other/another/don't ...!/to pin/to stick (sth) in//to make sb change their ways, opinions etc
+别 [bié / biè] to leave/to depart/to separate/to distinguish/to classify/other/another/don't ...!/to pin/to stick (sth) in//to make sb change their ways, opinions etc
 请假 [qǐngjià] to request leave of absence
 
 42. Invitation 2
 派对 [pàiduì] party (loanword)
 打扮 [dǎban] to decorate/to dress/to make up/to adorn/manner of dressing/style of dress
-能 [néng] surname Neng//can/to be able to/might possibly/ability/(physics) energy
+能 [néng] can/to be able to/might possibly/ability/(physics) energy
 希望 [xīwàng] to wish for/to desire/hope/CL:個|个[ge4]
 跟 [gēn] heel/to follow closely/to go with/(of a woman) to marry sb/with/compared with/to/towards/and (joining two nouns)
 公司 [gōngsī] (business) company/company/firm/corporation/incorporated/CL:家[jia1]
 正在 [zhèngzài] just at (that time)/right in (that place)/right in the middle of (doing sth)
-才 [cái] ability/talent/sb of a certain type/a capable individual/only/only then/just now//a moment ago/just now/(indicating sth happening later than expected)/(preceded by a clause of condition or reason) not until/(followed by a numerical clause) only
+才 [cái / cái] ability/talent/sb of a certain type/a capable individual/only/only then/just now//a moment ago/just now/(indicating sth happening later than expected)/(preceded by a clause of condition or reason) not until/(followed by a numerical clause) only
 事情 [shìqing] affair/matter/thing/business/CL:件[jian4],樁|桩[zhuang1]
 
 43. Dining 3
@@ -509,16 +509,16 @@
 味道 [wèidao] flavor/smell/hint of
 
 44. Shopping 2
-蓝 [lán] surname Lan//blue/indigo plant
+蓝 [lán] blue/indigo plant
 裙子 [qúnzi] skirt/CL:條|条[tiao2]
 试 [shì] to test/to try/experiment/examination/test
 条 [tiáo] strip/item/article/clause (of law or treaty)/classifier for long thin things (ribbon, river, road, trousers etc)
-双 [shuāng] surname Shuang//two/double/pair/both/even (number)
-利 [lì] surname Li//sharp/favorable/advantage/benefit/profit/interest/to do good to/to benefit
-色 [sè] color/CL:種|种[zhong3]/look/appearance/sex//color/dice
+双 [shuāng] two/double/pair/both/even (number)
+利 [lì] sharp/favorable/advantage/benefit/profit/interest/to do good to/to benefit
+色 [sè / shǎi] color/CL:種|种[zhong3]/look/appearance/sex//color/dice
 鞋子 [xiézi] shoe
 衬衫 [chènshān] shirt/blouse/CL:件[jian4]
-比 [bǐ] Belgium/Belgian/abbr. for 比利時|比利时[Bi3 li4 shi2]//euphemistic variant of 屄[bi1]//(particle used for comparison and "-er than")/to compare/to contrast/to gesture (with hands)/ratio//to associate with/to be near
+比 [bǐ / bǐ / bì] Belgium/Belgian/abbr. for 比利時|比利时[Bi3 li4 shi2]//(particle used for comparison and "-er than")/to compare/to contrast/to gesture (with hands)/ratio//to associate with/to be near
 裤子 [kùzi] trousers/pants/CL:條|条[tiao2]
 质量 [zhìliàng] quality/(physics) mass/CL:個|个[ge4]
 
@@ -529,24 +529,24 @@
 头发 [tóufa] hair (on the head)
 脸 [liǎn] face/CL:張|张[zhang1],個|个[ge4]
 又 [yòu] (once) again/also/both... and.../and yet/(used for emphasis) anyway
-黑 [hēi] abbr. for Heilongjiang province 黑龍江|黑龙江[Hei1 long2 jiang1]//black/dark/sinister/secret/shady/illegal/to hide (sth) away/to vilify/(loanword) to hack (computing)
+黑 [hēi / hēi] abbr. for Heilongjiang province 黑龍江|黑龙江[Hei1 long2 jiang1]//black/dark/sinister/secret/shady/illegal/to hide (sth) away/to vilify/(loanword) to hack (computing)
 嘴巴 [zuǐba] mouth/CL:張|张[zhang1]/slap in the face/CL:個|个[ge4]
-脚 [jiǎo] foot/leg (of an animal or an object)/base (of an object)/CL:雙|双[shuang1],隻|只[zhi1]/classifier for kicks//variant of 角[jue2]/role
+脚 [jiǎo] foot/leg (of an animal or an object)/base (of an object)/CL:雙|双[shuang1],隻|只[zhi1]/classifier for kicks
 鼻子 [bízi] nose/CL:個|个[ge4],隻|只[zhi1]
 手 [shǒu] hand/(formal) to hold/person engaged in certain types of work/person skilled in certain types of work/personal(ly)/convenient/classifier for skill/CL:雙|双[shuang1],隻|只[zhi1]
 
 46. Travel
-离 [chī] mythical beast (archaic)//surname Li//to leave/to part from/to be away from/(in giving distances) from/without (sth)/independent of/one of the Eight Trigrams 八卦[ba1 gua4], symbolizing fire/☲
-路 [lù] surname Lu//road/CL:條|条[tiao2]/journey/route/line (bus etc)/sort/kind
-远 [yuǎn] far/distant/remote/(intensifier in a comparison) by far/much (lower etc)//to distance oneself from (classical)
+离 [chī / lí] mythical beast (archaic)//to leave/to part from/to be away from/(in giving distances) from/without (sth)/independent of/one of the Eight Trigrams 八卦[ba1 gua4], symbolizing fire/☲
+路 [lù] road/CL:條|条[tiao2]/journey/route/line (bus etc)/sort/kind
+远 [yuǎn / yuàn] far/distant/remote/(intensifier in a comparison) by far/much (lower etc)//to distance oneself from (classical)
 机场 [jīchǎng] airport/airfield/CL:家[jia1],處|处[chu4]
 停 [tíng] to stop/to halt/to park (a car)
 靠 [kào] to lean against or on/to stand by the side of/to come near to/to depend on/to trust/to fuck (vulgar)/traditional military costume drama where the performers wear armor (old)
 飞机 [fēijī] airplane/CL:架[jia4]
 火车 [huǒchē] train/CL:列[lie4],節|节[jie2],班[ban1],趟[tang4]
 票 [piào] ticket/ballot/banknote/CL:張|张[zhang1]/person held for ransom/amateur performance of Chinese opera/classifier for groups, batches, business transactions
-得 [dé] to obtain/to get/to gain/to catch (a disease)/proper/suitable/proud/contented/to allow/to permit/ready/finished//structural particle: used after a verb (or adjective as main verb), linking it to following phrase indicating effect, degree, possibility etc//to have to/must/ought to/to need to
+得 [dé / de / děi] to obtain/to get/to gain/to catch (a disease)/proper/suitable/proud/contented/to allow/to permit/ready/finished//structural particle: used after a verb (or adjective as main verb), linking it to following phrase indicating effect, degree, possibility etc//to have to/must/ought to/to need to
 让 [ràng] to yield/to permit/to let sb do sth/to have sb do sth/to make sb (feel sad etc)/by (indicates the agent in a passive clause, like 被[bei4])
 迟到 [chídào] to arrive late
 怎么办 [zěnmebàn] what's to be done
-后 [hòu] surname Hou//empress/queen//back/behind/rear/afterwards/after/later
+后 [hòu / hòu] empress/queen//back/behind/rear/afterwards/after/later

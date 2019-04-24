@@ -77,9 +77,12 @@ def setup_cedict():
     
     with open(CEDICT, encoding="utf-8") as cedict_file:
         for line in cedict_file:
+            if 'surname' in line or 'variant' in line:
+                continue
             parts = line.split()
             extracted = extract_pinyin(line)
             if parts[1] in cedict_dict:
+                cedict_dict[parts[1]]['py'] += " / " + extracted['py']
                 cedict_dict[parts[1]]['eng'] += "//" + extracted['eng']
             else:
                 cedict_dict[parts[1]] = extracted
