@@ -441,7 +441,7 @@
 瓶 [píng] variant of 瓶[ping2]
 照片 [zhàopiàn] photograph/picture/CL:張|张[zhang1],套[tao4],幅[fu2]
 张 [zhāng] to open up/to spread/sheet of paper/classifier for flat objects, sheet/classifier for votes
-一只
+只 [zhī] classifier for birds and certain animals, one of a pair, some utensils, vessels etc
 鸟 [niǎo] bird/CL:隻|只[zhi1],群[qun2]/(dialect) to pay attention to/(intensifier) damned/goddam
 树 [shù] tree/CL:棵[ke1]/to cultivate/to set up
 
@@ -534,5 +534,18 @@
 脚 [jué] variant of 角[jue2]/role
 鼻子 [bízi] nose/CL:個|个[ge4],隻|只[zhi1]
 手 [shǒu] hand/(formal) to hold/person engaged in certain types of work/person skilled in certain types of work/personal(ly)/convenient/classifier for skill/CL:雙|双[shuang1],隻|只[zhi1]
-渴咆蛇
-节 [jié] festival/holiday/node/joint/section/segment/part/to economize/to save/to abridge/moral integrity/classifier for segments, e.g. lessons, train wagons, biblical verses/CL:個|个[ge4]
+
+46. Travel
+离 [lí] to leave/to part from/to be away from/(in giving distances) from/without (sth)/independent of/one of the Eight Trigrams 八卦[ba1 gua4], symbolizing fire/☲
+路 [lù] road/CL:條|条[tiao2]/journey/route/line (bus etc)/sort/kind
+远 [yuàn] to distance oneself from (classical)
+机场 [jīchǎng] airport/airfield/CL:家[jia1],處|处[chu4]
+停 [tíng] to stop/to halt/to park (a car)
+靠 [kào] to lean against or on/to stand by the side of/to come near to/to depend on/to trust/to fuck (vulgar)/traditional military costume drama where the performers wear armor (old)
+飞机 [fēijī] airplane/CL:架[jia4]
+火车 [huǒchē] train/CL:列[lie4],節|节[jie2],班[ban1],趟[tang4]
+票 [piào] ticket/ballot/banknote/CL:張|张[zhang1]/person held for ransom/amateur performance of Chinese opera/classifier for groups, batches, business transactions
+得 [děi] to have to/must/ought to/to need to
+让 [ràng] to yield/to permit/to let sb do sth/to have sb do sth/to make sb (feel sad etc)/by (indicates the agent in a passive clause, like 被[bei4])
+迟到 [chídào] to arrive late
+怎么办 [zěnmebàn] what's to be done

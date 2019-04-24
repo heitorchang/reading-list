@@ -1,6 +1,9 @@
 import os
 import re
 
+# Problem: Some characters like hou4 show up in multiple lines, only the last
+# one is kept.
+
 DIRECTORY = "c:/Users/Heitor/Desktop/code/reading-list/duolingo_chinese/"
 
 INFILE = "vocab.txt"
