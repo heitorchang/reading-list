@@ -1,9 +1,6 @@
 import os
 import re
 
-# Problem: Some characters like hou4 show up in multiple lines, only the last
-# one is kept.
-
 DIRECTORY = "c:/Users/Heitor/Desktop/code/reading-list/duolingo_chinese/"
 
 INFILE = "vocab.txt"
@@ -81,7 +78,11 @@ def setup_cedict():
     with open(CEDICT, encoding="utf-8") as cedict_file:
         for line in cedict_file:
             parts = line.split()
-            cedict_dict[parts[1]] = extract_pinyin(line)
+            extracted = extract_pinyin(line)
+            if parts[1] in cedict_dict:
+                cedict_dict[parts[1]]['eng'] += "/" + extracted['eng']
+            else:
+                cedict_dict[parts[1]] = extracted
 
     return cedict_dict
 
