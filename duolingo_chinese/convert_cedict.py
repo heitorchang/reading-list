@@ -66,7 +66,7 @@ def extract_pinyin(line):
         m = pat.match(line)
         return {'trad': m.group("trad"),
                 'simp': m.group("simp"),
-                'py': decode_pinyin(m.group("py")),
+                'py': [decode_pinyin(m.group("py"))],
                 'eng': m.group("eng")}
                                     
     except TypeError:
@@ -82,7 +82,8 @@ def setup_cedict():
             parts = line.split()
             extracted = extract_pinyin(line)
             if parts[1] in cedict_dict:
-                cedict_dict[parts[1]]['py'] += " / " + extracted['py']
+                if extracted['py'][0] not in cedict_dict[parts[1]]['py']:
+                    cedict_dict[parts[1]]['py'].append(extracted['py'][0])
                 cedict_dict[parts[1]]['eng'] += "//" + extracted['eng']
             else:
                 cedict_dict[parts[1]] = extracted
@@ -96,7 +97,7 @@ def convert_vocab():
         for line in infile:
             try:
                 data = cedict_dict[line.strip()]
-                print("{} [{}] {}".format(data['simp'], data['py'], data['eng']), file=outfile)
+                print("{} [{}] {}".format(data['simp'], ", ".join(data['py']), data['eng']), file=outfile)
             except KeyError:
                 print(line.strip(), file=outfile)
         
