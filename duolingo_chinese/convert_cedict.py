@@ -74,10 +74,15 @@ def extract_pinyin(line):
 
 def setup_cedict():
     cedict_dict = {}
+
+    # skip lines that say 'see OTHER WORD'
+    see_pat = re.compile(r'.+ .+ \[.+\] /see .+\[.+\]')
     
     with open(CEDICT, encoding="utf-8") as cedict_file:
         for line in cedict_file:
-            if 'surname' in line or 'variant' in line:
+            if see_pat.match(line):
+                continue
+            if 'surname' in line or 'variant' in line or 'morphine' in line:
                 continue
             parts = line.split()
             extracted = extract_pinyin(line)

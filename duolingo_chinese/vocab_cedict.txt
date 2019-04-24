@@ -46,7 +46,7 @@
 生 [shēng] to be born/to give birth/life/to grow/raw/uncooked/student
 学 [xué] to learn/to study/to imitate/science/-ology
 他 [tā] he or him/(used for either sex when the sex is unknown or unimportant)/(used before sb's name for emphasis)/(used as a meaningless mock object)/other/another
-吗 [mǎ, ma] see 嗎啡|吗啡, morphine//(question particle for "yes-no" questions)
+吗 [ma] (question particle for "yes-no" questions)
 她 [tā] she
 们 [men] plural marker for pronouns, and nouns referring to individuals
 老师 [lǎoshī] teacher/CL:個|个[ge4],位[wei4]
@@ -54,7 +54,7 @@
 
 07. Contact 1
 电话 [diànhuà] telephone/CL:部[bu4]/phone call/CL:通[tong1]/phone number
-的 [de, dī, dí, dì] of/~'s (possessive particle)/(used after an attribute)/(used to form a nominal expression)/(used at the end of a declarative sentence for emphasis)//see 的士[di1 shi4]//really and truly//aim/clear
+的 [de, dí, dì] of/~'s (possessive particle)/(used after an attribute)/(used to form a nominal expression)/(used at the end of a declarative sentence for emphasis)//really and truly//aim/clear
 号码 [hàomǎ] number/CL:堆[dui1],個|个[ge4]
 多少 [duōshǎo, duōshao] number/amount/somewhat//how much/how many/which (number)/as much as
 
@@ -67,12 +67,12 @@
 英 [yīng] United Kingdom/British/England/English/abbr. for 英國|英国[Ying1 guo2]//hero/outstanding/excellent/(literary) flower/blossom
 对 [duì] right/correct/couple/pair/towards/at/for/to face/opposite/to treat (sb a certain way)/to match together/to adjust/to fit/to suit/to answer/to reply/classifier: couple
 都 [dōu, dū] all/both/entirely/(used for emphasis) even/already/(not) at all//capital city/metropolis
-大 [dà, dài] big/huge/large/major/great/wide/deep/older (than)/oldest/eldest/greatly/very much/(dialect) father/father's elder or younger brother//see 大夫[dai4 fu5]
+大 [dà] big/huge/large/major/great/wide/deep/older (than)/oldest/eldest/greatly/very much/(dialect) father/father's elder or younger brother
 拿 [ná] to hold/to seize/to catch/to apprehend/to take/(used in the same way as 把[ba3]: to mark the following noun as a direct object)
 加 [jiā] to add/plus/(used after an adverb such as 不, 大, 稍 etc, and before a disyllabic verb, to indicate that the action of the verb is applied to sth or sb previously mentioned)/to apply (restrictions etc) to (sb)/to give (support, consideration etc) to (sth)
 
 09. Greeting 3
-上 [shǎng, shàng] see 上聲|上声[shang3 sheng1]//on top/upon/above/upper/previous/first (of multiple parts)/to climb/to get onto/to go up/to attend (class or university)
+上 [shàng] on top/upon/above/upper/previous/first (of multiple parts)/to climb/to get onto/to go up/to attend (class or university)
 早 [zǎo] early/morning/Good morning!/long ago/prematurely
 忙 [máng] busy/hurriedly/to hurry/to rush
 早上 [zǎoshang] early morning/CL:個|个[ge4]
@@ -83,7 +83,7 @@
 
 10. Location 1
 东西南北 [dōngxīnánběi] east west south north
-家 [jiā] see 傢伙|家伙[jia1 huo5]//home/family/(polite) my (sister, uncle etc)/classifier for families or businesses/refers to the philosophical schools of pre-Han China/noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian/CL:個|个[ge4]
+家 [jiā] home/family/(polite) my (sister, uncle etc)/classifier for families or businesses/refers to the philosophical schools of pre-Han China/noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian/CL:個|个[ge4]
 京 [jīng] capital city of a country/big/algebraic term for a large number (old)/artificial mound (old)
 在 [zài] (located) at/(to be) in/to exist/in the middle of doing sth/(indicating an action in progress)
 儿 [ér, r] child/son//non-syllabic diminutive suffix/retroflex final
@@ -192,7 +192,7 @@
 朋友 [péngyou] friend/CL:個|个[ge4],位[wei4]
 男 [nán] male/Baron, lowest of five orders of nobility 五等爵位[wu3 deng3 jue2 wei4]/CL:個|个[ge4]
 矮 [ǎi] low/short (in length)
-可 [kě, kè] can/may/able to/to approve/to permit/to suit/(particle used for emphasis) certainly/very//see 可汗[ke4 han2]
+可 [kě] can/may/able to/to approve/to permit/to suit/(particle used for emphasis) certainly/very
 常 [cháng] always/ever/often/frequently/common/general/constant
 非常 [fēicháng] very/very much/unusual/extraordinary
 可爱 [kěài] adorable/cute/lovely
@@ -271,14 +271,14 @@
 一共 [yīgòng] altogether
 信用卡 [xìnyòngkǎ] credit card
 收 [shōu] to receive/to accept/to collect/to put away/to restrain/to stop/in care of (used on address line after name)
-千 [qiān] thousand//see 鞦韆|秋千[qiu1 qian1]
+千 [qiān] thousand
 便宜 [biànyí, piányi] convenient//cheap/inexpensive/small advantages/to let sb off lightly
 金 [jīn] gold/chemical element Au/generic term for lustrous and ductile metals/money/golden/highly respected/one of the eight ancient musical instruments 八音[ba1 yin1]
 贵 [guì] expensive/noble/precious/(honorific) your
 现金 [xiànjīn] cash
 太 [tài] highest/greatest/too (much)/very/extremely
 行 [háng, xíng] row/line/commercial firm/line of business/profession/to rank (first, second etc) among one's siblings (by age)/(in data tables) row/(Tw) column//to walk/to go/to travel/a visit/temporary/makeshift/current/in circulation/to do/to perform/capable/competent/effective/all right/OK!/will do/behavior/conduct/Taiwan pr. [xing4] for the behavior-conduct sense
-万 [mò, wàn] see 万俟[Mo4 qi2]//ten thousand/a great number
+万 [wàn] ten thousand/a great number
 不行 [bùxíng] won't do/be out of the question/be no good/not work/not be capable
 
 26. Entertainment
@@ -297,7 +297,7 @@
 新闻 [xīnwén] news/CL:條|条[tiao2],個|个[ge4]
 育 [yù] to have children/to raise or bring up/to educate
 体育 [tǐyù] sports/physical education
-节 [jiē, jié] see 節骨眼|节骨眼[jie1 gu5 yan3]//festival/holiday/node/joint/section/segment/part/to economize/to save/to abridge/moral integrity/classifier for segments, e.g. lessons, train wagons, biblical verses/CL:個|个[ge4]
+节 [jié] festival/holiday/node/joint/section/segment/part/to economize/to save/to abridge/moral integrity/classifier for segments, e.g. lessons, train wagons, biblical verses/CL:個|个[ge4]
 节目 [jiémù] program/item (on a program)/CL:臺|台[tai2],個|个[ge4],套[tao4]
 韩
 
