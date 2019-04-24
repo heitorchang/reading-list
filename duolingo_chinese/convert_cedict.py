@@ -80,7 +80,7 @@ def setup_cedict():
             parts = line.split()
             extracted = extract_pinyin(line)
             if parts[1] in cedict_dict:
-                cedict_dict[parts[1]]['eng'] += "/" + extracted['eng']
+                cedict_dict[parts[1]]['eng'] += "//" + extracted['eng']
             else:
                 cedict_dict[parts[1]] = extracted
 
