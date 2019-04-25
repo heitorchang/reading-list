@@ -9,5 +9,5 @@ os.chdir(DIRECTORY)
 with open(FILE, encoding="utf8") as infile:
     for line in infile:
         line = line.strip()
-        if 1 <= len(line) <= 4:
+        if 1 <= len(line) <= 6:
             print(line)
