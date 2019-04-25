@@ -433,7 +433,7 @@
 叉
 勺子
 
-38. Existence 1
+38. Existence
 办公室
 辆
 瓶
@@ -664,3 +664,111 @@
 堵车
 刚
 准时
+
+56. Location 5
+市
+公园
+城市
+附近
+地方
+图书馆
+中间
+
+57. Shopping 4
+角
+花
+打折
+皮
+旧
+经过
+换
+退货
+退款
+
+58. Routine 2
+刷牙
+习惯
+马上
+总是
+洗澡
+一边
+做梦
+讲
+故事
+
+59. Food 3
+其他
+除了
+饺子
+辣
+极了
+苦
+盐
+咸
+
+60. People 3
+初中
+年级
+长大
+个子
+小学
+比较
+戴
+眼镜
+年轻
+
+61. Location 6
+
+62. Routine 3
+
+63. Travel 2
+
+64. Languages 2
+
+65. Feelings
+
+66. School 2
+
+67. Future
+
+68. Environment
+
+69. Work
+
+70. Culture
+
+71. Hobbies 3
+
+72. Health 3
+
+73. Travel 3
+
+74. Languages 3
+
+75. House
+
+76. Exam
+
+77. Travel 4
+
+78. Comm 2
+
+79. Work 2
+
+80. Festivals
+
+81. Gourmet 2
+
+82. Net Slang
+
+83. Business 1
+
+84. Business 2
+
+85. Emergency
+
+86. Work 3
+
+87. Weather 2
+
+88. Duo
