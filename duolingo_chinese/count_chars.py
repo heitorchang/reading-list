@@ -1,5 +1,5 @@
 # Load vocab.txt and tally how many different characters are there.
-# 713 characters up to House (75)
+# 749 characters in the middle of Travel 4 (77)
 
 import os
 
