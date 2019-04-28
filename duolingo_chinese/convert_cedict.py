@@ -22,7 +22,7 @@ PinyinToneMark = {
     4: "\u00e0\u00f2\u00e8\u00ec\u00f9\u01dc\u01dc",
 }
 
-def decode_pinyin(s):
+def decode_pinyin_syl(s):
     s = s.lower()
     r = ""
     t = ""
@@ -58,6 +58,9 @@ def decode_pinyin(s):
             t = ""
     r += t
     return r
+
+def decode_pinyin(py):
+    return " ".join(map(decode_pinyin_syl, py.split()))
 
 def extract_pinyin(line):
     pat = re.compile(r'(?P<trad>.+) (?P<simp>.+) \[(?P<py>.*?)\] /(?P<eng>.*)/$')
