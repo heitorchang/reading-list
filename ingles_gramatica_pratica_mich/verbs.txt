@@ -2,20 +2,22 @@
 
 Present  I live              I have lived
          
-         Progressive         Progressive
+         Continuous          Continuous
          I am living         I have been living
 
+		 
 Past     I lived             I had lived
 
-         Progressive         Progressive
+         Continuous          Continuous
          I was living        I had been living
 
+		 
 Future   I will live         I will have lived
          I am going to live
 
-         Progressive         Progressive
+         Continuous          Continuous
          I will be living    I will have been living
          
 
-Progressive = Continuous
+Continuous is the same as Progressive
 

@@ -1,0 +1,8 @@
+cup = xícara, copo
+glass = copo
+
+copo = glass, cup
+xícara = cup
+
+menor de 25
+menor do que 25 (both ok)
