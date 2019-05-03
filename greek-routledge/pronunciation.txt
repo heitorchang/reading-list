@@ -1,0 +1,28 @@
+Alphabet
+αβγδεζηιθκλμνξοπρστυφχψω
+
+Vowels
+αεηιουω
+
+Consonants
+βγδζθκλμνξπρστφχψ
+
+pg. 1
+αυ is pronounced [af] at the end of a word and before π, τ, κ, φ, θ, χ, σ, ξ, ψ
+
+otherwise, it is pronounced [av].
+
+ευ and ηυ follow the same rules.
+
+γγ (n)g
+γκ (n)g
+μπ (m)b
+ντ (n)d
+τζ dz
+
+σ is pronounced [z] before β, γ, δ, λ, μ, ν, ρ
+
+k, g, x are palatalized when they are before [e] and [i]
+l is palatalized when it is before [i]
+
+The final ν of την and μην is dropped when followed by f, θ, x, v, γ, δ, j, s, z, l, m, n, r
