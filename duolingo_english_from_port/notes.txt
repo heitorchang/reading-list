@@ -6,3 +6,7 @@ xícara = cup
 
 menor de 25
 menor do que 25 (both ok)
+
+over time = ao longo do tempo
+
+carga = load
