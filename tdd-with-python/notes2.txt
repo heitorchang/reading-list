@@ -1,0 +1,3 @@
+Started 7.may.19
+
+25 Firefox, git bash, geckodriver

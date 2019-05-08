@@ -1,3 +1,10 @@
+# Emacs
+
+*~
+\#*\#
+.\#*
+
+
 # Github Python .gitignore
 __pycache__/
 *.py[cod]

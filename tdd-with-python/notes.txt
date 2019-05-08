@@ -1,3 +1,6 @@
+
+See notes2.txt (May 2019)
+
 http://www.obeythetestinggoat.com/pages/book.html#toc
 
 "Test first! Test first!"
