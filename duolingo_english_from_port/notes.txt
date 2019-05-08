@@ -10,3 +10,5 @@ menor do que 25 (both ok)
 over time = ao longo do tempo
 
 carga = load
+
+register = matricular
