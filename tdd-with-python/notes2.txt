@@ -1,3 +1,81 @@
 Started 7.may.19
 
 25 Firefox, git bash, geckodriver
+29 python -m venv venvsuperlists
+net  pip freeze > requirements.txt
+31 pip install django "selenium<4"
+39 selenium functional_tests.py
+41 django-admin startproject superlists
+44 gitignore
+45 git rm -r --cached __pycache__
+49 functional test = acceptance test = end-to-end test
+52 unittest
+54 git status, diff
+55 git commit -a
+57 python manage.py startapp
+58 functional tests are from the user's point of view
+   unit tests are from the programmer's point of view
+   functional = external, unit = internal
+59 Django TestCase smoke test
+60 git diff --staged (or --cached)
+60 Django MVC/Model-Template-View
+60 URL request
+62 lists/views.py
+64 superlists/urls.py
+66 git commit -am "message"
+67 test_home_page_returns_html
+68 unit testing cycle
+71 git log --oneline
+74 trivial tests don't take time to write anyway, so don't complain
+   it's good to have a placeholder
+75 functional_tests typing (send_keys)
+77 explicit wait
+78 don't test constants such as HTML
+79 templates
+81 install app in settings.py
+83 render_to_string (it's complicated)
+83 Django Test Client assertTemplateUsed
+85 when refactoring, change code or tests, but not both at the same time
+87 write HTML to match functional test
+91 functional tests are the final judge on whether the app works or not
+93 simple POST form
+93 if an unexpected error appears in a functional test, visit the page
+   manually or add a time.sleep()
+95 csrf_token
+96 test save POST request: client.post
+97 retrieve POST variable: request.POST['name']
+100 f-string in helpful error message
+101 "cheat" in template
+101 Red, Green, Refactor: remove magic constants
+    Triangulation: if the tests can be passed by cheating, write a better test
+102 Three strikes and refactor
+103 in functional_tests, put helper functions after tearDown()
+105 Django ORM (test models)
+105 save and retrieve item
+106 a "real" unit test shouldn't touch the database
+107 models.py: Item(models.Model)
+107 migrations add and remove database tables. It's like version control for
+    databases
+108 makemigrations
+108 even without a DB column, it is allowed to assign .text to an Item
+108 TextField() in a model
+109 default value in model field
+110 save POST to DB in the test
+111 save item in view
+112 test: only saves when necessary
+112 unit tests should only do one thing
+113 redirect after POST
+113 Item.objects.create(text=new_text) is equivalent to Item(); item.save()
+114 test redirection
+115 separate saving POST from redirect
+116 test display of several items
+117 template {% for item in items %}
+118 SQLite DBs are disk files
+119 python manage.py migrate
+120 forloop.counter
+121 git tag tagname
+121 remove db.sqlite3, migrate (--noinput seems unnecessary)
+122 regression: when new code breaks functionality that was working
+    Red/Green/Refactor
+123 Triangulation: add a new test to justify the generalization of the
+    implementation
