@@ -111,3 +111,10 @@ net  pip freeze > requirements.txt
 139 PUT is not available in HTML forms
 139 add a new FT (functional test) for new functionality
 140 regression test
+140 rename current FT to list_for_one_user
+141 multiple_users_at_different_urls
+141 self.assertRegex(list_url, '/lists/.+')
+141 second user
+142 ## metacomments explain how the test works
+142 page_text in FT
+143 redirection after POST
