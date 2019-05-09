@@ -79,3 +79,35 @@ net  pip freeze > requirements.txt
     Red/Green/Refactor
 123 Triangulation: add a new test to justify the generalization of the
     implementation
+124 need to isolate tests
+125 LiveServerTestCase creates a test DB
+125 functional_tests/__init__.py (seems unnecessary)
+125 git mv
+126 python manage.py test functional_tests
+127 LiveServerTestCase live_server_url
+128 git diff --staged -M
+129 unit tests: python manage.py test lists
+130 implicit waits should be avoided
+130 time.sleep(1) is an explicit wait
+131 replace explicit waits with a tool that waits as much as needed, up to
+    a timeout
+133 use wait_for instead of check_for
+134 purposely introduce errors
+135 ensure test isolation and manage global state; reset any permanent state
+    at the end of a test
+135 avoid voodoo sleeps
+135 don't rely on implicit waits
+136 how to design multiple lists, each with its own URL?
+137 instead of a long design process, create a minimum viable application as
+    quickly as possible
+138 You Ain't Gonna Need It! (YAGNI)
+138 REST style (Representational State Transfer)
+591 REST allows an user to obtain and update information about resources
+138 REST suggests the URL
+    /lists/<list_id>/  for a list,
+    /lists/new
+    /lists/<list_id>/add_item
+    it is not strictly REST, only inspired by it
+139 PUT is not available in HTML forms
+139 add a new FT (functional test) for new functionality
+140 regression test
