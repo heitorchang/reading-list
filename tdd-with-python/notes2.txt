@@ -118,3 +118,32 @@ net  pip freeze > requirements.txt
 142 ## metacomments explain how the test works
 142 page_text in FT
 143 redirection after POST
+144 hardcode URL for adding single item
+144 redirect to hardcoded URL in views
+145 replace assertIn with assertContains; it automatically takes care of
+    response.content.decode()
+146 create new URL for the-only-list
+146 new view function for the-only-list
+148 <form method="POST" action="/"> so that first test passes
+149 Green? Refactor
+149 grep -E "class|def" lists/tests.py
+150 use a separate template for lists
+150 test list uses list template
+151 copy home.html to list.html
+151 start a new To-Do list in home
+151 home view redirects to the-only-list or renders the simple home.html
+152 progress was made for new design but old stuff continues working
+153 NewListTest tests POST and redirection
+153 new /lists/new URL
+153 URLs without a trailing slash are "actions" that modify the DB
+153 assertRedirects
+154 add new /lists/new URL
+155 copy code from home page to pass tests
+156 clean up home_page view and remove test_only_saves_when_necessary
+157 update POST action in templates
+158 List test
+159 'list' shadows built-in 'list'
+159 assertEqual(item.list, my_list) compares primary keys
+159 try iterating to pass test
+159 edit models.py (not shown in book)
+160

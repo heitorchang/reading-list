@@ -12,3 +12,5 @@ over time = ao longo do tempo
 carga = load
 
 register = matricular
+
+application = aplicação / pedido / inscrição (Linguee)
