@@ -1,5 +1,6 @@
 Started 7.may.19
 
+Part I
 25 Firefox, git bash, geckodriver
 29 python -m venv venvsuperlists
 net  pip freeze > requirements.txt
@@ -81,7 +82,7 @@ net  pip freeze > requirements.txt
     implementation
 124 need to isolate tests
 125 LiveServerTestCase creates a test DB
-125 functional_tests/__init__.py (seems unnecessary)
+125 functional_tests/__init__.py
 125 git mv
 126 python manage.py test functional_tests
 127 LiveServerTestCase live_server_url
@@ -146,4 +147,62 @@ net  pip freeze > requirements.txt
 159 assertEqual(item.list, my_list) compares primary keys
 159 try iterating to pass test
 159 edit models.py (not shown in book)
-160
+160 naively set list to TextField and make a migration
+161 define list as ForeignKey
+161 delete migration only if it hasn't been commited to version control and
+    has not been applied to DB (migrate)
+162 NOT NULL constraints fail when ForeignKey was introduced
+162 create list in test
+163 new list in creating list view
+164 list id as its URL
+164 f-string
+165 greedy list id URL (in Django 2, <int:list_id>)
+166 add id to view_list
+166 filter objects
+167 redirect to new list id
+168 functional test detects that each new item creates a new list
+169 NewItemTest saves to existing list
+169 create other list to prevent checking correct list as first()
+170 \d regular expression instead of a greedy one
+171 URL for adding item
+172 add_item view
+173 ListViewTest for passing correct list to template
+173 response.context
+173 remove items from view_list context ...
+174 ... but change template to use list.item_set
+175 include list_urls
+176 lists/urls.py
+179 delete development DB because back-and-forth edits may have left
+    IntegrityErrors
+
+Part II
+180 CSS, static files
+181 NewVisitorTest in functional_tests
+181 test inputbox is centered
+181 assertAlmostEqual(delta=10)
+182 test inputbox in new list
+183 git reset --hard
+183 Bootstrap download
+185 Bootstrap HTML template
+185 template inheritance
+186 blocks
+188 Bootstrap grid, center
+189 Django static files
+190 Django looks for static/ subfolders in any app that's installed
+191 StaticLiveServerTestCase
+192 Windows errors when testing
+192 Jumbotron
+193 Bootstrap font size
+194 Less, Sass
+195 collectstatic, static folders
+196 static folder should be outside version control because it contains copies
+    of what's in app/static folders (lists/static)
+196 STATIC_ROOT setting
+     = os.path.abspath(os.path.join(BASE_DIR, '../static'))
+197 tree
+197 collectstatic to ../static
+199 npm, bower
+199 a minimal smoke test should be written to ensure CSS and static files are
+    working
+199 write tests to check layout is working without testing what they really are
+    (don't test constants)
