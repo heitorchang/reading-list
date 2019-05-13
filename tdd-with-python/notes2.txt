@@ -206,3 +206,25 @@ Part II
     working
 199 write tests to check layout is working without testing what they really are
     (don't test constants)
+201 staging site
+202 deployment overview
+203 functional test setup: if staging
+204 set URL in an environment variable
+205 set variable inline; don't use export
+206 provision a new server then deploy
+207 PaaS or virtual server
+207 Ubuntu server (AWS, Rackspace, Digital Ocean (do not use, bad IPs), Linode)
+208 user with sudo privileges
+208 nginx: sudo systemctl start nginx
+209 Python 3.6 deadsnakes PPA
+210 A-record is a reference between a domain name and a specific IP
+211 provisioning usually requires root privileges
+211 execute web server as a user different from root
+212 DB file location
+213 export Bash variable; it only lasts for the session
+214 requirements.txt
+214 python -m venv ../virtualenv
+215 nginx setup
+216 ln -s ../sites-available/$SITENAME /etc/nginx/sites-available/$SITENAME
+216 nginx.conf uncomment server_names_hash_bucket_size 64
+217 sudo nginx -t (test)
