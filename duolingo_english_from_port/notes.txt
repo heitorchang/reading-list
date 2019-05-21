@@ -14,3 +14,7 @@ carga = load
 register = matricular
 
 application = aplicação / pedido / inscrição (Linguee)
+
+next to = ao lado de
+
+picture/painting = quadro
