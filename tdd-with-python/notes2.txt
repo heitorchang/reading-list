@@ -228,3 +228,44 @@ Part II
 216 ln -s ../sites-available/$SITENAME /etc/nginx/sites-available/$SITENAME
 216 nginx.conf uncomment server_names_hash_bucket_size 64
 217 sudo nginx -t (test)
+218 migrate
+219 nginx log is /var/log/nginx/error.log
+221 gunicorn for Django, nginx for static
+221 set DEBUG=False, edit ALLOWED_HOSTS, systemd
+222 gunicorn does not serve static files
+223 collectstatic
+223 nginx location /static {...}
+224 Unix sockets in /tmp
+225 Debug, allowed_hosts
+226 systemd /etc/systemd/.../gunicorn.service
+227 sudo journalctl -u gunicorn
+227 daemon-reload
+228 provisioning summary
+228 deploy_tools subfolder for configuration files
+230 provisioning notes
+231 repo tree
+232 deployment for production
+232 security, fail2ban
+233 deployment should be reproducible
+233 fabric3 fab files
+234 fabfile example
+234 leading underscore for custom functions
+235 _create_directory_structure
+235 fabric's run()
+235 mkdir -p
+235 instead of os.path.join just use "/" in strings (because of Windows)
+236 git fetch gets commits but unlike pull, it does not update the source tree
+    immediately
+236 git reset --hard overwrites local changes
+236 update settings.py with sed
+237 secret_key.py
+238 virtualenv, static, migrate
+240 fabric config
+241 fab deploy:host=user@site
+243 sed replace
+243 tee writes pipe output to a file
+243 symbolic link
+245 git tag
+245 git log --graph --oneline --decorate
+245 list of deployment resources
+247 item validation
