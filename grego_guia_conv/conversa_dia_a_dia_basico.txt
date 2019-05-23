@@ -12,3 +12,47 @@ por favor;παρακαλώ
 tchau;γεια σου
 adeus;αντίο
 tudo bem, ok;εντάξει
+eu gostaria ...;θα ήθελα ...
+nós gostaríamos ...;θα θέλαμε ...
+você quer ...;θέλεις
+tem um ...;υπάρχει ένα
+como;πώς
+quando;πότε
+onde fica;πού είναι
+quanto custa isto;πόσο κάνει αυτό
+o senhor fala inglês;μιλάτε Αγγλικά
+como vai;πώς είσαι
+muito obrigado;ευχαριστώ πολύ
+sim, por favor;ναι, παρακαλώ
+até mais tarde;θα σε δω αργότερα
+quem;ποιός
+qual;ποιός
+o senhor tem;έχετε
+tem alguns;υπάρχουν καθόλσυ
+por que;γιατί
+o que;τι
+onde ficam;πόυ είναι
+o que é isto;τι είναι αυτό
+onde ficam os toaletes, por favor;πού είναι οι τουαλέτες, παρακαλώ
+bem, obrigado;καλά, ευχαριστώ
+não, obrigado;όχι, ευχαριστώ
+de nada;παρακαλώ
+sinto muito;λυπάμαι
+atenção;προσοχή
+não / proibido;μην
+entrada;είσοδος
+saída;έξοδος
+livre;ελεύθερο
+proibido estacionar;δεν επιτρέπεται  η στάθμευση
+proibido fumar;δεν επιτρέπεται το κάπνισμα
+aberto;ανοιχτά
+fora de serviço, quebrado;εκτός λειτουργίας
+rservado;ρεζερβέ
+bem-vindo;καλώς ήρθατε
+o senhor se importaria de;θα σας πείραζε αν ...
+um momento, por favor;μια στιημή, παρακαλώ
+sente-se, por favor;παρακαλώ καθίστε
+como?;παρακαλώ
+o quê?;τι
+poderia repetir, por favor?;μπορείτε να το επαναλάβετε αυτό, παρακαλώ
+
