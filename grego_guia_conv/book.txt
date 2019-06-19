@@ -1,19 +1,8 @@
-# 18.jun.2019
+18.jun.2019
 
-# Formato
+Guia de conversação de grego, Evy Markopoulou, Lalita Markopoulou, WMF Martins Fontes
 
-# Português
-# Grego
-
-# Português
-# Grego
-
-# ...
-
-
-# p. 7
-
-Conversa do dia a dia
+7 CONVERSA DO DIA A DIA
 
 boa noite
 καλησπέρα
@@ -137,3 +126,106 @@ quem
 
 qual
 ποιός
+
+atenção
+προσοχή
+
+não .../proibido ...
+μην ...
+
+entrada
+είσοδος
+
+saída
+έξοδος
+
+livre
+ελεύθερο
+
+proibido estacionar
+δεν επιτρέπεται η στάθμευση
+
+proibido fumar
+δεν επιτρέπεται το κάπνισμα
+
+aberto
+ανοιχτά
+
+fora de serviço/funcionamento, quebrado
+εκτός λειτουργίας
+
+reservado
+ρεζερβέ
+
+sanitários, toaletes
+τουαλέτες
+
+tem ...
+υπάρχει/υπάρχουν ...
+
+bem-vindo
+καλώς ήρθατε
+
+o(a) senhor(a) se importaria de ...?
+θα σας πείραζε αν ...;
+
+um momento, por favor
+μια στιγμή, παρακαλώ
+
+sente-se, por favor
+παρακαλώ καθίστε
+
+9 PROBLEMAS NA COMPREENSÃO DO GREGO
+
+como?
+παρακαλώ;
+
+o quê?
+τι;
+
+poderia repetir, por favor?
+μπορείτε να το επαναλάβετε αυτό, παρακαλώ;
+
+poderia falar mais devagar?
+μπορείτε να μιλάτε πιο αργά;
+
+não estou entendendo
+δεν καταλαβαίνω
+
+entendo um pouco de grego
+καταλαβαίνω λίγο ελληνικά
+
+consigo entender grego, mas não consigo falar
+καταλαβαίνω ελληνικά αλλά δεν μπορώ να μιλήσω
+
+quase nunca falo grego
+δεν μιλάω σχεδόν καθόλου ελληνικά
+
+o(a) senhor(a) fala inglês?
+μιλάτε Αγγλικά;
+
+como se diz ... em grego?
+πώς λέτε ... στα ελληνικά;
+
+como se escreve?
+πώς το συλλαβίζετε αυτό;
+
+como se diz aquilo em grego?
+πώς το λέτε αυτό στα ελληνικά;
+
+poderia anotar para mim?
+μπορείτε να μου το γράψετε;
+
+o(a) senhor(a) compreende grego?
+καταλαβαίνετε ελληνικά;
+
+vou escrever para o(a) senhor(a)
+θα σας το γράψω
+
+isto significa ...
+σημαίνει ...
+
+é um tipo de ...
+είναι ένα είδος ...
+
+11 FALANDO SOBRE A LÍNGUA
