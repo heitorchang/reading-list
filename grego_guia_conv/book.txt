@@ -11,4 +11,129 @@
 # ...
 
 
-# p. 1
+# p. 7
+
+Conversa do dia a dia
+
+boa noite
+καλησπέρα
+
+boa noite (ao se despedir)
+καληνύχτα
+
+boa tarde
+καλό απόγευμα
+
+bom dia
+καλημέρα
+
+com licença
+συγνώμη
+
+desculpe
+συγνώμη
+
+não
+όχι
+
+obrigado(a)
+ευχαριστώ, σ΄ευχαριστώ
+
+oi
+γεια
+
+olá
+γεια
+
+por favor
+παρακαλώ
+
+sim
+ναι
+
+tchau
+γεια
+
+tchau, adeus
+γεια, αντίο
+
+tudo bem, ok
+εντάξει, ΟΚ
+
+eu gostaria ...
+θα ήθελα ...
+
+nós gostaríamos ...
+θα θέλαμε ...
+
+você quer ...?
+θέλεις ...;
+
+o(a) senhor(a) tem ...?
+έχετε ...;
+
+tem um ...?
+υπάρχει ένα ...;
+
+tem alguns ...?
+υπάρχουν καθόλου ...;
+
+como ...?
+πώς ...;
+
+por que ...?
+γιατί ...;
+
+quando ...?
+πότε ...;
+
+o que ...?
+τι ...;
+
+onde fica ...?
+πού είναι ...;
+
+onde ficam ...?
+πού είναι ...;
+
+quanto custa isto?
+πόσο κάνει αυτό ...;
+
+o que é isto?
+τι είναι αυτό;
+
+o(a) senhor(a) fala inglês?
+μιλάτε Αγγλικά;
+
+onde ficam os toaletes, por favor?
+πού είναι οι τουαλέτες, παρακαλώ;
+
+como vai?
+πώς είσαι;
+
+bem, obrigado(a)
+καλά, ευχαριστώ
+
+muito obrigado(a)
+ευχαριστώ πολύ
+
+não, obrigado(a)
+όχι, ευχαριστώ
+
+sim, por favor
+ναι, παρακαλώ
+
+de nada
+παρακαλώ
+
+até mais tarde
+θα σε δω αργότερα
+
+sinto muito
+λυπάμαι
+
+quem
+ποιός
+
+qual
+ποιός
