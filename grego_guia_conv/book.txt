@@ -26,7 +26,7 @@ não
 όχι
 
 obrigado(a)
-ευχαριστώ, σ΄ευχαριστώ
+ευχαριστώ, σ'ευχαριστώ
 
 oi
 γεια
@@ -336,7 +336,139 @@ não é longe
 
 14 CONHECENDO PESSOAS
 
+agradar, gostar
+αρέσω
+
+amar
+αγαπώ
+
+bacana
+ωραίος
+
+barato
+φτηνός
+
+bem
+καλά
+
+bom
+καλός
+
+bonito
+όμορφος
+
+caro
+ακριβός
+
+chato
+βαρετός
+
+genial
+απίθανος
+
+interessante
+ενδιαφέρον
+
+mau
+άσχημος, κακός
+
+odiar
+μισώ
+
+razoável
+καθόλου άσχημος
+
 14 APRESENTANDO-SE E DESCOBRINDO INFORMAÇÕES SOBRE AS OUTRAS PESSOAS
+
+meu nome é ...
+τ'όνομά μου είναι ...
+
+qual é o seu nome?
+ποιό είναι τ'όνομά σου;
+
+como vai?
+τι κάνεις;
+
+prazer em conhecê-lo(a)!
+χάρηκα για τη γνωριμία!
+
+este é meu marido
+αυτός είναι ο άνδρας μου
+
+esta é minha companheira
+αυτή είναι η σύντροφός μου
+
+sou brasileiro/brasileira
+είμαι Βραζιλιανός/Βραζιλιανή
+
+sou do(a) ...
+είμαι από ...
+
+de onde o(a) senhor(a) é?
+από πού είστε;
+
+quantos anos tem?
+πόσο χρονών είσαι;
+
+tenho 22 anos
+είμαι είκοσι δύο χρονών
+
+o que faz da vida?
+τι δουλειά κάνεις;
+
+é estudante?
+είσαι φοιτητής/φοιτήτρια;
+
+trabalho
+δουλέυω
+
+estudo direito
+σπουδάζω νομικά
+
+sou professor
+είμαι δάσκαλος
+
+fico em casa com as crianças
+μένω στο σπίτι με τα παιδιά
+
+trabalho meio período
+κάνω δουλειά μερικής απασχόλησης
+
+trabalho com marketing
+δουλέυω στο μάρκετινγκ
+
+sou aposentado
+είμαι συνταξιούχος
+
+sou autônomo
+είμαι ελεύθερος επαγγελματίας
+
+tenho dois filhos
+έχω δύο παιδιά
+
+não temos filhos
+δεν έχουμε παιδιά
+
+dois meninos e uma menina
+δύο αγόρια κι ένα κορίτσι
+
+um menino de cinco e uma menina de dois
+ένα αγόρι πέντε χρονών κι ένα κορίτσι δύο χρονών
+
+o(a) senhor(a) já esteve no Brasil?
+έχετε πάει ποτέ στη Βραζιλία;
+
+você é brasileiro?
+είσαι Βραζιλιανός;
+
+conheço bem o Brasil
+γνωρίζω τη Βραζιλία αρκετά καλά
+
+também estamos de férias aqui
+είμαστε κι εμείς εδώ σε διακοπές
+
+eu adoraria ir ao Brasil algum dia
+θα ήθελα να πάω στη Βραζιλία μία μέρα
 
 16 FALANDO SOBRE A SUA ESTADIA
 
