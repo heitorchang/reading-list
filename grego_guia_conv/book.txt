@@ -92,7 +92,7 @@ o que é isto?
 τι είναι αυτό;
 
 o(a) senhor(a) fala inglês?
-μιλάτε Αγγλικά;
+μιλάτε αγγλικά;
 
 onde ficam os toaletes, por favor?
 πού είναι οι τουαλέτες, παρακαλώ;
@@ -202,7 +202,7 @@ quase nunca falo grego
 δεν μιλάω σχεδόν καθόλου ελληνικά
 
 o(a) senhor(a) fala inglês?
-μιλάτε Αγγλικά;
+μιλάτε αγγλικά;
 
 como se diz ... em grego?
 πώς λέτε ... στα ελληνικά;
@@ -229,3 +229,221 @@ isto significa ...
 είναι ένα είδος ...
 
 11 FALANDO SOBRE A LÍNGUA
+
+aprendi algumas palavras do meu guia de conversação
+έμαθα μερικές λέξεις από το ταξιδιωτικό μου λεξικό
+
+aprendi isto na escola, mas esqueci tudo
+έκανα στο σχολείο αλλά τα έχω ξεχάσει όλα
+
+só consigo me virar um pouco
+μπορώ μετά βίας να συνενοηθώ
+
+mal conheço duas palavras
+μετά βίας ξέρω δύο λέξεις
+
+acho o grego uma língua difícil
+βρίσκω τα ελληνικά μια δύσκολη γλώσσα
+
+sei só o básico, nada além disso
+ξέρω τα βασικά αλλά τίποτα παραπάνω
+
+as pessoas falam rápido demais para mim
+οι άνθρωποι μιλάνε πολύ γρήγορα για μένα
+
+você tem uma boa pronúncia
+έχετε καλή προφορά
+
+o(a) senhor(a) fala grego muito bem
+μιλάτε πολύ καλά ελληνικά
+
+12 FAZENDO PERGUNTAS SOBRE O CAMINHO
+
+desculpe, pode me dizer onde fica o(a) ..., por favor?
+συγνώμη, μπορείτε να μου πείτε που είναι το ..., παρακαλώ;
+
+qual é o caminho para ...?
+ποιός είναι ο δρόμος για ...;
+
+poderia me dizer como chego a ...?
+μπορείτε να μου πείτε πως να πάω στο ...;
+
+há um(a) ... aqui perto?
+υπάρχει ένα ... εδώ κοντά;
+
+poderia me mostrar no mapa?
+μπορείτε να μου το δείξετε (πάνω) στο χάρτη;
+
+há algum mapa da cidade em algum lugar?
+υπάρχει κάπου ένας χάρτης της πόλης;
+
+é longe?
+είναι μακριά;
+
+estou procurando ...
+ψάχνω για ...
+
+estou perdido
+έχω χαθεί
+
+siga
+ακολούθησε
+
+desça
+πήγαινε κάτω
+
+suba
+πήγαινε πάνω
+
+continue seguindo
+συνέχισε να πηγαίνεις
+
+esquerda
+αριστερά
+
+direita
+δεξιά
+
+sempre em frente
+ίσια
+
+vire
+στρίψε
+
+você está a pé?
+είσαι με τα πόδια;
+
+fica a uns cinco minutos de carro
+είναι πέντε λεπτά μακριά με το αυτοκίνητο
+
+é a primeira/segunda/terceira à esquerda
+είναι το πρώτο/δεύτερο/τρίτο αριστερά
+
+vire à direita na rotatória
+στρίψε δεξιά στον κόμβο
+
+vire à esquerda no banco
+στρίψε αριστερά στην τράπεζα
+
+pegue a próxima saída
+πάρε την επόμενη έξοδο
+
+não é longe
+δεν είναι μακριά
+
+é logo dobrando a esquina
+είναι πολύ κοντά
+
+14 CONHECENDO PESSOAS
+
+14 APRESENTANDO-SE E DESCOBRINDO INFORMAÇÕES SOBRE AS OUTRAS PESSOAS
+
+16 FALANDO SOBRE A SUA ESTADIA
+
+18 MANTENDO CONTATO
+
+18 EXPRESSANDO SUA OPINIÃO
+
+20 FALANDO SOBRE O TEMPO
+
+22 VIAJANDO
+
+25 DE AVIÃO
+
+27 DE TREM, ÔNIBUS DE VIAGEM, ÔNIBUS URBANO, METRÔ E BONDE
+
+30 DE CARRO
+
+33 DE BARCO
+
+35 HOSPEDAGEM
+
+37 HOTÉIS
+
+40 ALBERGUES DA JUVENTUDE
+
+41 ACOMODAÇÃO COM COZINHA
+
+42 CAMPING
+
+43 COMENDO E BEBENDO
+
+45 RESERVANDO UMA MESA
+
+46 PEDINDO A COMIDA
+
+48 BARES E CAFÉS
+
+49 A CONTA
+
+51 COMIDA E BEBIDA
+
+57 GLOSSÁRIO DE COMIDAS E BEBIDAS
+
+60 PASSEANDO
+
+61 SUGESTÕES E CONVITES
+
+62 COMBINANDO UM ENCONTRO
+
+64 FILMES, SHOWS E CONCERTOS
+
+66 FESTAS E BOATES
+
+68 ATRAÇÕES TURÍSTICAS
+
+70 MUSEUS, EXPOSIÇÕES E MONUMENTOS
+
+72 DANDO SUAS IMPRESSÕES
+
+74 ESPORTES E JOGOS
+
+76 CAMINHADAS
+
+78 ESQUIAÇÃO E SNOWBOARDING
+
+78 OUTROS ESPORTES
+
+80 JOGOS EM AMBIENTES FECHADOS
+
+81 COMPRAS
+
+83 PAGANDO
+
+84 COMIDA
+
+85 ROUPAS
+
+87 SOUVENIRS E PRESENTES
+
+89 FOTOGRAFIAS
+
+92 BANCOS
+
+94 AGÊNCIAS DE CORREIO
+
+96 CYBERCAFÉS E E-MAIL
+
+98 TELEFONE
+
+100 FAZENDO UMA LIGAÇÃO
+
+101 PROBLEMAS
+
+103 SAÚDE
+
+105 NO MÉDICO OU NO HOSPITAL
+
+108 NA FARMÁCIA
+
+110 PROBLEMAS E EMERGÊNCIAS
+
+113 POLÍCIA
+
+115 HORA E DATA
+
+117 A DATA
+
+119 A HORA
+
+122 NÚMEROS
