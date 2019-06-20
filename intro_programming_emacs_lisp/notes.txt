@@ -36,7 +36,7 @@ page number refers to absolute pdf's page, not book's page
 
 30 (message STRING) prints STRING in the echo area
 
-30 if there is a '%s' in the string, the message function looks to the argument that follows the string and replaces '%s' with this second argument
+30 if there is a '%s' (a control sequence) in the string, the message function looks to the argument that follows the string and replaces '%s' with this second argument
 
 31 '%d' is used for an integer
 
@@ -61,4 +61,55 @@ increment the counter (setq counter (+ counter 1))
 
 33 anything to the right of ; is a comment
 
+37 nil means false and is a synonym for ()
 
+38 C-u C-x C-e (universal-argument prefix argument eval-last-sexp) puts the result of the evaluation in the buffer instead of the echo area
+
+38 (current-buffer) returns the buffer itself
+
+38 (other-buffer) #<buffer *scratch*>
+
+(switch-to-buffer (other-buffer))
+
+40 set-buffer appears in code instead of switch-to-buffer because programs "do not have eyes"
+
+40 point is the position of the cursor
+
+42 defun has up to five parts following defun:
+
+1. the name of the symbol to which the function should be attached
+2. a list of arguments or () if no arguments are to be passed
+3. documentation
+4. (interactive "OPTIONS") allows the function to be called with M-x or by typing a key
+5. the body of the function (code)
+
+43 a non-interactive function
+
+(defun multiply-by-seven (number)
+  "Multiply NUMBER by seven."
+  (* 7 number))
+
+43 C-h f describes a function
+
+43 apropos prints only the first line of a multi-line documentation string
+
+44 C-x C-e installs a function
+
+45 most interactive functions are called for their side effects
+
+46 an interactive version of multiply-by-seven
+
+(defun multiply-by-seven-interactive (number)
+  "Multiply NUMBER by seven."
+  (interactive "p")
+  (message "The result is %d" (* 7 number)))
+
+46 "p" tells Emacs to pass the prefix argument to the function
+
+46 run the interactive multiply-by-seven function with
+
+C-u 6 M-x multiply-by-seven-interactive RET
+
+C-u defaults to 4
+
+47 M-<number> is the same as C-u <number>
