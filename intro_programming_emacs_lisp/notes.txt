@@ -113,3 +113,65 @@ C-u 6 M-x multiply-by-seven-interactive RET
 C-u defaults to 4
 
 47 M-<number> is the same as C-u <number>
+
+49 let is a special form that creates a name for a local variable that overshadows any use of the same name outside the let expression
+
+49 let is like a temporary and local setq 
+
+50 (let varlist body...)
+
+elements in the varlist are either symbols by themselves (that are given the initial value of nil) or a two-element list made up of a symbol and its initial value
+
+(let ((zebra "stripes")
+      (tiger "fierce"))
+  (message "One animal has %s and the other is %s."
+           zebra tiger))
+
+52 if is a conditional special form
+
+(if (> 5 4)
+    (message "5 is greater than 4"))
+
+53 (equal a b)
+
+54 if-then-else
+
+(if (> 4 5)
+    (message "4 falsely greater than 5")
+  (message "4 is not greater than 5"))
+
+54 only nil is false; everything else is true. Remember that () is the same as nil
+
+55 save-excursion saves the location of point and current buffer, executes the body, and then restores point to its previous location
+
+56 point is immediately before the character where the cursor appears to be on top of
+
+56 mark is another position in the buffer that can be set with set-mark-command (C-space)
+
+56 the positions of marks are saved in the mark ring
+
+56 the region is the part of the buffer between point and mark
+
+57 save-excursion often occurs within a let expression
+
+(let varlist
+  (save-excursion
+    body...))
+
+57 eval-last-sexp prints in the current buffer if invoked with an argument
+
+58 some of the argument codes for interactive functions are:
+
+b name of an existing buffer
+f name of an existing file
+p numeric prefix argument
+r point and the mark as two numeric arguments, smallest first
+
+59 eq is used to check if the two arguments are the same object
+
+59 equal checks if the two arguments have the same structure and contents
+
+59 string ordering may be done with string< (string-lessp). There is no string-greaterp, <= or >=
+
+59 message can use the control sequences %s (string or symbol), %d (number) and %c (character with given ASCII code)
+
