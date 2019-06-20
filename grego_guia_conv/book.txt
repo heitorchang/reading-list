@@ -706,3 +706,42 @@ eu adoraria ir ao Brasil algum dia
 20.000.000 είκοσι εκατομμύρια
 100.000.000 εκατό εκατομμύρια
 1.000.000.000 ένα δισεκατομμύριο
+
+primeiro πρώτος/πρώτη/πρώτο
+segundo δεύτερος
+terceiro τρίτος
+quarto τέταρτος
+quinto πέμπτος
+sexto έκτος
+sétimo έβδομος
+oitavo όγδοος
+nono ένατος
+décimo δέκατος
+décimo primeiro ενδέκατος
+décimo segundo δωδέκατος
+décimo terceiro δέκατος τρίτος
+décimo quarto δέκατος τέταρτος
+décimo quinto δέκατος πέμπτος
+décimo sexto δέκατος έκτος
+décimo sétimo δέκατος έβδομος
+décimo oitavo δέκατος όγδοος
+décimo nono δέκατος ένατος
+vigésimo εικοστός
+trigésimo τριακοστός
+quadragésimo τεσσαρακοστός
+quinquagésimo πεντηκοστός
+sexagésimo εξηκοστός
+septuagésimo εβδομηκοστός
+octogésimo ογδοηκοστός
+nonagésimo εννενηκοστός
+centésimo εκατοστός
+ducentésimo διακοσιοστός
+trecentésimo τριακοσιοστός
+quadringentésimo τετρακοσιοστός
+quingentésimo πεντακοσιοστός
+seiscentésimo εξακοσιοστός
+septingentésimo επτακοσιοστός
+octingentésimo οκτακοσιοστός
+nongentésimo εννεακοσιοστός
+milésimo χιλιοστός
+milionésimo εκατομμυριοστός
