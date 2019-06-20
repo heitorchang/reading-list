@@ -1,62 +1,64 @@
 by Robert J. Chassell
 
-1 lists look like '(rose violet daisy buttercup). ' is "quote"
+page number refers to absolute pdf's page, not book's page
 
-1 atoms are separated by whitespace and may be numbers, strings and symbols
+17 lists look like '(rose violet daisy buttercup). ' is "quote"
 
-2 () is both an atom and a list
+17 atoms are separated by whitespace and may be numbers, strings and symbols
 
-4 q exits the debugger
+18 () is both an atom and a list
 
-9 a symbol may be called a variable because it holds a value that may vary
+20 q exits the debugger
 
-9 a symbol can have both a value and a function attached to it (think of a symbol being a chest of drawers, with a drawer for a value and another for a function)
+25 a symbol may be called a variable because it holds a value that may vary
 
-10 binding a variable to a value is assigning it a value
+25 a symbol can have both a value and a function attached to it (think of a symbol being a chest of drawers, with a drawer for a value and another for a function)
 
-12 (concat "abc" "def") produces "abcdef"
+26 binding a variable to a value is assigning it a value
 
-12 (substring "The quick brown fox jumped." 16 19) produces "fox"
+28 (concat "abc" "def") produces "abcdef"
 
-12 (substring STRING BEGINNING-ZERO-INDEXED-INCLUSIVE END-EXCLUSIVE)
+28 (substring "The quick brown fox jumped." 16 19) produces "fox"
 
-12 (number-to-string NUMBER) (int-to-string NUMBER)
+28 (substring STRING BEGINNING-ZERO-INDEXED-INCLUSIVE END-EXCLUSIVE)
 
-13, 16, 18 'hello is a quoted symbol. It is the symbol itself. A quoted expression is returned as written, and not evaluated
+28 (number-to-string NUMBER) (int-to-string NUMBER)
 
-14 marker is a special object representing a buffer position
+29, 32, 34 'hello is a quoted symbol. It is the symbol itself. A quoted expression is returned as written, and not evaluated
 
-14 -p at the end of a function stands for "predicate". The function determines whether some property is true or false.
+30 marker is a special object representing a buffer position
 
-14 zerop is a test of whether its argument is zero
+30 -p at the end of a function stands for "predicate". The function determines whether some property is true or false.
 
-14 listp tests whether its argument is a list
+30 zerop is a test of whether its argument is zero
 
-14 (message STRING) prints STRING in the echo area
+30 listp tests whether its argument is a list
 
-14 if there is a '%s' in the string, the message function looks to the argument that follows the string and replaces '%s' with this second argument
+30 (message STRING) prints STRING in the echo area
 
-15 '%d' is used for an integer
+30 if there is a '%s' in the string, the message function looks to the argument that follows the string and replaces '%s' with this second argument
 
-15 multiple '%s' and '%d' look for the corresponding value following the first string
+31 '%d' is used for an integer
 
-16 set, setq and let assign a value to a variable
+31 multiple '%s' and '%d' look for the corresponding value following the first string
 
-16 when using set, both the variable and the value need to be quoted, unless you want to evaluate them
+32 set, setq and let assign a value to a variable
 
-16 setq is just like set, except that the first argument is quoted automatically
+32 when using set, both the variable and the value need to be quoted, unless you want to evaluate them
 
-17 setq works in pairs
+32 setq is just like set, except that the first argument is quoted automatically
+
+33 setq works in pairs
 
 (setq trees '(pine fir oak)
       herbivores '(gazelle zebra antelope))
 
-17 set and setq make a symbol 'point' to a value
+33 set and setq make a symbol 'point' to a value
 
-17 initialize a counter (setq counter 0)
+33 initialize a counter (setq counter 0)
 
 increment the counter (setq counter (+ counter 1))
 
-17 anything to the right of ; is a comment
+33 anything to the right of ; is a comment
 
 
