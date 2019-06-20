@@ -26,3 +26,5 @@ k, g, x are palatalized when they are before [e] and [i]
 l is palatalized when it is before [i]
 
 The final ν of την and μην is dropped when followed by f, θ, x, v, γ, δ, j, s, z, l, m, n, r
+
+Alternatively, ν is needed after τη and μη if it is followed by a vowel or κ, π, τ, ξ, ψ
