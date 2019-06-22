@@ -175,3 +175,12 @@ r point and the mark as two numeric arguments, smallest first
 
 59 message can use the control sequences %s (string or symbol), %d (number) and %c (character with given ASCII code)
 
+62 (defun simplified-beginning-of-buffer ()
+     "Move point to beginning of buffer, leave mark at previous position"
+     (interactive)
+     (push-mark)
+     (goto-char (point-min)))
+
+63 mark-whole-buffer (C-x h)
+
+70 xref-find-definitions (M-.) goes to the source of a function or variable
