@@ -1,6 +1,8 @@
 Guia de conversação de grego, Evy Markopoulou, Lalita Markopoulou
 WMF Martins Fontes, 2012
 
+Use Segoe UI font
+
 ÍNDICE
 
 7 CONVERSA DO DIA A DIA
@@ -601,9 +603,198 @@ esteve em ...?
 
 18 MANTENDO CONTATO
 
+deveríamos manter contato
+να κρατήσουμε επαφή
+
+vou lhe dar meu e-mail
+θα σα δώσω το ιμέιλ μου
+
+aqui está meu endereço, caso algum dia vá ao Brasil
+πάρε τη διεύθυνσή μου, αν έρθεις ποτέ στη Βραζιλία
+
+quer me dar seu endereço?
+θα μου δώσεις τη διεύθυνσή σου;
+
+você tem e-mail?
+έχεις ιμέιλ;
+
+você será sempre bem-vindo para vir ficar conosco
+είσαι πάντα ευπρόσδεκτος να έρθεις και να μείνεις μαζί μας εδώ
+
 18 EXPRESSANDO SUA OPINIÃO
 
+nós nos divertimos de montão
+περάσαμε φανταστικά! Ξεφαντώσαμε!
+
+foi chato pra caramba!
+ήταν πολύ βαρετά!
+
+estou com ótimo humor
+έχω πολύ κέφι
+
+realmente gosto ...
+μου αρέσει πραγματικά ...
+
+realmente gostei ...
+μου άρεσε πραγματικά ...
+
+não gosto ...
+δεν μου αρέσει ...
+
+não gostei ...
+δεν μου άρεσε ...
+
+amo ...
+αγαπώ ...
+
+amei ...
+αγάπησα ...
+
+eu gostaria ...
+θα ήθελα ...
+
+eu teria gostado ...
+θα μου άρεσε ...
+
+acho isto ...
+το βρίσκω ...
+
+achei isto ...
+το βρήκα ...
+
+é adorável
+είναι αξιαγάπητο
+
+foi adorável
+ήταν αξιαγάπητο
+
+concordo
+συμφωνώ
+
+não concordo
+δεν συμφωνώ
+
+não sei
+δεν ξέρω
+
+não me importo
+δεν με πειράζει
+
+isto não está me soando bem
+δεν μου αρέσει όπως ακούεται
+
+isto está parecendo interessante
+φαίνεται ενδιαφέρον
+
+isto realmente me chateia
+μ'ενοχλεί πραγματικά
+
+estava chato
+ήταν βαρετό
+
+é um roubo (muito caro)
+είναι πανάκριβα
+
+fica muito cheio à noite
+έχει πολύ κόσμο το βράδυ
+
+está muito cheio
+έχει πολύ κόσμο
+
+está muito parado
+είναι πολύ ήσυχα
+
+realmente me diverti muito
+διασκέδασα πραγματικά
+
+foi muito legal para nós
+περάσαμε πολύ ωραία
+
+estava mesmo um astral muito bom
+υπήρχε πραγματικά πολύ ωραία ατμόσφαιρα
+
+conhecemos umas pessoas legais
+γνωρίσαμε μερικούς ωραίους ανθρώπους
+
+achamos um hotel ótimo
+βρήκαμε ένα καταπληκτικό ξενοδοχείο
+
+o(a) senhor(a) gosta ...?
+σας αρέσει ...;
+
+vocês se divertiram?
+διασκεδάσατε;
+
+o(a) senhor(a) deveria ir para ...
+πρέπει να πάτε ...
+
+eu sugiro...
+προτείνω ...
+
+é um lugar muito agradável
+είναι μία θαυμάσια περιοχή
+
+não há muitos turistas
+δεν υπάρχουν πολλοί τουρίστες
+
+não vá no fim de semana, fica muito cheio
+μην πάτε το Σαββατοκύριακο, έχει πολύ κόσμο
+
+está um tanto hipervalorizado
+είναι κάπως υπερτιμημένο
+
 20 FALANDO SOBRE O TEMPO
+
+hoje fez um calor de lascar
+σκάσαμε σήμερα
+
+choveu canivete
+έβρεξε καρεκλοπόδαρα
+
+lá fora está congelando
+κάνει ψοφόκρυο έξω
+
+você viu a previsão do tempo para amanhã?
+είδες το δελτίο καιρού για αύριο;
+
+vai melhorar
+θα κάνει καλό καιρό
+
+não vai melhorar
+δεν πρόκειται να κάνει καλό καιρό
+
+está muito quente
+κάνει πολύ ζέστη
+
+esfria à noite
+πιάνει κρύο τη νύχτα
+
+o tempo estava lindo
+ο καιρός ήταν ωραίος
+
+choveu algumas vezes
+έβρεξε μερικές φορές
+
+houve uma tempestade
+πέσαμε σε καταιγίδα
+
+tivemos sorte com o tempo
+είμασταν τυχεροί με τον καιρό
+
+está muito úmido aqui
+έχει πολύ υγρασία εδώ
+
+o tempo estava bom a semana toda
+είχε θαυμάσιο καιρό όλη την εβδομάδα
+
+parece que vai chover
+μπορεί να βρέξει
+
+a previsão é de tempo bom para o resto da semana
+είναι καλή η πρόβλεψη του καιρού για την υπόλοιπη εβδομάδα
+
+amanhã vai esquentar de novo
+θα κάνει πάλι ζέστη αύριο
 
 22 VIAJANDO
 
@@ -851,7 +1042,7 @@ segunda-feira de Páscoa
 Dia do Trabalho (1 de maio)
 Πρωτομαγιά
 
-Pentecostes
+Pentecostes (50 dias depois de Páscoa)
 Πεντηκοστή/του Αγίου Πνεύματος
 
 Assunção (15 de agosto)
