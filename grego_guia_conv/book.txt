@@ -29,6 +29,11 @@ WMF Martins Fontes, 2012
 48 BARES E CAFÉS
 49 A CONTA
 51 COMIDA E BEBIDA
+52 ορεκτικά, σαλάτες, τυριά APERITIVOS, SALADAS, QUEIJOS
+53 κρεατικά CARNE
+54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
+55 όσπρια, λαδερά LEGUMES E VERDURAS
+56 γλυκά PRODUTOS DE CONFEITARIA E BOLOS
 57 GLOSSÁRIO DE COMIDAS E BEBIDAS
 60 PASSEANDO
 61 SUGESTÕES E CONVITES
@@ -64,7 +69,8 @@ WMF Martins Fontes, 2012
 117 A DATA
 119 A HORA
 122 NÚMEROS
-
+183 FERIADOS E FESTAS
+187 PESOS E MEDIDAS
 
 7 CONVERSA DO DIA A DIA
 
@@ -536,6 +542,63 @@ eu adoraria ir ao Brasil algum dia
 
 16 FALANDO SOBRE A SUA ESTADIA
 
+estou aqui a trabalho
+είμαι εδώ για δουλειές
+
+estamos de férias
+είμαστε σε διακοπές
+
+cheguei há três dias
+έφτασα πριν τρεις μέρες
+
+estamos aqui há uma semana
+είμαστε εδώ μια εβδομάδα
+
+só estou aqui por uma semana
+είμαι εδώ μόνο για ένα Σαββατοκύριακο
+
+só estamos de passagem
+απλώς περνάμε από εδώ
+
+esta é a nossa primeira vez na Grécia
+αυτή είναι η πρώτη μας φορά στην Ελλάδα
+
+viemos comemorar nosso aniversário de casamento
+είμαστε εδώ για να γιορτάσουμε την επέτειο του γάμου μας
+
+estamos em lua de mel
+είμαστε στο μήνα του μέλιτος
+
+estamos aqui com uns amigos
+είμαστε εδώ με φίλους
+
+estamos fazendo uma viagem de turismo
+κάνουμε περιοδεία
+
+conseguimos pegar um voo barato
+καταφέραμε να βρούμε μία φτηνή πτήση
+
+estamos pensando em comprar uma casa aqui
+σκεφτόμαστε ν'αγοράσουμε ένα σπίτι εδώ
+
+aproveite sua estadia
+καλή διαμονή
+
+aproveite o resto de suas férias
+απολαύστε το υπόλοιπο των διακοπών σας
+
+esta é sua primeira vez na Grécia?
+είναι αυτή η πρώτη σας φορά στην Ελλάδα;
+
+quanto tempo vai ficar?
+πόσο καιρό θα μείνετε;
+
+está gostando daqui?
+σας αρέσει εδώ;
+
+esteve em ...?
+έχετε πάει στο ...;
+
 18 MANTENDO CONTATO
 
 18 EXPRESSANDO SUA OPINIÃO
@@ -573,6 +636,16 @@ eu adoraria ir ao Brasil algum dia
 49 A CONTA
 
 51 COMIDA E BEBIDA
+
+52 ορεκτικά, σαλάτες, τυριά APERITIVOS, SALADAS, QUEIJOS
+
+53 κρεατικά CARNE
+
+54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
+
+55 όσπρια, λαδερά LEGUMES E VERDURAS
+
+56 γλυκά PRODUTOS DE CONFEITARIA E BOLOS
 
 57 GLOSSÁRIO DE COMIDAS E BEBIDAS
 
@@ -745,3 +818,74 @@ octingentésimo οκτακοσιοστός
 nongentésimo εννεακοσιοστός
 milésimo χιλιοστός
 milionésimo εκατομμυριοστός
+
+20 mais 3 é igual a 23
+είκοσι συν τρία ίσον είκοσι τρία
+
+20 menos 3 é igual a 17
+είκοσι μείον τρία ίσον δεκαεπτά
+
+20 multiplicado por 4 é igual a 80
+είκοσι επί τέσσερα ίσον ογδόντα
+
+20 dividido por 4 é igual a 5
+είκοσι διά τέσσερα ίσον πέντε
+
+183 FERIADOS E FESTAS
+
+Ano Novo
+Πρωτοχρονιά
+
+Epifania (6 de janeiro)
+Θεοφάνεια
+
+início da Quaresma (celebrado numa segunda-feira)
+Καθαρά Δευτέρα
+
+25 de março (Anunciação)
+Του Ευαγγελισμού
+
+segunda-feira de Páscoa
+Δευτέρα του Πάσχα
+
+Dia do Trabalho (1 de maio)
+Πρωτομαγιά
+
+Pentecostes
+Πεντηκοστή/του Αγίου Πνεύματος
+
+Assunção (15 de agosto)
+Δεκαπενταύγουστος
+
+Dia do Oxi (28 de outubro)
+28η Οκτωβρίου
+
+Natal
+Χριστούγεννα
+
+segundo feriado de Natal
+Δεύτερη μέρα Χριστουγέννων
+
+187 PESOS E MEDIDAS
+
+centímetro
+εκατοστό
+
+metro
+μέτρο
+
+quilômetro
+χιλιόμετρο
+
+grama
+γραμμάριο
+
+quilo
+κιλό
+
+litro
+λίτρο
+
+grau Celsius
+βαθμός Κελσίου
+
