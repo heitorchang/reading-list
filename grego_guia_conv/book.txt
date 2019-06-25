@@ -798,6 +798,210 @@ amanhã vai esquentar de novo
 
 22 VIAJANDO
 
+aeroporto
+αεροδρόμιο
+
+alugar
+ενοικιάζω
+
+avião
+αεροπλάνο
+
+bagagem
+αποσκευές
+
+balsa
+φέρρυ
+
+barco
+πλοίο
+
+bonde
+τραμ
+
+carro
+αυτοκίνητο
+
+cartão de embarque
+κάρτα επιβίβασης
+
+centro da cidade
+κέντρο πόλης
+
+check-in
+έλεγχος εισιτηρίων, τσεκ ιν
+
+embarque
+επιβίβαση
+
+estação de metrô
+σταθμός μετρό
+
+estação ferroviária
+σιδηροδρομικός σταθμός
+
+estrada
+δρόμος
+
+guarda-volumes
+φύλαξη αποσκευών
+
+guia de ruas
+οδικός χάρτης
+
+mapa
+χάρτης
+
+metrô
+μετρό
+
+ônibus
+λεωφορείο
+
+ônibus circular (shuttle)
+λεωφορειάκι
+
+ônibus de viagem
+πούλμαν
+
+passagem
+εισιτήριο
+
+passagem (só de ida)
+απλό εισιτήριο
+
+passagem de ida e volta
+εισιτήριο επιστροφής
+
+passaporte
+διαβατήριο
+
+plataforma
+πλατφόρμα
+
+ponto de ônibus
+στάση λεωφορείων
+
+portão de embarque
+θύρα
+
+reservar
+κάνω κράτηση
+
+rodovia
+αυτοκινητόδρομος
+
+rua 
+οδός
+
+tabela de horários
+δρομολόγια
+
+táxi
+ταξί
+
+terminal
+αεροσταθμός
+
+terminal de ônibus
+σταθμός λεωφορείων
+
+trem
+τρένο
+
+voo
+πτήση
+
+onde posso comprar passagens?
+πού μπορώ να αγοράσω εισιτήρια;
+
+uma passagem para ..., por favor
+ένα εισιτήριο για ..., παρακαλώ
+
+eu gostaria de reservar uma passagem
+θα ήθελα να κάνω κράτηση για ένα εισιτήριο
+
+quanto custa uma passagem para ...?
+πόσο κοστίζει ένα εισιτήριο για ...;
+
+tem algum desconto para estudantes?
+υπάρχει έκπτωση για φοιτητές;
+
+poderia me dar uma tabela de horários, por favor?
+θα μπορούσα να έχω ένα φυλλάδιο με τα δρομολόγια, παρακαλώ;
+
+tem algum mais cedo/tarde?
+υπάρχει κάποιο νωρίτερα/αργότερα;
+
+quanto tempo dura a viagem?
+πόση ώρα διαρκεί το ταξίδι;
+
+este lugar está livre?
+είναι αυτή η θέση ελεύθερη;
+
+desculpe, tem alguém sentado aí
+λυπάμαι, κάποιος κάθεται εδώ
+
+estação rodoviária
+ΚΤΕΛ
+
+Olympic Airways (companhia aérea)
+ΟΑ
+
+rede de transportes urbanos de Atenas
+ΟΑΣΑ
+
+rede de transportes urbanos de Salônica
+ΟΑΣΘ
+
+companhia ferroviária
+ΟΣΕ
+
+autoridades portuárias de Pireus
+ΟΛΠ
+
+chegadas
+αφίξεις
+
+cancelado
+ακυρώθηκε/ματαιώθηκε
+
+conexões
+ανταποκρίσεις
+
+atraso
+καθυστέρηση
+
+partidas
+αναχωρήσεις
+
+entrada
+είσοδος
+
+saída
+έξοδος
+
+sanitário masculino
+ανδρών
+
+sanitário feminino
+γυναικών
+
+informações
+πληροφορίες
+
+entrada proibida
+απαγορεύεται η είσοδος
+
+passagens
+εισιτήρια
+
+sanitários, toaletes
+τουαλέτες
+
+está tudo reservado
+όλα είναι γεμάτα
+
 25 DE AVIÃO
 
 27 DE TREM, ÔNIBUS DE VIAGEM, ÔNIBUS URBANO, METRÔ E BONDE
