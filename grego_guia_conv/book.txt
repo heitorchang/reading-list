@@ -71,6 +71,7 @@ Use Segoe UI font
 117 A DATA
 119 A HORA
 122 NÚMEROS
+176 GRAMÁTICA
 183 FERIADOS E FESTAS
 187 PESOS E MEDIDAS
 
@@ -1399,6 +1400,8 @@ milionésimo εκατομμυριοστός
 
 20 dividido por 4 é igual a 5
 είκοσι διά τέσσερα ίσον πέντε
+
+176 GRAMÁTICA
 
 183 FERIADOS E FESTAS
 
