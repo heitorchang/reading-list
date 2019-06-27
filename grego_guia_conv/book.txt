@@ -1004,7 +1004,181 @@ está tudo reservado
 
 25 DE AVIÃO
 
+onde é o check-in da ...?
+πού είναι ο έλεγχος εισιτηρίων της ...;
+
+tenho um bilhete eletrônico
+έχω ένα ηλεκτρονικό εισιτήριο
+
+uma mala (a despachar) e uma mala de mão
+μια βαλίτσα και μια χειραποσκευή
+
+a que horas embarcamos?
+τι ώρα επιβιβαζόμαστε;
+
+gostaria de confirmar meu voo de volta
+θα ήθελα να επιβεβαιώσω την πτήση επιστροφής μου
+
+uma de minhas malas sumiu
+λείπει μια βαλίτσα μου
+
+minha bagagem não chegou
+οι αποσκευές μου δεν έχουν φτάσει
+
+o voo estava duas horas atrasado
+το αεροπλάνο είχε δυο ώρες καθυστέρηση
+
+perdi a conexão
+έχασα την ανταπόκρισή μου
+
+esqueci algo no avião
+άφησα κάτι μέσα στο αεροπλάνο
+
+gostaria de informar o extravio de minha bagagem
+θα ήθελα να δηλώσω την απώλεια των αποσκευών μου
+
+entrega de bagagens
+παραλαβή αποσκευών
+
+check-in
+έλεγχος εισιτηρίων/τσεκ ιν
+
+alfândega
+τελωνείο
+
+sala de embarque
+αίθουσα επιβίβασης
+
+voos domésticos
+εσωτεριλκές πτήσεις
+
+free shop
+αφορολόγητα είδη
+
+bens a declarar
+εμπορεύματα προς δήλωση
+
+nada a declarar
+τίποτα προς δήλωση
+
+embarque imediato
+άμεση επιβίβαση
+
+controle de passaportes
+έλεγχος διαβατηρίων
+
+por favor, aguarde na sala de embarque
+παρακαλώ περιμένετε στην αίθουσα επιβίβασης
+
+prefere um lugar na janela ou no corredor?
+θα θέλατε μια θέση στο παράθυρο ή στο διάδρομο;
+
+o(a) senhor(a) terá de fazer conexão em ...
+θα πρέπει να αλλάξετε στο ...
+
+quantas malas o(a) senhor(a) tem?
+πόσες τσάντες έχετε;
+
+foi o(a) senhor(a) mesmo(a) quem fez suas malas?
+ετοιμάσατε μόνοι σας όλες τις αποσκευές σας;
+
+alguém lhe deu alguma coisa para trazer no voo?
+σας έδωσε κανείς τίποτε να πάρετε στο αεροπλάνο;
+
+sua mala está cinco quilos acima do peso
+οι αποσκευές σας είναι πέντε κιλά υπέρβαρες
+
+aqui está seu cartão de embarque
+ορίστε η κάρτα επιβίβασής σας
+
+o embarque terá início às ...
+η επιβίβαση θα αρχίσει σε ...
+
+por favor, dirija-se ao portão número ...
+παρακαλώ πηγαίνετε στη θύρα ...
+
+esta é a última chamada para ...
+αυτή είναι η τελευταία κλήση για ...
+
+o(a) senhor(a) pode ligar para este número para saber se sua bagagem chegou
+μπορείτε να καλέσετε αυτό το νούμερο για να μάθετε αν οι αποσκευές σας έχουν φτάσει
+
 27 DE TREM, ÔNIBUS DE VIAGEM, ÔNIBUS URBANO, METRÔ E BONDE
+
+rodoviária Stathmós Peloponíssou
+ΚΤΕΛ Πελοποννήσου
+
+rodoviária Stathmós Laríssis
+ΚΤΕΛ Λαρίσσης
+
+pode me dar um mapa do metrô, por favor?
+μπορώ να έχω ένα χάρτη του μετρό, παρακαλώ;
+
+a que horas é o próximo trem para ...?
+τι ώρα είναι το επόμενο τρένο για ...?
+
+a que horas é o último trem?
+τι ώρα είναι το τελευταίο τρένο;
+
+qual é a plataforma para ...?
+ποια πλατφόρμα είναι για ...;
+
+onde posso pegar um ônibus para ...?
+από πού μπορώ να πάρω ένα λεωφορείο για ...;
+
+que fila pego para ir para ...?
+ποια γραμμή πρέπει να πάρω για να πάω στο ...;
+
+é este ponto para ...?
+αυτή είναι η στάση για ...;
+
+é daqui que parte o ônibus (de viagem) para ...?
+από εδώ φεύγει το πούλμαν για ...;
+
+poderia me dizer quando tenho que descer?
+μπορείτε να μου πείτε που πρέπει να κατέβω;
+
+perdi o trem/ônibus
+έχασα το τρένο μου/το λεωφορείο μου
+
+para os trens
+προς τα τρένα
+
+bilheteria
+εκδοτήριο εισιτηρίων
+
+passagens para hoje
+εισιτήρια για όσους ταξιδεύουν σήμερα
+
+semanal
+εβδομαδιαίο
+
+reservas
+κρατήσεις
+
+para o dia
+για μια μέρα
+
+mensal
+μηνιαίο
+
+tem um ponto um pouco mais à frente, à direita
+υπάρχει μια στάση λίγο πιο πάνω στα δεξιά
+
+somente o valor exato, por favor
+το ακριβές αντίτιμο, παρακαλώ
+
+o(a) senhor(a) tem que baldear em ...
+πρέπει να αλλάξετε στο ...
+
+o(a) senhor(a) tem que pegar o ônibus número ...
+πρέπει να πάρετε το λεωφορείο νούμερο ...
+
+este trem para em ...
+αυτό το τρένο σταματά στο ...
+
+dois pontos daqui
+δύο στάσεις από εδώ
 
 30 DE CARRO
 
