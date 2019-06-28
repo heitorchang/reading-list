@@ -1183,7 +1183,142 @@ dois pontos daqui
 
 30 DE CARRO
 
+rodovias principais
+εθνική οδός
+
+onde posso encontrar um posto de gasolina?
+πού μπορώ να βρω ένα πρατήριο βενζίνης;
+
+gasolina sem chumbo, por favor
+αμόλυβδη βενζίνη, παρακαλώ
+
+quanto custa o litro?
+πόσο κοστίζει το λίτρο;
+
+ficamos parados em um congestionamento
+πέσαμε σε κίνηση
+
+há algum estacionamento aqui perto?
+υπάρχει κάποιο γκαράζ εδώ κοντά;
+
+poderia nos ajudar a empurrar o carro?
+μπορείτε να μας βοηθήσετε να σπρώξουμε το αυτοκίνητο;
+
+a bateria acabou
+μείναμε από μπαταρία
+
+tive um problema mecânico
+έπαθα βλάβη
+
+ficamos sem gasolina
+μείναμε από βενζίνη
+
+estou com um pneu furado e o estepe está murcho
+έσκασε το λάστιχο και η ρεζέρβα μου είναι ξεφούσκωτη
+
+acabamos de sofrer um acidente
+μόλις πάθαμε ένα ατύχημα
+
+perdi a chave do carro
+έχασα τα κλειδιά του αυτοκινήτου μου
+
+quanto tempo vai demorar para consertar?
+πόση ώρα θα πάρει η επισκευή;
+
+eu gostaria de alugar um carro por uma semana
+θα ήθελα να νοικιάσω ένα αυτοκίνητο για μια εβδομάδα
+
+um carro automático
+ένα αυτόματο αυτοκίνητο
+
+eu gostaria de fazer um seguro total
+θα ήθελα μια μικτή ασφάλεια
+
+tem algum ponto de táxi aqui perto?
+υπάρχει πιάτσα ταξί εδώ γύρω;
+
+eu gostaria de ir para ...
+θα ήθελα να πάω στο ...
+
+gostaria de reservar um táxi para as 8h da noite
+θα ήθελα να κάνω μια κράτηση για ένα ταξί για τις οχτώ το απόγευμα
+
+pode me deixar aqui, obrigado(a)
+μπορείτε να με αφήσετε εδώ, ευχαριστώ
+
+quanto vai custar a corrida até o aeroporto?
+πόσο θα μου κοστίσει να πάω στο αεροδρόμιο;
+
+estou indo para ...
+πάω στο ...
+
+poderia me deixar aqui?
+μπορείτε να με αφήσετε εδώ;
+
+poderia me levar até ...?
+μπορείτε να με πάτε μέχρι ...;
+
+obrigado(a) pela carona
+ευχαριστώ που με φέρατε
+
+aluguel de automóveis
+ενοικίαση αυτοκινήτων
+
+estacionamento
+πάρκινγκ
+
+lotado (estacionamento)
+πλήρες
+
+para ... (indica direção)
+προς ...
+
+mantenha-se na faixa
+μπείτε στη σωστή λωρίδα κατεύθυνσης
+
+guarde o seu tíquete
+κρατείστε το εισιτήριό σας
+
+proibido estacionar
+μην παρκάρετε
+
+devagar
+αργά
+
+vagas (estacionamento)
+ελεύθερες θέσεις
+
+vou precisar de sua carteira de motorista, identidade e cartão de crédito
+θα χρειαστώ την άδεια οδήγησης, ταυτότητα ή διαβατήριο και την πιστωτική σας κάρτα
+
+é preciso pagar um depósito de 150 euros
+πρέπει να δώσετε προκαταβολή 150 ευρώ
+
+certo, entre, levo o(a) senhor(a) até ...
+εντάξει, μπείτε μέσα, θα σας πάω ως ...
+
 33 DE BARCO
+
+de quanto tempo é a travessia?
+πόση ώρα είναι ο διάπλους;
+
+quando vamos chegar a ...?
+πότε φτάνουμε σε ...;
+
+estou com enjoo
+έχω ναυτία
+
+posso pegar uma cabine?
+μπορώ να έχω μία καμπίνα;
+
+a que horas abre o restaurante?
+πότε ανοίγει το εστιατόριο;
+
+somente para passageiros a pé
+επιβάτες χωρίς όχημα μόνο
+
+próxima travessia às ...
+επόμενη αναχώρηση σε ...
 
 35 HOSPEDAGEM
 
