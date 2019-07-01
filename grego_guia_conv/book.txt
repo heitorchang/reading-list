@@ -1322,6 +1322,123 @@ próxima travessia às ...
 
 35 HOSPEDAGEM
 
+albergue da juventude
+ξενώνας για νέους, γιούθ χόστελ
+
+alugado
+ενοικιαζόμενο
+
+alugar
+ενοικιάζω
+
+banheiro
+μπάνιο
+
+banheiro com chuveiro
+μπάνιο με ντους
+
+banho
+λουτρό, μπάνιο
+
+barraca
+σκηνή
+
+bed and breakfast, pensão
+δωμάτιο σε πανσιόν με πρωινό
+
+cama
+κρεβάτι
+
+cama de casal
+διπλό κρεβάτι
+
+cama de solteiro
+μονό κρεβάτι
+
+camping
+κατασκήνωση, κάμπινγκ
+
+chave
+κλειδί
+
+chuveiro, ducha
+ντους
+
+fazer reserva
+κάνω κράτηση
+
+flat
+διαμέρισμα
+
+hotel
+ξενοδοχείο
+
+locatário
+ενοικοιαστής
+
+meia pensão
+ημιδιατροφή
+
+para alugar
+ενοικιάζω
+
+pensão completa
+πλήρης διατροφή
+
+quarto de casal
+δίκλινο δωμάτιο
+
+quarto de solteiro
+μονόκλινο
+
+quarto familiar
+οικογενειακό δωμάτιο
+
+sanitários, toaletes
+τουαλέτες
+
+suíte
+δωμάτιο με μπάνιο
+
+trailer
+τροχόσπιτο
+
+tudo incluído
+συμπεριλαμβάνονται όλα
+
+TV a cabo
+δορυφορική/καλωδιακή τηλεόραση
+
+tenho uma reserva
+έχω κάνει μια κράτηση
+
+o nome é ...
+στο όνομα ...
+
+vocês aceitam cartões de crédito?
+δέχεστε πιστωτικές κάρτες;
+
+cheio
+πλήρες
+
+particular
+ιδιωτικό
+
+recepção
+ρεσεψιόν
+
+sanitários, toaletes
+τουαλέτες
+
+quartos livres, vagos
+ελεύθερα δωμάτια
+
+posso ver seu passaporte, por favor?
+θα μπορούσα να δω το διαβατήριό σας, παρακαλώ;
+
+poderia preencher este formulário?
+θα μπορούσατε να συμπληρώσετε αυτό το έντυπο;
+
 37 HOTÉIS
 
 40 ALBERGUES DA JUVENTUDE
