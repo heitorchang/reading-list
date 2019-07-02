@@ -1441,6 +1441,96 @@ poderia preencher este formulário?
 
 37 HOTÉIS
 
+há quartos disponíveis?
+έχετε καθόλου άδεια δωμάτια;
+
+quanto é a diária de um quarto de casal?
+πόσο κοστίζει ένα δίκλινο δωμάτιο για μία νύχτα;
+
+eu gostaria de reservar um quarto de casal/um quarto de solteiro
+θα ήθελα να κάνω μια κράτηση για ένα δίκλινο/ένα μονόκλινο δωμάτιο
+
+para três noites
+για τρεις νύχτες
+
+seria possível ficar uma noite a mais?
+θα ήταν δυνατόν να μείνω άλλη μία νύχτα;
+
+há quartos disponíveis para hoje à noite?
+μήπως έχετε κανένα διαθέσιμο δωμάτιο για απόψε;
+
+há quartos para famílias?
+έχετε οικογενειακά δωμάτια;
+
+seria possível colocar uma cama a mais?
+θα ήταν δυνατόν να προσθέσετε ένα επιπλέον κρεβάτι;
+
+posso ver o quarto primeiro?
+θα μπορούσα να δω το δωμάτιο πρώτα;
+
+teria um quarto maior/mais tranquilo?
+μήπως έχετε κάτι μεγαλύτερο/πιο ήσυχο;
+
+este está bom, fico com ele
+αυτό είναι εντάξει, θα το πάρω
+
+poderia recomendar-me outros hotéis?
+θα μπορούσατε να μου προτείνετε κάποιο άλλο ξενοδοχείο;
+
+o café da manhã está incluído?
+περιλαμβάνεται το πρωϊνό;
+
+a que horas é servido o café da manhã?
+τι ώρα σερβίρεται το πρωϊνό;
+
+tem elevador?
+υπάρχει ασανσέρ;
+
+o hotel fica perto do centro da cidade?
+είναι το ξενοδοχείο κοντά στο κέντρο της πόλης;
+
+a que horas o quarto vai ficar pronto?
+τι ώρα θα είναι έτοιμο το δωμάτιο;
+
+a chave do quarto ..., por favor
+το κλειδί για το δωμάτιο ..., παρακαλώ
+
+posso ter um cobertor extra?
+θα μπορούσα να έχω άλλη μία κουβέρτα;
+
+o ar-condicionado não está funcionando
+ο κλιματισμός δεν λειτουργεί
+
+sinto muito, mas estamos lotados
+λυπάμαι, αλλά είμαστε πλήρεις
+
+só temos disponível um quarto de solteiro
+έχουμε μόνο ένα μονόκλινο δωμάτιο ελεύθερο
+
+para quantas noites?
+για πόσες νύχτες το θέλετε;
+
+qual é o seu nome, por favor?
+ποιό είναι το όνομά σας, παρακαλώ;
+
+o check-in é a partir do meio-dia
+μπορείτε να παραλάβετε το δωμάτιό σας από τις δώδεκα το μεσημέρι
+
+o(a) senhor(a) tem de fazer o check-out antes das 11h da manhã
+πρέπει να αναχωρήσετε από το δωμάτιο πριν τις ένδεκα το πρωί (11 π.μ.)
+
+o café da manhã é servido no restaurante das 7h30 às 9h da manhã
+το πρωϊνό σερβίρεται στο εστιατόριο από τις επτά και μισή μέχρι τις εννέα το πρωί (7.30 - 9.00 π.μ.)
+
+gostaria de um jornal pela manhã?
+θα θέλατε μία εφημερίδα το πρωί;
+
+seu quarto ainda não está pronto
+το δωμάτιό σας δεν είναι ακόμη έτοιμο
+
+pode deixar suas malas aqui
+μπορείτε να αφήσετε τις αποσκευές σας εδώ
+
 40 ALBERGUES DA JUVENTUDE
 
 41 ACOMODAÇÃO COM COZINHA
