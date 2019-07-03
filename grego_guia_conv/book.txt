@@ -1533,9 +1533,96 @@ pode deixar suas malas aqui
 
 40 ALBERGUES DA JUVENTUDE
 
+há vaga para duas pessoas para esta noite?
+έχετε χώρο για δύο άτομα για απόψε;
+
+reservamos duas camas para três noites
+έχουμε κλείσει δυο κρεβάτια για τρεις νύχτες
+
+será que eu poderia deixar minha mochila na recepção?
+θα μπορούσα ν'αφήσω το σάκο μου στη ρεσεψιόν;
+
+tem algum lugar em que possamos deixar nossas bicicletas?
+έχετε/υπάρχει κάποιο μέρος που θα μπορούσαμε ν'αφήσουμε τα μοδήλατά μας;
+
+voltarei lá pelas 7h
+θα γυρίσω να το πάρω κατά τις επτά
+
+não tem água quente
+δεν υπάρχει ζεστό νερό
+
+a pia está entupida
+ο νιπτήρας είναι βουλωμένος
+
+o(a) senhor(a) tem a carteirinha?
+έχετε κάρτα μέλους;
+
+fornecemos roupa de cama
+διαθέτουμε σεντόνια
+
+o albergue reabre às 6h da tarde
+ο ξενώνας ξανανοίγει στις έξι
+
 41 ACOMODAÇÃO COM COZINHA
 
+estamos procurando algo para alugar próximo à cidade
+ψάχνουμε να νοικιάσουμε κάτι κοντά στη πόλη
+
+onde podemos pegar/deixar as chaves?
+από που παίρνουμε/αφήνουμε τα κλειδιά;
+
+a eletricidade está incluída no preço?
+το ηλεκτρικό (ρεύμα) συμπεριλαμβάνεται στην τιμή;
+
+tem roupa de cama e toalhas?
+διαθέτετε σεντόνια και πετσέτες;
+
+precisa de carro?
+είναι απαραίτητο το αυτοκίνητο;
+
+tem piscina?
+υπάρχει πισίνα;
+
+a acomodação é adequada para pessoas de idade?
+είναι το κατάλιμα κατάλληλο για ηλικιωμένους ανθρώπους;
+
+onde fica o supermercado mais próximo?
+πού βρίσκεται το κοντινότερο σούπερ-μάρκετ;
+
+favor deixar a casa limpa e arrumada quando for embora
+παρακαλώ ν'αφήσετε το σπίτι καθαρό και τακτοποιημένο όταν φύγετε
+
+a casa é totalmente mobiliada
+το σπίτι είναι πλήρως επιπλωμένο
+
+tudo está incluido no preço
+όλα συμπεριλαμβάνονται στη τιμή
+
+o(a) senhor(a) realmente vai precisar de um carro nessa parte do país
+χρειάζεστε πραγματικά ένα αυτοκίνητο σ'αυτή την περιοχή της χώρας
+
 42 CAMPING
+
+tem algum camping aqui perto?
+υπάρχει κάποιο κάμπινγκ εδώ κοντά;
+
+eu gostaria de reservar um espaço para uma barraca de duas pessoas por três noites
+θα ήθελα να κλείσω μια θέση για σκηνή δυο ατόμων για τρεις νύχτες
+
+quanto é o pernoite?
+πόσο κοστίζει η νύχτα;
+
+onde ficam os chuveiros?
+πού είναι τα ντους;
+
+podemos pagar, por favor? estávamos no espaço ...
+θα μπορούσαμε να πληρώσουμε παρακαλώ; είμασταν στη θέση ...
+
+custa ... por pessoa e por noite
+κοστίζει ... ευρώ η βραδιά το άτομο
+
+se precisar de algo, basta vir e pedir
+εάν χρειαστείτε κάτι, μη διστάσετε να μας ρωτήσετε
 
 43 COMENDO E BEBENDO
 
