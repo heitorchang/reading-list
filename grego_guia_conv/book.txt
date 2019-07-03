@@ -71,8 +71,10 @@ Use Segoe UI font
 117 A DATA
 119 A HORA
 122 NÚMEROS
-176 GRAMÁTICA
+* 176 GRAMÁTICA
 183 FERIADOS E FESTAS
+185 ENDEREÇOS ÚTEIS
+186 INFORMAÇÕES TELEFÔNICAS
 187 PESOS E MEDIDAS
 
 7 CONVERSA DO DIA A DIA
@@ -1866,6 +1868,48 @@ Natal
 
 segundo feriado de Natal
 Δεύτερη μέρα Χριστουγέννων
+
+185 ENDEREÇOS ÚTEIS
+
+Embaixada do Brasil
+
+Av. Vasilissis Sofias, nº 23 - 3º andar
+Código Postal 10674, Atenas - Grécia
+(30) 210 721 3039
+atenas.itamaraty.gov.br/pt-br/
+
+Hellenic Tourist Organization (ΕΟΤ)
+(30) 210 870 7000
+www.gnto.gov.gr
+
+186 INFORMAÇÕES TELEFÔNICAS
+
+Telefonista internacional: 139
+Telefone de informações: 11888
+Páginas amarelas: 11811
+
+NÚMEROS EM GERAL
+Emergência: 112
+Polícia: 100
+Ambulância: 166
+Bombeiros: 199
+Polícia de turismo: 171
+Polícia grega (informações em geral): 1033
+Centro de informações aos cidadãos (multilíngue, 24/7): 1564
+Serviço de informações ao turista: 10400
+Escritório central para estrangeiros: 210 340 5969
+
+SAÚDE
+S.O.S. médicos: 1016
+Emergências hospitalares: 1434
+Farmácias de plantão: 1434
+Orientação médica: 197
+
+ASSISTÊNCIA NA ESTRADA
+ELPA: 10400
+Express Service: 1154
+InterAmerican: 1168
+Hellas Service: 1057
 
 187 PESOS E MEDIDAS
 
