@@ -1628,6 +1628,174 @@ se precisar de algo, basta vir e pedir
 
 43 COMENDO E BEBENDO
 
+taverna
+ταβέρνα
+
+petiscos
+μεζέδες
+
+restaurante
+εστιατόριο
+
+kebabs gregos
+σουβλάκια
+
+lugar para tomar café
+καφετέρια
+
+café-bar
+καφέ-μπαρ
+
+lugar mais tradicional para tomar café
+καφενείο
+
+café grego
+ελληνικός
+
+café gelado
+νεσκαφέ φραπέ
+
+local onde se pode beber e comer alguns petiscos
+ουζερί
+
+água
+νερό
+
+água mineral
+μεταλλικό νερό, εμφιαλωμένο
+
+almoçar
+γευματίζω
+
+almoço
+γεύμα
+
+café
+καφές
+
+café com leite
+καφές με γάλα
+
+café da manhã
+πρωϊνό
+
+café preto
+καφές χωρίς γάλα
+
+carta de vinhos
+κατάλογος κρασιών
+
+cerveja
+μπύρα
+
+chá
+τσάι
+
+Coca-Cola
+κόκα κόλα
+
+comer
+τρώω
+
+conta
+λογαριασμός
+
+entrada, aperitivo
+ορεκτικό
+
+fazer o pedido
+παραγγέλνω
+
+garrafa
+μπουκάλι
+
+gaseificado(a) (vinho, água)
+ανθρακούχο
+
+gorjeta
+πουρμπουάρ
+
+jantar (substantivo)
+δείπνο, βραδυνό
+
+jantar (verbo)
+δειπνώ
+
+limonada
+λεμονάδα
+
+menu
+μενού
+
+pão
+ψωμί
+
+prato principal
+κυρίως πιάτο
+
+salada
+σαλάτα
+
+sanduíche
+σάντουιτς
+
+serviço
+υπηρεσία
+
+sobremesa
+επιδόρπιο
+
+suco de fruta
+χυμός φρούτων
+
+tomar café da manhã
+παίρνω πρωϊνό
+
+vinho
+κρασί
+
+vinho branco
+λευκό κρασί
+
+vinho rosé
+ροζέ κρασί
+
+vinho tinto
+κόκκινο κρασί
+
+vamos sair e comer alguma coisa?
+πάμε να φάμε κάτι;
+
+quer sair para beber alguma coisa?
+θέλεις να πάμε για ένα ποτό;
+
+poderia me recomendar um bom restaurante?
+μήπως μπορείτε να μας προτείνετε ένα καλό εστιατόριο;
+
+não estou com muita fome
+δεν πεινάω πολύ
+
+por favor! (para chamar o garçom)
+παρακαλώ!
+
+saúde!
+στην υγειά μας!
+
+estava muito bom
+ήταν υπέροχα
+
+poderia nos trazer um cinzeiro, por favor?
+μπορείτε να μας φέρετε ένα τασάκι, παρακαλώ;
+
+onde ficam os toaletes, por favor?
+πού είναι οι τουαλέτες, παρακαλώ;
+
+(comida) para viagem
+φαγητό σε πακέτο
+
+desculpe, mas encerramos o serviço às 11h da noite
+λυπάμαι, σταματάμε να σερβίρουμε στις 11 η ώρα
+
 45 RESERVANDO UMA MESA
 
 46 PEDINDO A COMIDA
