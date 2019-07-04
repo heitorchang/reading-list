@@ -1839,6 +1839,72 @@ desculpe, mas estamos lotados no momento
 
 46 PEDINDO A COMIDA
 
+sim, gostaríamos de fazer o pedido
+ναι, είμαστε έτομοι να παραγγείλουμε
+
+não, poderia nos dar mais alguns minutos?
+όχι, μας δίνετε λίγα λεπτά ακόμα;
+
+eu gostaria ...
+θα ήθελα ...
+
+será que eu poderia ter ...?
+θα μπορούσα να έχω ...;
+
+não sei direito o que é "pastitsio"
+δεν είμαι σίγουρος για το τι είναι το παστίτσιο
+
+vou querer aquilo
+θα πάρω αυτό
+
+isto vem com verduras?
+συνοδεύεται με λαχανικά;
+
+qual é o prato do dia?
+ποιές είναι οι σπεσιαλιτέ της ημέρας;
+
+que sobremesas vocês têm?
+τι επιδόρπια έχετε;
+
+água, por favor
+λίγο νερό, παρακαλώ
+
+uma garrafa de vinho tinto/branco
+ένα μπουκάλι κόκκινο/λευκό κρασί
+
+sou alérgico a amendoim/trigo/frutos do mar/suco de frutas cítricas
+είμαι αλλεργικός στα φυστίκια/στο σιτάρι/στα θαλασσινά/στα εσπεριδοειδή
+
+isto é para mim
+αυτό είναι για μένα
+
+não foi isto que pedi, eu queria ...
+δεν είναι αυτό που παρήγγειλα, ήθελα ...
+
+poderia nos trazer mais pão, por favor?
+θα μπορούσαμε να έχουμε λίγο ψωμί ακόμα, παρακαλώ;
+
+poderia nos trazer outra jarra de água, por favor?
+μπορείτε να μας φέρετε ακόμα μια κανάτα νερό, παρακαλώ;
+
+já escolheram?
+είστε έτοιμοι να παραγγείλετε;
+
+volto daqui a pouco
+θα επιστρέψω σε λίγα λεπτά
+
+desculpe, não temos mais ...
+λυπάμαι, δεν μας έχει μείνει καθόλου ...
+
+o que deseja para beber?
+τι θα θέλατε να πιείτε;
+
+gostaria de pedir sobremesa ou café?
+θα θέλατε επιδόρπιο ή καφέ;
+
+estava tudo certo?
+ήταν όλα εντάξει;
+
 48 BARES E CAFÉS
 
 49 A CONTA
