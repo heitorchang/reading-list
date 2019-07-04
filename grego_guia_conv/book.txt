@@ -1798,6 +1798,45 @@ desculpe, mas encerramos o serviço às 11h da noite
 
 45 RESERVANDO UMA MESA
 
+eu gostaria de reservar uma mesa para amanhã à noite
+θα ήθελα να κλείσω ένα τραπέζι για αύριο το βράδυ
+
+para duas pessoas
+για δύο άτομα
+
+para as 8h mais ou menos
+γύρω στις οχτώ η ώρα
+
+teria uma mesa disponível um pouco mais cedo do que isso?
+μήπως έχετε κάποιο διαθέσιμο τραπέζι νωρίτερα;
+
+fiz uma reserva em nome de ...
+έχω κλείσει ένα τραπέζι στο όνομα ...
+
+reservado
+ρεζερβέ
+
+para que horas?
+για ποιά ώρα;
+
+para quantas pessoas?
+για πόσα άτομα;
+
+em nome de quem?
+σε τι όνομα;
+
+fumante ou não fumante?
+καπνιστών ή μη καπνιστών;
+
+o(a) senhor(a) tem reserva?
+έχετε κάνει κράτηση;
+
+essa mesa no canto está bem para vocês?
+σας κάνει το τραπέζι στη γωνία;
+
+desculpe, mas estamos lotados no momento
+λυπάμαι, είμαστε πλήρεις για την ώρα
+
 46 PEDINDO A COMIDA
 
 48 BARES E CAFÉS
