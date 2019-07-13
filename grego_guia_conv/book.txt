@@ -1907,9 +1907,146 @@ estava tudo certo?
 
 48 BARES E CAFÉS
 
+eu queria ...
+θα ήθελα ...
+
+uma Coca-Cola/uma Coca-Cola diet
+μία κόκα κόλα/μία κόκα κόλα λάϊτ
+
+uma taça de vinho tinto/branco
+ένα ποτήρι κόκκινο/λευκό κρασί
+
+um café preto/com leite
+ένα καφέ χωρίς γάλα/με γάλα
+
+uma xícara de chá
+ένα φλυτζάνι τσάϊ
+
+um café e um croissant
+ένα καφέ και ένα κρουασάν
+
+uma xícara de chocolate quente
+μία ζεστή σοκολάτα
+
+outro(a), por favor
+το ίδιο ξανά, παρακαλώ
+
+sem álcool
+μη αλκοολούχο
+
+o que deseja?
+τι θα θέλατε;
+
+esta é a área de não fumantes
+αυτή είναι η περιοχή των μη καπνιστών
+
+posso lhe pedir que pague agora, por favor?
+θα μπορούσατε να με πληρώσετε τώρα, παρακαλώ;
+
 49 A CONTA
 
+a conta, por favor
+τον λογαριασμό, παρακαλώ
+
+quanto lhe devo?
+τι σας οφείλω;
+
+vocês aceitam cartão de crédito?
+δέχεστε πιστωτικές κάρτες;
+
+acho que há um erro na conta
+νομίζω ότι έχει γίνει κάποιο λάθος με το λογαριασμό
+
+o serviço está incluído?
+συμπεριλαμβάνεται το σέρβις;
+
+vocês vão pagar tudo junto?
+θα πληρώσετε όλοι μαζί;
+
+sim, o serviço está incluído
+ναι, συμπεριλαμβάνεται το σέρβις
+
+estar de fogo (estar bêbado)
+είμαι μεθυσμένος
+
+estar muito bêbado
+είμαι λιώμα
+
+ter comido demais
+έσκασα από το φαΐ
+
+estar de ressaca
+έχω χανκόβερ
+
+estou morrendo de fome!
+πεινάω σαν λύκος!
+
 51 COMIDA E BEBIDA
+petiscos salgados
+μεζές
+
+bebida à base de anis
+ούζο
+
+cozido
+βραστό
+
+recheado
+γεμιστό
+
+bem passado
+καλοψημένο
+
+defumado
+καπνιστό
+
+frio
+κρύο
+
+derretido
+λιωμένο
+
+porção
+μερίδα
+
+ao ponto
+μέτρια ψημένο
+
+cozido em água
+νερόβραστο
+
+muito frio
+παγωμένο
+
+à milanesa, empanado
+πανέ
+
+frito
+τηγανητό
+
+picante
+πικάντικο
+
+em pedaços
+σε κομμάτια
+
+malpassado
+σενιάν
+
+cozido no vapor
+στον ατμό
+
+em fatias
+φέτες
+
+grelhado na brasa
+ψητό στα κάρβουνα
+
+grelhado
+ψητό στη σχάρα
+
+assado (carne, peixe ou frango)
+ψητό στο φούρνο
 
 52 ορεκτικά, σαλάτες, τυριά APERITIVOS, SALADAS, QUEIJOS
 
