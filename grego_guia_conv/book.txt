@@ -2050,6 +2050,96 @@ assado (carne, peixe ou frango)
 
 52 ορεκτικά, σαλάτες, τυριά APERITIVOS, SALADAS, QUEIJOS
 
+camarões cozidos em molho de tomate e cobertos com ovos mexidos
+γαρίδες σαγανάκι
+
+azeitonas
+ελιές
+
+abobrinhas fritas
+κολοκυθάκια τηγανητά
+
+patê de berinjela
+μελιτζανοσαλάτα
+
+charuto de folha de uva
+ντολμαδάκια γιαλαντζί
+
+queijo frito
+σαγανάκι
+
+patê de alho
+σκορδαλιά
+
+torta de espinafre
+σπανακόπιτα
+
+purê com ovas de peixe
+ταραμοσαλάτα
+
+patê de iogurte, alho, pepino e hortelã
+τζατζίκι
+
+patê de queijo com pimentas ardidas
+τυροκαφτερή
+
+creme ou sopa de favas
+φάβα
+
+folheados de queijo
+τυροπιτάκια
+
+polvo no vinagre
+χταπόδι ξιδάτο
+
+beterraba
+πατζάρια
+
+salada de repolho
+σαλάτα λάχανο
+
+salada de alface-romana e cebolinhas brancas, temperada com azeite e limão ou vinagre
+σαλάτα μαρούλι
+
+salada fria de verduras cozidas, temperada com azeite e limão
+χόρτα
+
+salada típica grega (tomate, pepino, queijo feta, cebola, azeitonas)
+χωριάτικη σαλάτα
+
+salada de repolho, cenoura ralada e cebolinhas-brancas, temperada com endro, azeite e limão
+σαλάτα ανάμικτη
+
+tipo de queijo muito leve e macio
+ανθότυρο
+
+queijo de cabra, de consistência dura
+γραβιέρα
+
+queijo amarelo e macio, feito de leite de vaca
+κασέρι
+
+queijo de cabra, de consistência dura, mais picante do que o γραβιέρα
+κεφαλογραβιέρα
+
+queijo de cabra, de consistência dura
+κεφαλοτύρι
+
+queijo branco, macio, feito de leite de ovelha ou de cabra
+μανούρι
+
+queijo defumado, de consistência dura, uma especialidade da cidade de Metsovo
+μετσοβόνε
+
+queijo branco, macio, feito de leite de ovelha
+μυτζήθρα
+
+queijo branco picante e salgado, feito com leite de ovelha, uma especialidade da cidade de Kalamata
+σφέλα
+
+queijo feta
+φέτα
+
 53 κρεατικά CARNE
 
 54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
