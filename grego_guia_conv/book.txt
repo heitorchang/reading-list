@@ -2142,6 +2142,81 @@ queijo feta
 
 53 κρεατικά CARNE
 
+carne assada ou cozida
+μαγειρευτά
+
+carne grelhada
+της ώρας
+
+cordeiro no rolete (espeto)
+αρνί στη σούβλα
+
+picadinho de carne de cordeiro com alface, em molho cremoso de ovos e limão
+αρνί φρικασέ
+
+espécie de almôndegas cozidas em molho de ovos e limão
+γιουβαρλάκια αυγολέμονο
+
+carne de vaca, de cordeiro ou de frango, cozida em molho de tomate, com kritharáki, um tipo de massa, e tradicionalmente assada em uma travessa de cerâmica
+γιουβέτσι
+
+porco no rolete
+γουρουνόπουλο
+
+"churrasquinho grego": carne servida em fatias finas, geralmente acompanhada de pão sírio, tomates, cebola e tzatzíki
+γύρος
+
+carne servida em pequenos pedaços, geralmente com pão sírio, tomates e tzatzíki, kebab
+κεμπάπ
+
+espécie de almôndega
+κεφτεδάκια
+
+carne de vaca em molho de tomate
+κοκκινιστό
+
+tripas de carneiro
+κοκορέτσι
+
+frango grelhado
+κοτόπουλο στη σχάρα
+
+frango com quiabo em molho de tomate
+κοτόπουλο με μπάμιες
+
+charuto de repolho
+λαχανοντολμάδες
+
+carne de vaca, de porco ou de frango em molho de limão
+λεμονάτο
+
+mussaca
+μουσακάς
+
+hambúrguer
+μπιφτέκι μοσχαρίσιο
+
+costeleta/bisteca de porco
+μπριζόλα χοιρινή/μοσχαρίσια
+
+costela
+παϊδάκια
+
+iguaria assada, similar à lasanha, feita com macarrão, carne moída, molho de tomate e molho bechamel
+παστίτσιο
+
+espetinhos de carne grelhada
+σουβλάκι
+
+cozido feito com lebre ou coelho em molho picante de tomates e cebolas
+στιφάδο
+
+carne de porco com salsão e alho-poró
+χοιρινό πρασοσέλινο
+
+espécie de linguiça picante
+χωριάτικο λουκάνικο
+
 54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
 
 55 όσπρια, λαδερά LEGUMES E VERDURAS
