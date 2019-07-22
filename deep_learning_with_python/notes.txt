@@ -1,0 +1,12 @@
+started 22 jul 2019
+
+page numbers are PDF numbers, not book's
+
+41 in machine learning, a category in a classification problem is called a class
+41 data points are called samples. the class associated with a specific sample is a label
+41 keras.datasets mnist comes as four numpy arrays:
+   train_images, train_labels are the training set (the data the model learns from)
+   the model is tested on the test set (test_images, test_labels)
+42 labels are an array of digits from 0-9
+42 a layer is the core building block of neural networks. it is a data-processing module that is like a filter for data. data goes in, and a more useful form comes out
+43
