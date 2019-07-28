@@ -3,10 +3,77 @@ started 22 jul 2019
 page numbers are PDF numbers, not book's
 
 41 in machine learning, a category in a classification problem is called a class
+
 41 data points are called samples. the class associated with a specific sample is a label
+
 41 keras.datasets mnist comes as four numpy arrays:
    train_images, train_labels are the training set (the data the model learns from)
    the model is tested on the test set (test_images, test_labels)
+   
 42 labels are an array of digits from 0-9
+
 42 a layer is the core building block of neural networks. it is a data-processing module that is like a filter for data. data goes in, and a more useful form comes out
-43
+
+43 as part of compilation, we need:
+   loss function: how the network will measure its performance on the training data and how to steer itself in the right direction
+   optimizer: the mechanism through which the network will update itself
+   metrics to monitor: here we only care about accuracy (the fraction of images that were correctly classified)
+
+43 the network.fit method fits the model to the training data
+
+45 tensors are containers for data (numbers). they are a generalization of matrices to an arbitrary number of dimensions (a dimension is often called an axis)
+
+45 here, tensors are multidimensional Numpy arrays
+
+45 scalars are 0D (zero-dimensional) tensors. they only contain one number. a scalar tensor is also called a scalar array.
+
+45 ndim is a Numpy tensor attribute that shows the number of axes (also called its rank)
+
+x = np.array(9)
+x.ndim  # 0
+
+45 a vector is a 1D tensor.
+
+x = np.array([12, 3, 6, 15, 14])
+x.ndim  # 1
+
+x has five entries and so it's called a 5-dimensional vector. dimensionality can denote either the number of entries along a specific axis or the number of axes in a tensor (it's confusing). saying "a tensor of rank 5" is technically more correct
+
+45 a matrix is a 2D tensor, an array of vectors.
+
+x = np.array([[5, 2, 4, 1],
+              [6, 9, 1, 9],
+	      [7, 8, 0, 1]])
+
+[5, 2, 4, 1] is the first row and [5, 6, 7] is the first column.
+
+46 packing matrices in a new array gives you a 3D tensor, and so on.
+
+x = np.array([[[3, 4],
+               [1, 9]],
+	      [[9, 2],
+	       [5, 4]],
+	      [[2, 5],
+	       [6, 3]]])
+
+46 a tensor's three key attributes are:
+
+   rank: (ndim) the number of axes
+   shape: how many dimensions the tensor has along each axis
+   data type: (dtype) float32, uint8, char, etc.
+
+47 displaying a MNIST digit
+
+digit = train_images[4]
+
+import matplotlib.pyplot as plt
+plt.imshow(digit, cmap=plt.cm.binary)
+plt.show()
+
+48 tensor-slicing images[10:100] is the same as images[10:100, :, :]
+
+48 in general, the first axis (axis 0) is the samples axis (or samples dimension). samples of the MNIST data are images of digits
+
+48 deep-learning models process small batches of data, such as of size 128. when considering a batch tensor, the first axis (axis 0) is called the batch axis (or dimension)
+
+49
