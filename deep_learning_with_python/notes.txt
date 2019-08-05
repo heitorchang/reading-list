@@ -76,4 +76,53 @@ plt.show()
 
 48 deep-learning models process small batches of data, such as of size 128. when considering a batch tensor, the first axis (axis 0) is called the batch axis (or dimension)
 
-49
+49 the first axis (axis 0) of a batch tensor is the "batch axis" or "batch dimension"
+
+49 vector data - 2D tensors (samples, features)
+   timeseries or sequence data - 3D tensors (samples, timesteps, features)
+   images - 4D tensors (samples, height, width, channels) (TensorFlow convention)
+   videos - 5D tensors (samples, frames, height, width, channels)
+
+49 an actuarial dataset may consider age, ZIP code and income. A person is a vector of 3 values, so 100,000 people are stored in a 2D tensor of shape (100000, 3)
+
+49 a text document may be represented counts of how many times a word out of a dictionary occur
+
+50 by convention, the time axis of a timeseries tensor is the second axis (index 1)
+
+52 keras.layers.Dense(512 ,activation='relu') is a function which takes as input a 2D tensor and returns another 2D tensor
+
+relu(x) is max(x, 0) (rectified linear unit)
+
+output = relu(dot(W, input) + b)
+
+53 broadcasting is matching the shape of a small operand to the larger one
+
+54 the dot operation is also called a tensor product. In 2D, the @ operator may be used
+
+56 tensor reshaping
+
+60 W and b in the relu function are tensors that are attributes of the layer. They're called the weights or trainable parameters of the layer (kernel and bias, respectively)
+
+initially, W and b are random. Gradually adjusting them based on a feedback signal is training.
+
+The training loop is:
+1. draw a batch of training samples x and corresponding targets y
+2. run the network on x (the forward pass) to obtain predictions y_pred
+3. compute the loss of the network on the batch (a measure of the mismatch between y_pred and y)
+4. update all the weights of the network in a way that slightly reduces the loss on this batch
+
+61 to decrease the loss, the gradient of the loss is computed and we move the coefficients in the opposite direction, to decrease the loss
+
+63 mini-batch stochastic gradient descent (mini-batch SGD)
+
+stochastic refers to randomly drawing each batch of data
+
+65 momentum to find the global minimum
+
+66 backpropagation applies the derivative chain rule to compute the contribution of each parameter to the loss value
+
+69 Learning means finding a combination of model parameters that minimizes a loss function for a given set of training data samples and their corresponding targets
+
+69 the loss is the quantity we wish to minimize during training. It represents a measure of success for the task we're trying to solve
+
+69 the optimizer specifies in which way the gradient of the loss will be used to update parameters. There are RMSProp, SGD with momentum, and more
