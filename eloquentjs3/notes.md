@@ -90,3 +90,11 @@ const square = function(x) {
   return x * x;
 };
 ```
+
+`let` and `const` are local to the block they are declared in.
+
+in pre-2015 JS, only functions created new scopes. `var` bindings are visible throughout the whole function that they appear in
+
+lexical scoping is a convention where scope is determined by the place of that variable in the program text. Each local scope can see all the local scopes that contain it, and so on.
+
+*** FUNCTIONS AS VALUES
