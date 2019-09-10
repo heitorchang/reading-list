@@ -154,3 +154,22 @@ function multiplier(factor) {
 
 `var` bindings end up in the nearest function scope or the global scope.
 
+# 04 Data Structures: Objects and arrays
+
+Numbers, strings and Booleans are the atoms that data structures are built from
+
+an array stores sequences of values
+
+`array[index]` retrieves the numbered element (starting from 0) from the array
+
+using a dot or brackets accesses a property, such as `item.x`. With `item[x]`, `x` is evaluated first
+
+elements in an array are stored as the array's properties, using numbers as property names
+
+both string and array objects contain properties that hold function values, such as `s.toUpperCase()`.
+
+properties that contain functions are usually called *methods* (such as `toUpperCase` is a method of a string).
+
+`Array.push(value)` and `Array.pop()`
+
+** p 73 Objects

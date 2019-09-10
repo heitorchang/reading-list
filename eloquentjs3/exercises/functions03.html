@@ -6,4 +6,37 @@ function myMin(a, b) {
     return a;
   }
 }
+
+function evenOdd(n) {
+  if (n == 0) {
+    return "even";
+  } else if (n == 1) {
+    return "odd";
+  } else {
+    return evenOdd(n - 2);
+  }
+}
+
+function countBs(s) {
+  let ct = 0;
+  // https://stackoverflow.com/questions/54369513/how-to-count-the-correct-length-of-a-string-with-emojis-in-javascript
+  for (let i = 0; i < [...s].length; i++) {
+    if (s.codePointAt(i) == 66) {
+      ct++;
+    }
+  }
+  return ct;
+}
+
+function countOccurrences(s, c) {
+  let ct = 0;
+  const ccp = c.codePointAt(0);
+  for (let i = 0; i < [...s].length; i++) {
+    if (s.codePointAt(i) == ccp) {
+      ct++;
+    }
+  }
+  return ct;
+}
+    
 </script>
