@@ -346,10 +346,182 @@ let list = {
 
 To test if something is a real object, use `typeof x == "object" && x != null`
 
-# Higher-order functions
+# 05 Higher-order functions
 
 the array method `forEach` provides a `for/of` loop as a higher-order function
 
 `["A", "B"].forEach(e => console.log(e));`
 
-** 86/98 script data set
+`filter` is an array method that keeps values that passes a test
+
+`WRITING_SCRIPTS.filter(s => s.direction == "ttb")`
+
+`map` applies a function to elements of an array
+
+`rtlScripts.map(s => s.name);`
+
+`[1, 2, 3].map(x => x * 100);`
+
+`reduce` builds a value by repeatedly taking a single element from the array and combining it with the current value
+
+`[1, 2, 3, 4].reduce((a, b) => a + b, 0)`
+
+`some(test)` is a method that returns true if one or more elements satisfies the given test
+
+`all(test)` tests if all elements pass the test
+
+## Emojis
+
+`let horseShoe = "HS"` (pretend H and S are emojis)
+
+`horseShoe.length` -> `4`
+`horseShoe[0]` -> <?>
+`horseShoe.codePointAt(0)` -> 128052
+
+To count the number of characters, use `[...s].length`
+
+`findIndex` finds the first value for which the given function returns true. It returns `-1` if no such element is found
+
+flatten an array of arrays (but no deeper)
+
+```
+  function flatten(a) {
+    return a.reduce((result, e) => result.concat(e), []);
+  }
+```
+
+# 06 The secret life of Objects
+
+Object-oriented programming divides programs into smaller pieces and make each piece responsible for managing its own state (local state)
+
+Interaction between objects is done through *interfaces*
+
+Properties may be public or private
+
+*Encapsulation* is separating the interface from the implementation
+
+Methods are properties that hold functions
+
+the binding called `this` in a method points at the object that it was called on
+
+```
+function speak(line) {
+  console.log(`The ${this.type} rabbit says ${line}`);
+}
+```
+
+to pass `this` explicitly, use the function's `call` method, which takes the `this` value as its first argument and treats further arguments as normal parameters.
+
+`speak.call(hungryRabbit, "Burp!")`
+
+A function has its own `this` binding, so you cannot refer to the `this` of the wrapping scope in a function defined with the `function` keyword.
+
+On the other hand, arrow functions do not bind their own `this`. They use the `this` binding of their enclosing scope.
+
+## Prototypes
+
+a prototype is an object that is used as a fallback source of properties
+
+an unsuccessful search for a property goes to its prototype, then the prototype's prototype, and so on.
+
+`Object.prototype` is the object behind almost all objects. Its prototype is `null`.
+
+There exist `Array.prototype` and `Function.prototype`
+
+`Object.create(aPrototype)` will create an object with a specific prototype
+
+## Classes
+
+A *class* defines the shape of a type of object, the methods and properties it has. A specific object is called an *instance* of the class
+
+Methods are shared in all instances, but properties that differ need to be stored individually in each instance
+
+A *constructor* function defines the properties that instances are supposed to have.
+
+by putting the `new` keyword in front of a function call, the function is treated as a constructor
+
+by convention, constructor names are capitalized
+
+```
+function Rabbit(type) {
+  this.type = type;
+}
+Rabbit.prototype.speak = function(line) {
+  console.log(`The ${this.type} rabbit says ${line}`);
+};
+
+let weirdRabbit = new Rabbit("weird");
+```
+
+The new way is:
+
+```
+class Rabbit {
+  constructor(type) {
+    this.type = type;
+  }
+  speak(line) {
+    console.log(`The ${this.type} rabbit says ${line}`);
+  }
+}
+
+let killerRabbit = new Rabbit("killer");
+```
+
+several methods may be written inside the class declaration. `constructor` is treated as a special method
+
+right now, there are no ways of adding properties to a class (only methods). The prototype has to be manipulated after defining the class
+
+`class` may be used in an expression to produce the constructor as a value. A class name is not needed
+
+```
+let object = new class { getWord() { return "hello"; } };
+console.log(object.getWord());
+```
+
+if there is a property in a prototype, adding a property to an object will hide the prototype's property.
+
+`Rabbit.prototype.teeth = "small";` can be written to affect all rabbits. However, `killerRabbit.teeth = "long, sharp";` will only affect `killerRabbit`.
+
+## Map data structure
+
+A *map* associates values (keys) with other values. Objects may be used as maps
+
+```
+let ages = {
+  Boris: 39,
+  Liang: 22,
+}
+```
+
+`${ages["Boris"]}` -> 39
+`"Jack" in ages` -> false
+`"toString" in ages` -> true
+
+to avoid properties present in `Object.prototype`, a map can be created with `Object.create(null)`.
+
+`new Map();` should be used instead of a regular object. it allows any type of keys
+
+```
+let ages = new Map();
+ages.set("Boris", 39);
+console.log(ages.get("Boris"));
+```
+
+`Object.keys` returns only an object's own keys, not those in the prototype.
+
+as an alternative to the `in` operator, such as `"a" in obj`, `obj.hasOwnProperty("a")` will ignore the object's prototype.
+
+## Polymorphism
+
+`toString` may be overridden to produce a more useful result than `[object Object]`.
+
+```
+Rabbit.prototype.toString = function() {
+  return `a ${this.type} rabbit`;
+};
+```
+
+*Polymorphism* is a technique of writing code that works with dissimilar objects that have a certain interface. Polymorphic code works with values of different shapes, as long as they support the expected interface
+
+** 107/119 symbols
