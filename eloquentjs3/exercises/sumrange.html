@@ -1,0 +1,27 @@
+  <script>
+  function myrange(a, b, step = 1) {
+    let result = [];
+    let curIndex = 0;
+    let curVal = a;
+    if (step > 0) {
+      while (curVal <= b) {
+        result.push(curVal);
+        curVal += step;
+      }
+    } else {
+      while (curVal >= b) {
+        result.push(curVal);
+        curVal += step;
+      }
+    }
+    return result;
+  }
+
+function mysum(a) {
+  let total = 0;
+  for (n of a) {
+    total += n;
+  }
+  return total;
+}
+</script>

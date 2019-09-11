@@ -1,0 +1,13 @@
+<script>
+  function reverseArray(a) {
+    let stack = [];
+    let result = [];
+    for (elem of a) {
+      stack.push(elem);
+    }
+    while (stack.length > 0) {
+      result.push(stack.pop());
+    }
+    return result;
+  }
+</script>

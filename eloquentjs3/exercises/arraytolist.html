@@ -1,0 +1,20 @@
+<script>
+
+function arrayToList(a) {
+  a.reverse();
+  let list = null;
+  for (elem of a) {
+    list = {value: elem, rest: list};
+  }
+  return list;
+}
+
+function nth(list, n) {
+  let pointer = list;
+  for (let i = 0; i < n; i++) {
+    pointer = pointer.rest;
+  }
+  return pointer.value;
+}
+
+</script>
