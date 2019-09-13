@@ -680,6 +680,7 @@ ranges are determined by the character's Unicode number
 \D Not a digit
 \W Not alphanumeric or underscore
 \S Not whitespace
+\b word boundary
 . any character except newline
 ```
 
@@ -705,4 +706,39 @@ To use + or * on more than one element at a time, the elements need to be enclos
 
 the `i` at the end indicates the regexp is case insensitive
 
-** 147/159 matches groups
+```
+let match = /\d+/.exec("one two 100");
+console.log(match);
+// -> ["100"]
+```
+
+is similar to `"one two 100".match(/\d+/);`
+
+when a group matches multiple times, only the last match ends up in the array
+
+```
+console.log(/bad(ly)?/.exec("bad"));  // -> ["bad", undefined]
+console.log(/(\d)+/.exec("123"));  // -> ["123", "3"]
+```
+
+Dates' months start at 0, but days start at 1.
+
+```
+function getDate(string) {
+  // the first element (full match) is skipped
+  let [_, month, day, year] =
+    /(\d{1,2})-(\d{1,2})-(\d{4})/.exec(string);
+  return new Date(year, month - 1, day);
+}
+```
+
+`^` and `$` mark the beginning and end of the input string
+
+pipes `|` denotes a choice between patterns. Parentheses can be used to limit the part of the pattern the operator applies to
+
+a poorly constructed regexp may take a very long time to find matches due to how backtracking works
+
+the work done by `/([01]+)+b/' doubles with each additional character.
+
+## The `replace` method
+
