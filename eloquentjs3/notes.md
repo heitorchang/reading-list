@@ -522,6 +522,141 @@ Rabbit.prototype.toString = function() {
 };
 ```
 
-*Polymorphism* is a technique of writing code that works with dissimilar objects that have a certain interface. Polymorphic code works with values of different shapes, as long as they support the expected interface
+*Polymorphism* is a technique of writing code so that it works with dissimilar objects, given that they have the same interface. Polymorphic code works with values of different shapes, as long as they support the expected interface
 
-** 107/119 symbols
+In other words, code written to use an interface automatically knows how to work with any object that provides the interface.
+
+## Symbols
+
+property names are usually strings, but they can also be symbols. They are values created with the `Symbol()` function. Newly created symbols are unique and the same symbol cannot be created twice.
+
+```
+let sym = Symbol("name");
+console.log(sym == Symbol("name"));  // false
+```
+
+being unique and usable as property names, symbols are suitable for defining interfaces that can peacefully live alongside other properties
+
+it is possible to include symbol properties in object expressions and classes by using square brackets around the property name
+
+```
+let stringObject = {
+  [toStringSymbol]() { return "jute rope"; }
+};
+console.log(stringObject[toStringSymbol]());
+```
+
+## The iterator interface
+
+an object given to a `for/of` loop needs to be *iterable*. This means it has a method named with the `Symbol.iterator` symbol (a value defined by the language)
+
+calling this method returns an object that provides the *iterator* interface. it has a `next()` method that returns an object with a `value` property and `done` Boolean property
+
+`Matrix.prototype[Symbol.iterator] = function() { ... };`
+
+## Getters, setters, and statics
+
+properties that are accessed directly may hide a method call. they are called *getters*, and are defined by writing `get` in front of the method name
+
+similarly, a setter is used when a property is written to.
+
+```
+class Temperature {
+  constructor(celsius) {
+    this.celsius = celsius;
+  }
+  get fahrenheit() {
+    return this.celsius * 1.8 + 32;
+  }
+  set fahrenheit(value) {
+    this.celsius = (value - 32) / 1.8;
+  }
+  static fromFahrenheit(value) {
+    return new Temperature((value - 32) / 1.8);
+  }
+}
+
+let temp = new Temperature(22);
+console.log(temp.fahrenheit);
+temp.fahrenheit = 86;
+```
+
+*static* methods are stored on the constructor. For example, `Temperature.fromFahrenheit(100)`
+
+## Inheritance
+
+*inheritance* is deriving a new class from another, but with new definitions for some of its properties
+
+`class SymmetricMatrix extends Matrix { ... }`
+
+the parent class is called the *superclass*, and the derived class, *subclass*.
+
+in the constructor, `super` must be called to initialize the instance properties.
+
+```
+class SymmetricMatrix extends Matrix {
+  constructor(size, element = (x, y) => undefined) {
+    super(size, size, (x, y) => {
+      if (x < y) return element(y, x);
+      else return element(x, y);
+    });
+  }
+  set(x, y, value) {
+    super.set(x, y, value);
+    if (x != y) {
+      super.set(y, x, value);
+    }
+  }
+}
+```
+
+inheritance may increase the complexity of programs because it ties two pieces together (the superclass and the subclass). On the other hand, encapsulation and polymorphism separate code from each other, reducing complexity.
+
+`obj instanceof class` tests whether an object was derived from a specific class. It works through inherited types
+
+# 07 Robot parcel delivery simulation
+
+It is preferable (to manage complexity) to create new states out of old ones instead of mutating state. When objects are fixed, stable things, we can consider operations on them in isolation
+
+# 08 Bugs and errors
+
+one way to set a breakpoint is to include a `debugger` statement in the program
+
+## Exceptions
+
+*unwinding the stack* is jumping out of the function that caused an exception and all of its callers, all the way to the first call that started the current execution
+
+It is possible to *catch* the exception.
+
+`throw new Error("invalid choice");`
+
+```
+try {
+  ...
+} catch (error) {
+  ...
+} finally {
+  // a block that runs no matter what happens
+}
+```
+
+a programming style that computes new values instead of changing existing data is easier to debug
+
+there is no direct support for selectively catching exceptions. either you catch them all or you don't catch any
+
+to overcome this, we need to define a new type of error and use `instanceof` to identify it
+
+## Assertions
+
+Assertions are checks that verify that something is the way it's supposed to be
+
+```
+function firstElem(arr) {
+  if (arr.length == 0) {
+    throw new Error("firstElem called with empty array");
+  }
+  return arr[0];
+}
+```
+
+** 143/155 regexp
