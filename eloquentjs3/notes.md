@@ -659,4 +659,50 @@ function firstElem(arr) {
 }
 ```
 
-** 143/155 regexp
+# 09 Regular expressions
+
+a regular expression is a type of object. It's created with `new RegExp("abc")` or `/abc/`
+
+in the `/.../` format, backslashes that aren't part of special codes like `\n` are preserved. To represent special regexp characters like `?` literal, a backslash needs to be added before them.
+
+`/abc/.test("xyzabcde")  // true`
+
+putting a set of characters between square brackets makes that part of the expression match any of the characters between the brackets
+
+`/[0-9]/.test("in 1970")  // true`
+
+ranges are determined by the character's Unicode number
+
+```
+\d digit
+\w alphanumeric and underscore
+\s whitespace
+\D Not a digit
+\W Not alphanumeric or underscore
+\S Not whitespace
+. any character except newline
+```
+
+inside square brackets, special characters like `.` and `+` lose their special meaning
+
+to invert a set of characters, use `[^1-9]` (match anything except 1 to 9)
+
+`+` indicates the element before the `+` may be repeated more than once
+
+`*` is like `+`, but also allows matching zero times
+
+`?` matches zero or one time (the element is optional)
+
+`{n}` matches `n` times
+
+`{a,b}` matches at least `a` times and at most `b` times
+
+`{6,} means 6 or more times
+
+To use + or * on more than one element at a time, the elements need to be enclosed in parentheses.
+
+`let cartoonCrying = /boo+(hoo+)+/i;`
+
+the `i` at the end indicates the regexp is case insensitive
+
+** 147/159 matches groups
