@@ -742,3 +742,76 @@ the work done by `/([01]+)+b/' doubles with each additional character.
 
 ## The `replace` method
 
+the string method `replace` may use a regular expression as its first argument. when the global `g` option is added to the regexp, all matches will be replaced
+
+parenthesized groups are referred to with `$1`, `$2`, and so on (up to 9). The whole match can be referred to with `$&`
+
+`"Liskov, Barbara\nMcCarthy, John".replace(/(\w+), (\w+)/g, "$2 $1");`
+
+The second argument to `replace` can be a function
+
+a `?` after `+`, `*`, `?` and `{}` make them nongreedy.
+
+`new RegExp("...")` lets you dynamically create a regexp
+
+a regexp may be used with the `search` method
+
+the global or sticky (y) option must be used to use the `lastIndex` property
+
+*sticky* means the regexp will not search ahead and skip part of the string
+
+## Looping over matches
+
+```
+while (match = numberPattern.exec(input)) {
+  console.log("Found", match[0], "at", match.index);
+}
+```
+
+use `/\r?\n/` to split a string by newlines
+
+use `^` and `$` to ensure whole lines are matched to avoid subtle bugs
+
+the pattern `if (match = string.match(...))` is a trick to enter the body only if the match succeeds
+
+## International characters
+
+`\p{...}` matches a given property. The `u` (Unicode) option should be added (at the end of the regexp) 
+
+`console.log(/\p{Alphabetic}/u.test("α"));`
+
+# 10 Modules
+
+a module is a piece of program that specifies which other pieces it relies on and which functionality it provides for other modules
+
+relations between modules are called *dependencies*
+
+a package is a chunk of code that can be distributed (copied and installed)
+
+NPM (npmjs.org) provides an infrastructure that stores packages
+
+The old, obsolete way of defining modules looked like this:
+
+```
+const weekDay = function() {
+  const names = ["sun", "mon"...];
+
+  return {
+    name(num) { return names[num]; },
+    number(name) { return names.indexOf(name); }
+  };
+}();
+
+weekDay.name("sun");
+```
+
+the `Function()` constructor takes a comma-separated list of argument names and a string containing the function body
+
+CommonJS modules are the most widely used kind of package on NPM and it is used by Node.js
+
+`const ordinal = require("ordinal");`
+
+`exports.formatDate = function(date, fmt) { ... };`
+
+## ECMAScript modules (ES modules)
+
