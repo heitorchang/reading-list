@@ -815,3 +815,14 @@ CommonJS modules are the most widely used kind of package on NPM and it is used 
 
 ## ECMAScript modules (ES modules)
 
+```
+import ordinal from "ordinal";
+import {days, months} from "date-names";
+
+export function formatDate(date, fmt) { ... }
+
+export default ["winter", "summer"];
+```
+
+# 11 Asynchronous programming
+
