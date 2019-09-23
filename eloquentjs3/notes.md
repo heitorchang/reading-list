@@ -252,7 +252,7 @@ for (let entry of JOURNAL) {
 }
 ```
 
-`for (aChar of aString) { ... }` iterates over the string.
+`for (let aChar of aString) { ... }` iterates over the string.
 
 ## Further Arrayology
 
