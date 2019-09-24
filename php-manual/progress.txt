@@ -1,3 +1,10 @@
 26 jan 2017
 http://php.net/manual/en/language.basic-syntax.instruction-separation.php
 
+23 sep 2019
+PHP 7.3 manual
+begin
+https://www.php.net/manual/en/language.types.array.php
+
+24 sep 2019
+https://www.php.net/manual/en/language.expressions.php
