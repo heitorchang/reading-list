@@ -826,3 +826,8 @@ export default ["winter", "summer"];
 
 # 11 Asynchronous programming
 
+A *callback function* is passed to another function that performs a slow action. When the slow action is completed, the callback function is called with the result.
+
+`Promise.all`
+
+`async function`, `await`

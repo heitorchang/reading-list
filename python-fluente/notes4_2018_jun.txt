@@ -53,7 +53,7 @@ quotient, remainder = divmod(*t)
 
 55 use * to capture a variable amount of arguments. The starred variable may be anywhere. Unpacking structures may also be nested, such as (a, b, (c, d))
 
-a, b, c* = range(5)  # c is [2, 3, 4]
+a, b, *c = range(5)  # c is [2, 3, 4]
 
 a, *b, c = range(4)  # b is [1, 2]
 
