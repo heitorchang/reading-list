@@ -36,7 +36,7 @@ Use Segoe UI font
 54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
 55 όσπρια, λαδερά LEGUMES E VERDURAS
 56 γλυκά PRODUTOS DE CONFEITARIA E BOLOS
-57 GLOSSÁRIO DE COMIDAS E BEBIDAS
+* Ignorado: 57 GLOSSÁRIO DE COMIDAS E BEBIDAS 
 60 PASSEANDO
 61 SUGESTÕES E CONVITES
 62 COMBINANDO UM ENCONTRO
@@ -71,7 +71,7 @@ Use Segoe UI font
 117 A DATA
 119 A HORA
 122 NÚMEROS
-* 176 GRAMÁTICA
+* Ignorado: 176 GRAMÁTICA
 183 FERIADOS E FESTAS
 185 ENDEREÇOS ÚTEIS
 186 INFORMAÇÕES TELEFÔNICAS
@@ -2358,11 +2358,125 @@ docinhos de Natal feitos com amêndoas
 pão de ló em camadas, recheado de creme
 πάστα
 
-57 GLOSSÁRIO DE COMIDAS E BEBIDAS
+Ignorado: 57 GLOSSÁRIO DE COMIDAS E BEBIDAS
 
 60 PASSEANDO
 
+guia semanal de Atenas
+Αθηνόραμα
+
+local com música ao vivo
+ρεμπετάδικο
+
+balé
+μπαλέτο
+
+banda
+μπάντα
+
+bar
+μπαρ
+
+boate
+κλαμπ
+
+cinema
+κινηματογράφος, σινεμά
+
+circo
+τσίρκο
+
+concerto
+κονσέρτο, συναυλία
+
+dança moderna
+μοντέρνος χορός
+
+festa
+πάρτυ
+
+festival
+φεστιβάλ
+
+filme
+φιλμ, ταινία
+
+filme dublado
+μεταγλωτισμένο φιλμ
+
+filme legendado
+φιλμ με υπότιτλους
+
+grupo
+γκρουπ
+
+ingresso
+εισιτήριο
+
+jazz
+τζαζ
+
+música clássica
+κλασική μουσική
+
+música pop
+ποπ μουσική
+
+música tradicional
+παραδοσιακή μουσική
+
+musical
+μιούζικαλ
+
+peça de teatro
+έργο
+
+reservar
+κάνω κράτηση
+
+rock
+ροκ μουσική
+
+sair (para passear)
+βγαίνω έξω
+
+show
+παράσταση
+
+teatro
+θέατρο
+
 61 SUGESTÕES E CONVITES
+
+aonde poderíamos ir?
+πού μπορούμε να πάμε;
+
+vamos beber algo?
+να πάμε για ένα ποτό;
+
+já tem planos?
+έχεις σχέδια;
+
+o que você quer fazer?
+τι θέλεις να κάνεις;
+
+o que vai fazer hoje à noite?
+τι κάνεις απόψε;
+
+gostaria de ...?
+θα ήθελες να ...;
+
+estávamos pensando em ir a/para ...
+σκεφτόμασταν να πάμε ...
+
+hoje não posso, mas quem sabe outra hora
+δεν μπορώ σήμερα, αλλά ίσως κάποια άλλη φορά
+
+não tenho certeza se consigo fazer isso
+δεν είμαι σίγουρος πως μπορώ να τα καταφέρω
+
+eu adoraria
+πολύ θα τόθελα
 
 62 COMBINANDO UM ENCONTRO
 
@@ -2542,7 +2656,7 @@ milionésimo εκατομμυριοστός
 20 dividido por 4 é igual a 5
 είκοσι διά τέσσερα ίσον πέντε
 
-176 GRAMÁTICA
+Ignorado: 176 GRAMÁTICA
 
 183 FERIADOS E FESTAS
 
