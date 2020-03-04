@@ -1,8 +1,6 @@
 Guia de conversação de grego, Evy Markopoulou, Lalita Markopoulou
 WMF Martins Fontes, 2012
 
-Use Segoe UI font
-
 ÍNDICE
 
 7 CONVERSA DO DIA A DIA
@@ -36,7 +34,7 @@ Use Segoe UI font
 54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
 55 όσπρια, λαδερά LEGUMES E VERDURAS
 56 γλυκά PRODUTOS DE CONFEITARIA E BOLOS
-* Ignorado: 57 GLOSSÁRIO DE COMIDAS E BEBIDAS 
+57 GLOSSÁRIO DE COMIDAS E BEBIDAS (ignorado)
 60 PASSEANDO
 61 SUGESTÕES E CONVITES
 62 COMBINANDO UM ENCONTRO
@@ -71,7 +69,7 @@ Use Segoe UI font
 117 A DATA
 119 A HORA
 122 NÚMEROS
-* Ignorado: 176 GRAMÁTICA
+176 GRAMÁTICA (ignorado)
 183 FERIADOS E FESTAS
 185 ENDEREÇOS ÚTEIS
 186 INFORMAÇÕES TELEFÔNICAS
@@ -2358,7 +2356,7 @@ docinhos de Natal feitos com amêndoas
 pão de ló em camadas, recheado de creme
 πάστα
 
-Ignorado: 57 GLOSSÁRIO DE COMIDAS E BEBIDAS
+57 GLOSSÁRIO DE COMIDAS E BEBIDAS (ignorado)
 
 60 PASSEANDO
 
@@ -2480,9 +2478,216 @@ eu adoraria
 
 62 COMBINANDO UM ENCONTRO
 
+a que horas nos encontramos?
+τι ώρα να συναντηθούμε;
+
+onde nos encontramos?
+πού να συναντηθούμε;
+
+seria possível nos encontrarmos um pouquinho mais tarde?
+είναι δυνατόν να συναντηθούμε λίγο αργότερα;
+
+tenho de encontrar ... às nove
+πρέπει να συναντήσω τον ... στις εννιά
+
+não sei onde fica, mas vou procurar no mapa
+δεν ξέρω που είναι αλλά θα το βρω στον χάρτη
+
+vejo-o amanhã à noite
+θα σε δω αύριο το βράδυ
+
+encontro-me com você mais tarde, tenho que dar uma passada no hotel primeiro
+θα σε συναντήσω αργότερα, πρέπει να πάω πρώτα από το ξενοδοχείο
+
+eu ligo/passo um torpedo se houver alguma mudança de planos
+θα σου τηλεφωνήσω/στείλω μήνυμα αν κάτι αλλάξει
+
+você vai comer antes?
+θα φας πριν;
+
+desculpe, estou atrasado
+συγνώμη που άργησα
+
+concorda?
+συμφωνείς;
+
+venho buscá-lo por volta das 8h
+θα έρθω να σε πάρω γύρω στις οχτώ
+
+encontro-o lá
+θα σε συναντήσω κατ'ευθείαν εκεί
+
+podemos nos encontrar do lado de fora ...
+μπορούμε να βρεθούμε έξω από ...
+
+vou lhe dar meu telefone e você pode me ligar amanhã
+θα σου δώσω το νούμερό μου και μπορείς να μου τηλεφωνήσεις αύριο
+
+bebericar alguma coisa
+πίνω κάτι
+
+comer uma coisinha
+τσιμπάω κάτι
+
 64 FILMES, SHOWS E CONCERTOS
 
+há algum guia com a programação do que está acontecendo?
+υπάρχει κάποιος οδηγός θεαμάτων;
+
+eu gostaria de três ingressos para ...
+θα ήθελα τρία εισιτήρια για ...
+
+dois ingressos, por favor
+δύο εισιτήρια, παρακαλώ
+
+o nome é ...
+λέγεται ...
+
+vi o trailer
+το έχω δει στα προσεχώς
+
+a que horas começa?
+τι ώρα αρχίζει;
+
+eu gostaria de ir ver um show
+θα ήθελα να πάω να δω μία παράσταση
+
+vou me informar se ainda há ingressos disponíveis
+θα ρωτήσω αν υπάρχουν ακόμα θέσεις
+
+precisamos reservar com antecedência?
+πρέπει να κρατήσουμε θέσεις από πριν;
+
+há quanto tempo está em cartaz?
+πόσο καιρό παίζεται;
+
+tem ingressos para outro dia?
+υπάρχουν θέσεις για κάποια άλλη μέρα;
+
+eu gostaria de ir a um bar com música ao vivo
+θα ήθελα να πάω σ'ένα μπαρ με ζωντανή μουσική
+
+há concertos gratuitos?
+υπάρχουν συναυλίες με ελεύθερη είσοδο;
+
+que tipo de música é?
+τι είδους μουσική είναι;
+
+bilheteria
+εκδοτήριο εισιτηρίων
+
+cinema que exibe filmes de arte
+κινηματογράφος τέχνης
+
+cinema ao ar livre
+θερινός κινηματογράφος
+
+superprodução
+υπερπαραγωγή
+
+matinê
+ματινέ/πρωινή παράσταση
+
+reservas
+κρατήσεις
+
+em cartaz a partir de ...
+βγαίνει στους κινηματογράφους στις ...
+
+é um concerto ao ar livre
+είναι μία υπαίθρια συναυλία
+
+a crítica era muito boa
+πήρε πολύ καλές κριτικές
+
+entra em cartaz na semana que vem
+θα παίζεται από την επόμενη εβδομάδα
+
+é às 8h da noite no Odeon
+παίζεται στις οχτώ το απόγευμα στο Οντεόν
+
+os ingressos para esta exibição estão esgotados
+τα εισιτήρια γι'αυτήν την παράσταση έχουν εξαντληθεί
+
+está tudo reservado até ...
+δεν υπάρχουν θέσεις έως ...
+
+não é preciso reservar com antecedência
+δεν χρειάζεται να κάνεις κράτηση
+
+a peça dura uma hora e meia, incluindo o intervalo
+η παράσταση διαρκεί μιάμιση ώρα μαζί με το διάλειμμα
+
+por favor, desliguem seus aparelhos celulares
+παρακαλείσθε να απενεργοποιήσετε τα κινητά σας
+
 66 FESTAS E BOATES
+
+vou fazer uma festinha de despedida hoje à noite
+δίνω ένα πάρτι αποχαιρετισμού σήμερα το βράδυ
+
+devo levar alguma bebida?
+να φέρω κανένα ποτό;
+
+poderíamos ir a uma boate depois
+μπορούμε να πάμε σ'ένα κλαμπ/κέντρο μετά
+
+é preciso pagar para entrar?
+πρέπει να πληρώσουμε είσοδο;
+
+tenho de encontrar uma pessoa lá dentro
+πρέπει να συναντήσω κάποιον μέσα
+
+o senhor vai me deixar entrar de novo quando eu voltar?
+θα με αφήσετε να ξαναμπώ όταν θα επιστρέψω;
+
+o DJ é bom mesmo
+ο Ντι Τζέι είναι πολύ καλός
+
+você vem sempre aqui?
+έρχεσαι εδώ συχνά;
+
+posso lhe pagar uma bebida?
+μπορώ να σε κεράσω ένα ποτό;
+
+obrigada, mas estou com meu namorado
+ευχαριστώ, αλλά είμαι με τον φίλο μου
+
+não, obrigado, não fumo
+όχι, ευχαριστώ, δεν καπνίζω
+
+bebida grátis
+δωρεάν ποτό
+
+ao ar livre
+υπαίθριος
+
+festa, comemoração
+πανηγύρι
+
+chapelaria
+γκαρνταρόμπα
+
+sete euros após a meia-noite
+επτά ευρώ μετά τα μεσάνυχτα
+
+tem festa na casa da Ana
+γίνεται ένα πάρτι στης Άννας
+
+quer dançar?
+θέλεις να χορέψεις;
+
+voce tem fogo?
+έχεις φωτιά;
+
+pode me dar um cigarro?
+έχεις ένα τσιγάρο;
+
+podemos nos ver de novo?
+μπορούμε να ξαναβρεθούμε;
+
+posso ir à sua casa?
+μπορώ να σε συνοδεύσω;
 
 68 ATRAÇÕES TURÍSTICAS
 
@@ -2541,6 +2746,18 @@ eu adoraria
 119 A HORA
 
 122 NÚMEROS
+
+vinte mais três é igual a 23
+είκοσι συν τρία ίσον είκοσι τρία
+
+vinte menos três é igual a 17
+είκοσι μείον τρία ίσον δεκαεπτά
+
+vinte multiplicado por quatro é igual a 80
+είκοσι επί τέσσερα ίσον ογδόντα
+
+20 dividido por quatro é igual a 5
+είκοσι διά τέσσερα ίσον πέντε
 
 0 μηδέν
 1 ένα/ένας/μία/ένα
@@ -2644,19 +2861,7 @@ nongentésimo εννεακοσιοστός
 milésimo χιλιοστός
 milionésimo εκατομμυριοστός
 
-20 mais 3 é igual a 23
-είκοσι συν τρία ίσον είκοσι τρία
-
-20 menos 3 é igual a 17
-είκοσι μείον τρία ίσον δεκαεπτά
-
-20 multiplicado por 4 é igual a 80
-είκοσι επί τέσσερα ίσον ογδόντα
-
-20 dividido por 4 é igual a 5
-είκοσι διά τέσσερα ίσον πέντε
-
-Ignorado: 176 GRAMÁTICA
+176 GRAMÁTICA (ignorado)
 
 183 FERIADOS E FESTAS
 
