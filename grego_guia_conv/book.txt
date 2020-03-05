@@ -77,17 +77,17 @@ WMF Martins Fontes, 2012
 
 7 CONVERSA DO DIA A DIA
 
+bom dia
+καλημέρα
+
+boa tarde
+καλό απόγευμα
+
 boa noite
 καλησπέρα
 
 boa noite (ao se despedir)
 καληνύχτα
-
-boa tarde
-καλό απόγευμα
-
-bom dia
-καλημέρα
 
 com licença
 συγνώμη
@@ -2691,7 +2691,223 @@ posso ir à sua casa?
 
 68 ATRAÇÕES TURÍSTICAS
 
+antigo
+αρχαίος
+
+área
+περιοχή
+
+arte moderna
+μοντέρνα τέχνη
+
+castelo
+κάστρο
+
+catedral
+καθεδρικός ναός
+
+centro da cidade
+κέντρο πόλης
+
+centro de informações turísticas
+γραφείο τουρισμού
+
+escultura
+γλυπτική
+
+estátua
+άγαλμα
+
+exposição
+έκθεση
+
+galeria
+γκαλερί
+
+guia de turismo
+ξεναγός
+
+igreja
+εκκλησία
+
+mapa de ruas
+χάρτης
+
+mesquita
+τζαμί
+
+monastério
+μοναστήρι
+
+monumento
+μνημείο
+
+museu
+μουσείο
+
+parque
+πάρκο
+
+pintura
+ζωγραφική
+
+ruínas
+ερείπια
+
+século
+αιώνας
+
+sinagoga
+συναγωγή
+
+sítio arqueológico
+αρχαιολογικός χώρος
+
+turista
+τουρίστας
+
+velho
+παλαιός
+
+eu gostaria de algumas informações sobre ...
+θα ήθελα μερικές πληροφορίες για ...
+
+pode me dizer onde fica o centro de informações turísticas?
+μπορείτε να μου πείτε πού είναι το γραφείο τουρισού;
+
+o senhor tem um guia de ruas da cidade?
+έχετε ένα χάρτη της πόλης;
+
+disseram-me que há um templo antigo que pode ser visitado
+μου είπαν ότι υπάρχει ένας αρχαίος ναός που μπορεί κανείς να επισκεφτεί
+
+poderia me mostrar onde fica no mapa?
+μπορείτε να μου δείξετε πού είναι στον χάρτη;
+
+como se faz para chegar lá?
+πώς μπορώ να πάω εκεί;
+
+é gratuito?
+είναι ελεύθερη η είσοδος;
+
+quando isto foi construído?
+πότε χτίσθηκε;
+
+museu arqueológico
+αρχαιολογικό μουσείο
+
+entrada gratuita
+ελεύθερη είσοδος/δωρεάν
+
+bizantino
+βυζαντινός
+
+fechado
+κλειστό
+
+visita guiada
+ξενάγηση
+
+invasão
+εισβολή
+
+medieval
+μεσαιωνικός
+
+minoico
+μινωικός
+
+miceniano
+μυκηναϊκός
+
+cidade velha
+παλιά πόλη
+
+aberto
+ανοιχτό
+
+restauração
+ανακαίνηση
+
+trabalho de restauração
+αναστήλωση
+
+veneziano
+ενετικός
+
+guerra
+πόλεμος
+
+você está aqui (no mapa)
+είστε εδώ
+
+isto remonta ao século III a.C.
+είναι του τρίτου αιώνα π.Χ.
+
+o senhor terá de perguntar quando chegar lá
+θα πρέπει να ρωτήσετε όταν φτάσετε εκεί
+
+a próxima visita guiada começa às 2h
+η επόμενη ξενάγηση αρχίζει στις δύο το μεσημέρι
+
 70 MUSEUS, EXPOSIÇÕES E MONUMENTOS
+
+ouvi dizer que há uma exposição de ... muito boa no momento
+άκουσα ότι υπάρχει μία πολύ καλή έκθεση για ... αυτό το καιρό
+
+quanto custa para entrar?
+πόσο κοστίζει η είσοδος;
+
+este ingresso vale também para a exposição?
+αυτό το εισιτήριο ισχύει και για την έκθεση;
+
+tem algum tipo de desconto para jovens?
+υπάρχει έκπτωση για τους νέους;
+
+fica aberto aos domingos?
+είναι ανοιχτά την Κυριακή;
+
+duas meias e uma inteira, por favor
+δύο μειωμένα κι ένα ολόκληρο, παρακαλώ
+
+tenho carteirinha de estudante
+έχω φοιτητική ταυτότητα
+
+audioguia
+ηχογραφημένη ξενάγηση
+
+proibido usar o flash
+απαγορεύεται το φλας
+
+proibido fotografar
+απαγορεύεται η φωτογράφηση
+
+exposição permanente
+μόνιμη έκθεση
+
+por favor, não mexa/toque
+πακαλείσθε να μην αγγίζετε
+
+silêncio, por favor
+ησυχία παρακαλώ
+
+exposição temporária
+εποχιακή έκθεση
+
+por aqui
+κατεύθυνση επίσκεψης
+
+bilheteria
+γραφείο εισιτηρίων
+
+a entrada para o museu custa ...
+η είσοδος στο μουσείο κοστίζει ...
+
+este ingresso lhe permite também o acesso à exposição
+αυτό το εισιτήριο ισχύει και για την έκθεση
+
+o senhor tem a carteirinha de estudante?
+έχετε φοιτητική ταυτότητα;
 
 72 DANDO SUAS IMPRESSÕES
 
