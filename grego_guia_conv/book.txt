@@ -2911,7 +2911,77 @@ o senhor tem a carteirinha de estudante?
 
 72 DANDO SUAS IMPRESSÕES
 
+é bonito
+είναι όμορφο
+
+foi bonito
+ήταν όμορφο
+
+é fantástico
+είναι υπέροχο
+
+foi fantástico
+ήταν υπέροχο
+
+realmente eu aproveitei
+πραγματικά το απόλαυσα
+
+não gostei muito
+δεν μου άρεσε και τόσο πολύ
+
+foi um pouco chato
+ήταν λίγο βαρετό
+
+não sou muito fã de arte moderna
+δεν μου αρέσει πολύ η μοντέρνα τέχνη
+
+não vale o dinheiro
+δεν αξίζει τα λεφτά του
+
+é muito para turistas
+είναι πολύ τουριστικό
+
+estava muito lotado
+είχε πολύ κόσμο
+
+acabamos não indo, a fila era muito grande
+τελικά δεν μπήκαμε, η ουρά ήταν πολύ μεγάλη
+
+não tivemos tempo de ver tudo
+δεν είχαμε χρόνο να τα δούμε όλα
+
+famoso
+διάσημος
+
+pitoresco
+γραφικός
+
+tradicional
+παραδοσιακός
+
+típico
+χαρακτηριστικός
+
+o senhor realmente deve ir ver ...
+πρέπει οπωσδήποτε να πάτε να δείτε ...
+
+recomendo ir a ...
+σας συνιστώ να πάτε ...
+
+há uma vista maravilhosa de toda a cidade
+έχει μία υπέροχη θέα όλης της πόλης
+
+tornou-se um pouco turístico demais
+έχει γίνει πολύ τουριστικό
+
+o litoral ficou completamente arruinado
+η ακτή έχει καταστραφεί τελείως
+
 74 ESPORTES E JOGOS
+
+clube local de caminhadas
+οδοιπορικός σύλλογος
+
 
 76 CAMINHADAS
 
