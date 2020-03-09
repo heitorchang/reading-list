@@ -3099,10 +3099,75 @@ fiz isto uma ou duas vezes, há muito tempo
 estou exausto!
 είμαι πτώμα!
 
+eu gostaria de ir assistir a uma partida de futebol
+θα ήθελα να πάω να δω έναν αγώνα/ματς ποδοσφαίρου
+
+vamos dar uma parada para um piquenique?
+να σταματήσουμε για ένα πικ-νικ;
+
+jogamos ...
+παίξαμε ...
+
+aonde podemos ir para pescar?
+πού μπορούμε να πάμε για ψάρεμα;
+
+... para alugar
+ενοικιάζεται ...
+
+o senhor tem alguma experiência, ou é principiante?
+έχετε ξανακάνει ή είστε τελείως αρχάριος;
+
+é preciso fazer um depósito de ...
+πρέπει να δώσετε μια προκαταβολή ...
+
+o seguro é obrigatório e custa ...
+η ασφάλεια είναι υποχρεωτική και κοστίζει ...
 
 76 CAMINHADAS
 
+há trilhas para caminhada aqui na redondeza?
+υπαρχούν μονοπάτια για πεζοπορία εδώ γύρω;
+
+poderia recomendar algumas boas trilhas na área?
+μπορείτε να μου προτείνετε κάποιες καλές διαδρομές στην περιοχή;
+
+ouvi dizer que há uma bela trilha perto do lago
+άκουσα ότι υπάρχει μια ωραία διαδρομή κοντά στη λίμνη
+
+estamos procurando uma trilha curta aqui perto
+θα θέλαμε να πάμε για ένα σύντομο περίπατο εδώ γύρω
+
+posso alugar calçados para caminhada?
+μπορώ να νοικιάσω παπούτσια πεζοπορίας;
+
+quanto tempo dura a caminhada?
+πόση ώρα διαρκεί η πεζοπορία;
+
+é muito íngreme?
+είναι πολύ απότομα;
+
+onde começa a trilha?
+πού είναι η αρχή του μονοπατιού;
+
+a trilha é demarcada?
+υπάρχει σήμανση στο μονοπάτι;
+
+é uma trilha circular?
+είναι ένα κυκλικό μονοπάτι;
+
+duração média (da caminhada)
+μέσης διάρκειας
+
+são mais ou menos umas três horas de caminhada, incluindo as paradas para descanso
+η πεζοπορία διαρκεί τρεις ώρες μαζί με στάσεις
+
+traga uma jaqueta impermeável e calçados para caminhada
+φέρτε αδιάβροχο και παπούτσια πεζοπορίας
+
 78 ESQUIAÇÃO E SNOWBOARDING
+
+eu gostaria de alugar esquis, bastões e botas
+θα ήθελα να νοικιάσω χιονοπέδιλα, μπαστούνια και μπότες
 
 78 OUTROS ESPORTES
 
