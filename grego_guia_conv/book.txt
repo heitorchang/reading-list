@@ -2982,6 +2982,123 @@ o litoral ficou completamente arruinado
 clube local de caminhadas
 οδοιπορικός σύλλογος
 
+basquetebol
+μπάσκετ
+
+bilhar
+μπιλιάρδο
+
+bola
+μπάλα
+
+canoa
+κανό
+
+cartas
+χαρτιά
+
+ciclismo
+ποδηλασία
+
+ciclismo em montanha
+ορειβατική ποδηλασία
+
+equitação
+ιππασία
+
+esporte
+σπορ
+
+esqui
+σκι
+
+esqui alpino
+κατάβαση με σκι
+
+excursão
+εκδρομή
+
+fazer caminhada
+κάνω πεζοπορία
+
+futebol
+ποδόσφαιρο
+
+jogar
+παίζω
+
+jogo de tabuleiro
+επιτραπέζιο παιχνίδι
+
+jogo, partida
+αγώνας, ματς
+
+mergulho
+κατάδυση
+
+natação
+κολύμβηση
+
+pebolim
+ποδοσφαιράκια
+
+pedalinho
+ποδήλατο θαλάσσης
+
+pesca
+ψάρεμα
+
+piscina
+πισίνα
+
+rúgbi
+ράγκμπυ
+
+snowboarding
+σνόου μπόουρντινγκ
+
+surfe
+κυματοδρομία, σέρφινγκ
+
+tênis
+τένις
+
+ter um jogo de ...
+παίζουμε ένα παιχνίδι ...
+
+trilha de caminhada
+μονοπάτι
+
+velejo
+ιστιοπλοία
+
+vôlei
+βόλλεϋ, βόλεϊ
+
+xadrez
+σκάκι
+
+eu gostaria de alugar ... por uma hora
+θα ήθελα να νοικιάσω ... για μία ώρα
+
+tem aulas de ...?
+μπορούμε να κάνουμε μαθήματα ...;
+
+qual o valor da hora por pessoa?
+πόσο κοστίζει η ώρα κατ'άτομο;
+
+não sou muito de esportes
+δεν είμαι αθλητικός τύπος
+
+nunca fiz isto antes
+δεν έχω ξανακάνει
+
+fiz isto uma ou duas vezes, há muito tempo
+το έχω ξανακάνει μία δύο φορές, πριν από πολύ καιρό
+
+estou exausto!
+είμαι πτώμα!
+
 
 76 CAMINHADAS
 
