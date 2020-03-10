@@ -3169,17 +3169,342 @@ traga uma jaqueta impermeável e calçados para caminhada
 eu gostaria de alugar esquis, bastões e botas
 θα ήθελα να νοικιάσω χιονοπέδιλα, μπαστούνια και μπότες
 
+eu gostaria de alugar um snowboard
+θα ήθελα να νοικιάσω ένα σνόουμπόρντ/μία χιονοσανίδα
+
+estão muito grandes/pequenos
+είναι πολύ μεγάλα/μικρά
+
+um passe de um dia
+ένα εισιτήριο για μία μέρα
+
+sou principiante
+είμαι τελείως αρχάριος
+
+teleférico de cadeira
+εναέριο κάθισμα
+
+passagem de teleférico
+λιφτ πας
+
+teleférico
+χιονοδρομικός αναβατήρας/τελεφερίκ
+
 78 OUTROS ESPORTES
+
+onde podemos alugar bicicletas?
+πού μπορούμε να νοικιάσουμε ποδήλατα;
+
+há ciclovias?
+υπάρχουν ποδηλατόδρομοι;
+
+alguém tem uma bola de futebol?
+έχει κανείς μία μπάλα ποδοσφαίρου;
+
+para que time você torce?
+ποιά είναι η ομάδα σου;
+
+eu torço para ...
+υποστηρίζω ...
+
+há alguma piscina descoberta?
+υπάρχει κάποια υπαίθρια πισίνα;
+
+nunca mergulhei antes
+δεν έχω ξανακάνει καταδύσεις
+
+eu gostaria de fazer aulas de velejo para iniciantes
+θα ήθελα να κάνω μαθήματα ιστιοπλοίας για αρχάριους
+
+eu corro meia hora toda manhã
+τρέχω μισή ώρα κάθε πρωί
+
+o que devo fazer se o caiaque virar?
+τι κάνω αν αναποδογυρίσει το καγιάκ;
+
+há uma quadra pública de tênis não muito longe da estação
+υπάρχει ένα δημόσιο γήπεδο του τένις κοντά στο σταθμό
+
+a quadra de tênis está ocupada
+το γήπεδο του τένις είναι κατειλημμένο
+
+é a primeira vez que anda a cavalo?
+είναι η πρώτη φορά που κάνετε ιππασία;
+
+o senhor sabe nadar?
+ξέρετε κολύμπι;
+
+o senhor joga basquetebol?
+παίζετε μπάσκετ;
 
 80 JOGOS EM AMBIENTES FECHADOS
 
+vamos jogar cartas?
+παίζουμε χαρτιά;
+
+alguém conhece um bom jogo de cartas?
+μήπως ξέρει κανείς ένα καλό παιχνίδι με χαρτιά;
+
+alguém está com vontade de jogar Monopólio?
+θέλει κανείς να παίξει Μονόπολυ;
+
+é a sua vez
+είναι η σειρά σου
+
+o senhor sabe jogar xadrez?
+ξέρετε να παίζετε σκάκι;
+
+o senhor tem um maço de cartas?
+έχετε μια τράπουλα;
+
+estou acabado
+είμαι ψόφιος
+
+ele acabou comigo/me derrotou
+με ξετίναξε
+
 81 COMPRAS
+
+açougue
+κρεοπωλείο
+
+barato
+φτηνό
+
+caixa
+ταμείο
+
+caro
+ακριβό
+
+comprar
+αγοράζω
+
+custar
+κοστίζω
+
+grama
+γραμμάριο
+
+liquidação
+εκπτώσεις
+
+loja
+μαγαζί
+
+loja de departamentos
+πολυκατάστημα
+
+mercearia
+μανάβικο
+
+padaria
+φούρνος
+
+pagar
+πληρώνω
+
+preço
+τιμή
+
+presente
+δώρο
+
+quilo
+κιλό
+
+recibo, nota fiscal
+απόδειξη
+
+reembolso
+επιστροφή χρημάτων
+
+roupas
+ρούχα
+
+shopping center
+εμπορικό κέντρο
+
+souvenir
+σουβενίρ
+
+supermercado
+σούπερ-μάρκετ
+
+vendedor
+πωλητής
+
+vender
+πουλώ
+
+há algum supermercado aqui perto?
+υπάρχει σούπερ-μάρκετ εδώ κοντά;
+
+onde posso comprar cigarros?
+πού μπορώ ν'αγοράσω τσιγάρα;
+
+eu gostaria ...
+θα ήθελα ...
+
+estou procurando ...
+ψάχνω για ...
+
+vocês vendem ...?
+πουλάτε ...;
+
+o senhor sabe onde eu poderia encontrar ...?
+ξέρετε πού μπορώ να βρω ...;
+
+o senhor pode encomendar isto para mim?
+μπορείτε να μου το παραγγείλετε;
+
+quanto custa isto?
+πόσο κάνει;
+
+vou levar
+θα το πάρω
+
+não tenho muito dinheiro
+δεν έχω πολλά χρήματα
+
+não tenho dinheiro suficiente
+δεν έχω αρκετά χρήματα
+
+é só isso, obrigado
+τίποτ'άλλο, ευχαριστώ
+
+pode me dar uma sacola (plástica)?
+μπορώ να έχω μία (πλαστική) τσάντα;
+
+acho que o senhor me deu o troco errado
+νομίζω ότι κάνατε λάθος τα ρέστα μου
+
+fechado aos domingos/da 1h às 3h da tarde
+κλειστό την Κυριακή/από τις μια μ.μ. μέχρι τις τρεις μ.μ.
+
+aberto das ... às ...
+ανοιχτό από τις ... μέχρι τις ...
+
+oferta especial
+ειδική προσφορά
+
+liquidação
+εκπτώσεις
+
+é só isso?
+τίποτ'άλλο;
+
+quer uma sacola?
+θα θέλατε μια σακούλα;
 
 83 PAGANDO
 
+onde pago?
+πού μπορώ να πληρώσω;
+
+quanto lhe devo?
+τι σας οφείλω;
+
+poderia anotar para mim, por favor?
+μπορείτε να μου το γράψετε σ'ένα χαρτί, παρακαλώ;
+
+posso pagar com cartão de crédito?
+μπορώ να πληρώσω με πιστωτική κάρτα;
+
+vou pagar em dinheiro
+θα πληρώσω μετρητοίς
+
+desculpe, não tenho trocado
+λυπάμαι, δεν έχω ψιλά
+
+pode me dar uma nota fiscal?
+μπορώ να έχω την απόδειξη;
+
+pagar no caixa
+πληρώστε στο ταμείο
+
+como gostaria de pagar?
+πώς θέλετε να πληρώσετε;
+
+o senhor teria mais trocado?
+δεν έχετε καθόλου ψιλά;
+
+o senhor tem alguma identidade?
+έχετε ταυτότητα;
+
+poderia assinar aqui, por favor?
+μπορείτε να υπογράψετε εδώ, παρακαλώ;
+
 84 COMIDA
 
+onde posso comprar comida aqui na redondeza?
+πού μπορώ ν'αγοράσω φαγητό εδώ κοντά;
+
+há algum mercado?
+υπάρχει αγορά;
+
+há alguma padaria aqui perto?
+υπάρχει φούρνος εδώ κοντά;
+
+estou procurando o corredor dos cereais
+ψάχνω για τα δημητριακά
+
+eu gostaria de cinco fatias de presunto
+θα ήθελα πέντε φέτες ζαμπόν
+
+eu gostaria de um pedaço desse queijo de cabra
+θα ήθελα λίγο από αυτό το κατσικίσιο τυρί
+
+é para quatro pessoas
+είναι για τέσσερα άτομα
+
+mais ou menos 300 gramas
+τριακόσια γραμμάρια περίπου
+
+um quilo de maçãs, por favor
+ένα κιλό μήλα, παρακαλώ
+
+um pouquinho menos/mais
+λίγο λιγότερο/περισσότερο
+
+posso experimentar?
+μπορώ να το δοκιμάσω;
+
+é fácil de transportar?
+μεταφέρεται εύκολα;
+
+válido até ...
+ανάλωση πριν από ...
+
+delicatessen, comidas finas
+ντελικατέσεν
+
+caseiro
+σπιτικό
+
+especialidades locais
+τοπικές σπεσιαλιτέ
+
+orgânico
+βιολογικό
+
+há um mercado aberto todos os dias até a 1h da tarde
+υπάρχει αγορά κάθε μέρα μέχρι τη μία το μεσημέρι
+
+há uma mercearia virando a esquina, que fica aberta até tarde
+υπάρχει μανάβικο στην γωνία, ανοιχτό ως αργά
+
 85 ROUPAS
+
+estou procurando a seção de roupas masculinas
+ψάχνω για τα ανδρικά
+
+não, obrigado, só estou dando uma olhadinha
+όχι ευχαριστώ, απλώς κοιτάζω
+
+posso experimentar?
+μπορώ να το δοκιμάσω;
+
 
 87 SOUVENIRS E PRESENTES
 
