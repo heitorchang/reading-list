@@ -4172,6 +4172,64 @@ preços reduzidos
 
 89 FOTOGRAFIAS
 
+brilhante
+γυαλιστερό
+
+cabine fotográfica
+φωτογραφικός θάλαμος
+
+câmera descartável
+φωτογραφική μηχανή μίας χρήσης
+
+câmera digital
+ψηφιακή φωτογραφική μηχανή
+
+cartão de memória
+κάρτα μνήμης
+
+cópia
+αντίγραφο
+
+cor
+χρώμα
+
+exposição
+έκθεση
+
+filme
+φιλμ
+
+flash
+φλας
+
+fosco
+ματ
+
+foto de passaporte
+φωτογραφία διαβατηρίου
+
+máquina fotográfica
+φωτογραφική μηχανή
+
+negativo
+αρνητικό
+
+preto e branco
+ασπρόμαυρος
+
+reimpressão
+επανεκτύπωση
+
+revelar fotos
+εμφανίζω τις φωτογραφίες
+
+slide
+σλάιντ, διαφάνεια
+
+tirar uma foto/fotos
+βγάζω φωτογραφία/φωτογραφίες
+
+
 92 BANCOS
 
 94 AGÊNCIAS DE CORREIO
