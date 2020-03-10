@@ -4229,14 +4229,180 @@ slide
 tirar uma foto/fotos
 βγάζω φωτογραφία/φωτογραφίες
 
+poderia tirar uma foto de nós, por favor?
+μπορείτε να μας βγάλετε μια φωτογραφία, παρακαλώ;
+
+é só apertar este botão
+απλώς πατήστε αυτό το κουμπί
+
+eu gostaria de um filme em cores de ASA 200
+θα ήθελα ένα έγχρωμο φιλμ διακοσίων ΑΣΑ
+
+o senhor tem filmes em preto e branco?
+έχετε ασπρόμαυρα φιλμς;
+
+quanto custa para revelar um filme de 36 poses?
+πόσο κοστίζει η εμφάνιση ενός τριανταεξάρι φιλμ;
+
+eu gostaria de revelar este filme
+θα ήθελα να εμφανίσω αυτό το φιλμ
+
+eu gostaria de uma cópia extra de algumas fotos
+θα ήθελα μερικά αντίγραφα από μερικές φωτογραφίες
+
+três cópias dessa e duas dessa
+τρία αντίγραφα από αυτή και άλλα δύο από αυτή
+
+posso imprimir minhas fotos digitais aqui?
+μπορώ να τυπώσω τις ψηφιακές μου φωτογραφίες εδώ;
+
+o senhor poderia gravar estas fotos num CD para mim?
+μπορείτε να βάλετε αυτές τις φωτογραφίες σε ένα σιντί για μένα;
+
+vim buscar minhas fotos
+ήρθα να πάρω τις φωτογραφίες μου
+
+estou com um problema na minha câmera
+έχω ένα πρόβλημα με την φωτογραφική μου μηχανή
+
+não sei o que é
+δεν ξέρω τι είναι
+
+o flash não funciona
+δεν δουλεύει το φλας
+
+revelação de fotos em uma hora
+εμφάνιση σε μία ώρα
+
+formato-padrão
+κανονικό μέγεθος
+
+serviço rápido
+ταχεία εξυπηρέτηση
+
+fotos em CD
+φωτογραφίες σε σιντί
+
+talvez a bateria tenha acabado
+ίσως να τελείωσε η μπαταρία
+
+temos uma máquina para impressão de fotos digitais
+έχουμε ένα μηχάνημα για την εκτύπωση ψηφιακών φωτογραφιών
+
+qual o nome, por favor?
+σε ποιό όνομα, παρακαλώ;
+
+para quando as quer?
+πότε τις θέλετε έτοιμες;
+
+podemos revelá-las em uma hora
+μπορούμε να τις εμφανίσουμε σε μία ώρα
+
+suas fotos ficarão prontas na quinta-feira à tarde
+οι φωτογραφίες σας θα είναι έτοιμες την Πέμπτη το μεσημέρι
 
 92 BANCOS
 
+banco
+τράπεζα
+
+caixa eletrônico
+μηχάνημα ανάληψης
+
+cartão de crédito
+πιστωτική κάρτα
+
+casa de câmbio
+ανταλλακτήριο συναλλάγματος
+
+cheque
+επιταγή, τσεκ
+
+conta bancária
+λογαριασμός τραπέζης
+
+moeda
+κέρμα
+
+nota (de dinheiro), cédula
+χαρτονόμισμα
+
+sacar
+κάνω ανάληψη, σηκώνω χρήματα
+
+saque
+ανάληψη
+
+senha
+πιν, προσωπικός αριθμός
+
+taxa de comissão
+προμήθεια
+
+transferir
+μεταβίβαση
+
+traveler's checks
+ταξιδιωτικές επιταγές
+
+trocar
+αλλάζω
+
+onde posso trocar dinheiro?
+πού μπορώ ν'αλλάξω χρήματα;
+
+os bancos ficam abertos aos sábados?
+είναι οι τράπεζες ανοιχτές το Σάββατο;
+
+estou procurando um caixa eletrônico
+ψάχνω για ένα μηχάνημα ανάληψης
+
+eu gostaria de trocar 100 dólares
+θα ήθελα ν'αλλάξω εκατό δολάρια
+
+qual é a taxa de comissão que vocês cobram?
+πόση προμήθεια χρεώνετε;
+
+eu gostaria de transferir dinheiro
+θα ήθελα να μεταφέρω μερικά χρήματα
+
+eu gostaria de informar a perda do meu cartão de crédito
+θα ήθελα να δηλώσω την απώλεια της πιστωτικής μου κάρτας
+
+o caixa eletrônico engoliu o meu cartão
+το μηχάνημα κράτησε την κάρτα μου
+
+por favor, insira seu cartão
+παρακαλώ εισάγετε την κάρτα σας
+
+por favor, coloque sua senha
+παρακαλώ πληκτρολογήστε τον προσωπικό σας αριθμό
+
+por favor, selecione o valor para o saque
+παρακαλώ επιλέξτε το ποσό ανάληψης
+
+saque com recibo
+ανάληψη/συναλλαγή με απόδειξη
+
+saque sem recibo
+ανάληψη/συναλλαγή χωρίς απόδειξη
+
+por favor, selecione o valor desejado
+παρακαλώ επιλέξτε το ποσό που επιθυμείτε
+
+em manutenção (máquina fora de funcionamento)
+εκτός λειτουργείας
+
 94 AGÊNCIAS DE CORREIO
+
+#########
 
 96 CYBERCAFÉS E E-MAIL
 
 98 TELEFONE
+
+Organização Grega de Telecomunicações
+ΟΤΕ (Οργανισμός Τηλεπικοινωνιών Ελλάδος)
 
 100 FAZENDO UMA LIGAÇÃO
 
@@ -4244,11 +4410,23 @@ tirar uma foto/fotos
 
 103 SAÚDE
 
+hospitais de plantão
+εφημερία
+
+seção de pacientes estrangeiros (no hospital)
+εξωτερικά ιατρεία
+
+centro de atendimento básico
+κέντρο υγείας
+
 105 NO MÉDICO OU NO HOSPITAL
 
 108 NA FARMÁCIA
 
 110 PROBLEMAS E EMERGÊNCIAS
+
+polícia grega
+ΕΛΛΗΝΙΚΗ ΑΣΤΥΝΟΜΙΑ
 
 113 POLÍCIA
 
