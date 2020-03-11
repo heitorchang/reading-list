@@ -5420,6 +5420,108 @@ novembro
 dezembro
 Δεκέμβριος
 
+à noite
+το βράδυ
+
+agora
+τώρα
+
+ainda
+ακόμα
+
+ainda não
+όχι ακόμα
+
+ano
+χρόνος
+
+antes
+πριν
+
+após
+μετά
+
+às vezes
+μερικές φορές
+
+até
+έως, ως, μέχρι
+
+cedo
+νωρίς
+
+de ... a ...
+από ... έως ...
+
+de tempos em tempos
+που και που
+
+desde
+από το
+
+dia
+μέρα
+
+durante
+κατά την διάρκεια
+
+em meados de
+στην μέση του
+
+em um instante
+σε λίγο
+
+entre ... e ...
+μεταξύ ... και ...
+
+fim de semana
+Σαββατοκύριακο
+
+frequentemente
+συχνά
+
+imediatamente
+αμέσως
+
+já
+ήδη
+
+logo
+σύντομα
+
+manhã
+πρωί
+
+meia-noite
+μεσάνυχτα
+
+meio-dia
+μεσημέρι
+
+mês
+μήνας
+
+na hora do almoço
+το μεσημέρι
+
+no começo/fim de
+στην αρχή/στο τέλος του
+
+no momento
+τη στιγμή που
+
+noite
+νύχτα
+
+nunca
+ποτέ
+
+por muito tempo
+για πολύ καιρό
+
+próximo
+επόμενος
+
 
 117 A DATA
 
