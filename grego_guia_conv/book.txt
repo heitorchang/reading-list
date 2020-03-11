@@ -4395,14 +4395,273 @@ em manutenção (máquina fora de funcionamento)
 
 94 AGÊNCIAS DE CORREIO
 
-#########
+agência de correio
+ταχυδρομείο
+
+caixa de correio
+γραμματοκιβώτιο
+
+carta
+γράμμα
+
+cartão-postal
+κάρτα
+
+código de endereçamento postal
+ταχυδρομικός κώδικας
+
+correio
+ταχυδρομείο
+
+correio aéreo
+αεροπορικώς
+
+correspondência
+αλληλογραφία
+
+envelope
+φάκελος
+
+enviar
+στέλνω
+
+escrever
+γράφω
+
+pacote
+δέμα
+
+postar, pôr no correio
+ταχυδρομώ
+
+selo
+γραμματόσημο
+
+há alguma agência de correio aqui perto?
+υπάρχει ταχυδρομείο εδώ κοντά;
+
+há alguma caixa de correio aqui perto?
+υπάρχει γραμματοκιβώτιο εδώ κοντά;
+
+a agência de correio abre aos sábados?
+είναι το ταχυδρομείο ανοιχτό το Σάββατο;
+
+a que horas fecha a agência de correio?
+τι ώρα κλείνει το ταχυδρομείο;
+
+o senhor vende selos?
+πουλάτε γραμματόσημα;
+
+eu queria ... selos para o Brasil, por favor
+θα ήθελα ... γραμματόσημα για την Βραζιλία, παρακαλώ
+
+quanto tempo vai demorar para chegar?
+σε πόσες μέρες θα φτάσει;
+
+onde posso comprar envelopes?
+από πού μπορώ ν'αγοράσω φακέλους;
+
+há correspondência para mim?
+έχω κανένα γράμμα;
+
+frágil
+εύθραυστο
+
+destinatário
+παραλήπτης
+
+remetente
+αποστολέας
+
+vai levar entre três e cinco dias
+θα πάρει τρεις με πέντε μέρες
 
 96 CYBERCAFÉS E E-MAIL
+
+arroba
+παπάκι
+
+colar
+επικολώ
+
+copiar
+αντιγράφω
+
+cortar
+απαλοίφω
+
+cybercafé
+ίντερνετ καφέ
+
+deletar
+διαγράφω
+
+e-mail
+ιμέιλ, ηλεκτρονικό ταχυδρομείο
+
+endereço eletrônico
+ηλεκτρονική διεύθυνση
+
+enviar e-mail a alguém
+στέλνω ιμέιλ σε κάποιον
+
+enviar um e-mail
+στέλνω ένα ιμέιλ
+
+fazer download
+κατεβάζω αρχεία
+
+receber
+δέχομαι
+
+salvar
+αποθηκεύω
+
+tecla
+πλήκτρο
+
+teclado
+πληκτρολόγιο
+
+há algum cybercafé aqui perto?
+υπάρχει κάποιο ίντερνετ καφέ εδώ κοντά;
+
+o senhor tem e-mail?
+έχετε ιμέιλ;
+
+como me conecto?
+πώς μπορώ να συνδεθώ;
+
+eu só queria ver meus e-mails
+θα ήθελα απλώς να δω τα ιμέιλς μου
+
+o senhor poderia me ajudar, não sei direito o que fazer
+θα μπορούσατε να με βοηθήσετε, δεν είμαι σίγουρος τι πρέπει να κάνω
+
+não consigo achar o arroba neste teclado
+δεν μπορώ να βρω το παπάκι στο πληκτρολόγιο
+
+não está funcionando
+δεν δουλεύει
+
+há algo errado com meu computador, está travado
+κάτι δεν πάει καλά με το κομπιούτερ, έχει κολλήσει
+
+quanto custa por meia hora?
+πόσο θα κοστίσει για μισή ώρα;
+
+quando pago?
+πότε πρέπει να πληρώσω;
+
+caixa de entrada
+εισερχόμενα
+
+caixa de saída
+εξερχόμενα
+
+o senhor terá de esperar por mais ou menos uns 20 minutos
+θα πρέπει να περιμένετε είκοσι λεπτά ή και περισσότερο
+
+é só perguntar caso não saiba direito o que fazer
+μπορείτε να ρωτήσετε αν δεν είστε σίγουρος τι να κάνετε
+
+é só colocar esta senha para fazer o log on
+εισάγετε αυτό τον κωδικό για να συνδεθείτε
 
 98 TELEFONE
 
 Organização Grega de Telecomunicações
 ΟΤΕ (Οργανισμός Τηλεπικοινωνιών Ελλάδος)
+
+alô (para a pessoa que está ligando)
+γεια σας
+
+alô (para a pessoa que está recebendo a ligação)
+παρακαλώ, λέγετε
+
+cabine telefônica
+τηλεφωνικός θάλαμος
+
+cartão de telefone
+τηλεκάρτα
+
+cartões para telefones celulares
+κάρτα χρονοχρέωσης
+
+chamada internacional
+διεθνές τηλεφώνημα
+
+chamada local
+τοπικό τηλεφώνημα
+
+chamada nacional
+υπεραστικό τηλεφώνημα
+
+ligar para alguém
+τηλεφωνώ σε κάποιον
+
+lista telefônica
+τηλεφωνικός κατάλογος
+
+mensagem
+μήνυμα
+
+número de telefone
+αριθμός τηλεφώνου
+
+secretária eletrônica
+τηλεφωνητής
+
+serviço de informações
+πληροφορίες καταλόγου
+
+telefonar
+τηλεφωνώ
+
+telefone
+τηλέφωνο
+
+telefone celular
+κινητό
+
+telefonema
+τηλεφώνημα
+
+toque do telefone
+ήχος τηλεφώνου
+
+onde posso comprar um cartão de telefone?
+από πού μπορώ ν'αγοράσω μία τηλεκάρτα;
+
+um cartão de ... euros para celular, por favor
+μια κάρτα χρονοχρέωσης των ... ευρώ, παρακαλώ
+
+eu gostaria de fazer uma chamada a cobrar
+θα ήθελα να κάνω ένα τηλεφώνημα με χρέωση του καλούμενου
+
+há alguma cabine telefônica aqui perto, por favor?
+υπάρχει τηλεφωνικός θάλαμος εδώ κοντά, παρακαλώ;
+
+posso pôr meu telefone para carregar aqui?
+μπορώ να φορτίσω το τηλέφωνό μου εδώ;
+
+você tem um número de celular?
+έχεις κινητό;
+
+onde posso ligar para você?
+πού μπορώ να σε βρω;
+
+você recebeu minha mensagem?
+πήρες το μήνυμά μου;
+
+o número chamado não existe
+ο αριθμός που καλέσατε δεν αντιστοιχεί σε συνδρομητή
+
+por favor, digite a tecla com o símbolo #
+παρακαλώ πατήστε την δίεση
+
+aceita moedas de ... euros
+δέχεται κέρματα των ... ευρώ
 
 100 FAZENDO UMA LIGAÇÃO
 
@@ -4438,7 +4697,7 @@ polícia grega
 
 122 NÚMEROS
 
-32.13 euros
+trinta e dois euros e treze centavos (32.13 euros)
 τριανταδύο κόμμα δεκατρία ευρώ/τριανταδύο ευρώ και δεκατρία λεπτά
 
 vinte mais três é igual a 23
