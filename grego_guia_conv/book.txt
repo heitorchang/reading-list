@@ -4675,7 +4675,7 @@ alô, é a Maria?
 γεια σας, είστε η Μαρία;
 
 o senhor fala inglês?
-μιλάτε Αγγλικά;
+μιλάτε αγγλικά;
 
 poderia falar mais devagar, por favor?
 μπορείτε να μιλήσετε πιο αργά, παρακαλώ;
@@ -5133,6 +5133,108 @@ desmaiar
 
 polícia grega
 ΕΛΛΗΝΙΚΗ ΑΣΤΥΝΟΜΙΑ
+
+acidente
+ατύχημα
+
+ambulância
+ασθενοφόρο
+
+bombeiros
+πυροσβεστική
+
+deficiente
+ανάπηρος
+
+doente
+άρρωστος
+
+emergência
+επείγον
+
+ferido
+τραυματίας
+
+fogo
+φωτιά
+
+guarda costeira
+ακτοφυλακή
+
+hospital
+νοσοκομείο
+
+médico
+γιατρός
+
+morto
+αργά
+
+multa
+πρόστιμο
+
+polícia
+αστυνομία
+
+policial
+αστυνομικός
+
+policial de trânsito
+τροχονόμος
+
+quebrado
+σπασμένο
+
+o senhor pode me ajudar?
+μπορείτε να με βοηθήσετε;
+
+socorro!
+βοήθεια!
+
+fogo!
+φωτιά!
+
+cuidado!
+πρόσεξε!
+
+é uma emergência!
+είναι επείγον!
+
+ocorreu um acidente
+έγινε ένα ατύχημα
+
+poderia me emprestar seu telefone, por favor?
+θα μπορούσα να δανειστώ το τηλέφωνό σας, παρακαλώ;
+
+alguém aqui fala inglês?
+υπάρχει κανείς εδώ που να μιλάει αγγλικά;
+
+preciso entrar em contato com a embaixada do Brasil
+πρέπει να επικοινωνήσω με τη Βραζιλιανή πρεσβεία
+
+onde fica a delegacia de polícia mais próxima?
+πού είναι το κοντινότερο αστυνομικό τμήμα;
+
+o que tenho de fazer?
+τι πρέπει να κάνω;
+
+meu passaporte/cartão de crédito foi roubado
+μου έκλεψαν το διαβατήριό μου/την πιστωτική μου κάρτα
+
+minha bolsa foi roubada
+μου άρπαξαν την τσάντα μου
+
+perdi ...
+έχασα ...
+
+fui atacado
+μου επιτέθηκαν
+
+meu filho/minha filha desapareceu
+έχασα το γιό μου/την κόρη μου
+
+meu carro foi guinchado
+πήρε το αυτοκίνητό μου ο γερανός της Τροχαίας
 
 113 POLÍCIA
 
