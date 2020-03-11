@@ -5522,10 +5522,214 @@ por muito tempo
 próximo
 επόμενος
 
+raramente
+σπάνια
+
+recentemente
+πρόσφατα
+
+semana
+εβδομάδα
+
+sempre
+πάντα
+
+tarde (adj)
+αργά, καθυστερημένα
+
+tarde (subst)
+απόγευμα
+
+tardinha, noite
+βράδυ
+
+último
+τελευταίος
+
+até logo!
+στο επανιδείν!
+
+até mais tarde!
+τα λέμε αργότερα!
+
+até segunda-feira!
+τη Δευτέρα λοιπόν!
+
+bom fim de semana!
+καλό Σαββατοκύριακο!
+
+desculpe, estou atrasado
+λυπάμαι που άργησα
+
+ainda não estive lá
+δεν έχω πάει ακόμα εκεί
+
+não tive tempo para ...
+δεν είχα χρόνο να ...
+
+estou com bastante tempo
+έχω πολύ χρόνο
+
+estou com pressa
+βιάζομαι
+
+rápido!
+βιάσου!
+
+só um minuto, por favor
+ένα λεπτό, παρακαλώ
+
+tive uma longa noite
+ξενύχτησα
+
+acordei cedo
+σηκώθηκα πολύ νωρίς
+
+esperei séculos
+περίμενα πολύ
+
+tenho de acordar muito cedo amanhã para pegar o meu voo
+πρέπει να σηκωθώ πολύ πρωί αύριο για να προλάβω το αεροπλάνο μου
+
+só temos mais quatro dias
+μας μένουν μόνο τέσσερεις μέρες
 
 117 A DATA
 
+dois de janeiro de 2007
+στις δύο Ιανουαρίου του δύο χιλιάδες επτά
+
+em junho de 2007
+τον Ιούνιο του δύο χιλιάδες επτά
+
+de 2006 a 2007
+από το δύο χιλιάδες έξι ως το δύο χιλιάδες επτά
+
+entre 2006 e 2007
+ανάμεσα στο δύο χιλιάδες έξι και το δύο χιλιάδες επτά
+
+no século I a.C.
+τον πρώτο αιώνα προ Χριστού (π.Χ.)
+
+no século III d.C.
+τον τρίτο αιώνα μετά Χριστόν (μ.Χ.)
+
+arte do século XIX
+η τέχνη του δεκάτου ενάτου (19ου) αιώνα
+
+no início/em meados/no final do século XXI
+στις αρχές/στα μέσα/στα τέλη του εικοστού πρώτου αιώνα
+
+amanhã
+αύριο
+
+amanhã de manhã/à tarde/à noite
+αύριο το πρωί/το απόγευμα/το βράδυ
+
+anteontem
+προχθές
+
+dentro de dois dias
+σε δύο μέρες
+
+depois de amanhã
+μεθαύριο
+
+em meados de
+στα μέσα του
+
+há ...
+πριν ...
+
+hoje
+σήμερα
+
+na noite passada
+χθες βράδυ
+
+no início/final de
+στις αρχές/στα τέλη του
+
+ontem 
+χθες
+
+ontem de manhã/de tarde/de noite
+χθες το πρωί/το απόγευμα/το βράδυ
+
+nasci em 1975
+γεννήθηκα το χίλια εννιακόσια εβδομήντα πέντε
+
+eu vim aqui há alguns anos
+ήρθα εδώ πριν μερικά χρόνια
+
+passei um mês na França no último verão
+πέρασα ένα μήνα στην Γαλλία πέρσι το καλοκαίρι
+
+estive aqui no ano passado nessa mesma época
+ήμουν εδώ πέρσι αυτόν τον καιρό
+
+qual é a data de hoje?
+πόσο έχει ο μήνας σήμερα;
+
+que dia é hoje?
+τι μέρα έχουμε σήμερα;
+
+é primeiro de abril
+είναι πρώτη Απριλίου
+
+vou ficar até domingo
+θα μείνω μέχρι την Κυριακή
+
+vamos embora amanhã
+φεύγουμε αύριο
+
+já tenho planos para terça-feira
+έχω ήδη κάτι κανονίσει για την Τρίτη
+
+uma vez/duas vezes
+μία φορά/δύο φορές
+
+três vezes por hora/por dia
+τρεις φορές την ώρα/την μέρα
+
+todo dia
+κάθε μέρα
+
+toda segunda-feira
+κάθε Δευτέρα
+
+foi construído em meados do século XIX
+χτίσθηκε στα μέσα του δεκάτου ενάτου αιώνα
+
+aqui fica muito cheio no verão
+έχει πολύ κίνηση εδώ το καλοκαίρι
+
+quando o senhor vai embora?
+πότε φεύγετε;
+
+quanto tempo o senhor vai ficar?
+πόσο καιρό θα μείνετε;
+
+às 2h em ponto
+στις δύο ακριβώς
+
+acabou de dar 8h
+είναι περασμένες οχτώ
+
 119 A HORA
+
+são 4h da manhã
+είναι τέσσερις η ώρα
+
+às 4h da tarde
+στις τέσσερις το απόγευμα
+
+antes de meio-dia
+π.μ. (προ μεσημβρίας)
+
+depois de meio-dia
+μ.μ. (μετά μεσημβρίαν)
+
 
 183 FERIADOS E FESTAS
 
