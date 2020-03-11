@@ -68,12 +68,12 @@ WMF Martins Fontes, 2012
 115 HORA E DATA
 117 A DATA
 119 A HORA
+183 FERIADOS E FESTAS
+187 PESOS E MEDIDAS
 122 NÚMEROS
 176 GRAMÁTICA
-183 FERIADOS E FESTAS
 185 ENDEREÇOS ÚTEIS
 186 INFORMAÇÕES TELEFÔNICAS
-187 PESOS E MEDIDAS
 
 7 CONVERSA DO DIA A DIA
 
@@ -4950,7 +4950,65 @@ polícia grega
 
 119 A HORA
 
-122 NÚMEROS
+183 FERIADOS E FESTAS
+
+Ano Novo
+Πρωτοχρονιά
+
+Epifania (6 de janeiro)
+Θεοφάνεια
+
+início da Quaresma (celebrado numa segunda-feira)
+Καθαρά Δευτέρα
+
+25 de março (Anunciação)
+Του Ευαγγελισμού
+
+segunda-feira de Páscoa
+Δευτέρα του Πάσχα
+
+Dia do Trabalho (1 de maio)
+Πρωτομαγιά
+
+Pentecostes (50 dias depois de Páscoa)
+Πεντηκοστή/του Αγίου Πνεύματος
+
+Assunção (15 de agosto)
+Δεκαπενταύγουστος
+
+Dia do Oxi (28 de outubro)
+Επέτειος του Όχι
+
+Natal
+Χριστούγεννα
+
+segundo feriado de Natal
+Δεύτερη μέρα Χριστουγέννων
+
+187 PESOS E MEDIDAS
+
+centímetro
+εκατοστό
+
+metro
+μέτρο
+
+quilômetro
+χιλιόμετρο
+
+grama
+γραμμάριο
+
+quilo
+κιλό
+
+litro
+λίτρο
+
+grau Celsius
+βαθμός Κελσίου
+
+122 QUANTIAS
 
 trinta e dois euros e treze centavos (32.13 euros)
 τριανταδύο κόμμα δεκατρία ευρώ/τριανταδύο ευρώ και δεκατρία λεπτά
@@ -4966,6 +5024,8 @@ vinte multiplicado por quatro é igual a 80
 
 20 dividido por quatro é igual a 5
 είκοσι διά τέσσερα ίσον πέντε
+
+122 NÚMEROS
 
 0 μηδέν
 1 ένα/ένας/μία/ένα
@@ -5211,41 +5271,6 @@ ter
 eu não jogo cartas
 δεν παίζω χαρτιά
 
-183 FERIADOS E FESTAS
-
-Ano Novo
-Πρωτοχρονιά
-
-Epifania (6 de janeiro)
-Θεοφάνεια
-
-início da Quaresma (celebrado numa segunda-feira)
-Καθαρά Δευτέρα
-
-25 de março (Anunciação)
-Του Ευαγγελισμού
-
-segunda-feira de Páscoa
-Δευτέρα του Πάσχα
-
-Dia do Trabalho (1 de maio)
-Πρωτομαγιά
-
-Pentecostes (50 dias depois de Páscoa)
-Πεντηκοστή/του Αγίου Πνεύματος
-
-Assunção (15 de agosto)
-Δεκαπενταύγουστος
-
-Dia do Oxi (28 de outubro)
-Επέτειος του Όχι
-
-Natal
-Χριστούγεννα
-
-segundo feriado de Natal
-Δεύτερη μέρα Χριστουγέννων
-
 185 ENDEREÇOS ÚTEIS
 
 Embaixada do Brasil
@@ -5287,27 +5312,3 @@ ELPA: 10400
 Express Service: 1154
 InterAmerican: 1168
 Hellas Service: 1057
-
-187 PESOS E MEDIDAS
-
-centímetro
-εκατοστό
-
-metro
-μέτρο
-
-quilômetro
-χιλιόμετρο
-
-grama
-γραμμάριο
-
-quilo
-κιλό
-
-litro
-λίτρο
-
-grau Celsius
-βαθμός Κελσίου
-
