@@ -29,11 +29,11 @@ WMF Martins Fontes, 2012
 48 BARES E CAFÉS
 49 A CONTA
 51 COMIDA E BEBIDA
-52 ορεκτικά, σαλάτες, τυριά APERITIVOS, SALADAS, QUEIJOS
-53 κρεατικά CARNE
-54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
-55 όσπρια, λαδερά LEGUMES E VERDURAS
-56 γλυκά PRODUTOS DE CONFEITARIA E BOLOS
+52 APERITIVOS, SALADAS, QUEIJOS ορεκτικά, σαλάτες, τυριά
+53 CARNE κρεατικά
+54 PEIXES E FRUTOS DO MAR ψαριά και θαλασσινά
+55 LEGUMES E VERDURAS όσπρια, λαδερά
+56 PRODUTOS DE CONFEITARIA E BOLOS γλυκά
 57 GLOSSÁRIO DE COMIDAS E BEBIDAS
 60 PASSEANDO
 61 SUGESTÕES E CONVITES
@@ -2046,7 +2046,7 @@ grelhado
 assado (carne, peixe ou frango)
 ψητό στο φούρνο
 
-52 ορεκτικά, σαλάτες, τυριά APERITIVOS, SALADAS, QUEIJOS
+52 APERITIVOS, SALADAS, QUEIJOS ορεκτικά, σαλάτες, τυριά
 
 camarões cozidos em molho de tomate e cobertos com ovos mexidos
 γαρίδες σαγανάκι
@@ -2138,7 +2138,7 @@ queijo branco picante e salgado, feito com leite de ovelha, uma especialidade da
 queijo feta
 φέτα
 
-53 κρεατικά CARNE
+53 CARNE κρεατικά
 
 carne assada ou cozida
 μαγειρευτά
@@ -2215,7 +2215,7 @@ carne de porco com salsão e alho-poró
 espécie de linguiça picante
 χωριάτικο λουκάνικο
 
-54 ψαριά και θαλασσινά PEIXES E FRUTOS DO MAR
+54 PEIXES E FRUTOS DO MAR ψαριά και θαλασσινά
 
 peixe assado com tomate
 πλακί
@@ -2283,7 +2283,7 @@ sépia
 polvo
 χταπόδι
 
-55 όσπρια, λαδερά LEGUMES E VERDURAS
+55 LEGUMES E VERDURAS όσπρια, λαδερά
 
 sopas de legumes
 όσπρια
@@ -2324,7 +2324,7 @@ sopa de feijão com tomates
 vagens em molho de tomate
 φασολάκια
 
-56 γλυκά PRODUTOS DE CONFEITARIA E BOLOS
+56 PRODUTOS DE CONFEITARIA E BOLOS γλυκά
 
 doceria
 ζαχαροπλαστείο
@@ -4828,8 +4828,112 @@ febre
 gesso
 γύψος
 
+ginecologista
+γυναικολόγος
+
+hospital
+νοσοκομείο
+
+infecção
+μόλυνση
+
+intoxicação alimentar
+τροφική δηλητηρίαση
+
+medicamento
+φάρμακο
+
+médico
+γιατρός
+
+menstruação
+περίοδος
+
+preservativo
+προφυλακτικό
+
+pronto-socorro
+τμήμα εκτάκτων περιστατικών
+
+quebrado
+σπασμένο
+
+queimadura de sol
+έγκαυμα από τον ήλιο
+
+radiografia
+ακτινογραφία
+
+sangue
+αίμα
+
+vacina
+εμβολιασμός
+
+vomitar
+κάνω εμετό
+
+alguém, por acaso, tem uma Aspirina/um absorvente íntimo/um Band-aid?
+μήπως έχει κανείς μία ασπιρίνη/ένα ταμπόν/ένα χανζαπλάστ κατά τύχη;
+
+preciso falar com um médico
+πρέπει να δω ένα γιατρό
+
+onde posso achar um médico?
+πού μπορώ να βρω ένα γιατρό;
+
+eu gostaria de marcar uma consulta para hoje
+θα ήθελα να κλείσω ένα ραντεβού για σήμερα
+
+o mais rápido possível
+το συντομότερο δυνατόν
+
+não, não tem problema
+όχι, δεν πειράζει
+
+poderia mandar uma ambulância para ...
+μπορείτε να στείλετε ένα ασθενοφόρο στο ...
+
+quebrei meus óculos
+έσπασα τα γυαλιά μου
+
+perdi uma lente de contato
+έχασα το φακό επαφής μου
+
+feridos
+επείγοντα
+
+consultório médico
+ιατρείο
+
+receita médica
+συνταγή γιατρού
+
+não há horários para consultas até quinta-feira
+δεν υπάρχουν ελεύθερα ραντεβού μέχρι την Πέμπτη
+
+sexta-feira às 2h da tarde está bom?
+είναι εντάξει την Παρασκευή στις δύο το μεσημέρι;
 
 105 NO MÉDICO OU NO HOSPITAL
+
+tenho uma consulta com o Dr. ...
+έχω ένα ραντεβού με τον/την γιατρό ...
+
+não estou me sentindo muito bem
+δεν αισθάνομαι πολύ καλά
+
+eu me sinto muito fraco
+αισθάνομαι πολύ αδύναμος
+
+não sei o que é 
+δεν ξέρω τι είναι
+
+fui mordido/picado ...
+με τσίμπησε ...
+
+estou com uma dor de cabeça
+έχω πονοκέφαλο
 
 108 NA FARMÁCIA
 
