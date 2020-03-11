@@ -39,6 +39,10 @@ if __name__ == "__main__":
         font-style: normal;
         }
 
+        body {
+        margin: 1.2em;
+        }
+        
         .sp {
         font-size: 0.3em;
         margin: 0.2em;
