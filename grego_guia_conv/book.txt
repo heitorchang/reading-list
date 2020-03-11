@@ -4935,7 +4935,199 @@ fui mordido/picado ...
 estou com uma dor de cabeça
 έχω πονοκέφαλο
 
+estou com dor de dente/dor de estômago
+με πονάει το δόντι μου/το στομάχι μου
+
+peguei uma dor de garganta
+με πονάει ο λαιμός μου
+
+minhas costas estão doendo
+με πονάει η πλάτη μου
+
+dói
+πονάει
+
+dói aqui
+πονάει εδώ
+
+estou me sentindo mal
+νιώθω άρρωστος
+
+piorou
+χειροτέρεψε
+
+há dois dias
+είναι έτσι εδώ και δύο μέρες
+
+começou ontem à noite
+άρχισε χθές το βράδυ
+
+isto nunca me aconteceu antes
+δεν μου έχει ξανασυμβεί
+
+estou com febre
+έχω πυρετό
+
+tenho asma
+έχω άσθμα
+
+tenho um problema cardíaco
+έχω πρόβλημα με την καρδιά μου
+
+estou tomando antibiótico há uma semana, mas não estou melhorando
+παίρνω αντιβιοτικά εδώ και μια εβδομάδα αλλά δεν πάω καλύτερα
+
+coça
+έχω φαγούρα
+
+eu tomo pílula anticoncepcional
+παίρνω αντισυλληπτικό χάπι
+
+estou grávida de ... meses
+είμαι ... μηνών έγκυος
+
+sou alérgico a penicilina
+είμαι αλλεργικός στην πενικιλλίνη
+
+torci o tornozelo
+στραμπούληξα τον αστράγαλό μου
+
+eu caí e machuquei as costas
+έπεσα και χτύπησα την πλάτη μου
+
+tive um desmaio/uma vertigem
+μου ήρθε σκοτοδίνη
+
+tive um derrame/um ataque cardíaco
+έπαθα ένα εγκεφαλικό επεισόδιο/συγκοπή
+
+perdi uma obturação
+μου έφυγε ένα σφράγισμα
+
+é grave?
+είναι σοβαρό;
+
+é contagioso?
+είναι μεταδοτικό;
+
+como ele está?
+πώς είναι;
+
+quanto lhe devo?
+τι σας οφείλω;
+
+poderia me dar um recibo, pois assim posso conseguir o reembolso do dinheiro?
+μπορείτε να μου δώσετε απόδειξη για να πάρω πίσω τα χρήματα;
+
+favor sentar-se na sala de espera
+παρακαλώ καθείστε στην αίθουσα αναμονής
+
+onde dói?
+πού πονάει;
+
+respire fundo
+πάρτε μια βαθιά ανάσα
+
+deite-se, por favor
+ξαπλώστε παρακαλώ
+
+dói quando eu aperto aqui?
+πονάει όταν πιέζω εδώ;
+
+o senhor é vacinado contra ...?
+έχετε εμβολιαστεί κατά ...;
+
+o senhor está tomando algum outro medicamento?
+παίρνετε κανένα άλλο φάρμακο;
+
+o senhor é alérgico ...?
+είστε αλλεργικός στο ...;
+
+vou lhe dar uma receita
+θα σας γράψω μία συνταγή
+
+isto vai ajudar a sarar em alguns dias
+πρέπει να φύγει σε λίγες μέρες
+
+deve sarar logo
+θα πρέπει να επουλωθεί γρήγορα
+
+vai ser preciso fazer uma cirurgia
+θα χρειαστεί εγχείρηση
+
+volte daqui a uma semana
+ελάτε πάλι να με δείτε την άλλη εβδομάδα
+
 108 NA FARMÁCIA
+
+eu queria uma caixa de Band-aid, por favor
+θα ήθελα ένα κουτί χανζαπλάστ, παρακαλώ
+
+há algum remédio para um resfriado forte?
+θα μπορούσα να πάρω κάτι για ένα άσχημο κρύωμα;
+
+preciso de um remédio para tosse
+χρειάζομαι κάτι για τον βήχα
+
+sou alérgico a Aspirina
+είμαι αλλεργικός στην ασπιρίνη
+
+preciso da pílula do dia seguinte
+χρειάζομαι το χάπι της επόμενης μέρας
+
+eu gostaria de tentar um remédio homeopático
+θα ήθελα να δοκιμάσω μια ομοιοπαθητική θεραπεία
+
+eu queria um frasco de solução para lentes de contato gelatinosas
+θα ήθελα ένα διάλυμα για μαλακούς φακούς επαφής
+
+aplicar
+επαλοίφω
+
+venda somente com receita médica
+δίνεται μόνο με συνταγή ιατρού
+
+cápsula
+κάψουλα
+
+contraindicações
+αντενδείξεις
+
+creme
+κρέμα
+
+pomada
+αλοιφή
+
+possíveis efeitos colaterais
+πιθανές παρενέργειες
+
+pó
+σκόνη
+
+supositórios
+υπόθετα
+
+xarope
+σιρόπι
+
+comprimido
+χάπι
+
+tomar três vezes ao dia antes das refeições
+πάρτε το τρεις φορές την ημέρα πριν τα γεύματα
+
+ficar de cama
+είμαι καθηλωμένος στο κρεβάτι
+
+sentir-se mal
+αισθάνομαι πολύ βαριά
+
+estar com um resfriado terrível
+έχω ένα απαίσιο κρύωμα
+
+desmaiar
+χάνω τις αισθήσεις μου
 
 110 PROBLEMAS E EMERGÊNCIAS
 
