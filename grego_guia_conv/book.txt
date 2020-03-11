@@ -4665,7 +4665,109 @@ aceita moedas de ... euros
 
 100 FAZENDO UMA LIGAÇÃO
 
+alô, aqui é o ...
+γεια σας, είμαι ο ...
+
+alô, posso falar com ..., por favor?
+γεια σας, θα μπορούσα να μιλήσω με τον/την ..., παρακαλώ;
+
+alô, é a Maria?
+γεια σας, είστε η Μαρία;
+
+o senhor fala inglês?
+μιλάτε Αγγλικά;
+
+poderia falar mais devagar, por favor?
+μπορείτε να μιλήσετε πιο αργά, παρακαλώ;
+
+não estou conseguindo ouvir, poderia falar mais alto, por favor?
+δεν σας ακούω, μπορείτε να μιλήσετε πιο δυνατά, παρακαλώ;
+
+poderia dizer a ele/ela que liguei?
+μπορείτε να του/της πείτε ότι τηλεφώνησα;
+
+poderia pedir a ele/ela que me ligasse de volta?
+μπορείτε να του/της πείτε να με πάρει τηλέφωνο;
+
+volto a ligar mais tarde
+θα ξαναπάρω αργότερα
+
+meu nome é ... e meu número de telefone é ...
+τ'όνομά μου είναι ... και το τηλέφωνό μου είναι ...
+
+saberia me dizer quando posso falar com ele/ela?
+ξέρετε πότε θα είναι ελεύθερος/ελεύθερη;
+
+obrigado, até logo
+ευχαριστώ, αντίο σας
+
+telefone comercial (número)
+τηλέφωνο δουλειάς
+
+telefone residencial (número)
+τηλέφωνο σπιτιού
+
+telefone celular (número)
+κινητό τηλέφωνο
+
+quem está falando?
+ποιός είναι;
+
+o senhor ligou errado
+πήρατε λάθος αριθμό
+
+ele/ela não está no momento
+δεν είναι εδώ αυτή τη στιγμή
+
+quer deixar recado?
+θέλετε ν'αφήσετε κάποιο μήνυμα;
+
+direi a ele/ela que o senhor ligou
+θα του/της πω ότι πήρατε
+
+direi a ele/ela para retornar a ligação
+θα του/της πω να σας πάρει τηλέφωνο
+
+só um momento, vou passar para ele/ela
+περιμένετε θα σας τον/την δώσω αμέσως
+
 101 PROBLEMAS
+
+não sei o código
+δεν ξέρω τον κωδικό
+
+está ocupado
+είναι κατειλημμένο
+
+não está atendendo
+δεν απαντά
+
+não completou a ligação
+δεν μπορούσα να βγάλω γραμμή
+
+não tenho muito crédito no meu telefone
+δεν μου έχουν μείνει πολλές μονάδες
+
+logo a linha vai cair
+θα κοπεί η γραμμή
+
+a ligação está muito ruim
+έχει πολύ άσχημο σήμα
+
+não estou conseguindo sinal
+δεν έχει σήμα
+
+quase não consigo ouvi-lo
+δεν σ'ακούω καθόλου καλά
+
+a linha está ruim
+η γραμμή είναι χάλια
+
+dar uma ligada (fazer uma ligação)
+κάνω ένα τηλέφωνο
+
+bater o telefone na cara de alguém
+το κλείνω σε κάποιον
 
 103 SAÚDE
 
@@ -4677,6 +4779,55 @@ seção de pacientes estrangeiros (no hospital)
 
 centro de atendimento básico
 κέντρο υγείας
+
+álcool
+οινόπνευμα
+
+alergia
+αλλεργία
+
+ambulância
+ασθενοφόρο
+
+analgésico
+παυσίπονο
+
+antisséptico
+απολυμαίνω
+
+Aspirina
+ασπιρίνη
+
+clínico geral
+παθολόγος
+
+comprimido
+χάπι
+
+dentista
+οδοντίατρος
+
+desmaiar
+λιποθυμώ
+
+diarreia
+διάρροια
+
+erupção cutânea
+εξάνθημα
+
+espinha
+σπυρί
+
+farmácia
+φαρμακείο
+
+febre
+θερμοκρασία
+
+gesso
+γύψος
+
 
 105 NO MÉDICO OU NO HOSPITAL
 
