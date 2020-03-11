@@ -5236,9 +5236,190 @@ meu filho/minha filha desapareceu
 meu carro foi guinchado
 πήρε το αυτοκίνητό μου ο γερανός της Τροχαίας
 
+meu carro quebrou
+έμεινε το αυτοκίνητο
+
+meu carro foi arrombado
+κάποιος παραβίασε το αυτοκίνητό μου
+
+há um homem me seguindo
+με ακολουθεί ένας άντρας
+
+há acesso para deficientes?
+υπάρχει είσοδος για άτομα με ειδικές ανάγκες;
+
+você pode dar uma olhadinha nas minhas coisas por um minuto?
+μπορείς να προσέξεις τα πράγματά μου για ένα λεπτό;
+
+ele está se afogando, peça ajuda!
+πνίγεται, φέρτε βοήθεια!
+
+cuidado com o cão
+προσοχή! ο σκύλος δαγκώνει
+
+socorro mecânico
+οδική βοήθεια
+
+saída de emergência
+έξοδος κινδύνου
+
+achados e perdidos
+τμήμα απολεσθέντων αντικειμένων
+
+socorro na montanha
+ορειβατική διασωστική ομάδα
+
+fora de serviço
+εκτός λειτουργείας
+
+serviço de emergência policial
+άμεσος δράση
+
+polícia de trânsito
+τροχαία
+
 113 POLÍCIA
 
+eu gostaria de denunciar um roubo
+θέλω να κάνω μία δήλωση κλοπής
+
+preciso de um documento da polícia para minha companhia de seguro
+χρειάζομαι ένα πιστοποιητικό από την αστυνομία για την ασφαλιστική μου εταιρεία
+
+sobrenome
+επώνυμο
+
+nome
+όνομα
+
+endereço
+διεύθυνση
+
+código de endereçamento postal (CEP)
+ταχυδρομικός κώδικας/τκ
+
+país
+χώρα
+
+nacionalidade
+ιθαγένεια/υπηκοότητα
+
+data de nascimento
+ημερομηνία γέννησης
+
+local de nascimento
+τόπος γέννησης
+
+idade
+ηλικία
+
+sexo
+φύλο
+
+duração da estadia
+διάρκεια παραμονής
+
+data da chegada/partida
+ημερομηνία άφιξης/αναχώρησης
+
+profissão
+επάγγελμα
+
+número do passaporte
+αριθμός διαβατηρίου
+
+é preciso pagar uma taxa alfandegária sobre esse item
+πρέπει να πληρώσετε τελωνειακούς δασμούς για αυτό το αντικείμενο
+
+poderia abrir essa bolsa, por favor?
+μπορείτε να ανοίξετε αυτή τη τσάντα, παρακαλώ;
+
+o que está faltando?
+τι λείπει από εδώ;
+
+quando aconteceu isso?
+πότε συνέβει αυτό;
+
+onde o senhor está hospedado?
+πού μένετε;
+
+poderia descrevê-lo?
+μπορείτε να τον/την περιγράψετε;
+
+poderia preencher este formulário, por favor?
+μπορείτε να συμπληρώσετε αυτό το έντυπο, παρακαλώ;
+
+poderia assinar aqui, por favor?
+μπορείτε να υπογράψετε εδώ, παρακαλώ;
+
+policial, tira
+μπάτσος
+
+roubar
+κλέβω
+
+ele foi em cana (foi preso)
+τον πιάσανε
+
 115 HORA E DATA
+
+domingo
+Κυριακή
+
+segunda-feira
+Δευτέρα
+
+terça-feira
+Τρίτη
+
+quarta-feira
+Τετάρτη
+
+quinta-feira
+Πέμπτη
+
+sexta-feira
+Παρασκευή
+
+sábado-feira
+Σάββατο
+
+janeiro
+Ιανουάριος
+
+fevereiro
+Φεβρουάριος
+
+março
+Μάρτιος
+
+abril
+Απρίλιος
+
+maio
+Μάιος
+
+junho
+Ιούνιος
+
+julho
+Ιούλιος
+
+agosto
+Αύγουστος
+
+setembro
+Σεπτέμβριος
+
+outubro
+Οκτώβριος
+
+novembro
+Νοέμβριος
+
+dezembro
+Δεκέμβριος
+
 
 117 A DATA
 
