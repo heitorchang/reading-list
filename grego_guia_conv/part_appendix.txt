@@ -1,5 +1,6 @@
-122 NÚMEROS
+<div id="p970" class="sect"><a href="#a970">NÚMEROS</a></div>
 
+<pre>
 0 μηδέν
 1 ένα/ένας/μία/ένα
 2 δύο
@@ -101,29 +102,46 @@ octingentésimo οκτακοσιοστός
 nongentésimo εννεακοσιοστός
 milésimo χιλιοστός
 milionésimo εκατομμυριοστός
+</pre>
 
-176 GRAMÁTICA
+<div id="p980" class="sect"><a href="#a980">GRAMÁTICA</a></div>
 
+<div class="pt">
 Artigos indefinidos (singular)
+</div>
 
+<pre>
 nom.  ένας / μια / ένα
 acus. ένα(ν) / μια(ν) / ένα
 gen.  ενός / μιας / ενός
+</pre>
 
+<div class="pt">
 Artigos definidos (singular)
+</div>
 
+<pre>
 nom.  ο / η / το
 acus. τον / τη(ν) / το
 gen.  του / της / του
+</pre>
 
+
+<div class="pt">
 Artigos definidos (plural)
+</div>
 
+<pre>
 nom.  οι / οι / τα
 acus. τους / τις / τα
 gen.  των / των / των
+</pre>
 
+<div class="pt">
 Substantivos
+</div>
 
+<pre>
 ο κήπος, τον κήπο, του κήπου, οι κήποι, τους κήπους, των κήπων
 
 ο αιώνας, τον αιώνα, του αιώνα, οι αιώνες, τους αιώνες, των αιώνων
@@ -139,9 +157,13 @@ Substantivos
 το πόδι, το πόδι, του ποδιού, τα πόδια, τα πόδια, των ποδιών
 
 το δέμα, το δέμα, του δέματος, τα δέματα, τα δέματα, των δεμάτων
+</pre>
 
+<div class="pt">
 Pronomes pessoais
+</div>
 
+<pre>
 εγώ, με, μου
 εσύ, σε, σου
 αυτός, τον, του
@@ -152,11 +174,17 @@ Pronomes pessoais
 αυτοί, τους, τους
 αυτές, τις, τους
 αυτά, τα, τους
+</pre>
 
+<div class="pt">
 Verbos
+</div>	
 
+<div class="pt">
 Presente (voz ativa)
+</div>
 
+<pre>
 δίνω
 δίνεις
 δίνει
@@ -170,9 +198,13 @@ Presente (voz ativa)
 αγαπάμε
 αγαπάτε
 αγαπάν(ε)
+</pre>
 
+<div class="pt">
 Presente (voz passiva)
+</div>
 
+<pre>
 δίνομαι
 δίνεσαι
 δίνεται
@@ -186,18 +218,26 @@ Presente (voz passiva)
 αγαπιόμαστε
 αγαπιέστε
 αγαπιούνται
+</pre>
 
+<div class="pt">
 Passado (voz ativa)
+</div>
 
+<pre>
 αγάπησα
 αγάπησες
 αγάπησε
 αγαπήσαμε
 αγαπήσατε
 αγάπησαν
+</pre>
 
+<div class="pt">
 Passado (voz passiva)
+</div>
 
+<pre>
 αγαπήθηκα
 αγαπήθηκες
 αγαπήθηκε
@@ -243,9 +283,11 @@ ter
 
 eu não jogo cartas
 δεν παίζω χαρτιά
+</pre>
 
-185 ENDEREÇOS ÚTEIS
+<div id="p999" class="sect"><a href="#a999">INFORMAÇÕES ÚTEIS</a></div>
 
+<pre>
 Embaixada do Brasil
 
 Av. Vasilissis Sofias, nº 23 - 3º andar
@@ -256,8 +298,6 @@ atenas.itamaraty.gov.br/pt-br/
 Hellenic Tourist Organization (ΕΟΤ)
 (30) 210 870 7000
 www.gnto.gov.gr
-
-186 INFORMAÇÕES TELEFÔNICAS
 
 Telefonista internacional: 139
 Telefone de informações: 11888
@@ -285,3 +325,4 @@ ELPA: 10400
 Express Service: 1154
 InterAmerican: 1168
 Hellas Service: 1057
+</pre>

@@ -1,80 +1,3 @@
-Guia de conversação de grego, Evy Markopoulou, Lalita Markopoulou
-WMF Martins Fontes, 2012
-
-ÍNDICE
-
-7 CONVERSA DO DIA A DIA
-9 PROBLEMAS NA COMPREENSÃO DO GREGO
-11 FALANDO SOBRE A LÍNGUA
-12 FAZENDO PERGUNTAS SOBRE O CAMINHO
-14 CONHECENDO PESSOAS
-14 APRESENTANDO-SE E DESCOBRINDO INFORMAÇÕES SOBRE AS OUTRAS PESSOAS
-16 FALANDO SOBRE A SUA ESTADIA
-18 MANTENDO CONTATO
-18 EXPRESSANDO SUA OPINIÃO
-20 FALANDO SOBRE O TEMPO
-22 VIAJANDO
-25 DE AVIÃO
-27 DE TREM, ÔNIBUS DE VIAGEM, ÔNIBUS URBANO, METRÔ E BONDE
-30 DE CARRO
-33 DE BARCO
-35 HOSPEDAGEM
-37 HOTÉIS
-40 ALBERGUES DA JUVENTUDE
-41 ACOMODAÇÃO COM COZINHA
-42 CAMPING
-43 COMENDO E BEBENDO
-45 RESERVANDO UMA MESA
-46 PEDINDO A COMIDA
-48 BARES E CAFÉS
-49 A CONTA
-51 COMIDA E BEBIDA
-52 APERITIVOS, SALADAS, QUEIJOS ορεκτικά, σαλάτες, τυριά
-53 CARNE κρεατικά
-54 PEIXES E FRUTOS DO MAR ψαριά και θαλασσινά
-55 LEGUMES E VERDURAS όσπρια, λαδερά
-56 PRODUTOS DE CONFEITARIA E BOLOS γλυκά
-57 GLOSSÁRIO DE COMIDAS E BEBIDAS
-60 PASSEANDO
-61 SUGESTÕES E CONVITES
-62 COMBINANDO UM ENCONTRO
-64 FILMES, SHOWS E CONCERTOS
-66 FESTAS E BOATES
-68 ATRAÇÕES TURÍSTICAS
-70 MUSEUS, EXPOSIÇÕES E MONUMENTOS
-72 DANDO SUAS IMPRESSÕES
-74 ESPORTES E JOGOS
-76 CAMINHADAS
-78 ESQUIAÇÃO E SNOWBOARDING
-78 OUTROS ESPORTES
-80 JOGOS EM AMBIENTES FECHADOS
-81 COMPRAS
-83 PAGANDO
-84 COMIDA
-85 ROUPAS
-87 SOUVENIRS E PRESENTES
-89 FOTOGRAFIAS
-92 BANCOS
-94 AGÊNCIAS DE CORREIO
-96 CYBERCAFÉS E E-MAIL
-98 TELEFONE
-100 FAZENDO UMA LIGAÇÃO
-101 PROBLEMAS
-103 SAÚDE
-105 NO MÉDICO OU NO HOSPITAL
-108 NA FARMÁCIA
-110 PROBLEMAS E EMERGÊNCIAS
-113 POLÍCIA
-115 HORA E DATA
-117 A DATA
-119 A HORA
-183 FERIADOS E FESTAS
-187 PESOS E MEDIDAS
-122 NÚMEROS
-176 GRAMÁTICA
-185 ENDEREÇOS ÚTEIS
-186 INFORMAÇÕES TELEFÔNICAS
-
 7 CONVERSA DO DIA A DIA
 
 bom dia
@@ -451,7 +374,7 @@ odiar
 razoável
 καθόλου άσχημος
 
-14 APRESENTANDO-SE E DESCOBRINDO INFORMAÇÕES SOBRE AS OUTRAS PESSOAS
+15 APRESENTANDO-SE E DESCOBRINDO INFORMAÇÕES SOBRE AS OUTRAS PESSOAS
 
 meu nome é ...
 τ'όνομά μου είναι ...
@@ -622,7 +545,7 @@ você tem e-mail?
 você será sempre bem-vindo para vir ficar conosco
 είσαι πάντα ευπρόσδεκτος να έρθεις και να μείνεις μαζί μας εδώ
 
-18 EXPRESSANDO SUA OPINIÃO
+19 EXPRESSANDO SUA OPINIÃO
 
 nós nos divertimos de montão
 περάσαμε φανταστικά! Ξεφαντώσαμε!
@@ -3736,7 +3659,7 @@ passagem de teleférico
 teleférico
 χιονοδρομικός αναβατήρας/τελεφερίκ
 
-78 OUTROS ESPORTES
+79 OUTROS ESPORTES
 
 onde podemos alugar bicicletas?
 πού μπορούμε να νοικιάσουμε ποδήλατα;
@@ -5840,7 +5763,7 @@ Epifania (6 de janeiro)
 início da Quaresma (celebrado numa segunda-feira)
 Καθαρά Δευτέρα
 
-25 de março (Anunciação)
+Vinte e cinco de março (Anunciação)
 Του Ευαγγελισμού
 
 segunda-feira de Páscoa
@@ -5901,5 +5824,5 @@ vinte menos três é igual a 17
 vinte multiplicado por quatro é igual a 80
 είκοσι επί τέσσερα ίσον ογδόντα
 
-20 dividido por quatro é igual a 5
+vinte dividido por quatro é igual a 5
 είκοσι διά τέσσερα ίσον πέντε
