@@ -96,6 +96,7 @@ if __name__ == "__main__":
     <body>
         <div class="back"><a href="#top">Voltar ao topo</a></div>
         <div id="top" class="sect">GUIA DE CONVERSAÇÃO DE GREGO</div>
+        <div class="pt"><a href="conversacao_grego.pdf">Clique aqui para baixar o arquivo PDF</a></div>
         
 """, file=html)
 
