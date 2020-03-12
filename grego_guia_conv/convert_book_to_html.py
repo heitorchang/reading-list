@@ -40,7 +40,8 @@ if __name__ == "__main__":
         }
 
         body {
-        margin: 1.2em;
+            margin: 1.2em;
+            font-size: 250%;
         }
         
         .sp {
@@ -49,15 +50,15 @@ if __name__ == "__main__":
         }
         
         .gr {
-        font-family: 'GFSNeoH';
-        font-size: 125%;
+            font-family: 'GFSNeoH';
+            font-size: 150%;
         background-color: #DEF;
         padding: 0.3em;
         }
 
         pre {
-        font-family: 'GFSNeoH';
-        font-size: 125%;
+            font-family: 'GFSNeoH';
+            font-size: 150%;
         background-color: #DEF;
         padding: 0.3em;
         }
@@ -86,8 +87,8 @@ if __name__ == "__main__":
         background-color: #FFF;
         border: 2px solid #CCC;
         border-radius: 5px;
-        box-shadow: 5px 5px 2px #CCC;
-
+            box-shadow: 5px 5px 2px #CCC;
+            font-size: 20px;
         }
         
         </style>
@@ -106,7 +107,7 @@ if __name__ == "__main__":
                 
                 id, name = parts[0], parts[1:]
                 
-                print('<a id="a{}" href="#p{}">{}</a>'.format(id, id, " ".join(name)), file=html)
+                print('<a id="a{}" href="#p{}">{} {}</a>'.format(id, id, id, " ".join(name)), file=html)
                 
 
         for line in open("part_content.txt", encoding="utf-8"):
@@ -117,7 +118,7 @@ if __name__ == "__main__":
                 if firstchar.isdigit():
                     one = line.split()[0]
                     rest = " ".join(line.split()[1:])
-                    print('<div id="p{}" class="sect"><a href="#a{}">{}</a></div>'.format(one, one, rest), file=html)
+                    print('<div id="p{}" class="sect"><a href="#a{}">{} {}</a></div>'.format(one, one, one, rest), file=html)
                 else:
                     if ord(firstchar) < 256:
                         # portuguese

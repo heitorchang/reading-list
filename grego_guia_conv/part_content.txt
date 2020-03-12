@@ -5810,7 +5810,7 @@ litro
 grau Celsius
 βαθμός Κελσίου
 
-122 QUANTIAS
+199 QUANTIAS
 
 trinta e dois euros e treze centavos (32.13 euros)
 τριανταδύο κόμμα δεκατρία ευρώ/τριανταδύο ευρώ και δεκατρία λεπτά
