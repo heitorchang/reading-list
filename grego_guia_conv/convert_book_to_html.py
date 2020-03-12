@@ -78,6 +78,7 @@ if __name__ == "__main__":
         .sect {
         font-size: 2em;
         margin: 0.8em 0 0.4em 0;
+        break-before: page;
         }
 
         .back {
@@ -90,14 +91,22 @@ if __name__ == "__main__":
             box-shadow: 5px 5px 2px #CCC;
             font-size: 20px;
         }
+
+        .blk {
+        page-break-inside: avoid;
+        }
+
+        .tit {
+        font-size: 2em;
+        margin: 0.8em 0 0.4em 0;
+        }
         
         </style>
         
     </head>
     <body>
-        <div class="back"><a href="#top">Voltar ao topo</a></div>
-        <div id="top" class="sect">GUIA DE CONVERSAÇÃO DE GREGO</div>
-        
+        <div id="top" class="tit">GUIA DE CONVERSAÇÃO DE GREGO</div>
+        <div class="blk">&nbsp;
 """, file=html)
 
         for line in open("part_contents.txt", encoding="utf-8"):
@@ -118,7 +127,7 @@ if __name__ == "__main__":
                 if firstchar.isdigit():
                     one = line.split()[0]
                     rest = " ".join(line.split()[1:])
-                    print('<div id="p{}" class="sect"><a href="#a{}">{} {}</a></div>'.format(one, one, one, rest), file=html)
+                    print('</div><div id="p{}" class="sect"><a href="#a{}">{} {}</a></div><div class="blk">'.format(one, one, one, rest), file=html)
                 else:
                     if ord(firstchar) < 256:
                         # portuguese
@@ -126,9 +135,10 @@ if __name__ == "__main__":
                     else:
                         print(f'<div class="gr">{line}</div>', file=html)
             else:
-                print('<div class="sp">&nbsp;</div>', file=html)
+                print('</div><div class="blk">', file=html)
                         
 
+        print('</div>', file=html)
         for line in open("part_appendix.txt", encoding="utf-8"):
             print(line, end="", file=html)
 
