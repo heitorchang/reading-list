@@ -1,0 +1,49 @@
+Read online at
+
+https://leanpub.com/understandinges6/read
+
+Let declarations in Loops
+
+  for each iteration of a loop, a new variable is created
+  see for-in-funcs.html
+
+Tagged Templates
+
+  let message = tag`Hello World`;
+
+  tag is a function that is called with the processed template literal data. This function receives data about the template literal as individual pieces and must combine them to create the result.
+
+Raw values in template literals
+
+  let message2 = String.raw`some\nstring`;
+
+An expression may be used to define a default parameter
+
+...rest parameter
+
+  function check(arg, arg2, ...rest) { }
+
+Spread an array
+
+  console.log(Math.max(...values));
+  console.log(Math.max(...values, 0));
+
+Arrow functions
+
+  var doNothing = () => {};
+  var getName = () => "Joe";
+  var ask = (person, task) => {
+    console.log(person + " will do " + task);
+  };
+    
+  var getObj = () => ({ name: "Joe" });
+
+  Wrapping the object literal in parentheses signals that the braces are an object literal, not a function body
+
+A sorting function
+
+  var result = values.sort((a, b) => a - b);
+
+In strict mode, certain tail calls are optimized
+
+NEXT: Expanded Object Functionality
