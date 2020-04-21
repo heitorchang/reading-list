@@ -1,0 +1,21 @@
+Security, Portability
+Seguranca, Portabilidade
+
+Bytecode, Just-In-Time compiler, HotSpot, Ahead-of-time compiler
+
+Servlet: um programa pequeno que executa no servidor (estende a funcionalidade de um servidor web)
+
+Encapsulacao: mecanismo que une codigo e os dados que serao manipulados. Evita interferencia externa e uso indevido. (caixa preta)
+
+Codigo e dados podem ser private ou public
+
+Uma classe é uma especificaco de como construir um objeto (variaveis de instancia e metodos).
+
+Polimorfismo: a abilidade de uma interface acessar uma classe geral de ações. Exemplo: um volante permite direcionar um carro, caminhao, trator, etc.
+
+Herança: uma classe poder adquirir propriedades de uma superclasse. Exemplo: Pessoa, Aluno, Professor
+
+Try this 1-1: Convert gallons to liters
+
+GalToLit.java
+

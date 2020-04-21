@@ -1,0 +1,26 @@
+Ch 1
+
+1. Bytecode is intermediate instructions (between human readable code and machine code) to be executed by the virtual machine
+
+2. Encapsulation, Polymorphism and Inheritance
+
+3. the main() method
+
+[X] 4. a label for a value, it may be changed as the program progresses
+    a variable is a named memory location whose contents may be changed during the execution of a program
+
+5. 67count (D)
+
+6. //, /*  */
+
+7. if (cond) { block }, for (init; cond; iter) { block }
+
+8. { }
+
+9. moon = earth * 0.17
+
+10. 1 meter = 39.37 inches
+
+11. syntax error
+
+12. no
