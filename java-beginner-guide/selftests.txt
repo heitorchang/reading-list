@@ -24,3 +24,146 @@ Ch 1
 11. syntax error
 
 12. no
+
+Ch 2
+
+[X] 1. for efficiency (measure how much memory to occupy)
+    for portability
+
+2. it's a 16-bit number (Unicode)
+
+3. false
+
+4. one\ntwo\nthree
+
+[X] 5. missing int i
+    sum is declared inside for block, redefining it every time. Also, sum cannot be used outside the for block
+
+6. increment happens before (++i) or after (i++) retrieving the variable's value
+
+7. (i != 0) && (x / i)
+
+8. int
+
+9. when adding smaller integer types or forcing loss of information
+
+10. check n % i != 0 for all i
+
+11. no
+
+12. yes
+
+Ch 3
+
+1. See ReadUntilPeriod.java
+
+2. if (cond) {
+
+   } else if (cond2) {
+
+   } else {
+
+   }
+
+[X] 3. x < 10
+    y > 100
+
+4. for (int i = 1000; i >= 0; i -= 2) { }
+
+[X] 5. yes, but i will have incremented by one more than the values in sum
+    no, i is outside the for declaration
+
+6. exits the innermost loop, or if a label is used, exits the block that has that label
+
+7. after while; after for
+
+[X] 8.
+
+0 1
+2 3
+4 5
+6 7
+8 9
+
+9. see LoopGeometric.java
+
+10. see SwapCase.java
+
+11. a loop that does not end normally or has breaks
+
+[X] 12. yes
+
+Ch 4
+
+1. a class is a model, or template for objects. It describes the form and behavior of objects. Objects need to be instantiated with new Something()
+
+2. class SomeName { }
+
+3. instance variables
+
+4. class MyCounter { }
+MyCounter counter;
+counter = new MyCounter();
+
+5. double MyMeth(int a, int b) { }
+
+6. return value;
+
+7. same name as the class name
+
+8. creates an instance (allocates memory) and initializes data using the class' constructor
+
+9. reclaims memory from objects that have no references pointing at them. it is done when needed
+
+10. a reference to the object on which a method is invoked.
+
+11. yes
+
+12. void
+
+Ch 5
+
+1. double[] a = double[10];
+double a[] = double[10];
+var a[] = double[10];
+
+2. int[] a = { 1, 2, 3, 4, 5 };
+
+3. see ArrayAverage.java
+
+4. see SortStrings.java
+
+5. indexOf() returns first occurrence (from the left) while lastIndexOf() returns last occurrence
+
+6. "abc".length(), "abc".charAt(0)
+
+7. convert 8 characters into a binary string?
+
+8. no
+
+9. x < 0 ? y = 10 : y = 20;
+
+10. logical, because it is applied on booleans
+
+11. yes, yes
+
+12. >>>, moves bits to the right and always places a zero on the left
+
+13. for (var i : array)
+
+14. no, because indices are used
+
+15. yes
+
+16. var
+
+17. var done = false;
+
+18. yes, no
+
+19. no, var cannot be used for arrays.
+
+[X] 20. yes
+    no, var can only be used one at a time
+
+21. var mask = 1L;

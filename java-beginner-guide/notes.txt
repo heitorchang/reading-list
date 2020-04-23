@@ -19,3 +19,5 @@ Try this 1-1: Convert gallons to liters
 
 GalToLit.java
 
+for-each loop:
+for(int x : nums) { sum += x; }
