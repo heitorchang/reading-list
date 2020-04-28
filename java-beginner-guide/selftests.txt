@@ -167,3 +167,155 @@ var a[] = double[10];
     no, var can only be used one at a time
 
 21. var mask = 1L;
+
+Ch 6
+
+1. no, count is private
+
+2. precede
+
+3. see Stack.java
+
+4. Test t1 = new Test(1);
+   Test t2 = new Test(2);
+   int tmp = t1.a;
+   t1.a = t2.a;
+   t2.a = tmp;
+ 
+5. no, signatures are the same (return types are insufficient for overloading)
+
+6. see RecursiveBackwards.java
+
+7. static
+
+8. initialization of a class, such as connecting to a network
+
+9. a class inside a class (a nonstatic nested class)
+
+10. private
+
+11. signature
+
+12. value
+
+13. int sum(int... values) {
+  int total = 0;
+  for (var i : values) {
+    total += i;
+  }
+  return total;
+}
+
+14. yes
+
+15. int f(int... a), int g(int b, int... c)
+
+Ch 7
+
+1. no, yes
+
+[X] 2. class Circle extends TwoDShape {
+  Circle(double r) {
+    super(r, r);
+  }
+  
+  double area() {
+    return 3.1415 * (getWidth() / 2) * (getWidth() / 2);  // radius is half of
+                                                          // width
+  }
+}
+
+3. private
+
+4. super constructor and super member variable access
+
+5. alpha, beta, gamma
+
+6. dynamic method dispatch. the object being referred to determines which version of the method is called
+
+7. a class that defines an empty method and whose subclasses must implement them
+
+8. final
+
+9. a consistent interface to various subclasses
+
+10. Object
+
+11. true
+
+12. final
+
+13. A
+
+14. B
+
+Ch 8
+
+1. put files in qpack/ directory. import qpack.*;
+
+2. a scope of valid names; it is important because in large projects. names can collide
+
+3. directories
+
+[X] 4. default access is package access, protected members may be accessed in its package and also by subclasses in other packages.
+
+[X] 5. import or fully qualify its name
+
+6. the interface exemplifies polymorphism
+
+7. as many as you wish, as many as you wish
+
+8. yes
+
+9. interface IVehicle {
+  int getPassengers();
+}
+
+[X] 10. yes
+
+11. true, though it may contain interfaces
+
+12. java.lang
+
+13. default int ...
+
+14. yes
+
+15. with a default interface method
+
+16. InterfaceName.methodName()
+
+17. yes, to be used inside it.
+
+Ch 9
+
+1.Throwable
+
+2. place code that may cause an error inside the try block. the catch block will execute if an error happened
+
+3. no try block
+
+4. JVM aborts and prints a stack trace
+
+5. B is a subclass and should appear before A
+
+6. yes
+
+7. False, it is the block that runs after a try/catch block regardless of what happened
+
+[X] 8. checked
+    All exceptions except Errors and RuntimeExceptions
+
+9. MyClass needs to subclass Throwable
+
+10. class FullStackException extends Exception {}
+// constructor with stack size as a parameter
+throw new FullStackException(stackLength);
+
+[X] 11. throw, error in the JVM, error in the program
+
+12. Exception, Error
+
+13. placing OR (pipes) | between Exceptions so that a catch block runs when any of those exceptions are thrown
+
+14. No, they are JVM errors outside your control

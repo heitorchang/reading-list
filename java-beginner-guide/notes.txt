@@ -1,3 +1,5 @@
+began 21 apr 2020
+
 Security, Portability
 Seguranca, Portabilidade
 
@@ -21,3 +23,23 @@ GalToLit.java
 
 for-each loop:
 for(int x : nums) { sum += x; }
+
+While it's ok for a reference variable of a superclass to refer to a subclass, this reference may not access a member of the subclass (because the superclass has no knowledge of a subclass).
+
+Dynamic method dispatch: the mechanism by which a call to an overridden method is resolved at run time rather than compile time. (run-time polymorphism)
+
+For an overridden method, the version that is run will be that of the object being referred to.
+
+Throwable is the superclass of Exception and Error. Errors are related to JVM errors, while Exceptions result from program activity
+
+Exception handling uses try, catch, throw, throws, and finally
+
+Various storage classes like Maps and Sets only work with objects. So, primitives must be wrapped in their corresponding objects.
+
+java.util.Scanner
+Scanner conin = new Scanner(System.in)
+int i;
+
+if (conin.hasNextInt()) {
+  i = conin.nextInt();
+}
