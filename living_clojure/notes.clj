@@ -79,6 +79,8 @@ Adding :refer :all to require loads all the symbols into the current namespace. 
 
 nil and false are the only logically false values
 
+(complement fn) returns a function that gives the opposite truth value
+
 (= a b c ...) checks if values are equal (like Java's equals method)
 (identical? a b) checks object identity
 
@@ -141,3 +143,98 @@ an optional last expression is the default case. otherwise an exception is throw
     "b" "banana"
     "c" "cherry"
     "no fruit found")) ; => banana
+
+(partial fn arg) is a way of currying (generating a new function with an argument partially applied)
+
+(comp fn1 fn2 ...) composes the functions going from right to left
+
+destructuring is assigning named bindings to elements in things such as collections
+
+(let [[color size] ["blue" "small"]]
+  (str "the " color " window is " size))
+
+(let [[color [size]] ["blue" ["very small"]]]
+  (str "the " color " window is " size))
+
+:as ORIGINAL at the end allows us to keep the whole initial data structure as ORIGINAL
+
+(let [[color [size] :as original] ["blue" ["small"]]] ...)
+
+(let [{flower1 :flower1 flower2 :flower2}
+      {:flower1 "red" :flower2 "blue"}]
+  (str "The first flower was " flower1 " and the other one " flower2))
+
+{flower2 :flower2 :or {flower2 "missing"}}
+
+(let [{:keys [flower1 flower2]}
+      {:flower1 "red" :flower2 "blue"}]
+  ...)
+
+(defn flower-colors [{:keys [flower1 flower2]}]
+  (str "the flowers are " flower1 " and " flower2))
+
+(flower-colors {:flower1 "rose" :flower2 "tulip"})
+
+Laziness allows you to deal with infinite lists
+
+(take 5 (range)) ; => (0 1 2 3 4)
+
+(repeat 3 "ha")
+
+(repeatedly 12 #(rand-int 10))  ; random ints from 0 to 9 inclusive, repeatedly will re-evaluate the rand-int function
+
+(take 9 (cycle ["a" "b" "c" "d" "e"]))
+
+A recursive function might also be written with loop
+
+(def alice-adjs ["normal" "too small" "too big" "swimming"])
+
+(defn alice-is-recursive [in out]
+  (if (empty? in)
+    out
+    (alice-is-recursive
+     (rest in)
+     (conj out (str "Alice is " (first in))))))
+
+(alice-is-recursive alice-adjs [])
+
+(defn alice-is-loop [input]
+  (loop [in input
+         out []]
+    (if (empty? in)
+      out
+      (recur (rest in)
+             (conj out (str "Alice is " (first in)))))))
+
+(alice-is-loop alice-adjs)
+
+loop and recur does not consume the call stack
+
+recur may appear alone in a function
+
+(defn countdown [n]
+  (if (= n 0)
+    n
+    (recur (- n 1))))
+
+(countdown 100)
+
+(def animals ["cat" "dog" "mouse"])
+(map fn coll) returns a lazy sequence
+
+(doall (map #(println %) animals)) will force evaluation
+
+(map) may take a function of several arguments and the same number of collections. it stops when the shortest collection ends
+
+(reduce + [1 2 3]) ; => 6
+
+(reduce (fn [r x] (if (nil? x) r (conj r x)))
+        []
+        [:mouse nil :duck nil nil :cat]) ; => [:mouse :duck :cat]
+
+You cannot reduce an infinite sequence
+
+(filter predicate-to-keep coll)
+
+(remove predicate coll)
+
