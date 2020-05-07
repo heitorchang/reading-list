@@ -1,0 +1,542 @@
+abacate
+αβοκάντο
+
+abobrinha
+κολοκύθι
+
+abóbora
+κολοκύθα
+
+água
+νερό
+
+alcachofras
+αγκινάρες
+
+alcaparra
+κάπαρη
+
+alface
+μαρούλι
+
+alho
+σκόρδο
+
+alho-poró
+πράσο
+
+almoço
+μεσημεριανό
+
+amêndoa
+αμύγδαλο
+
+arroz
+ρύζι
+
+aspargo
+σπαράγγια
+
+atum
+τόνος
+
+avelãs
+φουντούκια
+
+azeite de oliva
+ελαιόλαδο
+
+azeitona
+ελιά
+
+açúcar
+ζάχαρη
+
+bacon
+μπέϊκον
+
+bala
+καραμέλα
+
+batata
+πατάτα
+
+batatas chips
+τσιπς
+
+batatas fritas
+τηγανητές πατάτες
+
+baunilha
+βανίλια
+
+bebida quente
+ρόφημα
+
+berinjela
+μελιτζάνα
+
+beterraba
+πατζάρι
+
+biscoito
+κουλούρι
+
+bolo
+κέικ
+
+bolo confeitado
+τούρτα
+
+cabrito
+κατσίκι
+
+café da manhã
+πρωινό
+
+camomila
+χαμομήλι
+
+canela
+κανέλλα
+
+carne de porco
+χοιρινό
+
+carne de vaca
+μοσχάρι
+
+carne moída
+κιμάς
+
+cebola
+κρεμμύδι
+
+cenoura
+καρότο
+
+centeio
+σίκαλη
+
+cereais
+δημητριακά
+
+cereja
+κεράσι
+
+cerveja
+μπίρα
+
+chocolate
+σοκολάτα
+
+chá
+τσάι
+
+chá de erva
+τσάι βουνού
+
+clara de ovo
+ασπράδι
+
+coentro
+κορίανδρος
+
+cogumelos
+μανιτάρια
+
+colher
+κουτάλι
+
+colher de chá
+κουτάλι του γλυκού
+
+colher de sopa
+κουτάλι της σούπας
+
+cominho
+κύμινο
+
+copo
+ποτήρι
+
+cordeiro
+αρνί
+
+costelas
+παϊδάκια
+
+couve-flor
+κουνουπίδι
+
+coxa de frango
+μπούτι
+
+creme
+κρέμα
+
+creme de leite azedo
+κρέμα γάλακτος
+
+cubos de gelo
+παγάκια
+
+damasco
+βερίκοκο
+
+derretido
+λιωμένος
+
+doce, sobremesa
+γλυκό
+
+endro
+άνιθος
+
+ervilhas
+αρακάς
+
+especiarias
+μπαχαρικά
+
+espinafre
+σπανάκι
+
+espécie de bolinhos doces com mel
+λουκουμάδες
+
+faca
+μαχαίρι
+
+farinha
+αλεύρι
+
+favas
+φάβα
+
+feijão
+κουκιά
+
+feijões
+φασόλια
+
+figo
+σύκο
+
+filé
+φιλέτο
+
+folha de louro
+δάφνη
+
+folhado
+μπουρέκι
+
+frango
+κοτόπουλο
+
+fruta
+φρούτα
+
+frutas secas
+ξηροί καρποί
+
+fígado
+συκώτι
+
+galinha
+κότα
+
+galo
+κόκορας
+
+garfo
+πιρούνι
+
+garrafa
+μπουκάλι
+
+gelatina
+ζελέ
+
+geleia
+μαρμελάδα
+
+gema de ovo
+κρόκος
+
+goma árabe, manjar turco
+λουκούμι
+
+grão-de-bico
+ρεβίθια
+
+guardanapo
+πετσέτα
+
+guardanapo de papel
+χαρτοπετσέτα
+
+hortelã
+μέντα
+
+iogurte
+γιαούρτι
+
+jantar
+δείπνο
+
+jarra
+κανάτα
+
+kiwi
+ακτινίδιο
+
+laranja
+πορτοκάλι
+
+lata
+κονσέρβα
+
+lebre
+λαγός
+
+legumes recheados
+γεμιστά
+
+leite
+γάλα
+
+lentilhas
+φακές
+
+limonada
+λεμονάδα
+
+limão
+λεμόνι
+
+manjericão
+βασιλικός
+
+manteiga
+βούτυρο
+
+margarina
+βιτάμ
+
+marmelo
+κυδώνι
+
+massa
+μακαρόνια
+
+massa folhada
+φύλλο
+
+maçã
+μήλο
+
+mel
+μέλι
+
+melancia
+καρπούζι
+
+melão
+πεπόνι
+
+milho
+καλαμπόκι
+
+molho branco
+άσπρη σάλτσα
+
+molho branco, molho bechamel
+μπεσαμέλ
+
+molho de tomate
+κόκκινη σάλτσα
+
+morango
+φράουλα
+
+mostarda
+μουστάρδα
+
+nectarina
+νεκταρίνι
+
+noz
+καρύδι
+
+noz-moscada
+μοσχοκάρυδο
+
+óleo
+λάδι
+
+omelete
+ομελέτα
+
+orégano
+ρίγανη
+
+ouzo (bebida alcoólica à base de anis)
+ούζο
+
+ovo
+αβγό
+
+pato
+πάπια
+
+peito de frango
+στήθος κοτόπουλο
+
+peixe
+ψάρι
+
+pepino
+αγγούρι
+
+pera
+αχλάδι
+
+picante, apimentado
+καυτερό
+
+picles
+τουρσί
+
+pimentas
+πιπεριές
+
+pimentão
+πιπέρι
+
+pinhões
+κουκουνάρια
+
+preparado em molho de vinho
+κρασάτο
+
+presunto
+ζαμπόν
+
+pão
+ψωμί
+
+pão feito com massa fermentada
+ψωμί με προζύμι
+
+pão integral
+ψωμί ολικής αλέσεως
+
+pêssego
+ροδάκινο
+
+queijo
+τυρί
+
+quiabo
+μπάμιες
+
+raki de Creta
+τσικουδιά
+
+raki quente com mel
+ρακόμελο
+
+raki, tipo de licor
+ρακή
+
+ralado
+τριμμένο
+
+repolho
+λάχανο
+
+rúcula
+ρόκα
+
+sal
+αλάτι
+
+salada
+σαλάτα
+
+salsinha
+μαϊντανός
+
+salsão, aipo
+σέλινο
+
+semolina
+σιμιγδάλι
+
+sopa
+σούπα
+
+sorvete
+παγωτό
+
+sorvete de frutas
+γρανίτα
+
+suco
+χυμός
+
+suco de fruta feito na hora
+φυσικός χυμός
+
+suco de laranja
+πορτοκαλάδα
+
+talheres
+μαχαιροπίρουνα
+
+tangerina
+μανταρίνι
+
+tipo de hortelã
+δυόσμος
+
+tipo de massa de tamanho pequeno
+κριθαράκι
+
+tipo de vinho branco
+ρετσίνα
+
+toalha de mesa
+τραπεζομάντιλο
+
+tomate
+ντομάτα
+
+tomilho
+θυμάρι
+
+torta de creme
+μπουγάτσα
+
+trigo
+σιτάρι
+
+uva-passa
+σταφίδες
+
+uvas
+σταφύλια
+
+vinagre
+ξύδι
+
+vinho
+κρασί
+
+vinho tinto doce
+μαυροδάφνη
+
+zesto, casca de frutas cítricas
+ξύσμα
