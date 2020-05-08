@@ -1,0 +1,11 @@
+Use Conda? instead of python -m venv venv
+
+Use a django.views.generic.TemplateView instead of function-based views
+
+Define context variables in:
+
+def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    context['my_message'] = "Nice to see you"
+    return context
+
