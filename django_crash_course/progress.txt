@@ -1,4 +1,4 @@
 07.may.2020 start
 07.may.2020 25 Introducing tests
 08.may.2020 37 CheeseDetailView
-09.may.2020 53.3 Cheese view tests
+09.may.2020 end
