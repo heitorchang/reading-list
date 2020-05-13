@@ -1,0 +1,9 @@
+134 generic arrays cannot be created, a cast is needed
+
+public class FixedCapacityStack<Item> {
+
+  a = (Item[]) new Object[capacity];
+
+}
+
+the warning can be safely ignored. The Java system library uses the same idiom

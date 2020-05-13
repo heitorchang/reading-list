@@ -43,3 +43,39 @@ int i;
 if (conin.hasNextInt()) {
   i = conin.nextInt();
 }
+
+13. Generics
+
+The term "generics" means "parametrized types" (the type is passed as a parameter to the variable type declaration)
+
+A class, interface, or method that operates on a type parameter is generic (a generic class or generic method)
+
+Generic code works with multiple types of data, such as sorting numbers or strings with the same logic
+
+Bounded types
+NumericFns<T extends Number>
+
+Wildcard: the wildcard matches any valid NumericFns object
+boolean absEqual(NumericFns<?> ob) { }
+
+Wildcards may be bounded
+myFn(Gen<? extends A> ob) { }
+
+a parametrized type may extend an interface
+static <T extends Comparable<T>, V extends T> boolean arraysEqual(T[]x, V[]y) { }
+
+486 cannot instantiate an array whose element type is a type parameter
+also, cannot create an array of type-specific generic references
+
+vals = new T[10];  // not OK
+Gen<Integer> gens[] = new Gen<>[10];  // not OK
+
+These are OK:
+
+T vals[];
+Gen(T o, T[] nums) {
+  vals = nums;
+}
+
+Gen<?> gens[] = new Gen<?>[10];
+T[] ts = (T[]) new Object[10];
