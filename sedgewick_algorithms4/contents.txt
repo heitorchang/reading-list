@@ -1,19 +1,74 @@
 One. Fundamentals		2
 
 1.1 Basic programming model	8
+	Primitive data types
+	Loops and conditionals
+	Arrays
+	Static methods
+	Recursion
+	APIs
+	Strings
+	Input and output
+	Binary search
+      
 1.2 Data Abstraction		64
+	Objects
+	Abstract data types
+	Implementing ADTs
+	Designing ADTs
+	
 1.3 Bags, Queues and Stacks	120
+	APIs
+	Arithmetic expression evaluation
+	Resizing arrays
+	Generics
+	Iterators
+	Linked lists
+	
 1.4 Analysis of Algorithms 	172
+	Running time
+	Computational experiments
+	Tilde notation
+	Order-of-growth classifications
+	Amortized analysis
+	Memory usage
+	
 1.5 Case Study: Union-Find	216
-
+	Dynamic connectivity
+	Quick find
+	Quick union
+	Weighted quick union
+	
 
 Two. Sorting			242
 
 2.1 Elementary sorts		244
+	Rules of the game
+	Selection sort
+	Insertion sort
+	Shellsort
+	
 2.2 Mergesort			270
+	Abstract in-place merge
+	Top-down mergesort
+	Bottom-up mergesort
+	N lg N lower bound for sorting
+	
 2.3 Quicksort			288
+	In-place partitioning
+	Randomized quicksort
+	3-way partitioning
+	
 2.4 Priority Queues		308
+	Priority queue API
+	Elementary implementations
+	Binary heap
+	Heapsort
+	
 2.5 Applications		336
+	Comparators
+	Stability
+	Median and order statistics
 
 
 Three. Searching		360
