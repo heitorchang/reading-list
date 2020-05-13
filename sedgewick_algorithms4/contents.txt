@@ -74,28 +74,142 @@ Two. Sorting			242
 Three. Searching		360
 
 3.1 Symbol Tables		362
+	Symbol table API
+	Ordered symbol table API
+	Frequency counter
+	Sequential search
+	Binary search
+
 3.2 Binary Search Trees		396
+	Basic implementation
+	Order-based methods
+	Deletion
+	
 3.3 Balanced Search Trees	424
+	2-3 search trees
+	Red-black BSTs
+	Deletion
+	
 3.4 Hash Tables			458
+	Hash functions
+	Separate chaining
+	Linear probing
+	
 3.5 Applications		486
+	Set data type
+	Whitelist and blacklist filters
+	Dictionary lookup
+	Inverted index
+	File indexing
+	Sparse matrix-vector multiplication
 
 
 Four. Graphs			514
-
+	
 4.1 Undirected Graphs		518
+	Glossary
+	Undirected graph type
+	Adjacency-lists representation
+	Depth-first search
+	Breadth-first search
+	Connected components
+	Degrees of separation
+	
 4.2 Directed Graphs 		566
+	Glossary
+	Digraph data type
+	Depth-first search
+	Directed cycle detection
+	Precedence-constrained scheduling
+	Topological sort
+	Strong connectivity
+	Kosaraju-Sharir algorithm
+	Transitive closure
+	
 4.3 Minimum Spanning Trees	604
+	Cut property
+	Greedy algorithm
+	Edge-weighted graph data type
+	Prim's algorithm
+	Kruskal's algorithm
+	
 4.4 Shortest Paths		638
-
+	Properties of shortest paths
+	Edge-weighted digraph data types
+	Generic shortest paths algorithm
+	Dijkstra's algorithm
+	Shortest paths in edge-weighted DAGs
+	Critical-path method
+	Bellman-Ford algorithm
+	Negative cycle detection
+	Arbitrage
+	
 
 Five. Strings			694
 
 5.1 String Sorts		702
+	Key-indexed counting
+	LSD string sort
+	MSD string sort
+	3-way string quicksort
+	
 5.2 Tries			730
+	String symbol table API
+	R-way tries
+	Ternary search tries
+	Character-based operations
+	
 5.3 Substring Search		758
+	Brute-force algorithm
+	Knuth-Morris-Pratt algorithm
+	Boyer-Moore algorithm
+	Rabin-Karp fingerprint algorithm
+	
 5.4 Regular Expressions		788
+	Describing patterns with REs
+	Applications
+	Nondeterministic finite-state automata
+	Simulating an NFA
+	Building an NFA corresponding to an RE
+	
 5.5 Data Compression		810
+	Rules of the game
+	Reading and writing binary data
+	Limitations
+	Run-length coding
+	Huffman compression
+	LZW compression
 
 
 Six. Context			852
 
+6.1 Event-Driven Simulation
+	Hard-disc model
+	Collision prediction
+	Collision resolution
+
+6.2 B-Trees
+	Cost model
+	Search and insert
+
+6.3 Suffix Arrays
+	Suffix sorting
+	Longest repeated substring
+	Keyword in context
+
+6.4 Network Flow
+	Maximum flow
+	Minimum cut
+	Ford-Fulkerson algorithm
+
+6.5 Reductions
+	Sorting
+	Shortest path
+	Bipartite matching
+	Linear programming
+
+6.6 Intractability
+	Longest-paths problem
+	P vs. NP
+	Boolean satisfiability
+	NP-completeness
