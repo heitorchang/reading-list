@@ -55,7 +55,7 @@ quotient, remainder = divmod(*t)
 
 a, b, *c = range(5)  # c is [2, 3, 4]
 
-a, *b, c = range(4)  # b is [1, 2]
+a, *b, c = range(5)  # b is [1, 2, 3]
 
 57 namedtuples have the _asdict() instance method that returns an OrderedDict
 
@@ -217,7 +217,7 @@ sorted(b, key=itemgetter(1))
 
 197 iadd, iand, etc. are inplace operator like += and &=
 
-197 methodcaller(f, g, ...) calls the methods f, g, etc. on the given ovject argument
+197 methodcaller(f, g, ...) calls the methods f, g, etc. on the given object argument
 
 198 functools.partial creates a new function with some of the arguments of the original function fixed (frozen in place)
 
