@@ -6,3 +6,6 @@ First reading
 
 Second reading
 see oct2018/progress.txt
+
+Third reading
+22 may 20

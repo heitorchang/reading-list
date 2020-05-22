@@ -1,0 +1,18 @@
+Abstract Data Type (ADT) (1.5) a logical description of how we view data and allowed operations on them without regard to how they will be implemented
+
+Abstraction (1.3) the process of separating logical and physical perspectives of a problem
+
+Algorithm (1.3) a step-by-step list of instructions for solving any instance of a particular problem. They must be finite.
+
+Class (1.8) a description of what the data look like (the state, attributes) and what the data can do (the behavior, methods)
+
+Collection Data Types (1.8.2) lists, strings, tuples, sets, dictionaries
+
+Data types (1.4) an interpretation of the underlying binary data in a program
+
+Encapsulation (1.5) (also called information hiding) providing a level of abstraction that hides the details of the implementation from a user's view
+
+Interface (1.3) a collection of functions that is provided by the designers for users (also called clients) to accomplish something useful
+
+Object (1.8) an instance of a class
+
