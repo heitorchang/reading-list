@@ -12,6 +12,10 @@ Data types (1.4) an interpretation of the underlying binary data in a program
 
 Encapsulation (1.5) (also called information hiding) providing a level of abstraction that hides the details of the implementation from a user's view
 
+Function (1.12) a procedural abstraction that consists of a name, a group of parameters, and a body
+
+Inheritance (1.13.2) the ability for one class to have the same characteristics (attributes and methods) from another class (the superclass). 
+
 Interface (1.3) a collection of functions that is provided by the designers for users (also called clients) to accomplish something useful
 
 Object (1.8) an instance of a class

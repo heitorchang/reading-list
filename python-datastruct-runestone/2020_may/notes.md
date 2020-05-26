@@ -15,3 +15,21 @@ radius = float(sradius)
 diameter = 2 * radius
 ```
 
+## 1.13 Object-Oriented Programming (Classes)
+
+```
+class MyFraction:
+
+    def __init__(self, top, bottom):
+        self.num = top
+        self.den = bottom
+
+
+    def __str__(self):
+        return str(self.num) + "/" + str(self.den)
+```
+
+## 2.1 A proper Python class
+
+For a class to be comparable, at the minimum, `__eq__` and `__lt__` must be implemented.
+

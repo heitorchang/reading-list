@@ -1,2 +1,2 @@
 22 may 20 begin
-22 may 20 1.12 functions
+22 may 20 3.2 Algorithm analysis
