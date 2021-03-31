@@ -118,3 +118,23 @@ from django.views.generic import TemplateView
 class HomePageView(TemplateView):
     template_name = 'home.html'
 ```
+
+Create a `home.html` page in `templates/`:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Project Home Page</title>
+    </head>
+    <body>
+        <p>This is my home page</p>
+    </body>
+</html>
+```
+
+## Testing
+
+Use `TestCase` because we are running database queries. `SimpleTestCase` is a subset that is designed for sites without models.
