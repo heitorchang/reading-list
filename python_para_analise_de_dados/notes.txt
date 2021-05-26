@@ -1,1 +1,56 @@
 53 in Jupyter, run "%matplotlib inline" to integrate it properly
+
+58 isinstance(a, int)
+58 isinstance(a, (int, float))
+
+59 getattr(a, 'split')
+
+66 o caractere \ é um "caractere de escape". barras invertidas precisam ser escapadas.
+
+71 datetime_obj.replace(minute=0, second=0)
+
+85 to add multiple elements to a list, use .extend() instead of +
+
+88 map items' location in a list
+
+mylist = ['foo', 'bar', 'baz']
+mapping = {}
+for i, e in enumerate(mylist):
+    mapping[e] = i
+# mapping: {'bar': 1, 'baz': 2, 'foo': 0}
+
+also (p. 98):
+loc_mapping = {val: index for index, val in enumerate(mylist)}
+
+90 convert lines to columns
+
+pitchers = [('Nolan', 'Ryan'), ('Roger', 'Clemens')]
+first_names, last_names = zip(*pitchers)
+
+92 mydict.update({'b': 'foo', 'c': 12}) alters mydict in-place
+
+92 dict() accepts a list of tuples (pairs)
+
+93 words = ['apple', 'bat', 'bar', 'atom', 'book']
+by_letter = {}
+for word in words:
+    letter = word[0]
+    by_letter.setdefault(letter, []).append(word)
+
+also: defaultdict
+by_letter = defaultdict(list)
+
+99 some_tuples = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+flattened = [x for tup in some_tuples for x in tup]
+# [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+compare to:
+
+[[x for x in tup] for tup in some_tuples]
+# [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+the order of nested list comprehensions is the same as nested for blocks
+
+100 funções são declaradas com a palavra reservada def, e o retorno é feito com return.
+
+102 funções "devolvem" valores
