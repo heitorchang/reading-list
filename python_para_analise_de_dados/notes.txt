@@ -54,3 +54,46 @@ the order of nested list comprehensions is the same as nested for blocks
 100 funções são declaradas com a palavra reservada def, e o retorno é feito com return.
 
 102 funções "devolvem" valores
+
+109 first_letter = lambda x: x[0]
+itertools.groupby(names, first_letter)
+
+111 handle multiple exceptions:
+try:
+    return float(x)
+except (ValueError, TypeError):
+    return x
+ 
+114 open mode 'x' will fail if the file already exists
+
+Ch. 4 NumPy
+
+122 ndarray é um objeto array N-dimensional
+
+123 data = np.random.randn(2, 3)  # generates 2 rows and 3 columns of random numbers
+
+simply write "data * 2" or "data + data"
+
+data.shape()  # (2, 3)
+data.dtype  # dtype('float64')
+data.ndim  # 2
+
+124 creating ndarrays
+
+data1 = [6, 7.5, 8, 1, 0]
+arr1 = np.array(data1)
+
+125 np.zeros(10)
+np.zeros((3, 6))
+np.empty((2, 3, 2))  # WARNING: might contain junk values
+
+np.arange(15) is the analogous function to regular "range"
+
+126 np.asarray(arr) does not make a copy if arr is already a ndarray
+
+128 cast an array:
+float_arr = arr.astype(np.float64)
+
+WARNING: the dtype numpy.string_ and unicode_ have fixed length and data may be truncated (for example, when an element is changed in-place)
+
+129 bulk, element-by-element arithmetic without loops is called "vectorization"
