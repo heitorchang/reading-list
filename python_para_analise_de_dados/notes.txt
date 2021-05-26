@@ -97,3 +97,104 @@ float_arr = arr.astype(np.float64)
 WARNING: the dtype numpy.string_ and unicode_ have fixed length and data may be truncated (for example, when an element is changed in-place)
 
 129 bulk, element-by-element arithmetic without loops is called "vectorization"
+
+131 array slices are views (data is not copied)
+
+132 to copy a slice: arr[5:8].copy()
+
+132 in a 2-d array, arr[0][2] is the same as arr[0, 2]. the first index is the row and the second index is the column
+
+134 n-dimensional arrays can be sliced: arr[:2, 1:]. Use the comma syntax [:2, :1]
+
+136 boolean indexing: data[names == 'Bob'] WARNING: if the boolean array dimension does not match the target array, no error is raised
+
+138 ~ (not), & and | can be used to combine boolean conditions. "and", "or" will not work
+WARNING: copies are always made with boolean indexing
+
+139 data[data < 0] = 0
+
+140 fancy indexing: get a subset of an ndarray by explicitly passing the desired order:
+arr[[4, 3, 0, 6]]
+arr[[-3, -5, -7]]
+
+with multiple lists of indices, elements corresponding to each tuple of indices are returned
+arr[[1, 5, 7, 2], [0, 3, 1, 2]]
+will select [1, 0], [5, 3], [7, 1], [2, 2]
+
+arr[[1, 5, 7, 2]][:, [0, 3, 1, 2]] returns a rectangular subset
+
+fancy indexing always returns a copy of the data
+
+142 arr.T shows the transpose, without copying data
+
+143 arr.transpose((1, 0, 2)) permutes multi-dimensional arrays (also a view)
+
+arr.swapaxes(1, 2)
+
+144 ufuncs (universal functions) operate on all elements of ndarrays
+
+np.sqrt(arr)
+
+146 some ufuncs:
+unary: abs, fabs, sqrt, square, exp, log, sign, ceil, floor, rint, modf, isnan, isfinite, logical_not, sin, cos, tan, sinh, arcsinh
+binary: add, subtract, multiply, divide, floor_divide, power, maximum, minimum, fmax, fmin, mod, copysign, greater, greater_equal, less,
+less_equal, equal, not_equal, logical_and, logical_or, logical_xor
+
+147 points_x = np.arange(-5, 5)
+points_y = np.arange(-10, 12)
+xs, ys = np.meshgrid(points_x, points_y)
+
+149 np.where is "x if condition else y" in vectorized form
+result = np.where(cond, xarr, yarr)
+np.where(arr > 0, 2, arr)
+
+150 simple statistics: sum, mean, std
+
+arr.mean(axis=1)  # mean by columns
+
+cumsum, cumprod
+
+153 (arr > 0).sum()  # count number of positive values
+
+bools.any()
+bools.all()
+
+0 is falsy for numeric arrays
+
+153 arr.sort()
+
+an axis may be passed: arr.sort(1)
+
+154 5% quantile:
+large_arr.sort()
+large_arr[int(0.05 * len(large_arr))]
+
+154 np.unique(names)
+
+155 np.in1d(values, [2, 3, 6]) tests if elements of values are in [2, 3, 6]
+
+other set methods: intersect1d, union1d, settdiff1d, setxor1d
+
+156 np.save('some_array', arr)
+np.load('some_array.npy')
+np.savez('array_archive.npz', a=arr, b=arrb)
+np.savez_compressed('array_archive.npz', a=arr, b=arrb)
+
+157 np.dot(x, y) is the same as x.dot(y) and x @ y
+
+numpy.linalg contains standard matrix operations
+
+common linalg functions: diag, dot, trace, det, eig, inv, pinv, qr, svd, solve, lstsq
+
+159 random number generators
+np.random.randn(2, 3)
+np.random.normal(size=(4, 4))
+
+160 np.random.seed(1223)
+
+rng = np.random.RandomState(1234)
+rng.randn(10)
+
+functions: seed, permutation, shuffle, rand, randint, randn, binomial, normal, beta, chisquare, gamma, uniform
+
+163 argmax: returns the first index of the array's max value
