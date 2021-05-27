@@ -381,3 +381,26 @@ data.iloc[:, :3][data.three > 5]
 
 193 arithmetic with two DataFrames produces a result with indices from both DataFrames.
 wherever there are missing values, the result will be NaN
+
+195 when there are no rows or columns in common, the result will be all NaN.
+
+197 df1.add(df2, fill_value=0) will put fill_value instead of NaN.
+
+functions with 'r' in the front invert the arguments
+
+fill_value can also be used in reindexing
+df1.reindex(columns=df2.columns, fill_value=0)
+
+198 arithmetic: add, sub, div, floordiv, mul, pow
+radd, rsub, rdiv, ...
+
+198 broadcasting refers to behavior of arithmetic between arrays of different shapes.
+values of the smaller array are "broadcast" to fill in missing parts of the larger array
+
+199 by default, arithmetic between a DataFrame and Series will broadcast by lines.
+frame - series
+
+200 to broadcast by columns:
+frame.sub(series, axis='index')  # or axis=0
+
+200 numpy ufuncs work with pandas objects
