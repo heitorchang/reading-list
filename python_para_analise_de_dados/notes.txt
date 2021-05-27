@@ -198,3 +198,186 @@ rng.randn(10)
 functions: seed, permutation, shuffle, rand, randint, randn, binomial, normal, beta, chisquare, gamma, uniform
 
 163 argmax: returns the first index of the array's max value
+
+165 pandas, like numpy, prefers vectorized operations (without the use of for loops)
+
+pandas was designed for heterogeneous data (different types), while numpy is more appropriate for homogeneous data
+
+import pandas as pd
+from pandas import Series, DataFrame
+
+166 a Series is a 1-dimensional sequence of values and an associated array of labels (rótulos), called the index.
+pd.Series([-4, 6, 2, 1])
+
+the default index is [0..N-1]
+
+ser.values  # gets data
+ser.index  # gets array of indices
+
+an arbitrary index list may be passed when constructing a Series
+
+167 pd.Series([4, 2, 5], index=['b', 'c', 'a'])
+
+indices may be used to retrieve specific values
+obj['a']
+obj[['b', 'c']]
+
+filtering works like in numpy: obj[obj > 0]
+
+168 a Series behaves like a dictionary
+
+obj3 = pd.Series({"Ohio": 2340, "Michigan": 5200})
+
+169 you may pass a list of indices as a keyword argument to Series to override the order of the dictionary's keys
+obj4 = pd.Series(dictdata, index=["Michigan", "Ohio"])
+
+the index array passed will determine the resulting contents (not including an index results in it not showing up)
+
+NaN is the special value for missing data
+
+pd.isnull(obj)
+pd.notnull(obj)  # returns True or False for each value
+
+also: obj.isnull(), obj.notnull()
+
+170 arithmetic operations line up objects by index. it is like doing a SQL join
+
+171 obj.name = 'population'
+obj.index.name = 'state'
+
+the index may be assigned in-place
+
+obj.index = ['a', 'c', 'b']
+
+171 a DataFrame represents a rectangular table of data and each column may contain a different type of data (string, boolean, number).
+there is an index for rows and for columns.
+
+a DataFrame is like a dictionary of Series which share the same index.
+
+172 one of the most common ways of constructing a DataFrame is by passing a dictionary of lists (they must be of the same length).
+an list of indices may be passed
+
+df.head() shows the first 5 lines. df.tail() shows the last 5.
+
+173 passing the keyword argument columns will order the DataFrame.
+pd.DataFrame(data, columns=['year', 'state', 'population'])
+
+NaN will appear if a column is passed and there is no associated data
+
+a Series is returned when accessing a column via bracket notation: df['population']
+dot notation also works for names that would be acceptable variable names: df.population
+
+174 the special attribute loc is used to retrieve rows by passing an index
+frame.loc['three']
+
+columns may be reassigned: frame['debt'] = 16.5
+frame['year'] = np.arange(6)
+
+175 assigning a Series will align its indices to the indices in the DataFrame
+val = pd.Series([1.2, 1.5, 1.7], index=['two', 'one', 'three'])
+frame['debt'] = val
+
+NaN will appear when the Series does not specify an index in the DataFrame. extra indices in the Series do not appear.
+
+176 del frame['eastern'] removes that column
+
+a column obtained with indexing is a view. use copy() to make a copy
+
+176 a nested dictionary passed to pd.DataFrame() will transform the outer keys as columns and inner keys as indices
+
+debt = {"Nevada": {2001: 0.4, 2002: 2.9},
+        "Ohio": {2000: 1.5, 2001: 0.9, 2002: 3.5}}
+
+177 frame.T transposes the DataFrame
+
+the index keyword may be used when creating a DataFrame
+
+pd.DataFrame(debt, index=[2001, 2002, 2003])
+
+the index list that is passed will override the data's indices
+
+the index and columns may have names
+
+frame.index.name = 'year'
+frame.columns.name = 'state'
+
+178 various ways to pass data to construct a DataFrame:
+
+- ndarray (2-D), list of lists, list of tuples: a matrix of data
+- dictionary (of arrays, lists or tuples), structured numpy array: each sequence becomes a column
+- dictionary of Series: indices are joined
+- dictionary of dictionaries: each inner dictionary becomes a column and inner keys become row indices
+- list of dictionaries or Series: each item becomes a row; the union of dict keys and Series indices become column names
+- another DataFrame: the indices of that DataFrame are used, unless different indices are passed
+- numpy MaskedArray: like ndarray (2-D), but masked values become NA/missing
+
+df.values returns the data. if types are different, a dtype that accommodates all data will be chosen (such as dtype=object)
+
+179 obj.index returns an Index. they are immutable
+
+180 obj.columns is also an Index
+
+elements may be duplicated in an Index
+
+index methods: append, difference, intersection, union, isin, delete, drop, insert, is_monotonic, is_unique, unique
+
+182 obj.reindex(['a', 'b', 'c']) assigns a new index
+
+obj.reindex(range(6), method='ffill')  # forward fills missing values
+
+183 reindex(columns=['a', 'b', 'c']) reassigns the columns
+
+frame.loc[['a', 'b', 'c'], ['Texas', 'Utah']] to reindex appears to be deprecated
+
+184 reindex arguments: index, method, fill_value, limit (to fill), tolerance (inexact comparisons),
+level (correspondence between a simple index and a MultiIndex level), copy
+
+185 data.drop(['Colorado', 'Ohio']) removes rows (axis 0)
+data.drop('two', axis=1)  # removes column named 'two'
+data.drop(['two', 'four'], axis='columns')  # removes column named 'two' and 'four'
+
+186 obj.drop('c', inplace=True)
+
+187 a list of indices may be used to retrieve values from a Series
+s[['b', 'd']]
+s[s < 2]
+
+indexing with labels will include the endpoint:
+s['a':'c'] returns a, b, c
+
+188 indexing a DataFrame is used to retrieve columns
+df[['one', 'three']]
+
+however, passing a slice will return lines (df[:2])
+
+df[df['three'] > 5]
+
+190 data.loc[] uses indices
+data.loc['Colorado', ['two', 'three']]
+
+data.iloc uses integer indices
+data.iloc[2, [3, 0, 1]]
+
+slicing is allowed for indices
+data.loc[:'Utah', 'two']
+
+data.iloc[:, :3][data.three > 5]
+
+191 various ways of using loc and iloc (iloc and iat accepts integers)
+
+- df[val] selects a column or columns if a slice is used
+- df.loc[val] selects line(s)
+- df.loc[:, val] selects column(s)
+- df.loc[val1, val2] selects lines and columns
+- df.iloc[where] selects lines by position
+- df.iloc[:, where] selects column(s)
+- df.iloc[where_i, where_j] selects lines and columns
+- df.at[label_i, label_j] selects a single value by index 
+- df.iat[i, j] selects a single value by position
+- reindex selects lines or columns by labels
+- get_value, set_value selects a single value by the line and column labels
+
+193 use loc for labels, and iloc for integer indices
+
+193 arithmetic with two DataFrames produces a result with indices from both DataFrames.
+wherever there are missing values, the result will be NaN
