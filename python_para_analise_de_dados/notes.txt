@@ -404,3 +404,301 @@ frame - series
 frame.sub(series, axis='index')  # or axis=0
 
 200 numpy ufuncs work with pandas objects
+
+201 frame.apply() takes a function to be applied for every column or line
+f = lambda.x: x.max() - x.min()
+frame.apply(f)  # returns a value for each column
+frame.apply(f, axis='columns')  # returns a value for each line
+
+202 common aggregation functions like sum and mean already exist, use apply() for custom functions
+
+apply can also return a Series
+
+def f(x):
+    return pd.Series([x.min(), x.max()], index=['min', 'max'])
+
+frame.apply(f)
+
+frame.applymap(f)  # applies to each element
+
+203 obj.sort_index()
+
+to sort by column: frame.sort_index(axis=1)
+
+to sort descending: frame.sort_index(ascending=False)
+
+204 obj.sort_values()
+NaN appears at the end (regardless of ascending=True or False)
+
+sort a DataFrame by column: frame.sort_values(by='b')
+
+sort a DataFrame by multiple columns: frame.sort_values(by=['b', 'a'])
+
+205 obj.rank() assigns a ranking to each value (equal values are assigned the average of those values)
+
+obj.rank(method='first') ranks by the order of observation
+
+206 ascending=False may be passed to rank()
+
+207 rank accepts a method keyword parameter to break ties. available methods are: average, min, max, first, dense (ranks always increase by 1)
+
+207 obj.index.is_unique checks if all values are unique
+
+207 if you have duplicate values in the index, you will get all values/rows/columns that match
+
+208 reductions and summary statistics functions return a single value for a Series
+
+209 df.sum() adds the total for each column
+df.sum(axis='columns') adds totals for each row
+
+passing skipna=False will cause sum() to return NaN if there's a NaN in the Series
+
+210 passing the keyword argument level will group by level (in a MultiIndex axis)
+
+idxmin() and idxmax() return the index label of the min/max value. argmin, argmax return the integer index.
+
+cumsum() accumulates the running total
+
+df.describe() produces a summary table
+
+211 descriptive statistics: count, describe, min, max, argmin, argmax, idxmin, idxmax, quantile, sum, mean, median, mad, prod, var, std, skew,
+kurt, cumsum, cummin, cummax, cumprod, diff, pct_change
+
+212 pandas-datareader contains convenience functions like get_data_yahoo(ticker) (stock prices)
+
+213 obj.corr() and obj.cov() compute correlation and covariance.
+
+obj.corrwith() accepts a parameter and computes correlations of pairs of data
+
+214 obj.unique() returns an ndarray of unique values
+
+obj.value_counts() returns the frequency of each value. sort=False may be passed
+
+215 obj.isin(['b', 'c']) checks if each element of obj is contained in ['b', 'c'] and returns True or False for that value
+
+mask = obj.isin(['b', 'c'])
+obj[mask]  # filters obj, keeping only 'b's and 'c's
+
+216 Index.get_indexer(to_match) returns an array of indices of an array of values (with possible duplicates)
+
+to_match = pd.Series(['c', 'a', 'b', 'b', 'c', 'a'])
+unique_vals = pd.Series(['c', 'b', 'a'])
+pd.Index(unique_vals).get_indexer(to_match)
+# array([0, 2, 1, 1, 0, 2])
+
+match (? method does not exist): computes integer indices for each element of an array in another array of unique values
+
+217 data.apply(pd.value_counts).fillna(0) produces a histogram for each column (row index labels are the values counted)
+
+218 common functions to read data:
+read_csv
+read_table: tab-separated text file
+read_fwf: fixed-width columns
+read_clipboard
+read_excel
+read_hdf: binary format
+read_html
+read_json
+read_msgpack: binary format
+read_pickle: Python pickle
+read_sas
+read_sql
+read_stata
+read_feather
+
+219 optional parameters passed to these functions:
+
+indexing: whether column names should be obtained from the file, user, or neither
+data conversion and handling of null values
+datetime parsing
+iteration over large files
+handling "dirty" data
+
+220
+# ex1.csv
+a,b,c,d,message
+1,2,3,4,hello
+5,6,7,8,world
+9,10,11,12,foo
+
+221 header=None indicates that the source does not contain column names. the result will have a simple range produced by pandas
+names=['a', 'b', 'c'] sets the columns to 'a', 'b', 'c'
+
+passing index_col='message' will set the values in the 'message' column as the index for the rows.
+
+222 pd.read_csv('csv_mindex.csv', index_col=['key1', 'key2']) reads a hierarchical index of multiple columns
+
+# csv_mindex.csv
+key1,key2,value1,value2
+one,a,1,2
+one,b,3,4
+one,c,5,6
+one,d,7,8
+two,a,9,10
+two,b,11,12
+two,c,13,14
+two,d,15,16
+
+parsed = pd.read_csv('csv_mindex.csv', index_col=['key1', 'key2'])
+
+           value1  value2
+key1 key2                
+one  a          1       2
+     b          3       4
+     c          5       6
+     d          7       8
+two  a          9      10
+     b         11      12
+     c         13      14
+     d         15      16
+
+parsed['value1']  # returns column 'value1'
+parsed.loc['one']  # returns first block
+parsed.loc['one', 'a']  # returns first row, [1, 2]
+
+223 pd.read_table('ex3.txt', sep='\s+')  # uses whitespace as the separator
+
+skiprows=[0, 2, 3]  # ignores the rows with the given indices
+
+224 the empty string, NA and NULL are common sentinels that indicate a missing value
+
+na_values=['NULL'] specifies the null sentinel values
+
+sentinel values by column may be specified:
+sentinels = {'message': ['foo', 'NA'], 'something': ['two']}
+pd.read_csv('ex5.csv', na_values=sentinels)
+
+225 common arguments for reading csv and tables
+path
+sep / delimiter
+header
+index_col
+names (column names)
+skiprows
+na_values
+comment (character)
+parse_dates (if True, attempts parsing all columns. a list of column indices or names may be passed)
+keep_date_col
+converters
+dayfirst (convention for date format, default=False)
+date_parser
+nrows (read only this many rows from the beginning)
+iterator
+chunksize (iterate over this many rows, to read file in parts)
+skip_footer
+verbose
+encoding
+squeeze
+thousands (character for thousands separator)
+
+226 limit display: pd.options.display.max_rows = 10
+
+228 data.to_csv(filename, sep="|", na_rep="NULL", index=False, header=False)  # writes a csv file
+the argument columns=['a', 'b', 'c'] selects a subset of columns
+
+230 in some cases, manual processing of a delimited file is necessary:
+
+# ex7.csv
+"a","b","c"
+"1","2","3"
+"1","2","3"
+
+with open('ex7.csv') as f:
+    lines = list(csv.reader(f))
+    header, values = lines[0], lines[1:]
+    data_dict = {h: v for h, v in zip(header, zip(*values))}
+# {'a': ('1', '1'), 'b': ('2', '2'), 'c': ('3', '3')}
+
+csv.Dialect may be subclassed to define the csv's properties
+
+class my_dialect(csv.Dialect):
+    lineterminator = '\n'
+    delimiter = ';'
+    quotechar = '"'
+    quoting = csv.QUOTE_MINIMAL
+reader = csv.reader(f, dialect=my_dialect)
+
+keyword parameters may also be passed instead of defining a dialect subclass
+
+common options: delimiter, lineterminator, quotechar, quoting, skipinitialspace, doublequote, escapechar
+
+232 csv.writer is used to create files
+
+with open('mydata.csv', 'w') as f:
+    writer = csv.writer(f, dialect=my_dialect)
+    writer.writerow(('a', 'b', 'c'))
+    writer.writerow(('1', '2', '3'))
+
+232 basic JSON types are: objects (dicts), arrays (lists), strings, numbers, booleans and null (None).
+all keys must be strings
+
+232 json.loads(jsonstr) converts a string to a Python object
+
+233 json.dumps(pyobj) converts a Python object to a JSON string
+
+passing a list of dictionaries (that was previously a JSON) to DataFrame() creates a row for each dictionary.
+
+pd.read_json() converts an array of objects (dictionaries) to a DataFrame
+
+data.to_json() returns a JSON string, with column names as keys and objects containing values for that column
+data.to_json(orient='records') produces an object for each row.
+
+234 read_html depends on lxml, beautifulsoup4 and html5lib (run pip install)
+
+236 XML (SKIPPED)
+
+239 frame.to_pickle(filename)
+pd.read_pickle(filename)
+
+avoid pickle for long-term storage (format or libraries may change)
+
+240 HDF5
+
+frame = pd.DataFrame({'a': np.random.randn(100)})
+store = pd.HDFStore('mydata.h5')
+store['obj1'] = frame
+store['obj1_col'] = frame['a']
+
+HDFStore may store data as 'fixed' or 'table'. 'table' is slower but allows a special lookup syntax
+
+store.put('obj2', frame, format='table')
+store.select('obj2', where=['index >= 10 and index <= 15'])
+
+store.close()
+
+put is the explicit version of store['obj2'] = frame, and allows passing options like format
+
+frame.to_hdf('mydata.h5', 'obj3', format='table')
+pd.read_hdf('mydata.h5', 'obj3', where=['index < 5'])
+
+WARNING: if storing data in remote servers like Amazon S3 or HDFS, a different format like Apache Parquet may be more appropriate.
+HDF5 is not a database, and may be corrupted if many writers operate on it simultaneously.
+
+242 xlsx = pd.ExcelFile(filename)  # returns an ExcelFile instance.
+to read XLS, xlrd is needed and XLSX needs openpyxl.
+
+pd.read_excel(xlsx, 'Sheet1')
+
+passing the ExcelFile instance is faster for reading many sheets, but the filename can be passed directly
+
+to write Excel files:
+writer = pd.ExcelWriter('ex2.xlsx')
+frame.to_excel(writer, 'Sheet1')
+
+a filename may be passed instead of an ExcelWriter instance.
+
+after working on the Excel file, close the ExcelFile and ExcelWriter.
+
+244 Web APIs
+
+import requests
+url = "https://api.github.com/repos/pandas-dev/pandas/issues"
+resp = requests.get(url)
+data = resp.json()
+data[0]['title']  # 'BUG: rank with +inf'
+
+issues = pd.DataFrame(data, columns=['number', 'title', 'labels', 'state'])
+
+245 SQLite interaction (SKIPPED)
+
+consider using SQLAlchemy
