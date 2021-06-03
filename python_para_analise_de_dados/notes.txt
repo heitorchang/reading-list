@@ -1,5 +1,8 @@
 General notes
 
+import matplotlib.pyplot as plt
+if plt.show() does not work, an alternative is plt.savefig('/path/to/image.png')
+
 pd.Series([2, None]) results in [2.0, NaN]. NaN is of type numpy.float64, displayed as nan.
 It may be referenced as np.nan and in Python, float('nan')
 
