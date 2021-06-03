@@ -760,3 +760,75 @@ inplace=True may be passed
 
 data.rename(index=str.title, columns=str.upper)
 inplace=True may be passed
+
+263 binning
+ages = [20, 22, 25, 27, 21, 24, 38, 51, 45, 61, 32]
+bins = [18, 25, 35, 60, 100]
+
+cats = pd.cut(ages, bins)
+
+264 cats.codes
+cats.categories
+pd.value_counts(cats)
+passing right=False to cut will cause the right-hand side interval to be open.
+you can pass labels=['Youth', 'YoungAdult', 'MiddleAged', 'Senior'] to cuts()
+
+265 divide into uniform bins:
+pd.cut(data, 4, precision=2)  # 4 bins with 2 decimal places
+
+qcut divides the data into bins in a manner that all bins have roughly the same number of items
+it uses the quantiles of the data
+
+266 filtering outliers (valores discrepantes)
+
+267 select the rows < -3 or > 3 from a 2-D DataFrame:
+data[(np.abs(data) > 3).any(1)]  # the argument to any is the axis
+
+limit data to -3 or 3:
+data[np.abs(data) > 3] = np.sign(data) * 3
+
+268 np.random.permutation(n) returns an randomized array from 0 to n-1
+
+df.take(indices) returns the rows matching the indices in that order
+
+269 df.sample(3) returns a random sample of size 3 from df
+passing replace=True allows repeating an element
+
+270 pd.get_dummies(df['key']) returns a matrix of 0s and 1s matching indices with values
+it is used to get indicator variables
+pass prefix='key' to rename columns
+
+274 String manipulation
+274 pieces = [x.strip() for x in raw_str.split(',')]
+'::'.join(pieces)
+'subs' in val
+
+str.index() raises an exception, str.find() does not (it returns -1 if the argument was not found)
+
+276 regular expressions
+re.split('\s+', text)
+
+OR
+
+regex = re.compile('\s+')
+regex.split(text)
+regex.findall(text)
+search() returns only the first match
+match() only matches at the beginning of the string
+m.groups() returns substrings surrounded by parens
+regex.sub('new string', text)
+regex.sub(r'username: \1, domain: \2, suffix: \3', text)
+
+281 data.str ignores NA in string values
+
+str.get() is vectorized
+
+ser.str.match(pattern, flags=re.IGNORECASE)  # pattern is just a string, not a re.compile() object
+
+282 data.str.get(1)  # gets second char from each str
+data.str[0]  # gets first char from each str
+
+cat() concatenates strings with a given separator
+contains, count, extract, startswith, endswith, findall, get, isalnum, isalpha, isdecimal, isdigit, islower, isnumeric, isupper, join, len,
+lower, upper, match, pad, center, repeat, replace, slice, split, strip, rstrip, lstrip
+
