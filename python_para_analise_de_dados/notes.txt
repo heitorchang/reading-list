@@ -708,3 +708,55 @@ issues = pd.DataFrame(data, columns=['number', 'title', 'labels', 'state'])
 245 SQLite interaction (SKIPPED)
 
 consider using SQLAlchemy
+
+249 the sentinel value for nonexistent numerical data is NaN. the isnull() method checks a Series or DataFrame for NaN.
+missing data is labeled NA (not available).
+None is treated as NA.
+
+250 notnull is the opposite of isnull.
+dropna discards values or rows with NA or NaN. a tolerance may be passes (how='all' discards rows with all NA).
+fillna replaces NA with a given value.
+
+252 data.dropna(axis=1, how='all') discards columns that are all NA.
+
+253 df.dropna(thresh=2) keeps rows with 2 or more valid values
+
+253 passing a dict to fillna specifies what value to use for each column
+df.fillna({1: 0.5, 2: 0})  # the second column gets filled with 0.5, the third with 0
+
+255 fillna arguments:
+  value: alternative value used to fill NA values
+  method: interpolation method, by default 'ffill'
+  axis: default is 0, use 1 for columns
+  inplace: if True, mutates the object
+  limit: how many consecutive values to fill
+
+256 data.duplicated() returns True or False for each row, if it has been seen before
+
+data.drop_duplicates() removes identical rows, but keeps the first occurrence.
+passing keep='last' will keep the last occurrence.
+
+drop_duplicates([column_name]) will only check the given column(s)
+
+the Series method map(value_dict) may be used to associate a column with another
+
+city_to_state = {
+    'LA': 'CA',
+    'SF': 'CA',
+    'NY': 'NY',
+    'CHI': 'IL',
+    'SD': 'CA'
+}
+
+df = pd.DataFrame({"city": ['LA', 'SF', 'CHI'], "students": [3, 1, 2]})
+df['state'] = df['city'].map(city_to_state)
+
+260 data.replace(a, b)
+data.replace([a1, a2], [b1, b2])
+data.replace({-999: np.nan, -1000: 0.0})
+inplace=True may be passed
+
+262 data.index.map(lambda x: x[:3].upper())
+
+data.rename(index=str.title, columns=str.upper)
+inplace=True may be passed
