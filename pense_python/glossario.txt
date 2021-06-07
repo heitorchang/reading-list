@@ -3,6 +3,7 @@ Prefacio
 
 depuração: processo de encontrar e corrigir erros (bugs)
 
+
 Cap. 1
 ------
 
@@ -22,6 +23,8 @@ aspas (quote / quotation marks) marcam o começo e fim do texto. elas não apare
 
 aspas podem ser aspas simples ou aspas duplas. O começo e fim devem ser do mesmo tipo de aspas.
 
+as aspas devem ser aspas retas, não curvas.
+
 ** é usado para exponeniciação. ^ (usado em outras linguagens) faz o XOR bitwise.
 
 um valor é uma coisa básica trabalhada por um programa.
@@ -37,3 +40,65 @@ valores entre aspas são do tipo string, por exemplo, '2'.
 é uma representação visual do número, e operações matemáticas não funcionarão como esperado ('2' + '2' => '22')
 
 números inteiros grandes não devem ter pontos ou vírgulas de milhares.
+
+
+Cap. 2
+------
+Uma variável é um nome que se refere a um valor
+
+uma instrução de atribuição cria uma nova variável e dá um nome a ela.
+
+uma expressão é uma combinação de valores, variáveis, e e operadores
+
+um valor por si só é considerado uma expressão
+
+uma instrução é uma unidade de código que tem um efeito (exemplos: atribuição, print)
+
+no modo script, uma expressão sozinha não tem efeito visível (como no modo interativo)
+nesse caso, é necessário usar instruções print()
+
++ executa uma concatenação de strings (une duas strings pelas extremidades)
+
+* executa a repetição de uma string pela quantidade desejada.
+
+comentários começam com # (jogo da velha, cerquilha)
+
+erro de sintaxe: a sintaxe se refere à estrutura de um programa e regras da linguagem.
+exemplo: 8) falta o parênteses da esquerda.
+
+erro de tempo de execução: aparece quando o programa é executado. esse tipo de erro é chamado de exceção
+
+erro semântico: relacionado ao significado. o programa não faz o que deveria.
+
+palavra-chave: uma palavra reservada pela linguagem, usada para construções e significados específicos, como lógica e fluxo de operações
+
+
+Cap. 3
+------
+função: sequência de instruções que executa uma operação de computação. é possível criar funções anônimas com lambda.
+
+para chamar uma função, use parênteses depois do nome dela.
+
+expressões entre parênteses depois do nome da função são chamadas 'argumentos'
+
+uma função "recebe" argumento(s) e "retorna" um resultado (o valor de retorno)
+
+um módulo é um arquivo que contém uma coleção de funções relacionadas.
+
+a instrução de importação 'import' cria um objeto de módulo que contém as funções e variáveis definidas no módulo.
+
+notação de ponto: especificar um nome que pertence a um objeto (math.sin)
+
+composição: combinar elementos de um programa
+
+definição de função: a palavra-chave 'def' indica uma nova definição de função.
+
+parênteses vazios depois de um nome de função indicam que a função não recebe argumentos.
+
+a definição de uma função se chama cabeçalho. o resto é o corpo.
+
+a endentação (por convenção) é de quatro espaços.
+
+a definição de uma função cria um objeto de função, que tem o tipo "function"
+
+[sec. 3.5]
