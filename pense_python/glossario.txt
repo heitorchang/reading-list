@@ -1,0 +1,39 @@
+Prefacio
+--------
+
+depuração: processo de encontrar e corrigir erros (bugs)
+
+Cap. 1
+------
+
+entrada: recebimento de dados do teclado, arquivo, rede, ou outro dispositivo
+saída: exibição de dados na tela, gravação num arquivo, ou envio pela rede
+execução condicional: verificação de certas condições e execução do código adequado
+repetição: execução de alguma ação várias vezes, geralmente com algumas variações
+
+interpretador: um programa que lê e executa código Python
+interpretador online: PythonAnywhere, replit.com, Deepnote
+
+print() exibe um texto na tela (ele não imprime nada em papel)
+
+Python debugger: módulo pdb
+
+aspas (quote / quotation marks) marcam o começo e fim do texto. elas não aparecem no resultado.
+
+aspas podem ser aspas simples ou aspas duplas. O começo e fim devem ser do mesmo tipo de aspas.
+
+** é usado para exponeniciação. ^ (usado em outras linguagens) faz o XOR bitwise.
+
+um valor é uma coisa básica trabalhada por um programa.
+
+exemplos:
+2: número inteiro
+41.5: número de ponto flutuante
+"Hello": uma string (ela tem esse nome porque as letras estão em uma sequência em cadeia)
+
+type(valor) diz o tipo do valor.
+
+valores entre aspas são do tipo string, por exemplo, '2'.
+é uma representação visual do número, e operações matemáticas não funcionarão como esperado ('2' + '2' => '22')
+
+números inteiros grandes não devem ter pontos ou vírgulas de milhares.
