@@ -48,6 +48,8 @@ Uma variável é um nome que se refere a um valor
 
 uma instrução de atribuição cria uma nova variável e dá um nome a ela.
 
+diagrama de estado: n -> 19
+
 uma expressão é uma combinação de valores, variáveis, e e operadores
 
 um valor por si só é considerado uma expressão
@@ -101,4 +103,22 @@ a endentação (por convenção) é de quatro espaços.
 
 a definição de uma função cria um objeto de função, que tem o tipo "function"
 
-[sec. 3.5]
+fluxo de execução: a ordem na qual as instruções serão executadas
+
+uma chamada de função desvia o fluxo de execução: em vez de ir à próxima instrução (de cima pra baixo), o fluxo salta para o corpo da função, e no final, volta para continuar de onde parou
+
+dentro de uma função, é possível chamar outra função
+
+algumas funções exigem vários argumentos
+
+dentro de uma função, argumentos são atribuídos a variáveis chamadas parâmetros.
+
+def print_twice(bruce) atribui o argumento a um parâmetro chamado bruce.
+
+mnemonic: def f(a, b, c, *args, **kwargs) indicates that arguments are inside the function header definition.
+
+argumentos são avaliados antes da função ser chamada.
+
+o nome de uma variável passado como argumento é separado do nome do parâmetro (dentro da função)
+
+[sec. 3.8]
