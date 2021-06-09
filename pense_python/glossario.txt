@@ -81,7 +81,9 @@ função: sequência de instruções que executa uma operação de computação.
 
 para chamar uma função, use parênteses depois do nome dela.
 
-expressões entre parênteses depois do nome da função são chamadas 'argumentos'
+argumentos são valores passados para uma função.
+parâmetros são definidos pelos nomes que aparecem na definição de uma função.
+(https://docs.python.org/3/faq/programming.html#faq-argument-vs-parameter)
 
 uma função "recebe" argumento(s) e "retorna" um resultado (o valor de retorno)
 
@@ -115,10 +117,43 @@ dentro de uma função, argumentos são atribuídos a variáveis chamadas parâm
 
 def print_twice(bruce) atribui o argumento a um parâmetro chamado bruce.
 
-mnemonic: def f(a, b, c, *args, **kwargs) indicates that arguments are inside the function header definition.
-
 argumentos são avaliados antes da função ser chamada.
 
 o nome de uma variável passado como argumento é separado do nome do parâmetro (dentro da função)
 
-[sec. 3.8]
+variáveis dentro de uma função são locais. parâmetros também são locais
+
+dentro de um diagrama da pilha, uma função é representada por um frame (quadro)
+
+__main__ é um nome especial para o frame na posição mais proeminente. uma variável fora de qualquer função pertence a __main__
+
+traceback é uma lista de funções que mostra o arquivo em que um erro em tempo de execução aconteceu, e quais funções estavam sendo executadas no momento. o traceback também mostra a linha de código que causou o erro
+
+funções podem ser divididas em dois tipos: funções com resultado, e funções nulas (que não devolvem um valor)
+
+esse valor nulo é None, que é do tipo NoneType. ele não é uma string.
+
+uma função nomea um grupo de instruções, deixando o programa mais fácil de ler e depurar
+
+funções eliminam código repetitivo
+
+uma função bem projetada é útil para muitos programas
+
+depuração é como o trabalho de um detetive, e como ciência experimental. quando você tiver uma ideia do que está errado, basta alterar o programa e tentar novamente. Se a hipótese estava errada, é preciso criar uma outra.
+
+Cap. 4
+------
+import turtle
+bob = turtle.Turtle()
+
+instrução 'for': for i in range(4):
+
+a sintaxe de uma instrução for é semelhante à definição de uma função
+
+encapsulamento: incluir uma parte do código em uma função
+
+generalização: tornar uma função mais geral (por exemplo, adicionando um parâmetro a mais)
+
+argumentos de palavra-chave: polygon(bob, n=7, length=30)
+
+[sec. 4.6]
