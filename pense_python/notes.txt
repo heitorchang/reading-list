@@ -46,7 +46,7 @@ Cap. 2
 ------
 Uma variável é um nome que se refere a um valor
 
-uma instrução de atribuição cria uma nova variável e dá um nome a ela.
+uma instrução de atribuição (assignment) cria uma nova variável e dá um nome a ela.
 
 diagrama de estado: n -> 19
 
@@ -141,6 +141,7 @@ uma função bem projetada é útil para muitos programas
 
 depuração é como o trabalho de um detetive, e como ciência experimental. quando você tiver uma ideia do que está errado, basta alterar o programa e tentar novamente. Se a hipótese estava errada, é preciso criar uma outra.
 
+
 Cap. 4
 ------
 import turtle
@@ -150,10 +151,31 @@ instrução 'for': for i in range(4):
 
 a sintaxe de uma instrução for é semelhante à definição de uma função
 
-encapsulamento: incluir uma parte do código em uma função
+encapsulamento: incluir um bloco de código numa função
 
-generalização: tornar uma função mais geral (por exemplo, adicionando um parâmetro a mais)
+generalização: tornar algo específico numa função em algo mais geral (por exemplo, especificando um parâmetro)
 
-argumentos de palavra-chave: polygon(bob, n=7, length=30)
+argumentos de palavra-chave: um argumento que inclui o nome do parâmetro. Exemplo: polygon(bob, n=7, length=30)
 
-[sec. 4.6]
+instruções import geralmente ficam no início do script
+
+a interface de uma função é um resumo de como ela é usada: quais são os parâmetros? o que a função faz? qual é o valor de retorno?
+é como um contrato entre uma função e quem a chama.
+exigências de uma função são chamadas de precondições.
+as condições no fim da função são pós-condições: o efeito desejado da função e efeitos colaterais (que fazem mudanças)
+
+refatoração: o processo de recompor um programa para melhorar interfaces e facilitar a reutilização de código
+
+plano de desenvolvimento: processo para escrever programas.
+
+docstring: uma string no início de uma função que explica a interface (documentation string)
+
+por convenção, docstrings têm aspas triplas (string multilinha)
+
+método: uma função associada a um objeto e chamada com a notação de ponto
+
+loop: parte de um programa que é executada repetidamente
+
+
+Cap. 5
+------
