@@ -103,7 +103,7 @@ a definição de uma função se chama cabeçalho. o resto é o corpo.
 
 a endentação (por convenção) é de quatro espaços.
 
-a definição de uma função cria um objeto de função, que tem o tipo "function"
+a definição de uma função cria um objeto da função, que tem o tipo "function"
 
 fluxo de execução: a ordem na qual as instruções serão executadas
 

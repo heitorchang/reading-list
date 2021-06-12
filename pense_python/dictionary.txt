@@ -1,0 +1,158 @@
+problem solving : resolução de problemas
+high-level language : linguagem de alto nível
+low-level language : linguagem de baixo nível
+portability : portabilidade
+interpreter : interpretador
+prompt : prompt
+program : programa
+print statement : instrução print
+operator : operador
+value : valor
+type : tipo
+integer : inteiro
+floating-point : ponto flutuante
+string : (uma) string
+natural language : linguagem natural
+formal language : linguagem formal
+token : símbolo
+syntax : sintaxe
+parse : analisar
+bug : bug
+debugging : depuração
+variable : (uma) variável
+assignment : atribuição
+state diagram : diagrama de estado
+keyword : palavra-chave
+operand : operando
+expression : expressão
+evaluate : avaliar
+statement : instrução
+execute : executar
+interactive mode : modo interativo
+script mode : modo script
+script : script
+order of operations : ordem das operações
+concatenate : concatenar
+comment : comentário
+syntax error : erro de sintaxe
+exception : exceção
+semantics : semântica
+semantic error : erro semântico
+function : função
+function definition : definição de função
+function object : objeto da função
+header : cabeçalho
+body : corpo
+parameter : parâmetro
+function call : chamada de função
+argument : argumento
+local variable : variável local
+return value : valor de retorno
+fruitful function : função com resultado
+void function : função nula
+None : None
+module : módulo
+import statement : instrução de importação
+module object : objeto de módulo
+dot notation : notação de ponto
+composition : composição
+flow of execution : fluxo de execução
+stack diagram : diagrama da pilha
+frame : frame
+traceback : traceback
+method : método
+loop : loop (laço)
+encapsulation : encapsulamento
+generalization : generalização
+keyword argument : argumento de palavra-chave
+interface : interface
+refactoring : refatoração
+development plan : plano de desenvolvimento
+docstring : docstring
+precondition : precondição
+postcondition : pós-condição
+floor division : divisão pelo piso
+modulus operator : operador módulo
+boolean expression : expressão booleana
+relational operator : operador relacional
+logical operator : operador lógico
+conditional statement : instrução condicional
+condition : condição
+compound statement : instrução composta
+branch : ramo
+chained conditional : condicional encadeada
+nested conditional : condicional aninhada
+return statement : instrução de retorno
+recursion : recursividade
+base case : caso-base
+infinite recursion : recursividade infinita
+temporary variable : (uma) variável temporária
+dead code : código morto
+incremental development : desenvolvimento incremental
+scaffolding : andaime
+guardian : guardião
+reassignment : reatribuição
+update : atualização
+initialization : inicialização
+increment : incremento
+decrement : decremento
+iteration : iteração
+infinite loop : loop (laço) infinito
+algorithm : algoritmo
+object : objeto
+sequence : sequência
+item : item
+index : índice
+slice : fatia
+empty string : (uma) string vazia
+immutable : imutável
+traverse : atravessar
+search : busca
+counter : contador
+invocation : invocação
+optional argument : argumento opcional
+file object : objeto de arquivo
+reduction to a previously solved problem : redução a um problema resolvido anteriormente
+special case : caso especial
+list : lista
+element : elemento
+nested list : lista aninhada
+accumulator : acumuladora
+augmented assignment : atribuição aumentada (+=)
+reduce : redução 
+map : mapeamento 
+filter : filtragem
+object : objeto
+equivalent : equivalente 
+identical : idêntico
+reference : referência
+aliasing : alias (like in English)
+delimiter : delimitador
+mapping : mapeamento
+dictionary : dicionário
+key-value pair : par chave-valor
+item : item 
+key : chave
+value : valor
+implementation : implementação
+hashtable : hashtable
+hash function : função hash
+hashable : hashable
+lookup : busca
+reverse lookup : busca reversa
+raise statement : instrução raise
+singleton : item avulso (singleton)
+call graph : gráfico de chamada
+memo : memo
+global variable : variável global
+global statement : instrução global
+flag : flag
+declaration : declaração
+tuple : tupla
+tuple assignment : atribuição de tupla
+gather : gather
+scatter : scatter
+zip object : objeto zip
+iterator : iterador
+data structure : estrutura de dados
+shape error : erro de forma
