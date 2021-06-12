@@ -1,232 +1,80 @@
 absolute path : caminho absoluto
-accumulator : acumuladora
-algorithm : algoritmo
 aliasing : alias (like in English)
-analysis of algorithms : análise de algoritmos
-argument : argumento
-assert statement : instrução assert
 assignment : atribuição
-attribute : atributo
-augmented assignment : atribuição aumentada (+=)
-base case : caso-base
-benchmarking : benchmarking
-Big-O notation : notação grande-O
-body : corpo
-boolean expression : expressão booleana
 branch : ramo
-bug : bug
-bytes object : objeto bytes
 call graph : gráfico de chamada
 catch : capturar
 chained conditional : condicional encadeada
 child class : classe-filho
-class attribute : atributo de classe
-class : classe
-class diagram : diagrama de classe
-class object : objeto de classe
-comment : comentário
-composition : composição
-compound statement : instrução composta
-concatenate : concatenar
-conditional expression : expressão condicional
-conditional statement : instrução condicional
-condition : condição
 counter : contador
 crossover point : ponto de desvio
-database : banco de dados
-data encapsulation : encapsulamento de dados
-data structure : estrutura de dados
-dead code : código morto
 debugging : depuração
-declaration : declaração
-decrement : decremento
 deep copy : cópia profunda
 default value : valor padrão
-delimiter : delimitador
-dependency : dependência
 designed development : desenvolvimento planejado
 deterministic : determinista
-development plan : plano de desenvolvimento
-dictionary : dicionário
-directory : diretório
-docstring : docstring
 dot notation : notação de ponto
-element : elemento
 embedded object : objeto integrado
-empty string : (uma) string vazia
 encapsulation : encapsulamento
 encode : codificar 
-equivalent : equivalente 
 evaluate : avaliar
-exception : exceção
-execute : executar
-expression : expressão
-factory : fábrica
-file object : objeto de arquivo
-filter : filtragem
-flag : flag
-floating-point : ponto flutuante
 floor division : divisão pelo piso
 flow of execution : fluxo de execução
-formal language : linguagem formal
-format operator : operador de formatação
-format sequence : sequência de formatação
-format string : (uma) string de formatação
-frame : frame
-fruitful function : função com resultado
-functional programming style : programação funcional
 function call : chamada de função
 function definition : definição de função
-function : função
 function object : objeto da função
-gather : gather
-generalization : generalização
-generator expression : expressão geradora
-global statement : instrução global
-global variable : variável global
-guardian : guardião
-has-a relationship : relação has-a
-hashable : hashable
 hash function : função hash
-hashtable : hashtable
 hashtable : hashtable
 header : cabeçalho
 high-level language : linguagem de alto nível
-identical : idêntico
-immutable : imutável
-implementation : implementação
 import statement : instrução de importação
-incremental development : desenvolvimento incremental
-increment : incremento
-index : índice
 infinite loop : loop (laço) infinito
 infinite recursion : recursividade infinita
 information hiding : ocultamento de informação
 inheritance : herança
-initialization : inicialização
-instance attribute : atributo de instância
-instance : instância
-instantiate : instanciar
-integer : inteiro
-interactive mode : modo interativo
-interface : interface
-interpreter : interpretador
 invariant : invariável
-invocation : invocação
-is-a relationship : relação is-a
-item : item
-item : item 
-iteration : iteração
-iterator : iterador
-key : chave
 key-value pair : par chave-valor
-keyword argument : argumento de palavra-chave
 keyword : palavra-chave
 leading term : termo principal
-linear : linear
 list comprehension : abrangência de lista
-list : lista
-local variable : variável local
-logical operator : operador lógico
 lookup : busca
 loop : loop (laço)
 low-level language : linguagem de baixo nível
-machine model : modelo de máquina
-map : mapeamento 
 mapping : mapeamento
-memo : memo
-method : método
-method : método
 modifier : modificador
-module : módulo
-module object : objeto de módulo
 modulus operator : operador módulo
-multiplicity : multiplicidade
 multiset : multiconjunto
-natural language : linguagem natural
 nested conditional : condicional aninhada
 nested list : lista aninhada
-None : None
-object diagram : diagrama de objeto
-object : objeto
-object : objeto
 object-oriented language : linguagem orientada a objeto
 object-oriented programming : programação orientada a objeto
-operand : operando
-operator : operador
 operator overloading : sobrecarga de operador
-optional argument : argumento opcional
 order of growth : ordem de crescimento
 order of operations : ordem das operações
 override : ignorar (substituir um valor padrão)
-parameter : parâmetro
 parent class : classe-pai
 parse : analisar
 path : caminho 
-persistent : persistente
-pipe object : objeto pipe
-polymorphic : polimórfico
-portability : portabilidade
-positional argument : argumento posicional
-postcondition : pós-condição
-precondition : precondição
-print statement : instrução print
 problem solving : resolução de problemas
-program : programa
-prompt : prompt
 prototype and patch : protótipo e correção
 pseudorandom : pseudoaleatório
-pure function : função pura
-quadratic : quadrático
-raise statement : instrução raise
 reassignment : reatribuição
 recursion : recursividade
-reduce : redução 
-reduction to a previously solved problem : redução a um problema resolvido anteriormente
-refactoring : refatoração
-reference : referência
-relational operator : operador relacional
-relative path : caminho relativo
-return statement : instrução de retorno
-return value : valor de retorno
 reverse lookup : busca reversa
-rubber duck debugging : depuração do pato de borracha
 scaffolding : andaime
-scatter : scatter
-script mode : modo script
-script : script
-search : busca
-search : busca 
-semantic error : erro semântico
-semantics : semântica
-sequence : sequência
 shallow copy : cópia superficial
 shape error : erro de forma
-shell : shell
 singleton : item avulso (singleton)
 slice : fatia
-special case : caso especial
 stack diagram : diagrama da pilha
 state diagram : diagrama de estado
 statement : instrução
 string : (uma) string
-subject : sujeito
-syntax error : erro de sintaxe
-syntax : sintaxe
-temporary variable : (uma) variável temporária
-text file : arquivo de texto
 token : símbolo
-traceback : traceback
 traverse : atravessar
 tuple assignment : atribuição de tupla
 tuple : tupla
 type-based dispatch : despacho por tipo 
-type : tipo
 update : atualização
-value : valor
-value : valor
-variable : (uma) variável
 veneer : folheado
 void function : função nula
-worst case : pior caso
-zip object : objeto zip
