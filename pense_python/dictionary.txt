@@ -156,3 +156,77 @@ zip object : objeto zip
 iterator : iterador
 data structure : estrutura de dados
 shape error : erro de forma
+deterministic : determinista
+pseudorandom : pseudoaleatório
+default value : valor padrão
+override : ignorar (substituir um valor padrão)
+benchmarking : benchmarking
+rubber duck debugging : depuração do pato de borracha
+persistent : persistente
+format operator : operador de formatação
+format string : (uma) string de formatação
+format sequence : sequência de formatação
+text file : arquivo de texto
+directory : diretório
+path : caminho 
+relative path : caminho relativo
+absolute path : caminho absoluto
+catch : capturar
+database : banco de dados
+bytes object : objeto bytes
+shell : shell
+pipe object : objeto pipe
+class : classe
+class object : objeto de classe
+instance : instância
+instantiate : instanciar
+attribute : atributo
+embedded object : objeto integrado
+shallow copy : cópia superficial
+deep copy : cópia profunda
+object diagram : diagrama de objeto
+prototype and patch : protótipo e correção
+designed development : desenvolvimento planejado
+pure function : função pura
+modifier : modificador
+functional programming style : programação funcional
+invariant : invariável
+assert statement : instrução assert
+object-oriented language : linguagem orientada a objeto
+object-oriented programming : programação orientada a objeto
+method : método
+subject : sujeito
+positional argument : argumento posicional
+operator overloading : sobrecarga de operador
+type-based dispatch : despacho por tipo 
+polymorphic : polimórfico
+information hiding : ocultamento de informação
+encode : codificar 
+class attribute : atributo de classe
+instance attribute : atributo de instância
+veneer : folheado
+inheritance : herança
+parent class : classe-pai
+child class : classe-filho
+is-a relationship : relação is-a
+has-a relationship : relação has-a
+dependency : dependência
+class diagram : diagrama de classe
+multiplicity : multiplicidade
+data encapsulation : encapsulamento de dados
+conditional expression : expressão condicional
+list comprehension : abrangência de lista
+generator expression : expressão geradora
+multiset : multiconjunto
+factory : fábrica
+analysis of algorithms : análise de algoritmos
+machine model : modelo de máquina
+worst case : pior caso
+leading term : termo principal
+crossover point : ponto de desvio
+order of growth : ordem de crescimento
+Big-O notation : notação grande-O
+linear : linear
+quadratic : quadrático
+search : busca 
+hashtable : hashtable
