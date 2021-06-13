@@ -1,0 +1,19 @@
+Ch. 1
+-----
+
+import os
+os.chdir("/home/heitor/books/ThinkStats2-master/code/")
+
+# open nsfg.py, press C-RET
+df = ReadFemPreg()
+preg_map = MakePregMap(df)
+
+# save plots
+import thinkplot
+import thinkstats2
+h = thinkstats2.Hist([1,2,3,1,2])
+thinkplot.Hist(h)
+thinkplot.Save('/tmp/histogram', formats=['png'])
+
+
+* Progress: Ch. 4
