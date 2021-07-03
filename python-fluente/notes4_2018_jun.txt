@@ -335,6 +335,8 @@ is the same as d1(d2(f))
 
 immutable arguments are not changed, while mutable ones can be altered in place. However, they cannot be reassigned
 
+Mnemonic: if the argument can be mutated, its identity will remain and the mutation will occur. Otherwise, a new object is created.
+
 270 don't use mutable values as function keyword defaults
 
 273 usually, if a function or class alters mutable parameters, a copy should be created, such as list(items), so that the client's original data remains unchanged
