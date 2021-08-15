@@ -1,0 +1,2 @@
+83 evaluating a lazy expression is called "realizing" the expression
+99 (declare x y z) creates these vars with no initial binding at the same time
