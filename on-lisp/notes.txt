@@ -1,3 +1,7 @@
 Open onlisp.pdf and onlisp-copy.pdf to refer to the notes
 
+started 2021-09-04
+
 ATN: Augmented Transition Network (a form of parser)
+
+21 labels is like 'let' for functions. it allows any function to call another, including itself.
