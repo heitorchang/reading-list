@@ -157,17 +157,17 @@ and also the score itself."
 
 ;; Fig. 4.6
 
-(defun map0-n (fn n)
-  (mapa-b fn 0 n))
-
-(defun map1-n (fn n)
-  (mapa-b fn 1 n))
-
 (defun mapa-b (fn a b &optional (step 1))
   (do ((i a (+ i step))
        (result nil))
       ((> i b) (nreverse result))
     (push (funcall fn i) result)))
+
+(defun map0-n (fn n)
+  (mapa-b fn 0 n))
+
+(defun map1-n (fn n)
+  (mapa-b fn 1 n))
 
 (defun map-> (fn start test-fn succ-fn)
   (do ((i start (funcall succ-fn i))
@@ -213,3 +213,114 @@ and also the score itself."
           (if (funcall quit in)
               (return)
               (format *query-io* "~a~%" (funcall fn in))))))
+
+;;; Fig. 4.8
+
+(defun mkstr (&rest args)
+  (with-output-to-string (s)
+    (dolist (a args) (princ a s))))
+
+(defun symb (&rest args)
+  (values (intern (apply #'mkstr args))))
+
+(defun reread (&rest args)
+  (values (read-from-string (apply #'mkstr args))))
+
+(defun explode (sym)
+  (map 'list #'(lambda (c)
+                 (intern (make-string 1
+                                      :initial-element c)))
+       (symbol-name sym)))
+
+;;; Fig. 5.2
+
+(defun memoize (fn)
+  (let ((cache (make-hash-table :test #'equal)))
+    #'(lambda (&rest args)
+        (multiple-value-bind (val win) (gethash args cache)
+          (if win
+              val
+              (setf (gethash args cache)
+                    (apply fn args)))))))
+
+;;; Fig. 5.3
+
+(defun compose (&rest fns)
+  (if fns
+      (let ((fn1 (car (last fns)))
+            (fns (butlast fns)))
+        #'(lambda (&rest args)
+            (reduce #'funcall fns
+                    :from-end t
+                    :initial-value (apply fn1 args))))
+      #'identity))
+
+;;; Fig. 5.4
+
+(defun fif (if then &optional else)
+  #'(lambda (x)
+      (if (funcall if x)
+          (funcall then x)
+          (if else (funcall else x)))))
+
+(defun fint (fn &rest fns)
+  (if (null fns)
+      fn
+      (let ((chain (apply #'fint fns)))
+        #'(lambda (x)
+            (and (funcall fn x) (funcall chain x))))))
+
+(defun fun (fn &rest fns)
+  (if (null fns)
+      fn
+      (let ((chain (apply #'fun fns)))
+        #'(lambda (x)
+            (or (funcall fn x) (funcall chain x))))))
+
+;;; Fig. 5.5
+
+(defun lrec (rec &optional base)
+  "Page 69. The first argument must be a function of two arguments:
+the current car of the list, and a function which is called to continue the recursion.
+
+(lrec #'(lambda (x f) (1+ (funcall f))) 0)  ; length of a list
+"
+  (labels ((self (lst)
+             (if (null lst)
+                 (if (functionp base)
+                     (funcall base)
+                     base)
+                 (funcall rec (car lst)
+                          #'(lambda ()
+                              (self (cdr lst)))))))
+    #'self))
+
+;;; Fig. 5.8
+
+(defun ttrav (rec &optional (base #'identity))
+  (labels ((self (tree)
+             (if (atom tree)
+                 (if (functionp base)
+                     (funcall base tree)
+                     base)
+                 (funcall rec (self (car tree))
+                          (if (cdr tree)
+                              (self (cdr tree)))))))
+    #'self))
+
+;;; Fig. 5.10
+
+(defun trec (rec &optional (base #'identity))
+  (labels
+      ((self (tree)
+         (if (atom tree)
+             (if (functionp base)
+                 (funcall base tree)
+                 base)
+             (funcall rec tree
+                      #'(lambda ()
+                          (self (car tree)))
+                      #'(lambda ()
+                          (if (cdr tree)
+                              (self (cdr tree))))))))
+    #'self))

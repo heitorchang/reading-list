@@ -5,3 +5,11 @@ started 2021-09-04
 ATN: Augmented Transition Network (a form of parser)
 
 21 labels is like 'let' for functions. it allows any function to call another, including itself.
+
+62 (complement #'pred) returns the opposite value of pred
+
+75 the reader macro #. builds a new function at read-time. However, in general, it's better to use macros
+
+93 you might want to save a macroexpansion to debug it:
+     (setq exp (macroexpand-1 '(memq 'a '(a b c))))
+     then (eval exp)
