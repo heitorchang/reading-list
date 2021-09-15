@@ -16,6 +16,6 @@ Started   19.jun.19
 Paradigms of AI (PDF)
 Started   12.sep.21
 
-date      section page (of 948)
-14.sep.21  1.6      25
-
+date      section  PDF page (of 948)
+14.sep.21     1.6        25
+15.sep.21     2.1        46
