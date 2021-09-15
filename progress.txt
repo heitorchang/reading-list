@@ -1,4 +1,3 @@
-
 Foundations of Computer Science
 Started   09.sep.16 
 Paused    27.sep.16
@@ -14,5 +13,9 @@ Completed 18.fev.17
 Introduction to Emacs Lisp
 Started   19.jun.19
 
-date      page
-20.jun.19 20
+Paradigms of AI (PDF)
+Started   12.sep.21
+
+date      section page (of 948)
+14.sep.21  1.6      25
+
