@@ -19,3 +19,12 @@
   (if (= pow 0)
       1
       (* base (power base (- pow 1)))))
+
+(defun random-elt (choices)
+  (elt choices (random (length choices))))
+
+;; ex. 2.4
+(defun cross-product (fn xlist ylist)
+  (mappend #'(lambda (y)
+               (mapcar #'(lambda (x) (funcall fn x y)) xlist))
+           ylist))

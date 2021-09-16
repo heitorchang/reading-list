@@ -19,3 +19,4 @@ Started   12.sep.21
 date      section  PDF page (of 948)
 14.sep.21     1.6        25
 15.sep.21     2.3        50
+16.sep.21     3.1        60
