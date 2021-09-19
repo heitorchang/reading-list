@@ -1,3 +1,9 @@
+#|
+
+(load #P"/home/heitor/code/reading-list/paradigms-of-ai/prolog.fasl")
+
+|#
+
 (defparameter fail nil "pat-match failure")
 
 (defparameter no-bindings '((t . t))
