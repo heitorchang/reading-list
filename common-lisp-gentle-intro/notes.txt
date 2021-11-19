@@ -1,1 +1,118 @@
-;; 
+Table of contents (add 12 to get PDF page)
+
+   1 1. Functions and data
+   1  1.1 introduction
+   2  1.2 functions on numbers
+   3  1.3 three kinds of numbers
+   4  1.4 order of inputs is important
+   6  1.5 symbols
+   7  1.6 the special symbols T and NIL
+   8  1.7 some simple predicates
+  10  1.8 the EQUAL predicate
+  12  1.9 putting functions together
+  12   1.9.1 defining ADD1
+  13   1.9.2 defining ADD2
+  15   1.9.3 defining TWOP
+  16   1.9.4 defining ONEMOREP
+  18  1.10 the NOT predicate
+  20  1.11 negating a predicate
+  22  1.12 number of inputs to a function
+  24  1.13 errors
+  26       Advanced topics
+  27  1.14 the history of Lisp
+     
+  31 2. Lists
+  31  2.1 lists are the most versatile data type
+  31  2.2 what do lists look like?
+  33  2.3 lists of one element
+  33  2.4 nested lists
+  35  2.5 length of lists
+  37  2.6 NIL: the empty list
+  38  2.7 equality of lists
+  39  2.8 FIRST, SECOND, THIRD and REST
+  41  2.9 functions operate on pointers
+  42  2.10 CAR and CDR
+  44   2.10.1 the CDR of a single-element list
+  45   2.10.2 combinations of CAR and CDR
+  47   2.10.3 CAR and CDR of nested lists
+  50   2.10.4 CAR and CDR of NIL
+  52  2.11 CONS
+  55   2.11.1 CONS and the empty list
+  56   2.11.2 building nested lists with CONS
+  56   2.11.3 CONS can build lists from scratch
+  57  2.12 symmetry of CONS and CAR/CDR
+  58  2.13 LIST
+  63  2.14 replacing the first element of a list
+  66  2.15 list predicates
+  69       Advanced topics
+  70  2.16 unary arithmetic with lists
+  72  2.17 nonlist cons structures
+  74  2.18 circular lists
+  75  2.19 length of nonlist cons structures
+     
+  77 3. EVAL notation
+  77  3.1 introduction
+  78  3.2 the EVAL function
+  79  3.3 EVAL notation can do anything box notation can do
+  80  3.4 evaluation rules define the behavior of EVAL
+  82  3.5 defining functions in EVAL notation
+  84  3.6 variables
+  86  3.7 evaluating symbols
+  87  3.8 using symbols and lists as data
+  88  3.9 the problem of misquoting
+  89  3.10 three ways to make lists
+  91  3.11 four ways to misdefine a function
+  92  3.12 more about variables
+  96       Lisp on the computer
+  97  3.13 running Lisp
+  98  3.14 the Read-Eval-Print Loop
+  98  3.15 recovering from errors
+  99       Lisp toolkit: ED
+ 101	   keyboard exercise
+ 103	   Advanced topics
+ 103  3.16 functions of no arguments
+ 104  3.17 the QUOTE special function
+ 105  3.18 internal structure of symbols
+ 106  3.19 lambda notation
+ 109  3.20 scope of variables
+ 110  3.21 EVAL and APPLY
+
+ 113 4. Conditionals
+ 113  4.1 introduction
+ 113  4.2 the IF special function
+ 116  4.3 the COND macro
+ 117  4.4 using T as a test
+ 118  4.5 two more examples of COND
+ 119  4.6 COND and parenthesis errors
+ 122  4.7 the AND and OR macros
+ 122  4.8 evaluating AND and OR
+ 123  4.9 building complex predicates
+ 125  4.10 why AND and OR are conditionals
+ 126  4.11 conditionals are interchangeable
+ 129       Lisp toolkit: STEP
+ 131	   Advanced topics
+ 132  4.12 boolean functions
+ 133  4.13 truth tables
+ 134  4.14 DeMorgan's theorem
+
+ 137 5. Variables and side effects
+ 137  5.1 introduction
+ 137  5.2 local and global variables
+ 138  5.3 SETF assigns a value to a variable
+ 140  5.4 side effects
+ 141  5.5 the LET special function
+ 144  5.6 the LET* special function
+ 147  5.7 side effects can cause bugs
+ 149      Lisp toolkit: DOCUMENTATION and APROPOS
+ 151	  keyboard exercise
+ 152	  Advanced topics
+ 153  5.8 symbols and value cells
+ 155  5.9 distinguishing local from global variables
+ 157  5.10 binding, scoping, and assignment
+
+ 159 6. List data structures
+ 
+
+
+6 symbols are a data type. they are typically named after words or phrases, such as tuesday and buffalo-breath
+42 functions receive pointers to object inputs (such as lists), not the object itself
