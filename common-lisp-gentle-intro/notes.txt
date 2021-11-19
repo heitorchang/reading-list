@@ -111,6 +111,38 @@ Table of contents (add 12 to get PDF page)
  157  5.10 binding, scoping, and assignment
 
  159 6. List data structures
+ 159  6.1 introduction
+ 160  6.2 parenthesis notation vs. cons cell notation
+ 161  6.3 the APPEND function
+ 164  6.4 comparing CONS, LIST and APPEND
+ 165  6.5 more functions on lists
+ 165   6.5.1 REVERSE
+ 166   6.5.2 NTH and NTHCDR
+ 168   6.5.3 LAST
+ 168   6.5.4 REMOVE
+ 170  6.6 lists as sets
+ 170   6.6.1 MEMBER
+ 172   6.6.2 INTERSECTION
+ 173   6.6.3 UNION
+ 173   6.6.4 SET-DIFFERENCE
+ 174   6.6.5 SUBSETP
+ 175  6.7 programming with sets
+ 179  6.8 lists as tables (association lists)
+ 179   6.8.1 ASSOC
+ 180   6.8.2 RASSOC
+ 181  6.9 programming with tables
+ 185      Lisp toolkit
+ 188	  keyboard exercise
+ 192	  Advanced topics
+ 192  6.10 trees
+ 192   6.10.1 SUBST
+ 193   6.10.2 SUBLIS
+ 193  6.11 efficiency of list operations
+ 194  6.12 shared structure
+ 195  6.13 equality of objects
+ 198  6.14 keyword arguments
+
+ 201 7. Applicative programming
  
 
 
