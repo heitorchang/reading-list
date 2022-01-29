@@ -1,0 +1,33 @@
+1. A maneira como o mundo funciona está errada
+
+Planejar é util. seguir cegamente os planos é burrice. É muito tentador desenhar inumeros diagramas. Todo o trabalho que precisa ser feito em um projeto de grande porte ali, detalhado, para todos verem -- mas, quando deparam com a realidade, os planos desabam. Inclua no seu metodo de trabalho a possibilidade de mudanca, descoberta e inovacao.
+
+Inspecao e adaptacao: de tempos em tempos, pare o que está fazendo, revise o que ja fez, e verifique se deveria continuar fazendo o mesmo ou se existe uma maneira de faze-lo melhor
+
+Mude ou morra: Ficar preso ao modo antigo de fazer as coisas -- comando, controle, e previsibilidade rigida, so resultará em fracasso. Nesse meio-tempo, o concorrente que estiver disposto a inovar vai deixar voce pra trás
+
+Fracasse rapido para que possa corrigir o problema o quanto antes. A cultura corporativa costuma dar mais valor a formularios, procedimentos e reunioes do que à criacao de valor concreto, que possa ser verificado a curtos intervalos de tempo pelos usuarios. O trabalho que nao resulta em valor real é loucura. Trabalhar em um produto em ciclos curtos permite que se obtenha um feedback do usuario logo no comeco do desenvolvimento. Assim, voce pode eliminar imediatamente tudo aquilo que constitui um desperdicio obvio de esforco.
+
+
+2. A origem do Scrum
+
+Hesitacao significa morte.
+Observar
+Orientar
+Decidir
+Agir
+
+Saiba onde está, avalie suas alternativas, tome uma decisao e aja
+
+Olhe para fora para obter respostas. Sistemas adaptativos complexos seguem algumas regras simples, que sao captadas do ambiente.
+
+Equipes excelentes sao: multifuncionais, autonomas e capacitadas, com um proposito transcendente
+
+Nao adivinhe. Planeje, faça, verifique, aja. Planeje o que voce vai fazer. Faça. Verifique se o produto alcancou o resultado desejado. Aja em relacao a isso e mude a forma como está fazendo as coisas. Repita o processo em ciclos regulares e, dessa forma, alcance um aperfeicoamento continuo
+
+Shu Ha Ri: Primeiro, aprenda as regras e as formas. Quando tiver dominio delas, inove. por fim, em um estado elevado de mestria, descarte as formas e apenas seja -- com todo o conhecimento internalizado e as decisoes tomadas quase inconscientemente.
+
+
+3. Equipes
+
+Puxe a 
