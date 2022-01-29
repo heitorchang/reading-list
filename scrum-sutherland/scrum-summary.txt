@@ -157,4 +157,20 @@ Implementando o Scrum: como comecar
 
 7. torne o trabalho visivel. a maneira mais comum de fazer isso no Scrum é criar um Quadro Scrum com tres colunas: a fazer, fazendo, e feito. post-its representam os itens que devem ser realizados, e a equipe move essas notas pelo quadro Scrum conforme os itens vao sendo completados, um a um. outra maneira de tornar o trabalho visivel é criar um grafico de burndown. um eixo representa o numero de pontos que a equipe designou para o sprint (começa no total, por exemplo, 40, e vai até 0), e o outro representa o numero de dias. todo dia, o Scrum Master calcula o numero de pontos realizados e acrescenta essa informacao ao grafico. o ideal é que haja uma linha ingreme descendo em direcao a zer ponto restante no ultimo dia do sprint.
 
-8 reuniao diaria ou Scrum diario. essas sao as batidas do coracao do Scrum. todo dia, no mesmo horario, durante nao mais do que 15 minutos, a equipe e o Scrum Master se reunem e respondem a 3 perguntas:
+8. reuniao diaria ou Scrum diario. essas sao as batidas do coracao do Scrum. todo dia, no mesmo horario, durante nao mais do que 15 minutos, a equipe e o Scrum Master se reunem e respondem a 3 perguntas:
+
+* o que voce fez ontem para ajudar a equipe a concluir o sprint?
+* o que voce fará hoje para ajudar a equipe a concluir o sprint?
+* há algum obstaculo que esteja impedindo voce ou a equipe de alcancar a meta do sprint?
+
+so isso. a reuniao se resume a isso. se ela levar mais do que 15 minutos, isso significa que voce a está realizando da forma errada. esse encontro ajuda a equipe inteira a saber exatamente em que ponto as coisas estao no sprint. todas as tarefas serao completadas a tempo? ha oportunidades para auxiliar outros integrantes do grupo a superar obstaculos? nao existe isso de delegar tarefas de cima pra baixo. a equipe é autonoma, sao os integrantes que fazem isso. ninguem faz um relatorio detalhado para a gerencia. o Scrum Master é responsavel por fazer com que os obstaculos ao progresso da equipe sejam eliminados.
+
+9. revisao do sprint ou demonstracao do sprint. essa é a reuniao em que a equipe mostra o que realizou durante o sprint. qualquer um pode participar, nao apenas o Product Owner, o Scrum Master e a equipe, mas tambem os stakeholders, o comando da empresa, os clientes, etc. essa é uma reuniao aberta em qu ea equipe demonstra o que conseguiu mover ate a coluna Feito durante o ciclo. a equipe so deve demonstrar o que atender a definicao de Feito. o que estiver totalmente terminado e puder ser entregue sem mais nenhum trabalho. pode nao ser um produto completo, mas deve ser uma funcionalidade completa de um produto.
+
+10. retrospectiva de sprint. depois que tiver mostrado o que conseguiu realizar durante o ultimo sprint, aquilo que está feito e tem a possibilidade de ser enviado para os clientes para que receba feedback, a equipe se reune e pensa no que deu certo, no que poderia ter sido melhor e no que pode ser melhorado no sprint seguinte. qual é o aprimoramento no processo que os integrantes da equipe, em grupo, podem implementar de modo imediato?
+
+para que seja eficaz, essa reuniao requer certa maturidade emocional e um clima de confianca. o essencial é se lembrar de que voces nao estao procurando alguem em quem por a culpa. estao examinando o processo. por que isso aconteceu dessa maneira? por que nao percebemos aquilo? como podemos trabalhar mais rapido? é crucial que o grupo se responsabilize pelo processo e pelos resultados, e busque solucoes em equipe. Ao mesmo tempo, as pessoas precisam ter estrutura emocional para abordar as questoes que as incomodam de modo a buscar uma solucao, e nao de maneira acusatoria. e o resto do grupo precisa ter maturidade para ouvir o feedback, leva-lo em consideracao, e procurar uma solucao, em vez de ficar na defensiva.
+
+ao fim da reuniao, a equipe e o scrum master devem combinar qual é o aprimoramento no processo que será implementado no sprint seguinte. esse aprimoramento que as vezes é chamado de kaizen, deve ser incluido no backlog do sprint seguinte, com testes de aceitacao. assim, o grupo pode verificar com facilidade se conseguiu implementar a melhoria e qual foi o efeito dela na velocidade.
+
+11. comece de imediato o sprint seguinte, levando em consideracao a experiencia da equipe em relacao aos obstaculos e os aprimoramentos no processo.
