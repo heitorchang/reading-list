@@ -1,0 +1,2 @@
+04 to convert a seq back into a map, call 'into'
+(into {} (seq {:a 1 :b 2 :c 3}))
