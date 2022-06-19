@@ -1,0 +1,164 @@
+33 len in CPython actually reads ob_size of a C struct. It's much faster, so it's the reason len is a function, not a method
+35 __abs__, __add__, __mul__, __repr__
+
+mutable: list, deque, bytearray, array.array, memoryview
+immutable: tuple, str, bytes, primitives (int, float, boolean)
+
+391 Strong vs. Weak typing: strong typing does not implicitly convert between types
+Static vs. Dynamic typing: static typing checks types during compile time. Dynamic typing does so at run time
+
+55 use * to capture a variable amount of arguments. The starred variable may be anywhere. Unpacking structures may also be nested, such as (a, b, (c, d))
+
+a, b, *c = range(5)  # c is [2, 3, 4]
+72 bisect.bisect(lst, x) is an alias for bisect_right() and returns an index where x should be inserted in lst, such as lst.insert(idx, x). bisect_left() only differs from bisect() when x is already in lst
+
+83 deque.rotate(n) : if n > 0, items are shifted to the right, otherwise to the left if n < 0. Items are moved in-place
+85 queue.Queue is used for communication between threads. deque is used as a collection
+
+91 trick to sort a mixed list of strings and ints: sorted(lst, key=int)
+94 use isinstance(3, int) to check the type of an object
+101 dd = defaultdict(list)  # call with a default factory (without arguments)
+
+105 collections.OrderedDict
+collections.ChainMap
+collections.Counter
+collections.UserDict
+106 Subclassing UserDict is preferable to dict because certain overwritten dict methods do not get called. The actual data is stored in self.data
+
+122 if __eq__ is implemented, __hash__ should be too. If a == b, then hash(a) == hash(b) must also be true. If __eq__ depends on mutable state, __hash__ should raise a TypeError ("unhashable type")
+145 always pass encoding="???" when reading and writing text files
+177 A higher-order function is one that accepts functions as arguments or returns a function
+180 a lambda expression's body is limited to pure expressions (assignments, while, try are not allowed)
+182 callable() checks if an object is callable
+182 When creating an instance that accepts a list, it's a good idea to make a local copy: self._items = list(items)
+
+from functools import reduce
+
+206 the classic Strategy pattern defines a family of algorithms, encapsulates them and makes them interchangeable. The algorithm can vary independent of the clients who use them
+207 example: different discounts for different clients and orders. A concrete strategy is chosen by the client of the context class
+213 a new promotion object is not needed, because a promotion function may be called directly
+213 Strategy objects are often good Flyweights (a shared object)
+
+216 the Command pattern decouples a Caller object from the Receiver, which implements the operation
+
+222 nonlocal is often needed for writing custom decorators
+
+223 a decorator is a callable that accepts another function as an argument (the decorated function). It returns a function. Classes may also be decorated
+
+
+@decorate
+def target():
+    print("running target")
+
+is:
+
+target = decorate(target)
+
+224 decorators are run when a module is loaded (import time), and not at run time
+
+stacking decorators:
+@d1
+@d2
+def f():
+    ...
+is the same as d1(d2(f)). Closest decorator to the function is called first
+
+247 to create parametrized decorators, a decorator factory must be created. This decorator factory should accept the desired parameters, create a decorator that decorates the target function, and finally return it
+
+232 a closure is a function with an extended scope, enclosing non-global variables not defined in its body
+234 variables not associated in the local scope are "free variables"
+234 closures can be inspected with fn.__code__.co_varnames, .co_freevars, and fn.__closure__
+235 the only scenario where a function uses external, non-global variables is when it is nested in another function
+236 because variable assignments can only be done with local variables, the nonlocal declaration is needed in creating closures
+
+239 @functools.wraps copies relevant attributes from the decorated function to the decorator
+
+240 @functools.lru_cache() implements memoization. It stands for Least Recently Used (a limited cache where items not recently used are discarded)
+241 @functools.lru_cache() is written with parentheses. It has default arguments maxsize=128 and typed=False. If maxsize=None, the cache is unlimited. The cache size should be a power of 2. Parameters of the decorated function must be hashable
+
+244 there is no function or method overloading in Python
+
+244 @singledispatch is used to define a generic function
+245 if possible, register functions with ABCs instead of concrete types like int or list
+
+258 since objects must exist before a name is bound to them, it makes more sense to say, 'variable x is assigned to the object'
+260 an alternative word to use is "bind", that goes both ways. "assign" is used in contradictory ways.
+
+260 several variables assigned to the same object are aliases
+
+267 copy.deepcopy() creates deep copies. copy.copy creates shallow copies
+
+293 classmethods are typically used as alternative constructors
+293 a @staticmethod does not accept a special first parameter. It is like a regular function that happens to be inside a class definition
+
+299 @property marks a getter method of a property
+
+310 class attributes can be used as default values for instance attributes
+311 subclassing to override a class attribute is more commonplace than altering the target class' class attribute directly
+
+322 a protocol is an informal interface, defined in documentation but not enforced in code
+
+322 the Python sequence protocol implies only __len__ and __getitem__
+323 to support iteration, only __getitem__ is required
+
+329 __getattr__ is called if an attribute is not found via dot notation (myobj.x)
+330 implementing __setattr__ can prevent unwanted attribute assignments. usually, if __getattr__ is implemented, __setattr__ should be too
+
+if we assign z = zip(a, b, c), zip(*z) will reverse the operation
+363 issubclass() is more acceptable when checking if a class subclasses ABCs
+
+372 an abstract method may have an implementation, even if subclasses override them. To use them, use super()
+
+401 The Method Resolution Order (__mro__) defines the specific order when traversing the inheritance graph
+
+Classes designed to offer methods for unrelated subclasses should be mixin classes. Mixins should never be instantiated. Concrete classes should inherit from more than one mixin class
+
+457 the best way of checking if x is an iterator is: isinstance(x, abc.Iterator)
+
+461 a Pythonic implementation of an iterable uses a generator function to replace a custom iterator. (example of a Sentence class)
+
+def __iter__(self):
+    for word in self.words:
+        yield word
+
+itertools.takewhile, dropwhile, filter, map, combinations, permutations, cycle, repeat, groupby
+
+tee(it, n=2) returns a tuple of n independent generators
+
+485 a simple usage of 'yield from' replaces nesting a for loop:
+
+def myChain(*iterables):
+    for i in iterables:
+        yield from i  # replaces for item in i: yield item
+
+499 'with' defines a temporary context and undoes it under the control of a context manager. It is commonly used to open files and close them automatically
+'with' simplifies the try/finally pattern
+the context manager protocol is made up of __enter__ and __exit__
+'as x' is optional
+Examples: sqlite3 transactions, threading locks and conditions
+510 you must explicitly reraise an exception in the decorated function if you don't want @contextmanager to suppress it
+
+500 'else' after a 'for' will be executed if the loop reaches its end (that is, it wasn't interrupted by a 'break')
+'else' after 'try' executes if no exception was raised
+these 'else's are also ignored if an exception, 'return', 'break', or 'continue' exits the command's block
+
+coroutines enable cooperative multitasking. each coroutine yields control to a central scheduler so other coroutines may be activated
+530 when a generator calls 'yield from subgen()', subgen takes control and returns values to whoever called gen. It is like calling subgen directly. While subgen runs, gen is blocked
+531 the true power of yield from is to open a bidirectional channel between the outermost caller and the innermost subgenerator, without much code in between
+
+567 there are two Future classes: concurrent.futures.Future and asyncio.Future. They have the same purpose: to represent a delayed process that may or may not have been concluded
+Future is similar to Promise in JavaScript
+We don't need to create Futures. Passing a callable to Executor.submit() will create one automatically
+Both Future objects have a .done() method that is non-blocking and returns a Boolean telling whether the associated callable executed or not
+
+770 (Appendix) enum.Enum is a generic enumeration
+
+NOTE: async/await wasn't available in Fluent Python, 1st ed.
+
+594 concurrency is about dealing with many things at the same time (structure)
+parallelism is about doing many things at the same time (execution)
+
+595 asyncio implements concurrency with coroutine driven by an event loop.
+599 decorate coroutines with @asyncio.coroutine
+
+STOP 658
