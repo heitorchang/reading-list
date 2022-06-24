@@ -3,10 +3,10 @@
 def cartesian_product():
     # all possible combinations of employee and department
     # called a "cross join"
-    
+
     global_cnx("""
     SELECT e.fname, e.lname, d.name
-    FROM employee AS e JOIN department AS d;
+    FROM employee AS e CROSS JOIN department AS d;
     """)
 
 def inner_join_dept_id():
@@ -83,7 +83,7 @@ def insert_no_fee_chk(cnx):
     ('NFC', 'no-fee checking', 'ACCOUNT', '2006-01-01', '2006-12-31');""")
     cnx.commit()
     cursor.close()
-    
+
 def non_equi_join():
     global_cnx("""
     SELECT e.emp_id, e.fname, e.lname, e.start_date
