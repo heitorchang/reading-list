@@ -1,14 +1,13 @@
-/* http://examples.oreilly.com/learningsql/ */
 /* begin table creation */
 
 create table department
- (dept_id serial,
+ (dept_id serial  not null ,
   name varchar(20) not null,
   constraint pk_department primary key (dept_id)
  );
 
 create table branch
- (branch_id serial,
+ (branch_id serial  not null ,
   name varchar(20) not null,
   address varchar(30),
   city varchar(20),
@@ -18,15 +17,15 @@ create table branch
  );
 
 create table employee
- (emp_id serial,
+ (emp_id serial  not null ,
   fname varchar(20) not null,
   lname varchar(20) not null,
   start_date date not null,
   end_date date,
-  superior_emp_id smallint,
-  dept_id smallint,
+  superior_emp_id integer ,
+  dept_id integer ,
   title varchar(20),
-  assigned_branch_id smallint,
+  assigned_branch_id integer ,
   constraint fk_e_emp_id
     foreign key (superior_emp_id) references employee (emp_id),
   constraint fk_dept_id
@@ -37,7 +36,7 @@ create table employee
  );
 
 create table product_type
- (product_type_cd varchar(10),
+ (product_type_cd varchar(10) not null,
   name varchar(50) not null,
   constraint pk_product_type primary key (product_type_cd)
  );
@@ -54,7 +53,7 @@ create table product
  );
 
 create table customer
- (cust_id serial not null,
+ (cust_id serial  not null ,
   fed_id varchar(12) not null,
   cust_type_cd text not null,
   address varchar(30),
@@ -65,7 +64,7 @@ create table customer
  );
 
 create table individual
- (cust_id serial not null,
+ (cust_id serial  not null,
   fname varchar(30) not null,
   lname varchar(30) not null,
   birth_date date,
@@ -75,7 +74,7 @@ create table individual
  );
 
 create table business
- (cust_id serial not null,
+ (cust_id serial  not null,
   name varchar(40) not null,
   state_id varchar(10) not null,
   incorp_date date,
@@ -85,8 +84,8 @@ create table business
  );
 
 create table officer
- (officer_id serial not null,
-  cust_id integer not null,
+ (officer_id serial  not null ,
+  cust_id integer  not null,
   fname varchar(30) not null,
   lname varchar(30) not null,
   title varchar(20),
@@ -98,15 +97,15 @@ create table officer
  );
 
 create table account
- (account_id serial not null,
+ (account_id serial  not null ,
   product_cd varchar(10) not null,
-  cust_id integer not null,
+  cust_id integer  not null,
   open_date date not null,
   close_date date,
   last_activity_date date,
   status text,
-  open_branch_id smallint,
-  open_emp_id smallint,
+  open_branch_id integer ,
+  open_emp_id integer ,
   avail_balance real,
   pending_balance real,
   constraint fk_product_cd foreign key (product_cd)
@@ -121,13 +120,13 @@ create table account
  );
 
 create table transaction
- (txn_id serial not null,
+ (txn_id serial  not null,
   txn_date timestamp not null,
   account_id integer not null,
   txn_type_cd text,
-  amount double precision not null,
-  teller_emp_id smallint,
-  execution_branch_id smallint,
+  amount real not null,
+  teller_emp_id integer ,
+  execution_branch_id integer ,
   funds_avail_date timestamp,
   constraint fk_t_account_id foreign key (account_id)
     references account (account_id),
@@ -143,129 +142,96 @@ create table transaction
 /* begin data population */
 
 /* department data */
-insert into department (name)
-values ('Operations');
-insert into department (name)
-values ('Loans');
-insert into department (name)
-values ('Administration');
+insert into department
+ (name)
+values
+('Operations'),
+('Loans'),
+('Administration');
 
 /* branch data */
-insert into branch (name, address, city, state, zip)
-values ('Headquarters', '3882 Main St.', 'Waltham', 'MA', '02451');
-insert into branch (name, address, city, state, zip)
-values ('Woburn Branch', '422 Maple St.', 'Woburn', 'MA', '01801');
-insert into branch (name, address, city, state, zip)
-values ('Quincy Branch', '125 Presidential Way', 'Quincy', 'MA', '02169');
-insert into branch (name, address, city, state, zip)
-values ('So. NH Branch', '378 Maynard Ln.', 'Salem', 'NH', '03079');
+insert into branch
+ (name, address, city, state, zip)
+values
+('Headquarters', '3882 Main St.', 'Waltham', 'MA', '02451'),
+('Woburn Branch', '422 Maple St.', 'Woburn', 'MA', '01801'),
+('Quincy Branch', '125 Presidential Way', 'Quincy', 'MA', '02169'),
+('So. NH Branch', '378 Maynard Ln.', 'Salem', 'NH', '03079');
 
 /* employee data */
-insert into employee (fname, lname, start_date,
+insert into employee
+ (fname, lname, start_date,
   dept_id, title, assigned_branch_id)
-values ('Michael', 'Smith', '2001-06-22',
+values
+('Michael', 'Smith', '2005-06-22',
   (select dept_id from department where name = 'Administration'),
   'President',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Susan', 'Barker', '2002-09-12',
+  (select branch_id from branch where name = 'Headquarters')),
+('Susan', 'Barker', '2006-09-12',
   (select dept_id from department where name = 'Administration'),
   'Vice President',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Robert', 'Tyler', '2000-02-09',
+  (select branch_id from branch where name = 'Headquarters')),
+('Robert', 'Tyler', '2005-02-09',
   (select dept_id from department where name = 'Administration'),
   'Treasurer',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Susan', 'Hawthorne', '2002-04-24',
+  (select branch_id from branch where name = 'Headquarters')),
+('Susan', 'Hawthorne', '2006-04-24',
   (select dept_id from department where name = 'Operations'),
   'Operations Manager',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('John', 'Gooding', '2003-11-14',
+  (select branch_id from branch where name = 'Headquarters')),
+('John', 'Gooding', '2007-11-14',
   (select dept_id from department where name = 'Loans'),
   'Loan Manager',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Helen', 'Fleming', '2004-03-17',
+  (select branch_id from branch where name = 'Headquarters')),
+('Helen', 'Fleming', '2008-03-17',
   (select dept_id from department where name = 'Operations'),
   'Head Teller',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Chris', 'Tucker', '2004-09-15',
+  (select branch_id from branch where name = 'Headquarters')),
+('Chris', 'Tucker', '2008-09-15',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Sarah', 'Parker', '2002-12-02',
+  (select branch_id from branch where name = 'Headquarters')),
+('Sarah', 'Parker', '2006-12-02',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Jane', 'Grossman', '2002-05-03',
+  (select branch_id from branch where name = 'Headquarters')),
+('Jane', 'Grossman', '2006-05-03',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Headquarters'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Paula', 'Roberts', '2002-07-27',
+  (select branch_id from branch where name = 'Headquarters')),
+('Paula', 'Roberts', '2006-07-27',
   (select dept_id from department where name = 'Operations'),
   'Head Teller',
-  (select branch_id from branch where name = 'Woburn Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Thomas', 'Ziegler', '2000-10-23',
+  (select branch_id from branch where name = 'Woburn Branch')),
+('Thomas', 'Ziegler', '2004-10-23',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Woburn Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Samantha', 'Jameson', '2003-01-08',
+  (select branch_id from branch where name = 'Woburn Branch')),
+('Samantha', 'Jameson', '2007-01-08',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Woburn Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('John', 'Blake', '2000-05-11',
+  (select branch_id from branch where name = 'Woburn Branch')),
+('John', 'Blake', '2004-05-11',
   (select dept_id from department where name = 'Operations'),
   'Head Teller',
-  (select branch_id from branch where name = 'Quincy Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Cindy', 'Mason', '2002-08-09',
+  (select branch_id from branch where name = 'Quincy Branch')),
+('Cindy', 'Mason', '2006-08-09',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Quincy Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Frank', 'Portman', '2003-04-01',
+  (select branch_id from branch where name = 'Quincy Branch')),
+('Frank', 'Portman', '2007-04-01',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'Quincy Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Theresa', 'Markham', '2001-03-15',
+  (select branch_id from branch where name = 'Quincy Branch')),
+('Theresa', 'Markham', '2005-03-15',
   (select dept_id from department where name = 'Operations'),
   'Head Teller',
-  (select branch_id from branch where name = 'So. NH Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Beth', 'Fowler', '2002-06-29',
+  (select branch_id from branch where name = 'So. NH Branch')),
+('Beth', 'Fowler', '2006-06-29',
   (select dept_id from department where name = 'Operations'),
   'Teller',
-  (select branch_id from branch where name = 'So. NH Branch'));
-insert into employee (fname, lname, start_date,
-  dept_id, title, assigned_branch_id)
-values ('Rick', 'Tulman', '2002-12-12',
+  (select branch_id from branch where name = 'So. NH Branch')),
+('Rick', 'Tulman', '2006-12-12',
   (select dept_id from department where name = 'Operations'),
   'Teller',
   (select branch_id from branch where name = 'So. NH Branch'));
@@ -308,136 +274,123 @@ where ((lname = 'Fowler' and fname = 'Beth')
 
 drop table emp_tmp;
 
+/* recreate employee self-referencing foreign key */
+
 /* product type data */
-insert into product_type (product_type_cd, name)
-values ('ACCOUNT','Customer Accounts');
-insert into product_type (product_type_cd, name)
-values ('LOAN','Individual and Business Loans');
-insert into product_type (product_type_cd, name)
-values ('INSURANCE','Insurance Offerings');
+insert into product_type
+ (product_type_cd, name)
+values
+('ACCOUNT','Customer Accounts'),
+('LOAN','Individual and Business Loans'),
+('INSURANCE','Insurance Offerings');
 
 /* product data */
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('CHK','checking account','ACCOUNT','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('SAV','savings account','ACCOUNT','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('MM','money market account','ACCOUNT','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('CD','certificate of deposit','ACCOUNT','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('MRT','home mortgage','LOAN','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('AUT','auto loan','LOAN','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('BUS','business line of credit','LOAN','2000-01-01');
-insert into product (product_cd, name, product_type_cd, date_offered)
-values ('SBL','small business loan','LOAN','2000-01-01');
-
+insert into product
+ (product_cd, name, product_type_cd, date_offered)
+values
+('CHK','checking account','ACCOUNT','2004-01-01'),
+('SAV','savings account','ACCOUNT','2004-01-01'),
+('MM','money market account','ACCOUNT','2004-01-01'),
+('CD','certificate of deposit','ACCOUNT','2004-01-01'),
+('MRT','home mortgage','LOAN','2004-01-01'),
+('AUT','auto loan','LOAN','2004-01-01'),
+('BUS','business line of credit','LOAN','2004-01-01'),
+('SBL','small business loan','LOAN','2004-01-01');
 
 /* residential customer data */
-insert into customer (fed_id, cust_type_cd,
+insert into customer
+ (fed_id, cust_type_cd,
   address, city, state, postal_code)
-values ('111-11-1111', 'I', '47 Mockingbird Ln', 'Lynnfield', 'MA', '01940');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'James', 'Hadley', '1972-04-22' from customer
-where fed_id = '111-11-1111';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('222-22-2222', 'I', '372 Clearwater Blvd', 'Woburn', 'MA', '01801');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'Susan', 'Tingley', '1968-08-15' from customer
-where fed_id = '222-22-2222';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('333-33-3333', 'I', '18 Jessup Rd', 'Quincy', 'MA', '02169');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'Frank', 'Tucker', '1958-02-06' from customer
-where fed_id = '333-33-3333';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('444-44-4444', 'I', '12 Buchanan Ln', 'Waltham', 'MA', '02451');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'John', 'Hayward', '1966-12-22' from customer
-where fed_id = '444-44-4444';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('555-55-5555', 'I', '2341 Main St', 'Salem', 'NH', '03079');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'Charles', 'Frasier', '1971-08-25' from customer
-where fed_id = '555-55-5555';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('666-66-6666', 'I', '12 Blaylock Ln', 'Waltham', 'MA', '02451');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'John', 'Spencer', '1962-09-14' from customer
-where fed_id = '666-66-6666';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('777-77-7777', 'I', '29 Admiral Ln', 'Wilmington', 'MA', '01887');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'Margaret', 'Young', '1947-03-19' from customer
-where fed_id = '777-77-7777';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('888-88-8888', 'I', '472 Freedom Rd', 'Salem', 'NH', '03079');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'Louis', 'Blake', '1977-07-01' from customer
-where fed_id = '888-88-8888';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('999-99-9999', 'I', '29 Maple St', 'Newton', 'MA', '02458');
-insert into individual (cust_id, fname, lname, birth_date)
-select cust_id, 'Richard', 'Farley', '1968-06-16' from customer
+values
+('111-11-1111', 'I', '47 Mockingbird Ln', 'Lynnfield', 'MA', '01940'),
+('222-22-2222', 'I', '372 Clearwater Blvd', 'Woburn', 'MA', '01801'),
+('333-33-3333', 'I', '18 Jessup Rd', 'Quincy', 'MA', '02169'),
+('444-44-4444', 'I', '12 Buchanan Ln', 'Waltham', 'MA', '02451'),
+('555-55-5555', 'I', '2341 Main St', 'Salem', 'NH', '03079'),
+('666-66-6666', 'I', '12 Blaylock Ln', 'Waltham', 'MA', '02451'),
+('777-77-7777', 'I', '29 Admiral Ln', 'Wilmington', 'MA', '01887'),
+('888-88-8888', 'I', '472 Freedom Rd', 'Salem', 'NH', '03079'),
+('999-99-9999', 'I', '29 Maple St', 'Newton', 'MA', '02458'),
+('04-1111111', 'B', '7 Industrial Way', 'Salem', 'NH', '03079'),
+('04-2222222', 'B', '287A Corporate Ave', 'Wilmington', 'MA', '01887'),
+('04-3333333', 'B', '789 Main St', 'Salem', 'NH', '03079'),
+('04-4444444', 'B', '4772 Presidential Way', 'Quincy', 'MA', '02169');
+
+insert into individual
+ (cust_id, fname, lname, birth_date)
+select cust_id, 'James', 'Hadley', '1977-04-22'
+from customer
+where fed_id = '111-11-1111'
+union all
+select cust_id, 'Susan', 'Tingley', '1973-08-15'
+from customer
+where fed_id = '222-22-2222'
+union all
+select cust_id, 'Frank', 'Tucker', '1963-02-06'
+from customer
+where fed_id = '333-33-3333'
+union all
+select cust_id, 'John', 'Hayward', '1971-12-22'
+from customer
+where fed_id = '444-44-4444'
+union all
+select cust_id, 'Charles', 'Frasier', '1976-08-25'
+from customer
+where fed_id = '555-55-5555'
+union all
+select cust_id, 'John', 'Spencer', '1967-09-14'
+from customer
+where fed_id = '666-66-6666'
+union all
+select cust_id, 'Margaret', 'Young', '1951-03-19'
+from customer
+where fed_id = '777-77-7777'
+union all
+select cust_id, 'George', 'Blake', '1982-07-01'
+from customer
+where fed_id = '888-88-8888'
+union all
+select cust_id, 'Richard', 'Farley', '1973-06-16'
+from customer
 where fed_id = '999-99-9999';
 
-/*PAUSE*/
 /* corporate customer data */
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('04-1111111', 'B', '7 Industrial Way', 'Salem', 'NH', '03079');
-insert into business (name, state_id, incorp_date)
-select cust_id, 'Chilton Engineering', '12-345-678', '1995-05-01' from customer
-where fed_id = '04-1111111';
-insert into officer (officer_id, cust_id, fname, lname,
-  title, start_date)
-select null, cust_id, 'John', 'Chilton', 'President', '1995-05-01'
+insert into business
+ (cust_id, name, state_id, incorp_date)
+select cust_id, 'Chilton Engineering', '12-345-678', '1995-05-01'
 from customer
-where fed_id = '04-1111111';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('04-2222222', 'B', '287A Corporate Ave', 'Wilmington', 'MA', '01887');
-insert into business (name, state_id, incorp_date)
-select cust_id, 'Northeast Cooling Inc.', '23-456-789', '2001-01-01' from customer
-where fed_id = '04-2222222';
-insert into officer (officer_id, cust_id, fname, lname,
-  title, start_date)
-select null, cust_id, 'Paul', 'Hardy', 'President', '2001-01-01'
+where fed_id = '04-1111111'
+union all
+select cust_id, 'Northeast Cooling Inc.', '23-456-789', '2001-01-01'
 from customer
-where fed_id = '04-2222222';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('04-3333333', 'B', '789 Main St', 'Salem', 'NH', '03079');
-insert into business (name, state_id, incorp_date)
-select cust_id, 'Superior Auto Body', '34-567-890', '2002-06-30' from customer
-where fed_id = '04-3333333';
-insert into officer (officer_id, cust_id, fname, lname,
-  title, start_date)
-select null, cust_id, 'Carl', 'Lutz', 'President', '2002-06-30'
+where fed_id = '04-2222222'
+union all
+select cust_id, 'Superior Auto Body', '34-567-890', '2002-06-30'
 from customer
-where fed_id = '04-3333333';
-insert into customer (fed_id, cust_type_cd,
-  address, city, state, postal_code)
-values ('04-4444444', 'B', '4772 Presidential Way', 'Quincy', 'MA', '02169');
-insert into business (name, state_id, incorp_date)
+where fed_id = '04-3333333'
+union all
 select cust_id, 'AAA Insurance Inc.', '45-678-901', '1999-05-01' from customer
 where fed_id = '04-4444444';
-insert into officer (cust_id, fname, lname,
-  title, start_date)
+
+/*PAUSE*/
+
+insert into officer
+ (officer_id, cust_id, fname, lname, title, start_date)
+select null, cust_id, 'John', 'Chilton', 'President', '1995-05-01'
+from customer
+where fed_id = '04-1111111'
+union all
+select null, cust_id, 'Paul', 'Hardy', 'President', '2001-01-01'
+from customer
+where fed_id = '04-2222222'
+union all
+select null, cust_id, 'Carl', 'Lutz', 'President', '2002-06-30'
+from customer
+where fed_id = '04-3333333'
+union all
 select null, cust_id, 'Stanley', 'Cheswick', 'President', '1999-05-01'
 from customer
 where fed_id = '04-4444444';
-
 
 /* residential account data */
 insert into account (account_id, product_cd, cust_id, open_date,
@@ -634,10 +587,10 @@ from customer c cross join
     50000.00 avail, 50000.00 pend) a
 where c.fed_id = '04-4444444';
 
-/* put $100 in all checking/savings accounts on date account opened */
+/* put $100 in all checking/savings accounts on Jan 5th, 2008 */
 insert into transaction (txn_id, txn_date, account_id, txn_type_cd,
   amount, funds_avail_date)
-select null, a.open_date, a.account_id, 'CDT', 100, a.open_date
+select null, '2008-01-05', a.account_id, 'DBT', 100, '2008-01-05'
 from account a
 where a.product_cd IN ('CHK','SAV','CD','MM');
 
