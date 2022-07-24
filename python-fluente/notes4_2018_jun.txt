@@ -102,7 +102,7 @@ multiprocessing is used for communication between processes
 
 heapq provides functions to operate on lists; call heapify(lst)
 
-91 trick to sort a mixed list of strings and ints: sorted(lst, key=int) 
+91 trick to sort a mixed list of strings and ints: sorted(lst, key=int)
 
 94 use isinstance(3, int) to check the type of an object
 
@@ -223,7 +223,7 @@ sorted(b, key=itemgetter(1))
 
 def f(a, b):
     return a + b
-    
+
 addTo9 = partial(f, 9)
 
 addTo9(1)  # 10
@@ -300,7 +300,7 @@ def htmlize(obj):
 
 @htmlize.register(numbers.Integral)
 def _(n):
-    ...    
+    ...
 
 245 if possible, register functions with ABCs instead of concrete types like int or list
 
@@ -770,9 +770,9 @@ GEN_CREATED, GEN_RUNNING, GEN_SUSPENDED, or GEN_CLOSED
 
 520 execution stops exactly at the yield expression. Remember that in assignment statements, the right side is evaluated first
 
----,
+---.
 b = \ yield a  # this side is evaluated first
-     '--------
+     `--------
 
 'a' is returned to the caller, and b will only be assigned after .send() is called
 
@@ -905,7 +905,7 @@ If ProcessPoolExecutor is insufficient for I/O-bound applications, there is the 
 
 parallelism is about doing many things at the same time (execution)
 
-595 asyncio implements concurrency with coroutine driven by an event loop. 
+595 asyncio implements concurrency with coroutine driven by an event loop.
 
 596 spinning bar example with threading
 
