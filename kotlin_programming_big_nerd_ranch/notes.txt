@@ -1,0 +1,67 @@
+General
+-------
+
+Strings must be double-quoted. Single quotes are used for characters.
+
+
+Ch. 2
+-----
+
+Built-in types:
+String, Char, Boolean, Int, Double, List, Set, Map
+
+const declares compile-time constants, while val are for runtime constants
+
+Only primitives can be used as consts.
+String, Int, Double, Float, Long, Short, Byte, Char, Boolean
+
+
+Ch. 3
+-----
+
+Java has reference types and primitive types; however, Kotlin only has reference types.
+
+val race = "gnome"
+val faction: String = when (race) {
+    "dwarf" -> "Keepers of the mines"
+    "gnome" -> "Tinkerers"
+    "orc", "human" -> "Free people"
+    else -> "Shadow cabal"
+}
+
+when {
+    expPoints > requiredExpPoints -> {
+        "you already leveled up"
+    }
+}
+
+These are true:
+1 in 1..3
+3 in 1..3
+3 in 3 downTo 1
+1 in 3 downTo 1
+
+These are false:
+5 in 1 until 5
+3 in 5 until 1 // cannot go backwards
+
+Ch. 4
+-----
+
+Unit functions do not define a return type and do not have a return statement.
+
+Their return type is Unit.
+
+Nothing, like Unit, indicates that a function returns no value. However, a Nothing lets the compiler know that a function is guaranteed to never complete successfully.
+
+The TODO function returns Nothing
+
+fun shouldReturnAString(): String {
+    TODO("implement this function")
+}
+
+Within backticks, a wide variety of function identifiers may be used:
+
+fun `users should be signed out`() {
+    TODO()
+}
