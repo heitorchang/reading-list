@@ -1,0 +1,73 @@
+25
+while a "val" reference is itself immutable, it can point to a mutable object
+
+val languages = mutableListOf("Java")
+languages.add("Kotlin")
+
+
+29
+if a property name starts with "is", no additional prefix for the getter is added, and in the setter name, "is" is replaced with "set"
+
+30
+custom accessor
+
+class Rect(val w: Int, val h: Int) {
+    val isSquare: Boolean
+        get() {
+	    return w == h
+	}
+}
+
+
+37
+fun measureColor() = ORANGE
+when (val color = measureColor()) {
+    RED, ORANGE -> "warm red = ${color.r}"
+    GREEN -> "green"
+}
+
+
+37
+when (setOf(color1, color2)) {
+    setOf(RED, YELLOW) -> ORANGE
+    ...
+    else -> throw Exception("dirty color")
+}
+
+
+39
+when can be used without an argument; in this case, each branch is a Boolean expression
+
+
+39
+interface Expr
+class Num(val value: Int) : Expr
+class Sum(val left:Expr, val right: Expr) : Expr
+
+if (e is Sum) { ... }
+
+val n = e as Num
+
+
+43
+if ... {
+    ...
+} else if {
+    ...
+} else {
+    ...
+}
+
+
+fun eval(e: Expr): Int =
+    when (e) {
+        is Num ->
+            e.value
+        is Sum ->
+            eval(e.left) + eval(e.left)
+	else ->
+	    throw IllegalArgumentException("unknown expression")
+    }
+
+
+Stop: 44 (2.3.8)
