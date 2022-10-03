@@ -70,4 +70,152 @@ fun eval(e: Expr): Int =
     }
 
 
-Stop: 44 (2.3.8)
+44
+the last value of blocks as branches of "if", "when", "try", and "catch" is the return value, but not for regular functions
+
+
+45
+while (condition) {
+    ...
+}
+
+do {
+    ...
+} while (condition)
+
+
+45
+val oneToTen = 1..10 // ranges are inclusive. in this case, all values are iterated over, so it is called a progression
+
+
+46
+for (i in 10 downTo 0 step 2) { ... } // also inclusive
+for (i in 1 until 10) { .. } // does not include 10>
+
+
+47
+for (ch in 'A'..'F') { ... }
+
+
+47
+TreeMap sorts its keys
+
+
+49
+a in range
+a !in range // not in
+
+
+49
+ranges can be created for any object implementing the kotlin.Comparable interface
+"bob" in "alice".."carl" // ok
+"alice" < "bob" < "carl" // doesn't work
+
+
+50
+if (percentage !in 0..100) {
+    throw IllegalArgumentException("Percentage value must be between 0 to 100: $percentage")
+}
+
+throw is an expression, so it can be used as part of other exceptions
+
+
+51
+try {
+    val line = reader.readLine()
+    return Integer.parseInt(line)
+}
+catch (e: NumberFormatException) {
+    return null
+}
+finally {
+    reader.close()
+}
+
+
+54
+val mySet = setOf(1, 3, 9)
+
+
+55
+val myList = listOf(1, 7, 22)
+val map = mapOf(1 to "one", 2 to "b") // "to" is a normal function
+
+strings.last()
+numbers.sum()
+
+
+57
+fun <T> joinToString(
+      collection: Collection<T>,
+      separator: String,
+      prefix: String,
+      postfix: String
+): String {
+    val result = StringBuilder(prefix)
+    for ((index, element) in collection.withIndex()) {
+        if (index > 0) result.append(separator)
+	result.append(element)
+    }
+
+    result.append(postfix)
+    return result.toString()
+}
+
+
+58
+joinToString(collection, separator = " ", prefix = "(", postfix = ")")
+
+also: default values in a function signature has this syntax
+
+
+60
+annotate a Kotlin function with @JvmOverloads if you want to conveniently generate overloaded functions in the Java side.
+
+
+63
+"const" is allowed for properties of primitive types and String. It becomes a public static final field
+const val UNIX_LINE_SEPARATOR = "\n"
+
+an "extension function" is a function that can be called as a member of a class, but is defined outside of it.
+
+fun String.lastChar(): Char = this.get(this.length - 1)
+
+println("Hello".lastChar())
+
+"this" can be omitted:
+fun String.lastChar(): Char = get(length - 1)
+
+
+64
+However, encapsulation cannot be broken
+
+
+65
+import strings.lastChar as last
+
+for extension functions, only the short name can be used (while for regular classes and functions, the fully qualified name can be used)
+
+
+68
+Extension functions cannot be overridden (since it uses the declared static type, determined at compile time)
+
+
+69
+member functions shadow (take precedence over) extension functions
+
+extension properties can extend classes with the property syntax, but they can't have any state. it's not possible to add extra fields to existing instances.
+
+val String.lastChar: Char
+    get() = get(length - 1)
+
+
+However, a property on a StringBuilder can be a "var", because the contents of a StringBuilder can be modified.
+
+var StringBuilder.lastChar: Char
+    get() = get(length - 1)
+    set(value: Char) {
+        this.setCharAt(length - 1, value)
+    }
+
+STOP p. 70 Sec. 3.4
