@@ -218,4 +218,74 @@ var StringBuilder.lastChar: Char
         this.setCharAt(length - 1, value)
     }
 
-STOP p. 70 Sec. 3.4
+
+71
+spread operator is *
+
+fun main(args: Array<String>) {
+  val list = listOf("args: ", *args)
+}
+
+
+72
+infix call example ("to" function)
+1.to("one")
+1 to "one"
+
+infix fun Any.to(other: Any) = Pair(this, other)
+
+val (number, name) = 1 to "one"
+
+
+73
+for ((index, element) in collection.withIndex()) {
+  println("$index: $element")
+}
+
+
+74
+println("12-324.25.A".split("\\.|-".toRegex()))
+
+
+76
+(triple-quoted regex example)
+
+
+80
+(local function (nested function) example)
+
+
+81
+(extension function example)
+fun User.validateBeforeSave() { ... }
+
+
+84
+interfaces
+
+interface Clickable {
+  fun click() // returns Unit
+  fun showOff() = println("I'm clickable!") // default implementation
+}
+
+class Button : Clickable { // : is used for extends (inheritance) and implements (composition)
+  override fun click() = println("Clicked")
+}
+
+
+86
+super<Clickable>.showoff()
+
+
+88
+"open" classes can be inherited from
+
+
+89
+abstract classes cannot be instantiated
+
+
+91
+"internal" visibility modifier
+
+STOP: 93 Sec. 4.1.4
