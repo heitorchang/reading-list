@@ -288,4 +288,41 @@ abstract classes cannot be instantiated
 91
 "internal" visibility modifier
 
-STOP: 93 Sec. 4.1.4
+
+93
+nested inner class don't have access to the outer class instance, unless specifically requested
+
+
+95
+class Outer {
+  inner class Inner {
+    fun getOuterRef(): Outer = this@Outer
+  }
+}
+
+if a superclass is marked as "sealed", all its direct subclasses must be known at compile time and declared in the same package as the sealed class.
+
+
+96
+sealed interfaces behave similarly
+
+
+97
+class User (_nickname: String) { // constructor keyword may be omitted if there are no annotations or visibility modifiers
+  val nickname = _nickname
+}
+
+
+102
+delegating another constructor
+
+class MyButton : View {
+  constructor(ctx: Context): this(ctx, MY_STYLE) {
+    ...
+  }
+  constructor(ctx: Context, attr: Attribute): super(ctx, attr) {
+    ...
+  }
+}
+
+STOP: p. 113 Sec. 4.3.3
