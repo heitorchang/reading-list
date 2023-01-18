@@ -1,0 +1,55 @@
+Preface
+-------
+a deep neural net is a simplified model of our cerebral cortex, composed of a stack of layers of neurons.
+
+the goal is implementing programs capable of learning from data.
+
+frameworks used:
+- Scikit-Learn (implements many machine-learning algorithms)
+- TensorFlow (runs neural networks)
+- Keras (a deep learning API)
+
+code in this book can be run in Google Colab
+
+Part I covers:
+
+- what is machine learning?
+- the steps in a typical machine learning project
+- fitting a model to data
+- optimizing a cost function
+- handling, cleaning, and preparing data
+- selecting and engineering features
+- selecting a model and tuning hyperparameters using cross-validation
+- challenges in machine learning (underfitting, overfitting, bias/variance trade-off)
+- the most common algorithms:
+  - linear and polynomial regression
+  - logistic regression
+  - k-nearest neighbors
+  - support vector machines (SVMs)
+  - decision trees
+  - random forests
+  - ensemble methods
+- reducing the dimensionality of training data (fight the "curse of dimensionality")
+- unsupervised learning techniques:
+  - clustering
+  - density estimation
+  - anomaly detection
+
+Part II covers:
+
+- what are neural nets?
+- building and training neural nets using TensorFlow and Keras
+- the most important neural net architectures:
+  - feedforward neural nets for tabular data
+  - convolutional nets for computer vision
+  - recurrent nets and long short-term memory (LSTM) nets for sequence processing
+  - encoder-decoders and transformers for natural language processing (NLP) and more
+  - autoencoders
+  - generative adversarial networks (GANs)
+  - diffusion models for generative learning
+- how to build an agent (such as a bot) that can learn strategies from trial and error, using reinforcement learning
+- loading and preprocessing large amounts of data
+- training and deploying TensorFlow models at scale
+
+Ch. 1 (p. 23)
+-------------
