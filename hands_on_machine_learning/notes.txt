@@ -53,3 +53,76 @@ Part II covers:
 
 Ch. 1 (p. 23)
 -------------
+types of learning:
+- supervised vs. unsupervised
+- online vs. batch
+- instance-based vs. model-based
+
+machine learning is the science of programming computers so they can learn from data
+
+when a program is given more "experience" (new data), it "learns" if its measured performance improves
+
+the examples used to learn is the training set. it is made up of training instances (samples)
+
+the part that learns and makes predictions is called the model
+
+data mining: digging into large amounts of data to discover hidden patterns
+
+examples of ML applications:
+- image classification typically performed using convolutional neural networks (CNNs)
+- semantic image segmentation (detecting tumors in brain scans), typically using CNNs or transformers
+- classifying news articles using natural language processing (NLP), recurrent neural networks (RNNs), CNNs, or transformers
+- summarizing long documents
+- creating chatbots and personal assistants
+- forecasting revenue, based on performance metrics, using any regression model (linear, polynomial, support vector machine, random forest, artificial neural network)
+- speech recognition (RNNs, CNNs, transformers)
+- anomaly detection (credit card fraud), using isolation forests, Gaussian mixture models, or autoencoders
+- segmenting clients based on their purchases (clustering), using k-means or DBSCAN
+- representing a complex dataset (data visualization) using dimensionality reduction techniques
+- recommending a product (recommender system based on an artificial neural network)
+- building an intelligent bot (reinforcement learning, RL)
+
+supervised learning: the training set includes the desired solutions or labels. a typical task is classification
+
+regression: predicting a target numeric value, given a set of features (price of a car)
+
+logistic regression: outputs a probability of an item belonging to a given class
+
+"label" is more often used in classification, while "target" is more used in regression
+
+features are also called predictors or attributes
+
+unsupervised learning: training data is unlabeled.
+
+a clustering algorithm may be run to detect groups of similar items
+
+visualization is also common in unsupervised learning: a 2D or 3D representation can be plotted
+
+dimensionality reduction: simplifying the data without losing too much information. one way is to merge several correlated features into one.
+
+anomaly detection: does a new item look like existing ones?
+
+novelty detection: is the new item different from all instances in the training set?
+
+association rule learning: given a large amount of data, discover interesting relations between attributes
+
+semi-supervised learning: some instances are labeled
+
+self-supervised learning: generating a fully labeled dataset from a fully unlabeled one
+example: given a large dataset of unlabeled images, randomly mask a small part of each image and train a model to recover the original image
+
+transfer learning: transferring knowledge from one task to another
+
+in reinforcement learning, the agent can observe the environment, select actions, and get reward or penalties based on the choice. it must then learn by itself what is the best strategy (policy)
+
+batch learning: the system is incapable of learning incrementally. it must be trained using all the available data. this is offline learning.
+
+model rot (or data drift): the diminishing performance of a model due to changes in the world.
+
+online learning: you train the system incrementally by feeding it data instances sequentially, individually or in mini-batches
+
+learning rate: how fast they should adapt to changing data. a high learning rate means the system rapidly adapts to new data, but also quickly forgets old data. with a low learning rate, the system will have more inertia
+
+out-of-core learning is usually done offline, so "online learning" is a confusing term. it's better described as "incremental learning"
+
+online learning system are subject to errors (bugs) or abuse (someone trying to game the system) so it's important to monitor the data and performance, and be able to revert to a previous state if needed.
