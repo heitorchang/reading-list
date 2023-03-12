@@ -2,3 +2,5 @@
 2021-07-28 begin ch 6
 2021-07-29 begin ch 17
 2021-07-31 abandon after part 2
+
+2023-03-12 restart, begin ch 6
