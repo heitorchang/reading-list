@@ -126,6 +126,19 @@ PART II: Programming in Pure Lisp
      numbers
      packages (not specifically mentioned in the standard)
 
+Web defvar and defparameter should be used to initialize global variables. their names conventionally start and end with * (earmuffs).
+
+    (defvar *x*) without a value works; however, (defparameter *x*) does not.
+
+    defvar does not do anything if the variable already exists (say if you re-evaluate the entire file)
+    defparameter will reset the value if the file is re-evaluated
+
+    use defvar for variables whose values should not change / reset when the code changes.
+    use defparameter for variables that need to be updated when the code changes.
+
+    names defined with defconstant should start and end with +
+
+
 
 FUNCTIONS
 ---------
