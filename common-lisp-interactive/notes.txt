@@ -55,7 +55,7 @@ Web instead of make-package, use
         (:use :cl)) ; gigamonkeys.com ; cl is a shortcut for common-lisp
       Must use (in-package ...) next
 
-46 '() should be written to represent the empty list, though NIL and () are equivalent
+46 '() should be written to represent the empty list, though NIL, 'nil, and () are equivalent
 
 49 (cons 'a 'b) returns a dotted pair
 
@@ -87,6 +87,45 @@ PART II: Programming in Pure Lisp
 
 63 WARNING: if comparing symbols with eql, a quoted symbol will belong to the package where it was defined. when switching packages, the equality will fail.
    Solution: compare the string values. (string= (symbol-name s) "abc")
+
+69 commenting conventions
+
+;;; three semicolons: outside any function definition
+;; two semicolons: inside a function definition, on its own line
+; one semicolon: on the same line as Lisp code
+
+70 ; see Web
+  (defpackage :com.gigamonkeys.email-db
+    (:use :cl :com.acme.text)
+    (:import-from :com.acme.email :parse-email-address)
+    (:shadow :build-index)
+    (:shadowing-import-from :com.gigamonkeys.text-db :save))
+
+73 predicate functions (predicates) return either T or NIL. some examples are =, char=, string=, eql, and equal
+     predicates often end with the letter "p", such as numberp, characterp, symbolp, stringp, listp
+
+74 "and" and "or" are special forms. they stop evaluating as soon as the final answer can be determined:
+     for "and": as soon as one of the arguments evaluates to NIL, otherwise, return the last element (which has to be non-NIL)
+     for "or": as soon as one of the arguments evaluates to non-NIL, return it
+
+74 (defun <= (x y)
+     "Returns T if x is less than or equal to y, NIL otherwise."
+     (or (< x y) (= x y)))
+
+75 (null x) is a predicate to check for NIL, '(). can be implemented with (eql x 'nil)
+
+76 (listp nil) => T
+
+76 consp checks for nonempty lists
+
+76 (atom object) === (not (consp object))
+
+76 (in this book) an element / elemental object is an object that is testable with eql:
+     symbols
+     characters
+     numbers
+     packages (not specifically mentioned in the standard)
+
 
 FUNCTIONS
 ---------
@@ -123,3 +162,6 @@ FUNCTIONS
 (documentation 'list3 'function) ; 56 => docstring
 (trace f1 f2 f3 ...) ; 59
 (cl:last '(a b c)) ; 63 => (C)
+(characterp "a") ; 73 => NIL
+(listp '()) ; 73 => T
+(and (or (stringp x) (listp x)) (> (length x) 5)) ; 74 => does not produce a type error
