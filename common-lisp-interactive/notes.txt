@@ -8,6 +8,8 @@ Exercise guide
 (p2) desk calculator project
 
 
+PART I: The Basics
+
 11 a S-expression is a printed representation of an object (for example, a number or a list)
 
 11 a list S-expression is a left parenthesis followed by zero or more S-expressions followed by a right parenthesis
@@ -50,11 +52,44 @@ Exercise guide
 
 Web instead of make-package, use
       (defpackage :com.heitorchang.my-package
-        (:use :common-lisp)) ; gigamonkeys.com
+        (:use :cl)) ; gigamonkeys.com ; cl is a shortcut for common-lisp
       Must use (in-package ...) next
 
-FUNCTIONS
+46 '() should be written to represent the empty list, though NIL and () are equivalent
 
+49 (cons 'a 'b) returns a dotted pair
+
+50 in the REPL, *, **, and *** are bound to previously returned values
+
+51 (quote x) is a special form. its arguments are unevaluated. quote returns its unevaluated argument
+   (quote a) === 'a
+   (type-of (quote quote)) => SYMBOL
+
+51 note that '5e2 is not the S-expression you type for the argument as typed, but the object represented by that S-expression => 500.0
+
+
+PART II: Programming in Pure Lisp
+
+55 (defun fn-name varlist docstring form) ; a special form
+     in Lisp terminology, the formal arguments of a function are called lambda variables
+
+56 we say that variables are bound to values
+
+57 (defun switch (lst)
+     "Given a two-member list, return a new list with the two members interchanged."
+     (list2 (second lst) (first lst)))
+
+   (defun list2 (a b)
+     "Create a list with the two arguments in order."
+     (cons a (cons b '())))
+
+62 after switching packages, if a symbol is inherited from another package, it may be shadowed
+
+63 WARNING: if comparing symbols with eql, a quoted symbol will belong to the package where it was defined. when switching packages, the equality will fail.
+   Solution: compare the string values. (string= (symbol-name s) "abc")
+
+FUNCTIONS
+---------
 (function-call) ; page number => result
 
 (length "a string") ; 22 => 8
@@ -70,3 +105,21 @@ FUNCTIONS
 (describe 'describe) ; 36 => opens a browser. Note that describe is not sharp-quoted
 (in-package :common-lisp) ; 36 => Note: book quotes the package name, while today's Lisp uses a colon
 (list-all-packages) ; Web
+(cons 'a '(b c)) ; 45 => (A B C) inserts the first argument into the second argument (must be a list)
+(cons 2 '()) ; 45 => (2)
+(first '(1 2 3)) ; 46 => 1
+(rest '(1 2 3)) ; 46 => (2 3)
+(first '()) ; 47 => NIL
+(rest '()) ; 47 => NIL
+(cons '() '(a b c)) ; 47 => (NIL A B C)
+(equal '(a b c) '(a b c)) ; 48 => T
+(length '(a (b c) d)) ; 48 => 3
+(type-of '(1 2 3)) ; 49 => CONS
+(type-of '()) ; 49 => NULL
+''a === (quote (quote a)) ; 52 => 'A
+(defun list3 (o1 o2 o3)
+  "Returns a list of its three arguments in order."
+  (cons o1 (cons o2 (cons o3 '())))) ; 55 => LIST3
+(documentation 'list3 'function) ; 56 => docstring
+(trace f1 f2 f3 ...) ; 59
+(cl:last '(a b c)) ; 63 => (C)
