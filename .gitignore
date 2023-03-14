@@ -24,3 +24,5 @@ learning_sql/config_ptl.py
 *.fasl
 
 *.class
+
+TAGS
