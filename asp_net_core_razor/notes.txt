@@ -1,0 +1,244 @@
+See: skipped.txt
+
+8 a page controller is a class that derives from PageModel
+
+15 a provider is a component that handles communication between C# code and the data store
+
+21 New webapp
+
+dotnet new webapp -o WebApplication1
+
+// looks like sln (solution) file is not necessary
+
+24 New page
+
+dotnet new page -n Welcome -o Pages --namespace WebApplication1.Pages
+
+NOTE: -na does not work
+
+-n name
+-o output location
+--namespace for the generated C# files
+
+24 hot reload
+
+in the directory containing WebApplication1.csproj, run
+
+dotnet watch run
+
+28 a Solution file acts as a container for managing related projects (such as a business logic layer and a data access layer)
+
+the .csproj file contains information about the project for the build system.
+
+bin, obj: used in the build process
+
+WEB gitignore:
+
+https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+Properties: contains launchSettings.json, settings which are used when you run the application
+
+wwwroot: is configured to be run directly. should contain stylesheets, JS files, images, and other static files (not needed to be processed)
+
+Pages: the home of your Razor page files.
+
+31 the top-level (.cshtml) file is called the "content" or "view" file. In this book, it is called the "Razor page"
+
+the .cshtml.cs file is a C# file containing a class that derives from PageModel.
+
+appsettings.json has a development and a production version.
+
+32 WebApplicationBuilder properties:
+
+Environment: information about the web-hosting environment the app runs in
+
+Services: Service container (covered in Ch. 7)
+
+Configuration: enables composition of the configuration providers (covered in Ch. 14)
+
+Logging: configuration via ILoggingBuilder
+
+Host: configure application-host-specific services, such as third-party DI (Dependency Injection) containers
+
+WebHost: web server configuration
+
+33 bootstrapping: the initial configuration of the application
+
+33 the default web server is Kestrel
+
+34 builder.Services.AddRazorPages() includes the view engine, model binding, request validation, tag helpers, memory cache, and ViewData.
+
+34 the configured application is an instance of the WebApplication type. It merges:
+
+IApplicationBuilder (configures request or middleware pipeline)
+IEndpointRouteBuilder (configures mapping incoming requests to specific pages)
+IHost (provides the means to start and stop the application)
+
+34 an IWebHostEnvironment is accessible via the app.Environment property.
+
+35 HTTP (HyperText Transfer Protocol) is used to transfer information between systems in the client-server model. A request is the input, and the response is the output.
+
+37 request methods: GET, POST, PUT, DELETE
+
+37 headers are name-value pairs that provide additional information to the server.
+
+38 the information of an HTTP transaction is encapsulated in the HttpContext class.
+
+Properties of HttpContext:
+Request
+  Body
+  ContentLength
+  ContentType
+  Cookies
+  Form
+  Headers
+  IsHttps
+  Method
+  Path
+  Query
+Response
+  ContentLength
+  ContentType
+  Cookies
+  HasStarted
+  Headers
+  StatusCode
+  WriteAsync
+  Redirect
+Connection
+Session
+User (see ch. 9 and 10)
+
+39 the decision-making process (where to direct the request, logging, compression, what to return) is the "request pipeline". The individual components that perform these functions are known as middleware.
+
+40 a middleware component can short-circuit the data flow (for example, the static files middleware can return a file if it's determined to be static).
+
+skipped custom middleware p. 41-48
+
+50 layouts are a kind of master template for multiple pages.
+partial files are snippets of UI that can be plugged into a host page or layout.
+
+51 PageModel is a feature of Razor Pages that acts as both an MVC controller and a view model (a container for data specific to a particular view or page)
+
+tag helpers are components that enable server-side code to generate HTML
+
+an IActionResult is a return type of a handler method
+
+51 "Template View" is a common design pattern in web development frameworks. it uses markers or placeholders for server-side content.
+
+51 Razor syntax uses @ as a transition marker
+
+52 @page and @model WebApplication1... are directives
+@{ ... } is a C# code block
+<p>It is @day ... is an inline C# expression
+
+the using directive brings namespaces into scope (allows its types to be referenced without their fully qualified names)
+
+example:
+@using static System.IO.Path
+@ {
+  var extension = GetExtension("myfile.ext");
+}
+
+53 _ViewImports.cshtml centralizes directives for all cshtml files.
+
+53 WARNING: putting too much application logic in Razor pages and mixing it with HTML (in .cshtml files) makes it very difficult to test
+
+an algorithm may be placed in its own class
+
+54 a functions block looks like:
+
+@functions{
+  ...
+}
+
+functions blocks should be avoided in Razor pages for the same reason business logic should be avoided (mixing logic with HTML complicates testing)
+
+a reasonable use of a functions block is to write small routines that manage presentation logic and only apply to the page in which they are placed.
+
+55 expressions such as @partOfDay are "implicit expressions". an explicit expression uses parentheses:
+
+@(DateTime.Now.Hour > 12 ? "PM" : "AM")
+
+55 Control blocks in Razor
+
+@if(DateTime.Now.Hour <= 12)
+{
+  <p>It is morning.</p>
+}
+else if (...)
+{
+  <p>Afternoon</p>
+}
+else
+{
+  <p>Evening</p>
+}
+
+56
+
+@switch (DateTime.Now.Hour)
+{
+  case int _ when DateTime.Now.Hour <= 12:
+    <p>Morning</p>
+    break;
+  case int _ when ...
+    ...
+    break;
+  default:
+    <p>Evening</p>
+    break;
+}
+
+56 foreach: listing vacation destinations
+
+@functions{
+  public class City
+  {
+    public string Name { get; set; }
+    public string Country { get; set; }
+  }
+  List<City> cities = new List<City>{
+    new City { Name = "Paris", Country = "France" },
+    new City { Name = "Rome", Country = "Italy" },
+    new City { Name = "Madrid", Country = "Spain" }
+  };
+}
+
+<ul>
+  @foreach (var city in cities)
+  {
+    <li>@city.Name is in @city.Country</li>
+  }
+</ul>
+
+57 @:something and <text>something</text> is used to render HTML inside a code block.
+
+58 by default, Razor encodes unsafe characters such as <, >, and & to HTML equivalents (&lt;, &gt;, etc.)
+
+@{
+  var output = "<p>a paragraph</p>";
+}
+@output will show up as <p>a paragraph</p> in the browser.
+
+58 use
+@Html.Raw("<p>a paragraph</p>") but you must be sure the contents are sanitized.
+
+59 to prevent encoding non-ASCII characters, add to WebEncoderOptions in Program.cs:
+
+builder.Services.Configure<WebEncoderOptions>(options =>
+{
+  options.TextEncoderSettings = new
+  TextEncoderSettings(UnicodeRanges.BasicLatin, UnicodeRanges.Latin1Supplement);
+});
+
+or instead of individual ranges, use
+UnicodeRanges.All
+
+skipped templated Razor delegates p. 59-61
+
+62 Razor comments
+@* ... *@
+
+
+126 WARNING: using [BindProperties] in model binding will result in all public properties being available to the client, and vulnerable to an "overposting" (also called "mass assignment") attack.

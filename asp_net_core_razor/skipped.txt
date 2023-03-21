@@ -1,0 +1,5 @@
+Pages/sections skipped
+
+Ch. 2 middleware p. 41-48
+
+Ch. 3 templated Razor delegates p. 59-61
