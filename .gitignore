@@ -22,7 +22,9 @@ learning_sql/config_ubuntu.py
 learning_sql/config_ptl.py
 
 *.fasl
-
+*.fas
+*.lib
+*.dll
 *.class
 
 TAGS

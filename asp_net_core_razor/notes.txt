@@ -26,6 +26,11 @@ in the directory containing WebApplication1.csproj, run
 
 dotnet watch run
 
+25
+@{
+  ViewData["Title"] = "Welcome";
+}
+
 28 a Solution file acts as a container for managing related projects (such as a business logic layer and a data access layer)
 
 the .csproj file contains information about the project for the build system.
@@ -239,6 +244,263 @@ skipped templated Razor delegates p. 59-61
 
 62 Razor comments
 @* ... *@
+
+63 layout files contain a method called RenderBody, @RenderBody()
+
+64 specifying the layout page
+
+@{
+  Layout = "_Layout";
+
+  // OR
+
+  Layout = "/Pages/Shared/_Layout.cshtml";
+}
+
+65 Setting the layout in every page suffers from the same problem as not having a layout page: updating it in multiple locations becomes a chore.
+
+the file _ViewStart.cshtml (found in /Pages/) executes its code before any page that it affects (all Razor pages in the same folder and subfolders).
+
+order of execution: ViewStart -> Content -> Layout
+
+settings may be overridden by pages further down this order
+
+layouts may be nested
+
+WARNING: the ViewStart file cannot be relied on to set the parent layout file in a child layout. The ViewStart file has no effect over layouts within its folder and subfolders.
+
+66 the @section directive will include a section (that contains optional content) that depends on a particular destination.
+
+@section ThingsToDoWidget{
+  <p>Visit Eiffel Tower</p>
+}
+
+You render the content of a section within the layout page by calling "RenderSectionAsync" at the location where you want the content to appear.
+
+There are three versions:
+taking the section's name as a string
+taking a Boolean (true or false) that indicates whether all content pages are required to define the section
+taking both a string and a Boolean
+
+@await RenderSectionAsync("ThingsToDoWidget", required: false)
+
+67 determine if a content page has defined a specific section
+<div class="card">
+@if (IsSectionDefined("ThingsToDoWidget"))
+{
+  @await RenderSectionAsync("ThingsToDoWidget")
+}
+else
+{
+  <p>Things to do default content</p>
+}
+</div>
+
+IgnoreSection("admin");
+
+IgnoreSection returns void so it doesn't start with @ and must be terminated with a semicolon.
+
+68 a partial view (.cshtml) contains a chunk of HTML and some optional Razor syntax. it doesn't have a @page directive.
+
+They are used to:
+* break up a complex UI into more manageable pieces
+* avoid repetition
+* generate HTML for async page updates in AJAX scenarios
+
+with VS Code, add a new file with the .cshtml suffix or generate a new ViewStart or ViewImports file and remove the default content:
+
+dotnet new viewstart
+dotnet new viewimports
+
+conventionally (but not mandatory) partials' filenames should start with a leading underscore, such as _myPartial.cshtml.
+
+partials are looked for in the same folder containing the current page, Pages/Shared, and Views/Shared.
+
+_NavigationPartial should be placed in the Pages/Shared folder.
+
+69 a partial tag helper will render the contents of a partial view in the calling page:
+
+<partial name="_NavigationPartial" />
+
+70 a @model directive at the top of the partial file allows for displaying dynamic content.
+
+@model Dictionary<string, string>
+
+data for the partial is represented by a property of the host page named "Nav", and is passed to the partial tag helper's "model" attribute:
+
+<partial name="_NavigationPartial" model="Model.Nav" />
+
+70 Tag helpers are components that automate the generation of HTML. most attributes are custom and begin with "asp-"
+
+71 tag helpers are optional, but are enabled by default in the _ViewImports.cshtml file in /Pages/
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+Note: this book doesn't cover creation of custom tag helpers.
+
+71 tag helpers may be removed.
+
+the ! prefix to a tag name opts out of individual tags (add to both start and end tags)
+
+<!a href="http://www.microsoft.com">Microsoft</!a>
+
+72 to opt specific tags into processing, register a custom prefix
+
+@tagHelperPrefix x:
+<x:a asp-page="/Index">Home</x:a>
+
+this minimizes visual confusion; for example, for designers
+
+72 view components are similar to partial views, but should be preferred over partials when there is server-side logic or its own source of data (e.g. database-driven menus, shopping carts, or tag clouds). Note: covered in Ch. 14)
+
+73 the two primary roles of a PageModel class are the controller and view model.
+
+The role of a controller is to take requests, use that information to perform commands on the model, and then return the result of that processing.
+
+as part of the request processing, the controller has to prepare the data passed to the view in a form the view can work with. this form is the "view model".
+
+73 ViewData is also a way to pass data to view pages.
+
+The PageModel class is generated automatically when a Razor page is added to the application. It is named after the page, plus Model, e.g. WelcomeModel.
+
+Public PageModel properties are exposed to the Razor page through the inclusion of a @model directive that references the PageModel type.
+
+73 The recommended approach to pass data to pages is using a strongly typed view model.
+
+ViewData is a weakly typed option shown before to pass the page Title (p. 25)
+
+ViewData is a dictionary-based feature (key-value pairs).
+
+Definition:
+@{
+  ViewData["Title"] = "Welcome";
+}
+
+Access:
+<title>@ViewData["Title"]</title>
+
+The values are "object" types (anything goes)
+
+74 example of datetime rendering:
+@(((DateTime)ViewData["SaleEnds"]).ToString("h tt, MMMM dd, yyyy"))
+
+74 for assignment to take effect in the Razor page, it must include a @model directive referencing the appropriate Model type:
+
+@model WelcomeModel
+
+Model assignments may be overridden by the Razor page
+
+75 ViewBag is a property that wraps ViewData that enables you to treat it as a dynamic object.
+
+NOTE: using it is not recommended
+
+@ViewBag.SaleEnds
+
+it is available only in Razor files.
+
+75 ViewData should be used sparingly because it relies on magic strings (key names) and is weakly typed (public PageModel properties should be used)
+
+75 a view model is simple: a class that encapsulates the data required for a particular view or page. It is like a static database view. it contains a subset of data
+
+76 Example: OrderSummaryView that shows ProductId, Name, Price, CustomerId, and CustomerAddress
+
+76 An example view model class
+
+public class OrderSummaryViewModel
+{
+  public int Customer { get; set; }
+  public string CustomerName { get; set; }
+  public string CustomerAddress { get; set; }
+  public int ProductId
+  public string ProductName { get; set; }
+  public decimal ProductPrice { get; set; }
+}
+
+views for view models include a @model directive:
+
+@model OrderSummaryViewModel
+
+a PageModel is a view model in the MVC sense.
+
+77 a PageModel may contain public properties that are dynamic data:
+
+public class WelcomeModel : PageModel
+{
+  public DateTime SaleEnds { get; set; } = new DateTime(DateTime.Now.Year, 6, 30);
+  public void OnGet()
+  {
+  }
+}
+
+Razor page:
+
+@page
+@model WebApplication1.Pages.WelcomeModel
+@{
+}
+<p>Sale ends at @Model.SaleEnds.ToString("h tt, MMMM dd, yyyy")</p>
+
+IntelliSense kicks into life with this approach, as opposed to using ViewData
+
+78 Request processing in a PageModel is performed via handler methods (analogous to controller actions)
+
+On[method name] with Async (optionally)
+that is: OnGet, OnGetAsync, OnPost, OnPostAsync
+
+79 in C#, a dollar sign before a string means ith should be interpolated
+
+public class WelcomeModel : PageModel
+{
+  public string Message { get; set; }
+
+  public void OnGet(int id)
+  {
+    Message = $"OnGet executed with id = {id}";
+  }
+}
+
+79 the asp-route-* attribute is used in an <a> tag to pass data in the URL
+
+<a asp-page="/Welcome" asp-route-id="5">Get welcome</a>
+
+80 There can only be one kind of OnGet (cannot have both OnGet and OnGetAsync)
+
+81 It is possible to have named handler methods, such as OnPostSearch and OnPostRegister
+
+81 the asp-page-handler attribute must be used to determine which handler to use
+
+<form method="post" asp-page-handler="Search">...</form>
+<form method="post" asp-page-handler="Register">...</form>
+
+82 Handler methods return void, the type "Task", or action results of the interface type "IActionResult".
+
+Action results may be returning a file, an empty response, a specific HTTP status code, or a redirection.
+
+return types of void or Task implicitly return a PageResult, an action that renders a RazorPage. in general, it is not necessary to explicitly return a PageResult.
+
+83 Common ActionResults and associated helper methods:
+
+PageResult: Page (a Razor page)
+FileContentResult: File
+NotFoundResult: NotFound
+PartialResult: Partial
+RedirectToPageResult: RedirectToPage, RedirectToPagePermanent (Note: avoid permanent redirects)
+StatusCodeResult: StatusCode
+
+84 If multiple result types need to be returned, IActionResult should be specified as the return type for the handler method:
+
+public IActionResult OnGet(int id)
+{
+  var data = db.Find(id);
+  if (data == null)
+  {
+    return NotFound();
+  }
+  else
+  {
+    return Page();
+  }
+}
 
 
 126 WARNING: using [BindProperties] in model binding will result in all public properties being available to the client, and vulnerable to an "overposting" (also called "mass assignment") attack.
