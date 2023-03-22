@@ -240,7 +240,7 @@ builder.Services.Configure<WebEncoderOptions>(options =>
 or instead of individual ranges, use
 UnicodeRanges.All
 
-skipped templated Razor delegates p. 59-61
+skipped: templated Razor delegates p. 59-61
 
 62 Razor comments
 @* ... *@
@@ -465,6 +465,8 @@ public class WelcomeModel : PageModel
 
 80 There can only be one kind of OnGet (cannot have both OnGet and OnGetAsync)
 
+query parameters are bound to model parameters if their names match
+
 81 It is possible to have named handler methods, such as OnPostSearch and OnPostRegister
 
 81 the asp-page-handler attribute must be used to determine which handler to use
@@ -502,18 +504,376 @@ public IActionResult OnGet(int id)
   }
 }
 
+87 commonly found URL to file mapping may be:
+
+https://mysite.com/city/london -> c:\website\city\london.cshtml
+
+this is limiting because the URL may be city/paris, and we don't want a whole new page for that.
+
+87 a "city break" is a UK term for vacation packages in cities worldwide.
+
+(the book begins a new project called CityBreaks, see p. 21 notes)
+
+88 Routing is a middleware (EndpointRouting and Endpoint). They are added with UseRouting and MapRazorPages
+
+89 static file middleware whould be placed before the UseRouting middleware.
+
+middleware that needs to know about the selected endpoint goes between UseRouting and UseEndpoints (for example, Authorization middleware).
+
+89 a route template is a string representation of a route pattern. A RouteEndpoint is a type of endpoint that can be used in URL matching and generation.
+
+90 Note: alternative root for Razor pages (non-default)
+
+to be located, a Razor page must have a @page directive at the top and not start with an underscore (_)
+
+Index.cshtml generates the /index route template and /
+
+(be careful not to create Pages\Privacy\Index.cshtml and Pages\Privacy.cshtml, that is ambiguous)
+
+91 after @page, a string may be added to customize the route template:
+
+@page "route-template"
+
+parameters and separators are allowed in route templates.
+
+@page "/privacy-policy" overrides the default route template. literals behave like regular URLs
+
+92 a parameter may not be called Action, Area, Controller, Handler, or Page
+
+adding a city name parameter looks like:
+
+@page "{cityName}"
+
+that corresponds to URLs city/{cityName}
+
+values are added to a RouteValueDictionary object, which is added to a RouteData object.
+
+The values are retrieved with RouteData.Values.
+
+@page "{cityName}"
+@model CityBreaks.Pages.CityModel
+
+<h2>@RouteData.Values["cityName"] Details</h2>
+
+94 Parameters can be made optional by adding a question mark after the name {cityName?} but these must come last.
+
+a default value is defined as {cityName=Paris}
+
+if a route parameter name matches a query string value, the incoming value is assigned to a handler method parameter. (avoid using the RouteData dictionary)
+
+94 [example on binding cityName in the route to the model]
+
+95 multiple route parameters
+@page "{cityName}/{rating?}"
+
+96 a catchall parameter collects an arbitrary number of parameters separated by slashes.
+
+{*cityName} -> path separators are URL-encoded: /City%2FLondon%2f2022...
+{**cityName} -> the encoding is decoded, or round-tripped: /City/London/2022...
+
+96 all URL data is a string. Route constraints enable you to specify the data type and range of acceptable values
+
+97
+"{cityName}/{arrivalYear:int}-{arrivalMonth:range(1-12)}-{arrivalDay:int}"
+"{cityName}/{arrivalDate:datetime}"
+
+97-98 a list of common constraints (alpha, bool, int, range, maxlength, etc.)
+
+98 multiple constraints may be added one-by-one, separating them with colons
+
+99 route constraints are classes that implement the IRouteConstraint interface. a custom constraint such as CityRouteConstraint should be placed in a folder called RouteConstraints.
+
+99-100 [example of custom route constraint for CityRoute]
+
+WARNING: this approach is synchronous. there is an async solution called IEndPointSelectorPolicy that is not covered in this book.
+
+100 [example of registering the custom constraint]
+@page "{cityName:city}"
+
+100 via configuration, additional routes may be created for a page, but this approach is not scalable
+
+101 a UI language is called "culture"
+
+102 a PageRouteModelConvention can be created to apply to multiple pages.
+
+103 [example of PageRouteModelConvention to add a custom route convention]
+
+105 the anchor tag <a> custom attributes are (prefixed with asp-): page, page-handler, route-*, all-route-data, host, protocol, area
+
+105 when multiple route templates exist, the last template will be used to generate the href value.
+
+106 adding @page "{handler?}" allows customization of the handler behavior
+
+route-* attributes cater to parameter values, such as
+<a asp-page="/City" asp-route-cityName="Rome">Rome</a>
+
+all-route-data takes a Dictionary<string, string> as a value, and wraps them. it is used to avoid adding multiple route-* attributes
+
+var d = new Dictionary<string, string> { { "name": "Madrid" }, { "rating": "5" } };
+<a asp-page="/City" asp-all-route-data="d">Click me</a>
+
+107 Areas originate from the MVC framework, and should be avoided. It is used to separate large applications into smaller subapplications.
+
+skipped: p. 107-114
+
+115 the form is the primary interaction mechanism in a web app.
+
+116 to aid in CRUD systems, Razor pages include:
+
+* form control tag helpers
+* model binding
+* a validation framework
+
+116 Data annotation allow you to add additional information (metadata) to types in .NET, such as business requirements related to presence, type, and range.
+
+116 SETUP: the CityBreaks app is configured to use lowercase options for URLs and implements parameter transformers
+
+117 in a GET request, keys in the key-value pairs appended to the URL are generated from the "name" attribute of the form control
+
+with POST, the content of the form is included in the body of the request.
+
+GET should be used if the ability to bookmark the URL is needed.
+
+117 to prevent the user from refreshing the page containing the form, the PRG pattern is useful (Post-Redirect-Get)
+
+118 Note: Razor Pages is stateless
+
+data generated on the server needs to be generated each time you display a form
+
+119 it is possible to access the Request object directly, but not recommended. It is better to use model binding.
+
+119 key-value pairs are assigned to the Request.Form collection, such as
+Request.Form["password"]
+
+121 it is possible to assign the same name to multiple form controls (for example, for a series of checkboxes).
+
+StringValues can represent zero (null), one, or more strings, and supports an implicit conversion to string[]
+
+foreach(var city in Request.Form["city"])
+{
+  ...
+}
+
+122 when using GET, Request.Form becomes Request.Query
+
+123 @if (Request.HasFormContentType)
+{ ... }
+
+124 Model binding is the process that takes user input from a request (the source) and attempts to bind it to C# code (the target)
+
+Sources may be:
+* forms
+* route data
+* query strings
+* request body (including JSON)
+
+124 using model binding with handler parameters
+
+public class CreateModel : PageModel
+{
+  public string Message { get; set }
+  public void OnPost(string cityName)
+  {
+    Message = $"You submitted {cityName}";
+  }
+}
+
+125 using model binding with public properties
+
+when the binding source is form data, this is the recommended way to work with the model binder
+
+public class CreateModel : PageModel
+{
+  [BindProperty]
+  public string CityName { get; set; }
+}
+
+126 by default, BindProperty opts properties in to model binding for POST requests. for GET requests, it must be specified:
+
+[BindProperty(SupportsGet=true)]
+
+126 an invalid C# identifier must be defined with Name:
+[BindProperty(Name="e-mail")]
+public string Email { get; set; }
 
 126 WARNING: using [BindProperties] in model binding will result in all public properties being available to the client, and vulnerable to an "overposting" (also called "mass assignment") attack.
 
-WEB scaffolding tool
-https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-7.0&tabs=visual-studio-code
+127 binding complex objects
 
-dotnet tool uninstall --global dotnet-aspnet-codegenerator
-dotnet tool install --global dotnet-aspnet-codegenerator
-dotnet tool uninstall --global dotnet-ef
-dotnet tool install --global dotnet-ef
-dotnet add package Microsoft.EntityFrameworkCore.Design
-dotnet add package Microsoft.EntityFrameworkCore.SQLite
-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-dotnet add package Microsoft.EntityFrameworkCore.Tools
+132 binding simple collections
+
+140 validating input
+
+skipped: p. 127-186
+
+187 DI (Dependency Injection) enables loose coupling, resulting in easier to maintain and easier to test code
+
+187 services are globally registered within a container upon startup and provided by the container when needed by consumers.
+
+188 builder.Services is the service container.
+
+188 a key principle in software design is the "single-responsibility principle" (SRP). This is the S in SOLID. any component, module, or service should have only one reason to change: its single responsibility needs to change
+
+Note: the other initials of SOLID are:
+S: Single-responsibility
+O: Open-closed (open for extension, closed for modification)
+L: Liskov substitution (functions that use pointers/references to base classes must be able to use objects of derived classes)
+I: Interface segregation (clients should not be forced to depend upon interfaces that they do not use)
+D: Dependency Inversion (depend upon abstractions, not concretions)
+
+189 each piece of logic should only have one representation in the system.
+
+moving code to its own component might be needed
+
+190 SimpleCityService that generates a collection of City objects and makes it available to any part of the application that needs it
+
+// SimpleCityService.cs
+
+using CityBreaks.Models;
+
+namespace CityBreaks.Services
+{
+  public class SimpleCityService
+  {
+    public Task<List<City>> GetAllAsync()
+    {
+      return Task.FromResult(Cities);
+    }
+
+    private readonly List<City> Cities = new()
+    {
+      new City { Id = 1, Name = "Amsterdam", Country = new Country { ... } },
+      ...
+    }
+  }
+}
+
+191 update Create.cshtml.cs
+
+public async Task OnGetAsync()
+{
+  Cities = await GetCityOptions();
+}
+
+public async Task OnPostAsync() { ... }
+
+private async Task<SelectList> GetCityOptions()
+{
+  var service = new SimpleCityService();
+  var cities = await service.GetAllAsync();
+  return new SelectList(cities, nameof(City.Id), nameof(...) ...);
+}
+
+192 now, CreateModel _depends_ on the SimpleCityService.
+SimpleCityService is a dependency of the CreateModel class
+
+192 "new is glue" means that using the "new" keyword might be creating a tight coupling between a consumer (a high-level module) and its dependencies (low-level modules)
+
+in this example, SimpleCityService is glued to the CreateModel class.
+
+this example violates the explicit dependencies principle (methods and classes should explicitly require collaborating objects through method parameters or constructor parameters)
+
+193 To achieve loose coupling, one solution is to rely on abstractions, known as the dependency inversion principle (DIP). it is also called "inversion of control" (IoC)
+
+abstractions are abstract classes and interfaces. in general, interfaces are used unless you have some common behavior you want all implementations to share
+
+193 high-level modules should not depend on low-level modules. both should depend on abstractions. abstractions should not depend on details. details should depend on abstractions.
+
+high-level modules tend to be consumers of services
+low-level modules tend to be the services themselves
+
+CreateModel (high-level)
+ |
+ v
+
+ICityService (abstraction)
+
+ ^
+ |
+SimpleCityService (low-level)
+
+the interface should not return implementation-specific types, such as DbDataReader, but general-purpose types like a List<T>.
+
+194 ICityService.cs (interface)
+
+using CityBreaks.Models;
+
+namespace CityBreaks.Services
+{
+  public interface ICityService
+  {
+    Task<List<City>> GetAllAsync();
+  }
+}
+
+195 change SimpleCityService to implement the interface:
+public class SimpleCityService : ICityService
+
+195 Dependency Injection
+
+To inject the dependency into the consuming module:
+
+1. typically, it's done via its constructor as a parameter
+2. assign it to a private field for use within the consuming class
+
+public class CreateModel : PageModel
+{
+  private readonly ICityService _cityService;
+  public CreateModel(ICityService cityService)
+  {
+    _cityService = cityService;
+  }
+}
+
+196 service registration
+
+skipped: p. 196-208
+
+209 EF Core (Entity Framework Core) is an ORM (Object-Relational Mapping) tool
+
+210 the basic CRUD operations with EF Core are done via its _context_, an object that derives from DbContext
+
+210 migrations keep your database schema in sync with the model
+
+210 scaffolding is a feature that combines your model and db knowledge to generate CRUD pages
+
+211 EF Core manages communication between your business objects and the data store.
+
+LINQ (Language-Integrated Query) helps you create query specifications within your application code and provide those to EF Core. EF Core translates LINQ to SQL
+
+213 relationships in an EF Core model are represented by "navigational properties". For example, a Country may have many Cities. the following code will be inferred to have a one-to-many relationship between the Country and City entities
+
+public class City
+{
+  public int Id { get; set; }
+  public string Name { get; set; }
+  public Country Country { get; set; }
+}
+
+213-214 as a best practice, you should always instantiate collection navigation properties in their declaration, to avoid having to test for null when accessing them in code.
+
+[example with a foreign key property]
+
+public class City
+{
+  public int Id { get; set; }
+  public string Name { get; set; }
+  public int CountryId { get; set; }
+  public Country Country { get; set; }
+}
+
+public class Country
+{
+  public int Id { get; set; }
+  ...
+  public List<City> Cities { get; set; } = new List<City>();
+}
+
+skipped: p. 214
+
+215 EF Core is not included by default.
+
+run in the terminal:
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+END OF FILE

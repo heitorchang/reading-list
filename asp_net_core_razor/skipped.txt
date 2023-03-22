@@ -3,3 +3,9 @@ Pages/sections skipped
 Ch. 2 middleware p. 41-48
 
 Ch. 3 templated Razor delegates p. 59-61
+
+Ch. 4 custom generation of URLs p. 107-114
+
+Ch. 5-6 p. 127-186
+
+Ch. 7 p. 196-208
