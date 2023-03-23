@@ -876,4 +876,28 @@ skipped: p. 214
 run in the terminal:
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
+skipped: p. 215-340
+
+224 LINQ query syntax vs. method syntax (author prefers method syntax, which chains calls to a IEnumerable type)
+
+342 Serilog
+
+345-346 UseExceptionHandler
+
+346 Set Layout = null; in the custom error page to avoid an infinite recursion
+
+@page
+@model ErrorModel
+@{
+  Layout = null;
+  ViewData["Title"] = "Error";
+}
+
+skipped: 346-362
+
+363
+dotnet add package Serilog.AspNetCore
+
+
+
 END OF FILE
