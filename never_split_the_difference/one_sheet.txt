@@ -1,3 +1,11 @@
+SUMMARY
+
+ASK:
+What are we trying to accomplish?
+How am I supposed to do that?
+What is the biggest challenge you face?
+
+
 1. The Goal
 
 Think through best/worst-case scenarios but only write down a specific goal that represents the best case
