@@ -1,0 +1,62 @@
+Sketchy Lisp (Scheme)
+
+9 values passed to a procedure are called arguments
+
+"procedure applications" are performed to process the arguments
+
+10 in this book, "bottom" is an undefined value. (in some Schemes, it is called "error")
+
+12 a predicate is a procedure returning a truth value (e.g. zero?). True and false are #t and #f.
+
+14 the "normal form" of an expression is its form when it cannot be reduced any further
+
+programs can be "executed" by hand by re-writing them and reducing them step-by-step
+
+17 a tail-recursive program "does nothing" after calling itself (it does not need to do extra or temporary computation)
+
+18 letrec embed local definitions into a procedure
+
+19 "else" is also used in the place of #t as the final predicate of a "cond"
+
+22 #f is the only false value. Everything else is considered true.
+
+23 (read) and (write) translate between internal and external representations of objects
+
+23 chars are represented as #\H #\\, #\space, #\newline, etc.
+
+24 (display) pretty-prints objects (it is not the same as write)
+
+25 (quote (+ 5 7) creates a literal list of +, 5, and 7
+
+26 ( ) [ ] . ' ` , # " and ; cannot be used in symbols
+
+26 a Scheme variable is a reference to a value
+
+27 in this book, "symbol" means quoted symbols and unbound symbols. unquoted and bound symbols are referred to as variables, arguments, or procedures
+
+'expression is the same as (quote expression)
+
+(symbol->string 'foo) => "foo"
+
+(eq? 'foo 'foo) => #t can be used to compare symbols
+
+The only things eq? is guaranteed to work with are symbols, (), #t, and #f
+
+28 car, cdr, and cons
+(cons 'a '(b c)) => (a b c)
+(car '(a b c)) => a
+(cdr '(a b c)) => (b c)
+
+x = (cons (car x) (cdr x))
+
+29 (append '(a b) '(c d)) => (a b c d)
+
+neither car nor cdr works with '()
+
+29 null? tests whether a list is empty
+
+The empty list, '() must have the quote, though some Schemes allow the unquoted ()
+
+31 lambda is a placeholder name for anonymous procedures
+
+END OF FILE
