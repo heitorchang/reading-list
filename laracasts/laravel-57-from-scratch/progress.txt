@@ -1,4 +1,0 @@
-24.sep.19 start 03 Basic Routing
-26.sep.19 start 08 Eloquent
-27.sep.19 start 19
-30.sep.19 moved on to version 6

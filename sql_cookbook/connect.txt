@@ -1,5 +1,0 @@
-Run in cmd:
-
-psql -p 5433 -d cookbook -U postgres
-
-Right-click, Ctrl+V or Shift+Ins to paste code

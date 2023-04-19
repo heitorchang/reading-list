@@ -1,0 +1,21 @@
+7 Yeshol (mago e assassino) masc.
+7 Thenaar (divinita')
+8 Aster (Maestro di Yeshol) masc.
+13 Nihal (l'Ultimo Mezzelfo, eroina) femm.
+
+15 Mel (sentinella) masc.
+15 Dan (sentinella, compagno di Mel)
+15 Sarissa (sentinella, compagno di Mel) masc.
+15 Amanta (Primo Cortigiano, nobile della Terra del Sole, ribello' a Dohor e
+   antico Consigliere di Sulana) masc.
+15 Dohor (Re) masc.
+17 Lu (servitrice di Amanta) femm.
+17 Sulana (regina) femm.
+19 Makrat (capitale della Terra del Sole)
+20 Dubhe (ladra) femm.
+
+21 fammin (vittime di Dohor, creati dalla magia del Tiranno)
+26 Melna (madre di Dubhe)
+27 Gornar (gigante di 12 anni, Dubhe ha 8 nel passato)
+28 Mathon (ragazzino timido)
+29 Gorni (padre di Dubhe)
