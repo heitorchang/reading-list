@@ -1,0 +1,20 @@
+cup = xícara, copo
+glass = copo
+
+copo = glass, cup
+xícara = cup
+
+menor de 25
+menor do que 25 (both ok)
+
+over time = ao longo do tempo
+
+carga = load
+
+register = matricular
+
+application = aplicação / pedido / inscrição (Linguee)
+
+next to = ao lado de
+
+picture/painting = quadro

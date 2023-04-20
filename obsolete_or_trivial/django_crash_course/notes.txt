@@ -1,0 +1,18 @@
+NOTE: For new projects, start at Chapter 15 (The EveryCheese Project)
+
+Use a django.views.generic.TemplateView instead of function-based views
+
+Define context variables in:
+
+def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    context['my_message'] = "Nice to see you"
+    return context
+
+In a template, {{ MODEL.get_ATTRIBUTE_display }} is an automatically-generated utility method
+
+To manually test anonymously: Open an Incognito/Private window
+
+A CBV's attribute may be accessed in a template with view.attribute
+
+When testing an update, use cheese.refresh_from_db() because the old object is stale
