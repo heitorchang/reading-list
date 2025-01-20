@@ -13,7 +13,7 @@
      (goto (label test-b))
 
      gcd-done)))
-                    
+
 (set-register-contents! gcd-machine 'a 24826148)
 (set-register-contents! gcd-machine 'b 45296490)
 (start gcd-machine)
