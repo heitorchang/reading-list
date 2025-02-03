@@ -171,13 +171,15 @@
          (map (lambda (operand) (compile operand 'val 'next))
               (operands exp))))
     (preserving '(env continue)
-                (construct-arglist operand-codes)
-                (compile-procedure-call target linkage))))
+                proc-code
+                (preserving '(proc continue)
+                            (construct-arglist operand-codes)
+                            (compile-procedure-call target linkage)))))
 
 (define (construct-arglist operand-codes)
   (let ((operand-codes (reverse operand-codes)))
     (if (null? operand-codes)
-        (make-instruction-sequence '() '(argl) '((assign argl (const ()))))
+        (make-instruction-sequence '() '(argl) '((assign argl (const '()))))
         (let ((code-to-get-last-arg
                (append-instruction-sequences
                 (car operand-codes)
