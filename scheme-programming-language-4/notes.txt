@@ -1,0 +1,20 @@
+Ch. 1 Introduction
+-----
+
+Section 1.1
+-----------
+
+special characters ? ! . + - * / < = > : $ % ^ & _ ~ @ are allowed in identifiers
+
+#; is a "datum comment" (applies to the next value)
+
+#| ... |# is a block comment. they may be nested
+
+#<thing> indicates that the object does not have a printed representation
+
+Section 1.3
+-----------
+
+an exception with condition type &assertion is raiesd when a requirement (such as an index equal to or less than a vector size) is not met
+
+STOP Ch. 2
