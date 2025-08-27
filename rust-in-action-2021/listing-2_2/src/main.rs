@@ -1,0 +1,11 @@
+fn main() {
+    let a = 10;
+    let b: i32 = 20;
+    let c = 30_i32;
+    let e = add(add(a, b), c);
+    println!("(a + b) + c = {a} + {b} + {c} = {e}");
+}
+
+fn add(i: i32, j: i32) -> i32 {
+    i + j
+}
